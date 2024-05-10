@@ -29,7 +29,8 @@ module.exports = {
       cus1: '#3B82F6',
       cus2: '#1E40AF',
       custext: '#14b8a6',
-      textname: '#00355D'
+      textname: '#00355D',
+      'Teal-400': '#2dd4bf'
     },
   },
   plugins: [],
