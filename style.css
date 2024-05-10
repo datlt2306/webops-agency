@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Nunito", "Roboto", sans-serif;
+  }
+}
+
+.bg-border {
+  clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
+  border-bottom-right-radius: 10px;
+}
