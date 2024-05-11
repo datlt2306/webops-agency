@@ -118,12 +118,14 @@
         </div>
         <!--End Title Webops -->
         <!-- search project -->
-        <div class="search w-[1056px] pt-[63px] pb-[2.9rem] mx-auto">
-          <form>
+        <div
+          class="search sm:opacity-0 xl:opacity-100 hidden sm:block max-w-[1056px] pt-[63px] pb-[2.9rem] mx-auto"
+        >
+          <form class="">
             <div class="seacrh-project flex items-center ml-[0.7rem]">
               <input
                 type="text"
-                class="w-[620px] outline-none pl-16 relative rounded-l-full h-[60px] text-lg font-normal text-gray-400 placeholder-gray-400"
+                class="max-w-[600px] w-full outline-none pl-16 relative rounded-l-full h-[60px] text-lg font-normal text-gray-400 placeholder-gray-400"
                 placeholder="Tìm kiếm dự án chất lượng"
               />
               <img
@@ -132,11 +134,11 @@
                 alt=""
               />
 
-              <div class="option pl-5 outline-none w-64 bg-white flex relative">
+              <div class="option pl-5 outline-none bg-white flex relative">
                 <div
-                  class="gach h-8 border-l-2 top-[13px] left-2 absolute"
+                  class="gach h-8 border-l-2 top-[13px] left-1 absolute"
                 ></div>
-                <div class="relative">
+                <div class="relative flex max-w-[238px] justify-between">
                   <select
                     class="h-[60px] cursor-pointer appearance-none outline-none w-[242px] pl-[0.26rem] pr-[2rem] text-lg text-[#A1A1AA] bg-transparent"
                   >
@@ -155,7 +157,7 @@
                 class="w-[193px] text-center h-[60px] rounded-tl-full rounded-bl-full rounded-tr-full rounded-br-full bg-white button-Submit"
               >
                 <button
-                  class="w-[193px] pl-[10px] text-center h-[60px] bg-[#28EFE2] text-lg font-bold leading-7 rounded-tr-full rounded-br-full text-white"
+                  class="w-full pl-[10px] text-center h-[60px] bg-[#28EFE2] text-lg font-bold leading-7 rounded-tr-full rounded-br-full text-white"
                   type="submit"
                 >
                   Tìm kiếm dự án
@@ -167,67 +169,66 @@
         <!-- End search project -->
         <!-- menu project -->
         <section
-          class="menu-project rounded-[100px] mr-[4.2rem] border-2 border-white mx-auto w-[1237px] h-[49px]"
+          class="menu-project rounded-[100px] mr-[4.2rem] border-2 border-white mx-auto max-w-[1238px] h-[49px]"
         >
           <ul
-            class="items-center w-[1238px] h-[49px] text-center text-lg leading-6 font-bold text-[white] flex"
+            class="items-center max-w-[1238px] h-[49px] text-center text-lg leading-6 font-bold text-white flex"
           >
             <li>
               <a
                 href=""
-                class="hover:bg-cyan-400 -ml-[2PX] leading-8 hover:border-2 hover:border-white hover:rounded-full px-8 pt-[0.7rem] pb-[0.55rem]"
+                class="hover:bg-cyan-400 hover:border-transparent hover:border-2 hover:border-white hover:rounded-full pl-[30px] pr-[33.4px] pt-[0.65rem] pb-[0.5rem]"
                 >Tài chính</a
               >
             </li>
             <li>
               <a
                 href=""
-                class="hover:bg-cyan-400 hover:border-2 hover:border-white hover:rounded-full px-8 pt-[0.7rem] pb-[0.55rem]"
+                class="hover:bg-cyan-400 hover:border-transparent hover:border-2 hover:border-white hover:rounded-full pl-[30px] pr-[33.4px] pt-[0.7rem] pb-[0.55rem]"
                 >Giáo dục</a
               >
             </li>
             <li>
               <a
                 href=""
-                class="hover:bg-cyan-400 hover:border-2 hover:border-white hover:rounded-full px-8 py-2.5"
+                class="hover:bg-cyan-400 hover:border-transparent hover:border-2 hover:border-white hover:rounded-full pl-[30px] pr-[33.4px] py-2.5"
                 >Thương mại điện tử</a
               >
             </li>
             <li>
               <a
                 href=""
-                class="hover:bg-cyan-400 hover:border-2 hover:border-white hover:rounded-full px-8 py-2.5"
+                class="hover:bg-cyan-400 hover:border-transparent hover:border-2 hover:border-white hover:rounded-full pl-[30px] pr-[33.4px] py-2.5"
                 >Bất động sản</a
               >
             </li>
             <li>
               <a
                 href=""
-                class="hover:bg-cyan-400 hover:border-2 hover:border-white hover:rounded-full px-8 py-2.5"
+                class="hover:bg-cyan-400 hover:border-transparent hover:border-2 hover:border-white hover:rounded-full pl-[30px] pr-[33.4px] py-2.5"
                 >Du lịch - Giải trí</a
               >
             </li>
             <li>
               <a
                 href=""
-                class="hover:bg-cyan-400 hover:border-2 hover:border-white hover:rounded-full px-8 py-2.5"
+                class="hover:bg-cyan-400 hover:border-transparent hover:border-2 hover:border-white hover:rounded-full pl-[30px] pr-[33.4px] py-2.5"
                 >Spa - Làm đẹp</a
               >
             </li>
             <li>
               <a
                 href=""
-                class="hover:bg-cyan-400 hover:border-2 hover:border-white hover:rounded-full px-8 py-2.5"
+                class="hover:bg-cyan-400 hover:border-transparent hover:border-2 hover:border-white hover:rounded-full pl-[30px] pr-[33.4px] py-2.5"
                 >Truyền thông</a
               >
             </li>
           </ul>
         </section>
-        <!--End  menu project -->
 
         <!-- Conten -->
         <section
-          class="content w-[1408px] pt-10 items-center gap-x-8 gap-y-[2.4rem] mx-auto grid grid-cols-4"
+          class="content sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 pt-10 items-center gap-x-12 gap-y-[2.4rem] mx-auto grid grid-cols-1"
         >
           <!-- project -->
           <div class="project relative mx-auto w-[328px] h-[432px]">
@@ -585,10 +586,10 @@
         </section>
         <!-- end dự án -->
         <section
-          class="w-[1409px] h-[728px] items-center flex justify-center relative"
+          class="max-w-[1409px] h-[728px] items-center flex justify-center relative"
         >
           <div
-            class="z-50 absolute h-[374px] left-16 top-40 font-extrabold w-[350px]"
+            class="z-50 absolute h-[374px] left-16 top-40 font-extrabold max-w-[350px]"
           >
             <div><img class="pb-12" src="./img/lienhe.png" alt="" /></div>
             <div class="*:leading-[66px]">
@@ -602,10 +603,10 @@
             alt=""
           />
           <div
-            class="w-[1280px] absolute z-10 rounded-[30px] h-[728px] bg-[#264AB9]"
+            class="max-w-[1280px] absolute z-10 w-full rounded-[30px] h-[728px] bg-[#264AB9]"
           ></div>
           <div
-            class="w-[688px] h-[478px] absolute font-bold right-[7.5rem] text-white z-40"
+            class="w-[688px] h-[478px] absolute font-bold right-[6.5rem] text-white z-40"
           >
             <h1 class="text-[32px] text-center mb-[2.8rem]">
               ĐĂNG KÝ NHẬN TƯ VẤN MIỄN PHÍ
@@ -657,7 +658,7 @@
       </main>
       <footer class="max-w-full bg-[#23233F] h-[704px] mt-24">
         <section
-          class="w-[1408px] mx-auto pt-[5.5rem] *:text-white grid grid-cols-3"
+          class="max-w-[1408px] mx-auto pt-[5.5rem] *:text-white grid grid-cols-3"
         >
           <div class="pl-2 pt-2">
             <img src="./img/footer.png" alt="" />
@@ -722,7 +723,7 @@
               </ul>
             </div>
           </div>
-          <div class="w-[446px]">
+          <div class="max-w-[446px]">
             <div class="menu-footer pt-[7px] pl-7">
               <h1 class="text-[18px] text-white font-semibold">LIÊN HỆ</h1>
 
@@ -786,7 +787,7 @@
           </div>
         </section>
         <section
-          class="w-[1408px] pl-2 mt-11 flex border-t-2 border-white pt-[22px] justify-between mx-auto"
+          class="max-w-[1408px] pl-2 mt-11 flex border-t-2 border-white pt-[22px] justify-between mx-auto"
         >
           <div class="font-semibold text-[16px] text-white">
             Copyright WebOpsAgency

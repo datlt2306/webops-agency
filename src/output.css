@@ -558,9 +558,9 @@ video {
   width: 100%;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 393px) {
   .container {
-    max-width: 640px;
+    max-width: 393px;
   }
 }
 
@@ -736,6 +736,10 @@ video {
   top: 13px;
 }
 
+.right-\[6\.5rem\] {
+  right: 6.5rem;
+}
+
 .isolate {
   isolation: isolate;
 }
@@ -758,6 +762,10 @@ video {
 
 .z-50 {
   z-index: 50;
+}
+
+.z-30 {
+  z-index: 30;
 }
 
 .float-start {
@@ -997,6 +1005,10 @@ video {
   height: 1.25rem;
 }
 
+.h-6 {
+  height: 1.5rem;
+}
+
 .h-8 {
   height: 2rem;
 }
@@ -1057,10 +1069,6 @@ video {
   height: auto;
 }
 
-.h-6 {
-  height: 1.5rem;
-}
-
 .w-4 {
   width: 1rem;
 }
@@ -1069,32 +1077,16 @@ video {
   width: 1.25rem;
 }
 
+.w-6 {
+  width: 1.5rem;
+}
+
 .w-64 {
   width: 16rem;
 }
 
-.w-\[1056px\] {
-  width: 1056px;
-}
-
-.w-\[1237px\] {
-  width: 1237px;
-}
-
-.w-\[1238px\] {
-  width: 1238px;
-}
-
 .w-\[1280px\] {
   width: 1280px;
-}
-
-.w-\[1408px\] {
-  width: 1408px;
-}
-
-.w-\[1409px\] {
-  width: 1409px;
 }
 
 .w-\[193px\] {
@@ -1123,10 +1115,6 @@ video {
 
 .w-\[328px\] {
   width: 328px;
-}
-
-.w-\[350px\] {
-  width: 350px;
 }
 
 .w-\[446px\] {
@@ -1161,8 +1149,24 @@ video {
   width: 100%;
 }
 
-.w-6 {
-  width: 1.5rem;
+.w-\[245px\] {
+  width: 245px;
+}
+
+.w-\[238px\] {
+  width: 238px;
+}
+
+.max-w-\[1056px\] {
+  max-width: 1056px;
+}
+
+.max-w-\[1237px\] {
+  max-width: 1237px;
+}
+
+.max-w-\[1238px\] {
+  max-width: 1238px;
 }
 
 .max-w-\[1392px\] {
@@ -1173,8 +1177,48 @@ video {
   max-width: 1394px;
 }
 
+.max-w-\[1408px\] {
+  max-width: 1408px;
+}
+
+.max-w-\[1409px\] {
+  max-width: 1409px;
+}
+
+.max-w-\[350px\] {
+  max-width: 350px;
+}
+
 .max-w-full {
   max-width: 100%;
+}
+
+.max-w-\[446px\] {
+  max-width: 446px;
+}
+
+.max-w-\[1280px\] {
+  max-width: 1280px;
+}
+
+.max-w-\[620px\] {
+  max-width: 620px;
+}
+
+.max-w-\[242px\] {
+  max-width: 242px;
+}
+
+.max-w-\[193px\] {
+  max-width: 193px;
+}
+
+.max-w-\[600px\] {
+  max-width: 600px;
+}
+
+.max-w-\[238px\] {
+  max-width: 238px;
 }
 
 .flex-shrink {
@@ -1537,6 +1581,10 @@ video {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
 .flex-row {
   flex-direction: row;
 }
@@ -1737,9 +1785,9 @@ video {
   gap: 32px;
 }
 
-.gap-x-8 {
-  -moz-column-gap: 2rem;
-       column-gap: 2rem;
+.gap-x-12 {
+  -moz-column-gap: 3rem;
+       column-gap: 3rem;
 }
 
 .gap-y-\[2\.4rem\] {
@@ -2434,6 +2482,11 @@ video {
   padding-bottom: 10px;
 }
 
+.px-\[30px\] {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
 .pb-12 {
   padding-bottom: 3rem;
 }
@@ -2498,8 +2551,16 @@ video {
   padding-left: 28px;
 }
 
+.pr-\[15px\] {
+  padding-right: 15px;
+}
+
 .pr-\[2px\] {
   padding-right: 2px;
+}
+
+.pr-\[2rem\] {
+  padding-right: 2rem;
 }
 
 .pr-\[54px\] {
@@ -2570,16 +2631,20 @@ video {
   padding-top: 7px;
 }
 
-.pr-2 {
-  padding-right: 0.5rem;
+.pb-\[0\.5rem\] {
+  padding-bottom: 0.5rem;
 }
 
-.pr-\[2rem\] {
-  padding-right: 2rem;
+.pt-\[0\.65rem\] {
+  padding-top: 0.65rem;
 }
 
-.pr-\[15px\] {
-  padding-right: 15px;
+.pl-\[30px\] {
+  padding-left: 30px;
+}
+
+.pr-\[33\.4px\] {
+  padding-right: 33.4px;
 }
 
 .text-left {
@@ -3144,6 +3209,10 @@ video {
   transition-duration: 150ms;
 }
 
+.duration-300 {
+  transition-duration: 300ms;
+}
+
 .ease-in {
   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
@@ -3210,14 +3279,14 @@ body {
   font-family: 'Nunito', sans-serif;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 393px) {
   .sm\:container {
     width: 100%;
   }
 
-  @media (min-width: 640px) {
+  @media (min-width: 393px) {
     .sm\:container {
-      max-width: 640px;
+      max-width: 393px;
     }
   }
 
@@ -3310,6 +3379,10 @@ body {
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
+.hover\:border-transparent:hover {
+  border-color: transparent;
+}
+
 .hover\:bg-cyan-400:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(34 211 238 / var(--tw-bg-opacity));
@@ -3342,9 +3415,33 @@ body {
   text-align: center;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 393px) {
+  .sm\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .sm\:underline {
     text-decoration-line: underline;
+  }
+
+  .sm\:opacity-0 {
+    opacity: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .xl\:opacity-100 {
+    opacity: 1;
   }
 }
 
