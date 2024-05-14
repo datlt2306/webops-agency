@@ -36,6 +36,11 @@
       referrerpolicy="no-referrer"
     />
 
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
     <title>Document</title>
   </head>
   <body>
@@ -174,14 +179,13 @@
 
       <!--  Commitment To Quality Section -->
       <section
-        class="bg-gradient-to-r from-[#F0F7FF] to-[#E2EBF6] relative h-[72.25rem] pt-[6.1875rem] pb-24 overflow-hidden"
+        class="pt-[6.1875rem] pb-24 overflow-hidden"
+        style="
+          background: url('./src/images/hanoiline.svg') center bottom no-repeat,
+            linear-gradient(to right, #f0f7ff, #e2ebf6);
+        "
       >
-        <img
-          class="absolute max-w-max object-contain left-[-17.4375rem] bottom-0"
-          src="./src/images/hanoiline.svg"
-          alt="HaNoi SVG"
-        />
-        <div class="flex max-w-[87.0625rem] m-auto">
+        <div class="flex h-full max-w-[87.0625rem] m-auto relative">
           <div class="max-w-[43rem]">
             <h3 class="text-2xl text-[#00B8C4] font-extrabold mb-3">
               WebOps Agency luôn đồng hành cùng bạn
@@ -208,9 +212,7 @@
               tính chuyển đổi số trong thời đại 4.0.
             </p>
 
-            <div
-              class="grid grid-cols-[20.5rem_20.5rem] gap-8 z-10 absolute mt-[2.0625rem]"
-            >
+            <div class="grid grid-cols-[20.5rem_20.5rem] gap-8 mt-[2.0625rem]">
               <!-- Box 1 -->
               <div class="bg-white rounded-[1.25rem] h-[13.125rem]">
                 <div class="flex flex-col items-center">
@@ -304,17 +306,19 @@
               <!-- End Box 4 -->
             </div>
           </div>
+          <div class="animate-bounce h-16">
+            <img
+              class="ml-[12.6875rem] mt-[3.25rem]"
+              src="./src/images/rocket.svg"
+              alt="Rocket Image "
+            />
+          </div>
           <img
-            class="ml-[12.6875rem] mt-[3.25rem]"
-            src="./src/images/rocket.svg"
-            alt="Rocket Image "
+            class="absolute right-[-19.3%] bottom-[-10%]"
+            src="./src/images/cloud.svg"
+            alt="Cloud SVG"
           />
         </div>
-        <img
-          class="absolute right-[-0.875rem] bottom-0"
-          src="./src/images/cloud.svg"
-          alt="Cloud SVG"
-        />
       </section>
       <!-- End  Commitment To Quality Section -->
 
@@ -870,16 +874,117 @@
       <!-- End  Procedure Section -->
 
       <!-- Section Các Dự Án Tiêu Biểu -->
-      <section class="w-full h-[977px] bg-green-500"></section>
+      <section
+        class="overflow-hidden bg-gradient-to-r from-[##F0F7FF] to-[#E2EBF6] py-[30.5625rem] relative z-0 flex justify-center items-center"
+      >
+        <div
+          class="absolute -top-[11.1875rem] left-[0.0625rem] max-1500px:-left-3"
+        >
+          <img src="./src/images/2987331 1.svg" alt="" />
+        </div>
+
+        <div
+          class="absolute h-full flex justify-center items-center gap-[10rem]"
+        >
+          <div
+            class="absolute overflow-hidden -right-[8.5rem] z-0 mt-[0.125rem] max-1686px:-right-[4.75rem] max-1600px:-right-[2rem] max-1500px:hidden"
+          >
+            <img src="./src/images/Rectangle 236.svg" alt="" />
+          </div>
+
+          <div class="w-[58rem] pt-[0.125rem]">
+            <div class="swiper mySwiper w-full h-full">
+              <div class="swiper-wrapper">
+                <div
+                  class="swiper-slide text-center text-lg flex justify-center items-center"
+                >
+                  <img
+                    class="block w-full h-full object-cover"
+                    src="./src/images/Rectangle 235.png"
+                    alt=""
+                  />
+                </div>
+                <!-- <div
+                  class="swiper-slide text-center text-lg flex justify-center items-center"
+                >
+                  <img
+                    class="block w-full h-full object-cover"
+                    src="src/images/Rectangle 236.png"
+                    alt=""
+                  />
+                </div> -->
+                <div
+                  class="swiper-slide text-center text-lg flex justify-center items-center"
+                >
+                  <img
+                    class="block w-full h-full object-cover"
+                    src="./src/images/Rectangle 235.png"
+                    alt=""
+                  />
+                </div>
+                <div
+                  class="swiper-slide text-center text-lg flex justify-center items-center"
+                >
+                  <img
+                    class="block w-full h-full object-cover"
+                    src="src/images/Rectangle 236.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex justify-center items-center gap-8 pt-8 mr-1 pl-[0.25rem] z-30"
+            >
+              <div class="button-prev">
+                <img src="src/icons/arrow-left.svg" alt="" />
+              </div>
+              <div class="button-next">
+                <img src="src/icons/arrow-right.svg" alt="" />
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex flex-col z-10 gap-[3.0625rem] pb-[3.375rem] -mr-[1.0625rem] justify-center mt-[0.125rem] max-1500px:absolute max-1500px:top-[10%] max-1500px:gap-0 max-1500px:w-[628px]"
+          >
+            <div class="max-1500px:flex max-1500px:justify-center">
+              <img
+                class="float-right max-1500px:float-none max-1500px:hidden"
+                src="src/icons/archive.svg"
+                alt=""
+              />
+              <img
+                class="hidden max-1500px:block max-1500px:w-1/5"
+                src="src/icons/archive-mobile.svg"
+                alt=""
+              />
+            </div>
+            <div>
+              <h1
+                class="text-[4rem] font-extrabold text-white leading-[5.4375rem] text-right m-0 pb-[1px] max-1500px:hidden"
+              >
+                Các Dự Án
+                <span class="block">Tiêu Biểu</span>
+              </h1>
+              <h1
+                class="hidden max-1500px:block text-[4rem] font-extrabold text-tahiti leading-[5.4375rem] text-right m-0 pb-[1px]"
+              >
+                Các Dự Án Tiêu Biểu
+              </h1>
+            </div>
+          </div>
+        </div>
+      </section>
       <!-- End Section Các Dự Án Tiêu Biểu -->
 
       <!-- Section Hiện Thị Danh Sách -->
-      <section class="pt-24 pb-[10.1875rem] relative overflow-hidden">
-        <img
-          class="absolute max-w-max bottom-0 right-[-4.8%] -z-10"
-          src="./src/images/hanoiline [Converted] 1.svg"
-          alt="HaNoi Outline"
-        />
+      <section
+        class="pt-24 pb-[10.1875rem] relative overflow-hidden"
+        style="
+          background: url('./src/images/hanoiline [Converted] 1.svg') center
+            bottom no-repeat;
+        "
+      >
         <div class="max-w-[87.0625rem] m-auto">
           <div class="flex flex-col justify-center items-center">
             <h4
@@ -1286,12 +1391,13 @@
       <!-- End Section Các Ngành Nghề -->
 
       <!-- Section Feedback -->
-      <section class="bg-[#264AB9] relative overflow-hidden h-[1259px] -z-20">
-        <img
-          class="absolute max-w-max bottom-0 -z-10"
-          src="./src/images/backGroundFeedback.svg"
-          alt="backgounnd"
-        />
+      <section
+        class="bg-[#264AB9] relative overflow-hidden h-[1259px] -z-20"
+        style="
+          background: #264ab9 url('./src/images/backGroundFeedback.svg') center
+            bottom no-repeat;
+        "
+      >
         <div class="max-w-[87.0625rem] mx-auto">
           <h3
             class="text-white z-20 text-[2rem] font-bold w-[483px] text-center mx-auto leading-[44px] mt-24"
@@ -1488,16 +1594,14 @@
 
       <!--  Section Đối Tác -->
       <section
-        class="bg-[#E2EBF6] relative overflow-hidden pt-[9.5rem] pb-[12.0625rem] -z-20"
+        class="relative overflow-hidden pt-[9.5rem] pb-[12.0625rem]"
+        style="
+          background: #e2ebf6 url('./src/images/saigon_line 1.svg') center
+            bottom no-repeat;
+        "
       >
-        <img
-          class="absolute object-cover max-w-max bottom-0 -z-10"
-          src="./src/images/saigon_line 1.svg"
-          alt="SaiGon Outline"
-        />
-
         <div
-          class="max-w-[87.0625rem] m-auto flex flex-col justify-center relative"
+          class="max-w-[87.0625rem] m-auto flex flex-col justify-center relative z-10"
         >
           <div>
             <h1
@@ -1937,15 +2041,19 @@
       <!--  End Section Báo Chí Nói Gì Về Chúng Tôi -->
 
       <!-- Section Điều Gì ? -->
-      <section class="w-full relative bg-[#264AB9] mt-32">
-        <!-- C1: Giới hạn width của ảnh lại để không bị scroll-x (Do màn hình chỉ dài 1903px - Nếu màn dài 1920 thì không cần giảm width hay margin-left) -->
-        <!-- class="absolute right-0 mr-[-17px] top-[-70px]" -->
+      <section class="w-full relative mt-32 bg-[#264ab9]">
         <img
-          class="absolute right-0 top-[-4.375rem] w-[48.125rem]"
+          class="absolute max-w-max right-0 top-[-4.375rem] w-[48.125rem] z-10"
           src="./src/images/squareCutLeft.svg"
           alt="square"
         />
-        <div>
+        <div
+          class="relative z-10"
+          style="
+            background: url('./src/images/saigon_line [Converted] 2.svg') center
+              bottom no-repeat;
+          "
+        >
           <div
             class="max-w-[87.0625rem] m-auto flex gap-[4.8125rem] pb-24 relative"
           >
@@ -2003,9 +2111,9 @@
                     <p
                       class="font-medium text-lg text-[#00355D] leading-7 mt-[0.625rem]"
                     >
-                      Tư vấn giải pháp nhiệt tình. Hỗ trợ khách hàng
-                      nhanh chóng, 24/7 trong suốt quá trình triển khai, bảo
-                      hành và vận hành sản phẩm.
+                      Tư vấn giải pháp nhiệt tình. Hỗ trợ khách hàng nhanh
+                      chóng, 24/7 trong suốt quá trình triển khai, bảo hành và
+                      vận hành sản phẩm.
                     </p>
                   </div>
                 </div>
@@ -2045,7 +2153,7 @@
             </div>
 
             <div
-              class="mt-[9.875rem] z-10 flex flex-col items-end absolute right-[-1%] top-[2.8%]"
+              class="mt-[9.875rem] flex flex-col items-end absolute right-[-1%] top-[2.8%] z-20"
             >
               <img
                 class="w-[128px]"
@@ -2061,18 +2169,257 @@
               </h2>
             </div>
           </div>
-
-          <img
-            class="absolute bottom-0 right-[0.8%] overflow-hidden"
-            src="./src/images/saigon_line [Converted] 2.svg"
-            alt="SaiGon Outline"
-          />
         </div>
       </section>
       <!-- End Section Điều Gì ? -->
+
+      <!-- Section Contact -->
+      <section
+        class="max-w-[1393px] h-[728px] items-center flex justify-center relative mx-auto pl-4 pb-[0.125rem] mt-24"
+      >
+        <div
+          class="z-50 absolute h-[374px] left-[3.6rem] top-40 font-extrabold max-w-[350px] max-1444px:left-[11rem]"
+        >
+          <div class="-mt-[0.0625rem] max-1444px:w-[29%]">
+            <img
+              class="pb-12"
+              src="src/icons/lucide_contact-round.svg"
+              alt=""
+            />
+          </div>
+          <div
+            class="*:leading-[65px] text-[3rem] text-white max-1444px:text-[2.5rem] ml-1"
+          >
+            <h3 class="">Liên Hệ</h3>
+            <h3 class="">Với Chúng Tôi Ngay Bây Giờ</h3>
+          </div>
+        </div>
+        <img
+          class="absolute left-0 z-40 max-1444px:w-[32%] max-1444px:left-[8.5rem]"
+          src="src/images/Rectangle 252.png"
+          alt=""
+        />
+        <div
+          class="max-w-[1280px] absolute z-10 w-full rounded-[30px] h-[45.5rem] bg-[#264AB9] max-1444px:w-[75%] max-1444px:h-[83%]"
+        ></div>
+        <div
+          class="w-[688px] h-[478px] absolute font-bold right-[104px] text-white z-40 mt-[0.625rem] max-1444px:w-[50%] max-1444px:right-[10.5rem]"
+        >
+          <h1 class="text-[32px] text-center m-0 mb-[2.8rem]">
+            ĐĂNG KÝ NHẬN TƯ VẤN MIỄN PHÍ
+          </h1>
+          <!-- From  Signup -->
+          <form
+            class="grid grid-cols-2 gap-8 justify-end items-center pt-[0.375rem] max-1444px:w-[80%] max-1444px:gap-6 max-1444px:mx-auto"
+          >
+            <input
+              class="text-white rounded-[10px] text-left pr-[54px] pl-[12px] placeholder-white py-2 text-lg font-bold bg-transparent border-2 border-white outline-none"
+              type="text"
+              placeholder="Họ Tên"
+            />
+            <input
+              class="text-white rounded-[10px] text-left pr-[54px] pl-[12px] placeholder-white py-2 text-lg font-bold bg-transparent border-2 border-white outline-none"
+              type="number"
+              min="0"
+              placeholder="Số điện thoại"
+            />
+            <input
+              class="text-white rounded-[10px] text-left pr-[54px] pl-[12px] placeholder-white py-2 text-lg font-bold bg-transparent border-2 border-white outline-none"
+              type="email"
+              placeholder="Email"
+            />
+            <input
+              class="text-white rounded-[10px] text-left pr-[54px] pl-[12px] placeholder-white py-2 text-lg font-bold bg-transparent border-2 border-white outline-none"
+              type="text"
+              placeholder="Dịch vụ cần từ vấn"
+            />
+
+            <textarea
+              class="outline-none text-lg bg-transparent font-bold text-white placeholder-white w-[688px] h-[143px] py-2 pl-3 border-2 border-white rounded-[10px] max-1444px:w-[208.5%]"
+              name=""
+              id=""
+              placeholder="Nội dung"
+            ></textarea>
+            <div></div>
+            <button
+              class="absolute bottom-[0.3125rem] left-[37%] text-lg font-bold transform [-translate-x-1/2 -translate-y-1/2] bg-[#2DD4BF] px-[32px] rounded-[100px] pt-[10px] pb-[11px]"
+            >
+              Liên Hệ Ngay
+            </button>
+          </form>
+          <!-- From  Signup -->
+        </div>
+        <img
+          class="absolute z-20 w-auto max-1444px:w-[75%]"
+          src="src/images/Rectangle 142.png"
+          alt=""
+        />
+        <div
+          class="h-[600px] w-[208px] rounded-[30px] bg-[#E2EBF6] bottom-[4.9375rem] absolute -right-[1rem] max-1444px:w-[20%] max-1444px:h-[70%] max-1444px:right-28 max-1444px:bottom-[6.9375rem]"
+        ></div>
+      </section>
+      <!-- End Section Contact -->
     </main>
 
+    <footer class="max-w-full bg-[#23233F] h-[704px] mt-[5.9375rem]">
+      <section
+        class="max-w-[1408px] mx-auto pt-[5.5rem] *:text-white grid grid-cols-3"
+      >
+        <div class="pl-2 pt-2">
+          <img src="src/images/footer.png" alt="" />
+          <p class="text-[15px] font-[400] w-[448px] pt-[1rem] leading-7">
+            Chúng tôi luôn chắc chắn về mục đích thiết kế website của khách
+            hàng. Website chuyên nghiệp trước hết phải phù hợp với hệ thống nhận
+            diện thương hiệu của doanh nghiệp, logic nội dung chặt chẽ và ổn
+            định
+          </p>
+          <div class="menu-footer pt-11">
+            <h3 class="text-lg font-semibold">DỊCH VỤ</h3>
+            <ul class="*:mt-[0.75rem]">
+              <li>
+                <a href="">Dịch vụ</a>
+              </li>
+              <li>
+                <a href="">Dịch vụ</a>
+              </li>
+              <li>
+                <a href="">Dịch vụ</a>
+              </li>
+              <li>
+                <a href="">Dịch vụ</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <div class="menu-footer pl-[17px] pt-1">
+            <h1 class="text-lg font-semibold mt-1 leading-6">VỀ CHÚNG TÔI</h1>
+            <ul class="text-[16px] *:mt-[0.75rem] font-medium">
+              <li>
+                <a href="">List item</a>
+              </li>
+              <li>
+                <a href="">List item</a>
+              </li>
+              <li>
+                <a href="">List item</a>
+              </li>
+              <li>
+                <a href="">List item</a>
+              </li>
+            </ul>
+          </div>
+          <div class="menu-footer pt-[5.8rem] pl-[18px]">
+            <h1 class="font-semibold text-[18px]">CHÍNH SÁCH</h1>
+
+            <ul class="*:mt-3">
+              <li>
+                <a href="">Chính sách</a>
+              </li>
+              <li>
+                <a href="">Chính sách</a>
+              </li>
+              <li>
+                <a href="">Chính sách</a>
+              </li>
+              <li>
+                <a href="">Chính sách</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="max-w-[446px]">
+          <div class="menu-footer pt-[7px] pl-7">
+            <h1 class="text-[18px] text-white font-semibold m-0 mb-[0.4375rem]">
+              LIÊN HỆ
+            </h1>
+
+            <ul
+              class="*:flex *:leading-[1.3rem] *:tracking-[0.4px] *:gap-4 *:pt-[10px]"
+            >
+              <li>
+                <img class="w-4 h-5" src="src/icons/address.svg" alt="" />
+                <a class="text-[16px] tracking-[0.4px] font-normal" href=""
+                  >Số 102 Trần Phú, Phường Mộ Lao, Quận Hà Đông, TP.Hà Nội.</a
+                >
+              </li>
+              <li>
+                <img class="w-5 h-5" src="src/icons/phone.svg" alt="" />
+                <a class="text-[16px] font-normal" href=""
+                  >Hotline: 0973-258-886</a
+                >
+              </li>
+              <li>
+                <img class="w-5 h-5" src="src/icons/mail.svg" alt="" />
+                <a class="text-[16px] font-normal" href=""
+                  >info@webopsagency.com</a
+                >
+              </li>
+              <li>
+                <img
+                  class="w-5 h-5"
+                  src="src/icons/description_FILL0_wght400_GRAD0_opsz24 1.svg"
+                  alt=""
+                />
+                <a class="text-[16px] font-normal" href="">GPKD: 0107756568</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="pt-[4.6rem]">
+            <h1 class="font-semibold text-lg pl-[28px] m-0">
+              THEO DÕI CHÚNG TÔI
+            </h1>
+
+            <ul class="flex gap-[32px] pt-[10px] pl-[28px]">
+              <li>
+                <a href=""
+                  ><img src="src/icons/facebook-square.svg" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href=""><img src="src/icons/instagram.svg" /></a>
+              </li>
+              <li>
+                <a href=""><img src="src/icons/tiktok.svg" alt="" /></a>
+              </li>
+              <li>
+                <a href=""><img src="src/icons/twitter-square.svg" alt="" /></a>
+              </li>
+              <li>
+                <a href=""><img src="src/icons/youtube-square.svg" alt="" /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="max-w-[1426px] mt-[49px] mx-auto max-1444px:px-[17px]">
+        <div
+          class="border-t-2 border-white flex pt-[22px] justify-between mx-auto ml-[17px] max-1444px:ml-0"
+        >
+          <div class="font-semibold text-[16px] text-white pt-[6px]">
+            Copyright WebOpsAgency
+          </div>
+          <div class="-mt-[2px]">
+            <img src="src/images/image 406.png" alt="" />
+          </div>
+        </div>
+      </section>
+    </footer>
+
     <script src="./node_modules/flowbite/dist/flowbite.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      //Slide
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 2,
+        spaceBetween: 32,
+        navigation: {
+          nextEl: ".button-next",
+          prevEl: ".button-prev",
+        },
+      });
+    </script>
   </body>
 </html>
 

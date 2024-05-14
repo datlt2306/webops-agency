@@ -12,7 +12,13 @@ module.exports = {
         roboto: ["Roboto", "sans-serif"],
       },
     },
-    plugins: [require("flowbite/plugin")],
+    screens: {
+      sm: "393px",
+      md: "768px",
+      lg: "1024px",
+      xl: "1408px",
+      "2xl": "1536px",
+    },
   },
-  plugins: [],
+  plugins: [require("flowbite/plugin")],
 };
