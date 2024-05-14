@@ -19,14 +19,14 @@
       <div class="mx-auto relative">
         <div class="mx-auto">
           <img
-            class="mix-blend-multiply absolute overflow-hidden h-[53.125rem] top-0 z-10 w-full"
+            class="mix-blend-multiply absolute overflow-hidden h-[53.125rem] top-0 z-10 max-[600px]:w-[677px] max-[1024px]:w-full max-[1024px]:h-[298px] w-full"
             src="./img/color-backgroud.png"
             alt=""
           />
         </div>
         <div class="mx-auto">
           <img
-            class="mix-blend-multiply absolute overflow-hidden h-[53.125rem] top-0 z-10 w-full"
+            class="mix-blend-multiply absolute overflow-hidden h-[53.125rem] top-0 z-10 max-[600px]:w-[677px] max-[1024px]:w-full max-[1024px]:h-[298px] w-full"
             src="./img/Rectangle 300.png"
             alt=""
           />
@@ -34,16 +34,20 @@
       </div>
       <!-- /* ================================== HEADER==================================== */ -->
       <header
-        class="max-w-[1394px] h-[103px] items-center header flex justify-between relative z-10 mx-auto"
+        class="max-w-[1394px] h-[50px] lg:h-[103px] items-center header flex justify-between relative z-10 mx-auto"
       >
         <!-- Logo -->
-        <div class="logo">
-          <a href="#"><img src="./img/logo 1.svg" alt="" /></a>
+        <div
+          class="logo lg:max-w-[92px] lg:h-[61px] max-lg:w-[47.67px] max-lg:h-[32px]"
+        >
+          <a href="#"><img class="w-full" src="./img/logo 1.svg" alt="" /></a>
         </div>
         <!-- End logo -->
         <!-- Menu -->
-        <div class="menu flex flex-wrap sm:flex-nowrap -mr-4">
-          <ul class="items-center hidden sm:flex">
+        <div
+          class="menu max-lg:hidden lg:flex flex-wrap lg:flex-nowrap menu-mobile -mr-4"
+        >
+          <ul class="items-center lg:flex">
             <li class="font-bold leading-6 text-white text-lg">
               <a
                 class="hover:border-b-2 hover:border-cyan-400 hover:text-cyan-400 m-3"
@@ -88,30 +92,37 @@
             </li>
           </ul>
           <div
-            class="ml-3.5 font-bold gap-3 text-white text-lg my-auto flex items-center justify-center px-6 pt-3 pb-[0.72rem] bg-[#2AD8CD] rounded-[100px]"
+            class="ml-3.5 font-bold gap-3 text-white text-lg my-auto flex items-center justify-center bg-[#2AD8CD] rounded-[100px]"
           >
-            <a class="flex pr-[2px]" href="">
+            <a class="flex px-6 pt-3 pb-[0.72rem]" href="">
               <img class="mr-2" src="./img/phone.svg" alt="" />
 
               098 - 888 - 8888</a
             >
           </div>
         </div>
+
+        <div
+          class="ml-3.5 font-bold gap-3 text-white text-lg my-auto items-center justify-center px-6 pt-3 pb-[0.72rem] rounded-[100px] lg:hidden max-lg:block"
+          id="mobileMenuButton"
+        >
+          <img src="./img/menu mobile.png" alt="" />
+        </div>
         <!-- ENd Menu -->
       </header>
       <!-- /* ================================== END HEADER==================================== */ -->
       <!-- ======================================Dự án webOps Agency ========================== -->
 
-      <main class="main max-w-[1392px] z-10 relative mx-auto">
+      <main class="main max-w-[1408px] z-10 relative mx-auto">
         <!-- Title Webops -->
-        <div class="title-webOps ml-4">
+        <div class="title-webOps text-[64px] ml-4">
           <p
-            class="text-[64px] font-extrabold leading-[87.3px] text-center pt-[76px] text-white"
+            class="lg:text-[64px] text-2xl font-extrabold leading-0 lg:leading-[87.3px] text-center lg:pt-[76px] text-white"
           >
             Các Dự Án
           </p>
           <p
-            class="text-[64px] font-extrabold leading-[87.3px] text-center text-white"
+            class="lg:text-[64px] text-2xl font-extrabold leading-0 lg:leading-[87.3px] text-center text-white"
           >
             WebOps Agency Đã Triển Khai
           </p>
@@ -119,7 +130,7 @@
         <!--End Title Webops -->
         <!-- search project -->
         <div
-          class="search sm:opacity-0 xl:opacity-100 hidden sm:block max-w-[1056px] pt-[63px] pb-[2.9rem] mx-auto"
+          class="search max-lg:hidden lg:block hidden max-w-[1056px] pt-[63px] mx-auto"
         >
           <form class="">
             <div class="seacrh-project flex items-center ml-[0.7rem]">
@@ -169,409 +180,477 @@
         <!-- End search project -->
         <!-- menu project -->
         <section
-          class="menu-project rounded-[100px] mr-[4.2rem] border-2 border-white mx-auto max-w-[1238px] h-[49px]"
+          class="menu-project lg:mr-[4.563rem] max-lg:mt-[20px] lg:mt-[2.9rem] mx-auto lg:max-w-[1246px] lg:h-[49px]"
         >
-          <ul
-            class="items-center max-w-[1238px] h-[49px] text-center text-lg leading-6 font-bold text-white flex"
-          >
-            <li>
-              <a
-                href=""
-                class="hover:bg-cyan-400 hover:border-transparent hover:border-2 hover:border-white hover:rounded-full pl-[30px] pr-[33.4px] pt-[0.65rem] pb-[0.5rem]"
-                >Tài chính</a
-              >
-            </li>
-            <li>
-              <a
-                href=""
-                class="hover:bg-cyan-400 hover:border-transparent hover:border-2 hover:border-white hover:rounded-full pl-[30px] pr-[33.4px] pt-[0.7rem] pb-[0.55rem]"
-                >Giáo dục</a
-              >
-            </li>
-            <li>
-              <a
-                href=""
-                class="hover:bg-cyan-400 hover:border-transparent hover:border-2 hover:border-white hover:rounded-full pl-[30px] pr-[33.4px] py-2.5"
-                >Thương mại điện tử</a
-              >
-            </li>
-            <li>
-              <a
-                href=""
-                class="hover:bg-cyan-400 hover:border-transparent hover:border-2 hover:border-white hover:rounded-full pl-[30px] pr-[33.4px] py-2.5"
-                >Bất động sản</a
-              >
-            </li>
-            <li>
-              <a
-                href=""
-                class="hover:bg-cyan-400 hover:border-transparent hover:border-2 hover:border-white hover:rounded-full pl-[30px] pr-[33.4px] py-2.5"
-                >Du lịch - Giải trí</a
-              >
-            </li>
-            <li>
-              <a
-                href=""
-                class="hover:bg-cyan-400 hover:border-transparent hover:border-2 hover:border-white hover:rounded-full pl-[30px] pr-[33.4px] py-2.5"
-                >Spa - Làm đẹp</a
-              >
-            </li>
-            <li>
-              <a
-                href=""
-                class="hover:bg-cyan-400 hover:border-transparent hover:border-2 hover:border-white hover:rounded-full pl-[30px] pr-[33.4px] py-2.5"
-                >Truyền thông</a
-              >
-            </li>
-          </ul>
+          <div class="max-w-[1232px] overflow-x-hidden mx-auto">
+            <ul
+              class="items-center overflow-y-hidden rounded-[100px] min-[800px]:justify-center max-lg:h-[35px] whitespace-nowrap max-lg:flex max-w-[1241px] border-2 border-white h-[49px] text-center text-lg leading-6 font-bold text-white lg:flex"
+            >
+              <li>
+                <a
+                  href=""
+                  class="hover:bg-[#00B8C4] max-lg:text-[14px] hover:border-transparent max-lg:px-[10px] max-lg:pt-[7px] max-lg:pb-[5px] hover:border-2 hover:border-white hover:rounded-full lg:pl-[30px] lg:pr-[32.62px] lg:py-[11px]"
+                  >Tài chính</a
+                >
+              </li>
+              <li>
+                <a
+                  href=""
+                  class="hover:bg-[#00B8C4] max-lg:text-[14px] hover:border-transparent max-lg:px-[10px] max-lg:pt-[7px] max-lg:pb-[5px] hover:border-2 hover:border-white hover:rounded-full lg:pl-[30px] lg:pr-[32.62px] lg:py-[11px]"
+                  >Giáo dục</a
+                >
+              </li>
+              <li>
+                <a
+                  href=""
+                  class="hover:bg-[#00B8C4] max-lg:text-[14px] hover:border-transparent max-lg:px-[10px] max-lg:pt-[7px] max-lg:pb-[5px] hover:border-2 hover:border-white hover:rounded-full lg:pl-[30px] lg:pr-[32.62px] lg:py-[11px]"
+                  >Thương mại điện tử</a
+                >
+              </li>
+              <li>
+                <a
+                  href=""
+                  class="hover:bg-[#00B8C4] max-lg:text-[14px] hover:border-transparent max-lg:px-[10px] max-lg:pt-[7px] max-lg:pb-[5px] hover:border-2 hover:border-white hover:rounded-full lg:pl-[30px] lg:pr-[32.62px] lg:py-[11px]"
+                  >Bất động sản</a
+                >
+              </li>
+              <li>
+                <a
+                  href=""
+                  class="hover:bg-[#00B8C4] max-lg:text-[14px] hover:border-transparent max-lg:px-[10px] max-lg:pt-[7px] max-lg:pb-[5px] hover:border-2 hover:border-white hover:rounded-full lg:pl-[30px] lg:pr-[32.62px] lg:py-[11px]"
+                  >Du lịch - Giải trí</a
+                >
+              </li>
+              <li>
+                <a
+                  href=""
+                  class="hover:bg-[#00B8C4] max-lg:text-[14px] hover:border-transparent max-lg:px-[10px] max-lg:pt-[7px] max-lg:pb-[5px] hover:border-2 hover:border-white hover:rounded-full lg:pl-[30px] lg:pr-[32.62px] lg:py-[11px]"
+                  >Spa - Làm đẹp</a
+                >
+              </li>
+              <li>
+                <a
+                  href=""
+                  class="hover:bg-[#00B8C4] max-lg:text-[14px] hover:border-transparent max-lg:px-[10px] max-lg:pt-[7px] max-lg:pb-[5px] hover:border-2 hover:border-white hover:rounded-full lg:pl-[30px] lg:pr-[32.62px] lg:py-[11px]"
+                  >Truyền thông</a
+                >
+              </li>
+            </ul>
+          </div>
         </section>
 
         <!-- Conten -->
         <section
-          class="content sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 pt-10 items-center gap-x-12 gap-y-[2.4rem] mx-auto grid grid-cols-1"
+          class="content pt-10 mx-auto min-[600px]:grid min-[600px]:grid-cols-3 xl:grid xl:grid-cols-4 max-lg:grid max-lg:grid-cols-2 lg:gap-x-8 max-lg:gap-y-[10px] lg:gap-y-[2.25rem]"
         >
           <!-- project -->
-          <div class="project relative mx-auto w-[328px] h-[432px]">
+          <div
+            class="project relative mx-auto w-full h-[432px] max-lg:w-[167px] cursor-pointer group max-lg:h-[214px]"
+          >
+            <a class="w-full h-full max-w-[312px] max-h-[333px]" href="">
+              <div class="relative max-w-[312px] max-h-[333px] mx-auto">
+                <img
+                  class="absolute z-10 transition-transform transform w-full group-hover:translate-y-[-6px] max-lg:p-[5px]"
+                  src="./img/project1.png"
+                  alt=""
+                />
+              </div>
+            </a>
             <div
-              class="w-[328px] h-[85px] bg-[#00355D] rounded-[20px] pt-2 absolute z-20 left-0 bottom-1"
+              class="w-full h-[42px] lg:h-[85px] bg-[#00355D] rounded-br-[20px] rounded-bl-[20px] lg:pt-2 absolute z-20 left-0 bottom-1"
             >
               <img
-                class="absolute z-20 left-0 bottom-[5.2rem]"
+                class="absolute z-20 left-0 bottom-[41px] max-lg:w-[88px] max-lg:h-[36px] lg:w-[172px] 2xl:ml-[10px] lg:bottom-[5.2rem]"
                 src="./img/Rectangle 260.png"
                 alt=""
               />
               <img
-                class="absolute z-20 right-0 bottom-[5.2rem]"
+                class="absolute z-20 right-0 max-lg:w-[88px] max-lg:h-[36px] bottom-[41px] lg:w-[172px] 2xl:mr-[10px] lg:bottom-[5.2rem]"
                 src="./img/tamgiac.png"
                 alt=""
               />
             </div>
-            <a href="">
-              <img
-                class="absolute z-10 ml-2 transition-transform transform hover:translate-y-[-6px]"
-                src="./img/project1.png"
-                alt=""
-            /></a>
+
             <a
               href=""
-              class="text-project absolute z-20 bottom-5 ml-[0.8rem] mx-auto"
+              class="text-project text-[12px] lg:text-lg w-full absolute z-20 max-lg:bottom-[10px] lg:bottom-5 mx-auto"
             >
-              <div
-                class="text-[#FFFFFF] z-20 w-[304px] text-center m font-bold text-lg"
-              >
+              <div class="text-[#FFFFFF] z-20 text-center m font-bold">
                 Thẩm Mỹ Viện
               </div>
-              <div
-                class="text text-[#FFFFFF] z-20 w-[304px] text-center m font-bold text-lg"
-              >
+              <div class="text text-[#FFFFFF] z-20 text-center m font-bold">
                 Beauty Angel Academy
               </div>
             </a>
             <div
-              class="backgroud-project bg-[#00355D] absolute bottom-1 w-[328px] h-[169px] rounded-[20px]"
-            ></div>
+              class="backgroud-project bg-[#00355D] absolute bottom-1 w-full max-lg:h-[86px] h-[167px] rounded-[12px] lg:rounded-[15px]"
+            >
+              <!-- <img
+                class="rounded-[20px]"
+                src="./img/Rectangle 266.jpg"
+                alt=""
+              /> -->
+            </div>
           </div>
           <!-- end project -->
-          <div class="project relative mx-auto w-[328px] h-[432px]">
+          <!-- project -->
+          <div
+            class="project relative mx-auto w-full h-[432px] max-lg:w-[167px] cursor-pointer group max-lg:h-[214px]"
+          >
+            <a class="w-full h-full max-w-[312px] max-h-[333px]" href="">
+              <div class="relative max-w-[312px] max-h-[333px] mx-auto">
+                <img
+                  class="absolute z-10 transition-transform transform w-full group-hover:translate-y-[-6px] max-lg:p-[5px]"
+                  src="./img/project1.png"
+                  alt=""
+                />
+              </div>
+            </a>
             <div
-              class="w-[328px] h-[85px] bg-[#00355D] rounded-[20px] pt-2 absolute z-20 left-0 bottom-1"
+              class="w-full h-[42px] lg:h-[85px] bg-[#00355D] rounded-br-[20px] rounded-bl-[20px] lg:pt-2 absolute z-20 left-0 bottom-1"
             >
               <img
-                class="absolute z-20 left-1 bottom-[5.2rem]"
+                class="absolute z-20 left-0 bottom-[41px] max-lg:w-[88px] max-lg:h-[36px] lg:w-[172px] 2xl:ml-[10px] lg:bottom-[5.2rem]"
                 src="./img/Rectangle 260.png"
                 alt=""
               />
               <img
-                class="absolute z-20 right-1 bottom-[5.2rem]"
+                class="absolute z-20 right-0 max-lg:w-[88px] max-lg:h-[36px] bottom-[41px] lg:w-[172px] 2xl:mr-[10px] lg:bottom-[5.2rem]"
                 src="./img/tamgiac.png"
                 alt=""
               />
             </div>
-            <a href="">
-              <img
-                class="absolute z-10 ml-2 transition-transform transform hover:translate-y-[-6px]"
-                src="./img/project2.png"
-                alt=""
-            /></a>
-            <a
-              href=""
-              class="text-project absolute z-20 bottom-5 ml-[0.8rem] mx-auto"
-            >
-              <div
-                class="text-[#FFFFFF] z-20 w-[304px] text-center m font-bold text-lg"
-              >
-                Công Ty Cổ Phần Gỗ Ép
-              </div>
-              <div
-                class="text text-[#FFFFFF] z-20 w-[304px] text-center m font-bold text-lg"
-              >
-                Great Wood
-              </div>
-            </a>
-            <div
-              class="backgroud-project bg-[#00355D] absolute bottom-1 w-[328px] h-[169px] rounded-[20px]"
-            ></div>
-          </div>
-          <!-- end project -->
 
-          <div class="project relative mx-auto w-[328px] h-[432px]">
-            <div
-              class="w-[328px] h-[85px] bg-[#00355D] rounded-[20px] pt-2 absolute z-20 left-0 bottom-1"
-            >
-              <img
-                class="absolute z-20 left-0 bottom-[5.2rem]"
-                src="./img/Rectangle 260.png"
-                alt=""
-              />
-              <img
-                class="absolute z-20 right-0 bottom-[5.2rem]"
-                src="./img/tamgiac.png"
-                alt=""
-              />
-            </div>
-            <a href="">
-              <img
-                class="absolute z-10 ml-2 transition-transform transform hover:translate-y-[-6px]"
-                src="./img/project3.png"
-                alt=""
-            /></a>
             <a
               href=""
-              class="text-project absolute z-20 bottom-[46px] ml-[0.8rem] mx-auto"
+              class="text-project text-[12px] lg:text-lg w-full absolute z-20 max-lg:bottom-[10px] lg:bottom-5 mx-auto"
             >
-              <div
-                class="text-[#FFFFFF] text-center z-20 w-[304px] m font-bold text-lg overflow-hidden whitespace-nowrap"
-              >
-                Công Ty cổ phần Gỗ Ép Great Wood
+              <div class="text-[#FFFFFF] z-20 text-center m font-bold">
+                Thẩm Mỹ Viện
               </div>
-              <div
-                class="text-[#FFFFFF] z-20 w-[304px] text-center m font-bold text-lg overflow-hidden whitespace-nowrap"
-              >
-                <!-- Beauty Angel Academy -->
+              <div class="text text-[#FFFFFF] z-20 text-center m font-bold">
+                Beauty Angel Academy
               </div>
             </a>
             <div
-              class="backgroud-project bg-[#00355D] absolute bottom-1 w-[328px] h-[169px] rounded-[20px]"
-            ></div>
-          </div>
-          <!-- end project -->
-
-          <div class="project relative mx-auto w-[328px] h-[432px]">
-            <div
-              class="w-[328px] h-[85px] bg-[#00355D] rounded-[20px] pt-2 absolute z-20 left-0 bottom-1"
+              class="backgroud-project bg-[#00355D] absolute bottom-1 w-full max-lg:h-[86px] h-[167px] rounded-[12px] lg:rounded-[15px]"
             >
-              <img
-                class="absolute z-20 left-0 bottom-[5.2rem]"
-                src="./img/Rectangle 260.png"
-                alt=""
-              />
-              <img
-                class="absolute z-20 right-0 bottom-[5.2rem]"
-                src="./img/tamgiac.png"
-                alt=""
-              />
+              <!-- <img
+             class="rounded-[20px]"
+             src="./img/Rectangle 266.jpg"
+             alt=""
+           /> -->
             </div>
-            <a href="">
-              <img
-                class="absolute z-10 ml-2 transition-transform transform hover:translate-y-[-6px]"
-                src="./img/project4.png"
-                alt=""
-            /></a>
-            <a
-              href=""
-              class="text-project absolute z-20 bottom-5 ml-[0.8rem] mx-auto"
-            >
-              <div
-                class="text-[#FFFFFF] z-20 w-[304px] text-center m font-bold text-lg"
-              >
-                Công Ty Cổ phần Du Học
-              </div>
-              <div
-                class="text text-[#FFFFFF] z-20 w-[304px] text-center m font-bold text-lg"
-              >
-                rinku
-              </div>
-            </a>
-            <div
-              class="backgroud-project bg-[#00355D] absolute bottom-1 w-[328px] h-[169px] rounded-[20px]"
-            ></div>
           </div>
           <!-- end project -->
 
           <!-- project -->
-          <div class="project relative mx-auto w-[328px] h-[432px]">
+          <div
+            class="project relative mx-auto w-full h-[432px] max-lg:w-[167px] cursor-pointer group max-lg:h-[214px]"
+          >
+            <a class="w-full h-full max-w-[312px] max-h-[333px]" href="">
+              <div class="relative max-w-[312px] max-h-[333px] mx-auto">
+                <img
+                  class="absolute z-10 transition-transform transform w-full group-hover:translate-y-[-6px] max-lg:p-[5px]"
+                  src="./img/project1.png"
+                  alt=""
+                />
+              </div>
+            </a>
             <div
-              class="w-[328px] h-[85px] bg-[#00355D] rounded-[20px] pt-2 absolute z-20 left-0 bottom-1"
+              class="w-full h-[42px] lg:h-[85px] bg-[#00355D] rounded-br-[20px] rounded-bl-[20px] lg:pt-2 absolute z-20 left-0 bottom-1"
             >
               <img
-                class="absolute z-20 left-0 bottom-[5.2rem]"
+                class="absolute z-20 left-0 bottom-[41px] max-lg:w-[88px] max-lg:h-[36px] lg:w-[172px] 2xl:ml-[10px] lg:bottom-[5.2rem]"
                 src="./img/Rectangle 260.png"
                 alt=""
               />
               <img
-                class="absolute z-20 right-0 bottom-[5.2rem]"
+                class="absolute z-20 right-0 max-lg:w-[88px] max-lg:h-[36px] bottom-[41px] lg:w-[172px] 2xl:mr-[10px] lg:bottom-[5.2rem]"
                 src="./img/tamgiac.png"
                 alt=""
               />
             </div>
-            <a href="">
-              <img
-                class="absolute z-10 ml-2 transition-transform transform hover:translate-y-[-6px]"
-                src="./img/project1.png"
-                alt=""
-            /></a>
+
             <a
               href=""
-              class="text-project absolute z-20 bottom-5 ml-[0.8rem] mx-auto"
+              class="text-project text-[12px] lg:text-lg w-full absolute z-20 max-lg:bottom-[10px] lg:bottom-5 mx-auto"
             >
-              <div
-                class="text-[#FFFFFF] z-20 w-[304px] text-center m font-bold text-lg"
-              >
+              <div class="text-[#FFFFFF] z-20 text-center m font-bold">
                 Thẩm Mỹ Viện
               </div>
-              <div
-                class="text text-[#FFFFFF] z-20 w-[304px] text-center m font-bold text-lg"
-              >
+              <div class="text text-[#FFFFFF] z-20 text-center m font-bold">
                 Beauty Angel Academy
               </div>
             </a>
             <div
-              class="backgroud-project bg-[#00355D] absolute bottom-1 w-[328px] h-[169px] rounded-[20px]"
-            ></div>
+              class="backgroud-project bg-[#00355D] absolute bottom-1 w-full max-lg:h-[86px] h-[167px] rounded-[12px] lg:rounded-[15px]"
+            >
+              <!-- <img
+             class="rounded-[20px]"
+             src="./img/Rectangle 266.jpg"
+             alt=""
+           /> -->
+            </div>
           </div>
           <!-- end project -->
-          <div class="project relative mx-auto w-[328px] h-[432px]">
+          <!-- project -->
+          <div
+            class="project relative mx-auto w-full h-[432px] max-lg:w-[167px] cursor-pointer group max-lg:h-[214px]"
+          >
+            <a class="w-full h-full max-w-[312px] max-h-[333px]" href="">
+              <div class="relative max-w-[312px] max-h-[333px] mx-auto">
+                <img
+                  class="absolute z-10 transition-transform transform w-full group-hover:translate-y-[-6px] max-lg:p-[5px]"
+                  src="./img/project1.png"
+                  alt=""
+                />
+              </div>
+            </a>
             <div
-              class="w-[328px] h-[85px] bg-[#00355D] rounded-[20px] pt-2 absolute z-20 left-0 bottom-1"
+              class="w-full h-[42px] lg:h-[85px] bg-[#00355D] rounded-br-[20px] rounded-bl-[20px] lg:pt-2 absolute z-20 left-0 bottom-1"
             >
               <img
-                class="absolute z-20 left-1 bottom-[5.2rem]"
+                class="absolute z-20 left-0 bottom-[41px] max-lg:w-[88px] max-lg:h-[36px] lg:w-[172px] 2xl:ml-[10px] lg:bottom-[5.2rem]"
                 src="./img/Rectangle 260.png"
                 alt=""
               />
               <img
-                class="absolute z-20 right-1 bottom-[5.2rem]"
+                class="absolute z-20 right-0 max-lg:w-[88px] max-lg:h-[36px] bottom-[41px] lg:w-[172px] 2xl:mr-[10px] lg:bottom-[5.2rem]"
                 src="./img/tamgiac.png"
                 alt=""
               />
             </div>
-            <a href="">
-              <img
-                class="transition-transform transform hover:translate-y-[-6px] absolute z-10 ml-2"
-                src="./img/project2.png"
-                alt=""
-            /></a>
+
             <a
               href=""
-              class="text-project absolute z-20 bottom-5 ml-[0.8rem] mx-auto"
+              class="text-project text-[12px] lg:text-lg w-full absolute z-20 max-lg:bottom-[10px] lg:bottom-5 mx-auto"
             >
-              <div
-                class="text-[#FFFFFF] z-20 w-[304px] text-center m font-bold text-lg"
-              >
-                Công Ty Cổ Phần Gỗ Ép
+              <div class="text-[#FFFFFF] z-20 text-center m font-bold">
+                Thẩm Mỹ Viện
               </div>
-              <div
-                class="text text-[#FFFFFF] z-20 w-[304px] text-center m font-bold text-lg"
-              >
-                Great Wood
+              <div class="text text-[#FFFFFF] z-20 text-center m font-bold">
+                Beauty Angel Academy
               </div>
             </a>
             <div
-              class="backgroud-project bg-[#00355D] absolute bottom-1 w-[328px] h-[169px] rounded-[20px]"
-            ></div>
+              class="backgroud-project bg-[#00355D] absolute bottom-1 w-full max-lg:h-[86px] h-[167px] rounded-[12px] lg:rounded-[15px]"
+            >
+              <!-- <img
+             class="rounded-[20px]"
+             src="./img/Rectangle 266.jpg"
+             alt=""
+           /> -->
+            </div>
           </div>
           <!-- end project -->
 
-          <div class="project relative mx-auto w-[328px] h-[432px]">
+          <!-- project -->
+          <div
+            class="project relative mx-auto w-full h-[432px] max-lg:w-[167px] cursor-pointer group max-lg:h-[214px]"
+          >
+            <a class="w-full h-full max-w-[312px] max-h-[333px]" href="">
+              <div class="relative max-w-[312px] max-h-[333px] mx-auto">
+                <img
+                  class="absolute z-10 transition-transform transform w-full group-hover:translate-y-[-6px] max-lg:p-[5px]"
+                  src="./img/project1.png"
+                  alt=""
+                />
+              </div>
+            </a>
             <div
-              class="w-[328px] h-[85px] bg-[#00355D] rounded-[20px] pt-2 absolute z-20 left-0 bottom-1"
+              class="w-full h-[42px] lg:h-[85px] bg-[#00355D] rounded-br-[20px] rounded-bl-[20px] lg:pt-2 absolute z-20 left-0 bottom-1"
             >
               <img
-                class="absolute z-20 left-0 bottom-[5.2rem]"
+                class="absolute z-20 left-0 bottom-[41px] max-lg:w-[88px] max-lg:h-[36px] lg:w-[172px] 2xl:ml-[10px] lg:bottom-[5.2rem]"
                 src="./img/Rectangle 260.png"
                 alt=""
               />
               <img
-                class="absolute z-20 right-0 bottom-[5.2rem]"
+                class="absolute z-20 right-0 max-lg:w-[88px] max-lg:h-[36px] bottom-[41px] lg:w-[172px] 2xl:mr-[10px] lg:bottom-[5.2rem]"
                 src="./img/tamgiac.png"
                 alt=""
               />
             </div>
-            <a href="">
-              <img
-                class="absolute z-10 ml-2 transition-transform transform hover:translate-y-[-6px]"
-                src="./img/project3.png"
-                alt=""
-            /></a>
+
             <a
               href=""
-              class="text-project absolute z-20 bottom-[46px] ml-[0.8rem] mx-auto"
+              class="text-project text-[12px] lg:text-lg w-full absolute z-20 max-lg:bottom-[10px] lg:bottom-5 mx-auto"
             >
-              <div
-                class="text-[#FFFFFF] text-center z-20 w-[304px] m font-bold text-lg overflow-hidden whitespace-nowrap"
-              >
-                Công Ty cổ phần Gỗ Ép Great Wood
+              <div class="text-[#FFFFFF] z-20 text-center m font-bold">
+                Thẩm Mỹ Viện
               </div>
-              <div
-                class="text-[#FFFFFF] z-20 w-[304px] text-center m font-bold text-lg overflow-hidden whitespace-nowrap"
-              >
-                <!-- Beauty Angel Academy -->
+              <div class="text text-[#FFFFFF] z-20 text-center m font-bold">
+                Beauty Angel Academy
               </div>
             </a>
-
             <div
-              class="backgroud-project bg-[#00355D] absolute bottom-1 w-[328px] h-[169px] rounded-[20px]"
-            ></div>
+              class="backgroud-project bg-[#00355D] absolute bottom-1 w-full max-lg:h-[86px] h-[167px] rounded-[12px] lg:rounded-[15px]"
+            >
+              <!-- <img
+                class="rounded-[20px]"
+                src="./img/Rectangle 266.jpg"
+                alt=""
+              /> -->
+            </div>
           </div>
           <!-- end project -->
-
-          <div class="project relative mx-auto w-[328px] h-[432px]">
+          <!-- project -->
+          <div
+            class="project relative mx-auto w-full h-[432px] max-lg:w-[167px] cursor-pointer group max-lg:h-[214px]"
+          >
+            <a class="w-full h-full max-w-[312px] max-h-[333px]" href="">
+              <div class="relative max-w-[312px] max-h-[333px] mx-auto">
+                <img
+                  class="absolute z-10 transition-transform transform w-full group-hover:translate-y-[-6px] max-lg:p-[5px]"
+                  src="./img/project1.png"
+                  alt=""
+                />
+              </div>
+            </a>
             <div
-              class="w-[328px] h-[85px] bg-[#00355D] rounded-[20px] pt-2 absolute z-20 left-0 bottom-1"
+              class="w-full h-[42px] lg:h-[85px] bg-[#00355D] rounded-br-[20px] rounded-bl-[20px] lg:pt-2 absolute z-20 left-0 bottom-1"
             >
               <img
-                class="absolute z-20 left-0 bottom-[5.2rem]"
+                class="absolute z-20 left-0 bottom-[41px] max-lg:w-[88px] max-lg:h-[36px] lg:w-[172px] 2xl:ml-[10px] lg:bottom-[5.2rem]"
                 src="./img/Rectangle 260.png"
                 alt=""
               />
               <img
-                class="absolute z-20 right-0 bottom-[5.2rem]"
+                class="absolute z-20 right-0 max-lg:w-[88px] max-lg:h-[36px] bottom-[41px] lg:w-[172px] 2xl:mr-[10px] lg:bottom-[5.2rem]"
                 src="./img/tamgiac.png"
                 alt=""
               />
             </div>
-            <a href="">
-              <img
-                class="absolute z-10 ml-2 transition-transform transform hover:translate-y-[-6px]"
-                src="./img/project4.png"
-                alt=""
-            /></a>
+
             <a
               href=""
-              class="text-project absolute z-20 bottom-5 ml-[0.8rem] mx-auto"
+              class="text-project text-[12px] lg:text-lg w-full absolute z-20 max-lg:bottom-[10px] lg:bottom-5 mx-auto"
             >
-              <div
-                class="text-[#FFFFFF] z-20 w-[304px] text-center m font-bold text-lg"
-              >
-                Công Ty Cổ phần Du Học
+              <div class="text-[#FFFFFF] z-20 text-center m font-bold">
+                Thẩm Mỹ Viện
               </div>
-              <div
-                class="text text-[#FFFFFF] z-20 w-[304px] text-center m font-bold text-lg"
-              >
-                rinku
+              <div class="text text-[#FFFFFF] z-20 text-center m font-bold">
+                Beauty Angel Academy
               </div>
             </a>
             <div
-              class="backgroud-project bg-[#00355D] absolute bottom-1 w-[328px] h-[169px] rounded-[20px]"
-            ></div>
+              class="backgroud-project bg-[#00355D] absolute bottom-1 w-full max-lg:h-[86px] h-[167px] rounded-[12px] lg:rounded-[15px]"
+            >
+              <!-- <img
+            class="rounded-[20px]"
+            src="./img/Rectangle 266.jpg"
+            alt=""
+          /> -->
+            </div>
           </div>
+          <!-- end project -->
 
+          <!-- project -->
+          <div
+            class="project relative mx-auto w-full h-[432px] max-lg:w-[167px] cursor-pointer group max-lg:h-[214px]"
+          >
+            <a class="w-full h-full max-w-[312px] max-h-[333px]" href="">
+              <div class="relative max-w-[312px] max-h-[333px] mx-auto">
+                <img
+                  class="absolute z-10 transition-transform transform w-full group-hover:translate-y-[-6px] max-lg:p-[5px]"
+                  src="./img/project1.png"
+                  alt=""
+                />
+              </div>
+            </a>
+            <div
+              class="w-full h-[42px] lg:h-[85px] bg-[#00355D] rounded-br-[20px] rounded-bl-[20px] lg:pt-2 absolute z-20 left-0 bottom-1"
+            >
+              <img
+                class="absolute z-20 left-0 bottom-[41px] max-lg:w-[88px] max-lg:h-[36px] lg:w-[172px] 2xl:ml-[10px] lg:bottom-[5.2rem]"
+                src="./img/Rectangle 260.png"
+                alt=""
+              />
+              <img
+                class="absolute z-20 right-0 max-lg:w-[88px] max-lg:h-[36px] bottom-[41px] lg:w-[172px] 2xl:mr-[10px] lg:bottom-[5.2rem]"
+                src="./img/tamgiac.png"
+                alt=""
+              />
+            </div>
+
+            <a
+              href=""
+              class="text-project text-[12px] lg:text-lg w-full absolute z-20 max-lg:bottom-[10px] lg:bottom-5 mx-auto"
+            >
+              <div class="text-[#FFFFFF] z-20 text-center m font-bold">
+                Thẩm Mỹ Viện
+              </div>
+              <div class="text text-[#FFFFFF] z-20 text-center m font-bold">
+                Beauty Angel Academy
+              </div>
+            </a>
+            <div
+              class="backgroud-project bg-[#00355D] absolute bottom-1 w-full max-lg:h-[86px] h-[167px] rounded-[12px] lg:rounded-[15px]"
+            >
+              <!-- <img
+             class="rounded-[20px]"
+             src="./img/Rectangle 266.jpg"
+             alt=""
+           /> -->
+            </div>
+          </div>
+          <!-- end project -->
+
+          <div
+            class="project relative mx-auto w-full h-[432px] max-lg:w-[167px] cursor-pointer group max-lg:h-[214px]"
+          >
+            <a class="w-full h-full max-w-[312px] max-h-[333px]" href="">
+              <div class="relative max-w-[312px] max-h-[333px] mx-auto">
+                <img
+                  class="absolute z-10 transition-transform transform w-full group-hover:translate-y-[-6px] max-lg:p-[5px]"
+                  src="./img/project1.png"
+                  alt=""
+                />
+              </div>
+            </a>
+            <div
+              class="w-full h-[42px] lg:h-[85px] bg-[#00355D] rounded-br-[20px] rounded-bl-[20px] lg:pt-2 absolute z-20 left-0 bottom-1"
+            >
+              <img
+                class="absolute z-20 left-0 bottom-[41px] max-lg:w-[88px] max-lg:h-[36px] lg:w-[172px] 2xl:ml-[10px] lg:bottom-[5.2rem]"
+                src="./img/Rectangle 260.png"
+                alt=""
+              />
+              <img
+                class="absolute z-20 right-0 max-lg:w-[88px] max-lg:h-[36px] bottom-[41px] lg:w-[172px] 2xl:mr-[10px] lg:bottom-[5.2rem]"
+                src="./img/tamgiac.png"
+                alt=""
+              />
+            </div>
+
+            <a
+              href=""
+              class="text-project text-[12px] lg:text-lg w-full absolute z-20 max-lg:bottom-[10px] lg:bottom-5 mx-auto"
+            >
+              <div class="text-[#FFFFFF] z-20 text-center m font-bold">
+                Thẩm Mỹ Viện
+              </div>
+              <div class="text text-[#FFFFFF] z-20 text-center m font-bold">
+                Beauty Angel Academy
+              </div>
+            </a>
+            <div
+              class="backgroud-project bg-[#00355D] absolute bottom-1 w-full max-lg:h-[86px] h-[167px] rounded-[12px] lg:rounded-[100px]"
+            >
+              <img
+                class="rounded-[20px]"
+                src="./img/Rectangle 266.jpg"
+                alt=""
+              />
+            </div>
+          </div>
           <!-- end project -->
         </section>
         <!--end Conten -->
 
         <section
-          class="mx-auto pl-[10px] flex justify-center items-center text-lg font-bold text-white mb-24 mt-[45px] w-[250px] h-[49px]"
+          class="mx-auto pl-[10px] flex justify-center lg:pt-[10px] items-center text-lg font-bold text-white mb-24 mt-[45px] w-[250px] h-[49px]"
         >
           <a
             class="bg-[#00B8C4] ml-[10px] gap-1 w-[219px] h-[49px] items-center rounded-[100px] justify-center flex"
@@ -587,10 +666,10 @@
         </section>
         <!-- end dự án -->
         <section
-          class="max-w-[1409px] h-[728px] items-center flex justify-center relative"
+          class="max-w-[1409px] h-[728px] items-center lg:relative flex justify-center"
         >
           <div
-            class="z-50 absolute h-[374px] left-16 top-40 font-extrabold max-w-[350px]"
+            class="z-50 absolute h-[374px] left-[4.438rem] top-40 font-extrabold lg:block max-lg:hidden max-w-[350px]"
           >
             <div><img class="pb-12" src="./img/lienhe.png" alt="" /></div>
             <div class="*:leading-[66px]">
@@ -599,71 +678,78 @@
             </div>
           </div>
           <img
-            class="absolute left-0 z-40"
+            class="lg:block max-lg:hidden absolute left-0 z-40"
             src="./img/Rectangle 252.png"
             alt=""
           />
           <div
-            class="max-w-[1280px] absolute z-10 w-full rounded-[30px] h-[728px] bg-[#264AB9]"
+            class="max-w-[1280px] absolute z-10 lg:block max-lg:hidden w-full rounded-[30px] h-[728px] bg-[#264AB9]"
           ></div>
           <div
-            class="w-[688px] h-[478px] absolute font-bold right-[6.5rem] text-white z-40"
+            class="lg:w-[688px] lg:h-[478px] lg:absolute w-full font-bold lg:right-[6.938rem] text-white z-40"
           >
-            <h1 class="text-[32px] text-center mb-[2.8rem]">
+            <h1
+              class="lg:text-[32px] lg:text-white text-[#00355D] lg:pt-[10px] text-2xl text-center mb-[2.8rem]"
+            >
               ĐĂNG KÝ NHẬN TƯ VẤN MIỄN PHÍ
             </h1>
             <!-- From  Signup -->
-            <form class="grid grid-cols-2 gap-8 justify-end items-center">
+            <form
+              class="lg:grid max-lg:w-[90%] max-lg:mx-auto lg:grid-cols-2 lg:gap-y-[9px] lg:gap-x-8 lg:justify-end lg:items-center"
+            >
               <input
-                class="text-white rounded-[10px] text-left pr-[54px] pl-[12px] placeholder-white py-2 text-lg font-bold bg-transparent border-2 border-white outline-none"
+                class="text-white rounded-[10px] text-[14px] max-lg:w-full my-3 text-left pr-[54px] pl-[12px] placeholder-[#A1A1AA] lg:placeholder-white py-2 lg:text-lg font-bold bg-transparent border-2 border-[#A1A1AA] lg:border-white outline-none"
                 type="text"
                 placeholder="Họ Tên"
               />
               <input
-                class="text-white rounded-[10px] text-left pr-[54px] pl-[12px] placeholder-white py-2 text-lg font-bold bg-transparent border-2 border-white outline-none"
+                class="text-white rounded-[10px] text-[14px] w-full my-3 text-left pr-[54px] pl-[12px] placeholder-[#A1A1AA] lg:placeholder-white py-2 lg:text-lg font-bold bg-transparent border-2 border-[#A1A1AA] lg:border-white outline-none"
                 type="number"
                 min="0"
                 placeholder="Số điện thoại"
               />
               <input
-                class="text-white rounded-[10px] text-left pr-[54px] pl-[12px] placeholder-white py-2 text-lg font-bold bg-transparent border-2 border-white outline-none"
+                class="text-white rounded-[10px] text-[14px] w-full my-3 text-left pr-[54px] pl-[12px] placeholder-[#A1A1AA] lg:placeholder-white py-2 lg:text-lg font-bold bg-transparent border-2 border-[#A1A1AA] lg:border-white outline-none"
                 type="email"
                 placeholder="Email"
               />
               <input
-                class="text-white rounded-[10px] text-left pr-[54px] pl-[12px] placeholder-white py-2 text-lg font-bold bg-transparent border-2 border-white outline-none"
+                class="text-white rounded-[10px] text-[14px] w-full my-3 text-left pr-[54px] pl-[12px] placeholder-[#A1A1AA] lg:placeholder-white py-2 lg:text-lg font-bold bg-transparent border-2 border-[#A1A1AA] lg:border-white outline-none"
                 type="text"
                 placeholder="Dịch vụ cần từ vấn"
               />
-
               <textarea
-                class="outline-none text-lg bg-transparent font-bold text-white placeholder-white w-[688px] h-[143px] py-2 pl-3 border-2 border-white rounded-[10px]"
+                class="outline-none text-[14px] lg:text-lg w-full lg:my-3 h-[120px] bg-transparent font-bold text-white placeholder-[#A1A1AA] lg:placeholder-white lg:w-[688px] lg:h-[143px] py-2 pl-3 borde r-2 border-2 border-[#A1A1AA] lg:border-white rounded-[10px]"
                 name=""
                 id=""
                 placeholder="Nội dung"
               ></textarea>
               <div></div>
               <button
-                class="absolute bottom-0 left-[37%] text-lg font-bold transform [-translate-x-1/2 -translate-y-1/2] bg-[#2DD4BF] px-[32px] rounded-[100px] py-[10px]"
+                class="absolute lg:-bottom-[5px] left-[37%] lg:text-lg font-bold lg:transform text-[14px] px-5 py-3 [-translate-x-1/2 -translate-y-1/2] bg-[#2DD4BF] lg:px-[32px] rounded-[100px] lg:py-[10px]"
               >
                 Liên Hệ Ngay
               </button>
             </form>
             <!-- From  Signup -->
           </div>
-          <img class="absolute z-20" src="./img/Rectangle 142.png" alt="" />
+          <img
+            class="absolute z-20 lg:block max-lg:hidden"
+            src="./img/Rectangle 142.png"
+            alt=""
+          />
           <div
-            class="h-[600px] w-[208px] rounded-[30px] bg-[#E2EBF6] bottom-[76px] absolute right-0"
+            class="h-[600px] xl:block max-lg:hidden w-[208px] rounded-[30px] bg-[#E2EBF6] bottom-[76px] absolute right-0"
           ></div>
         </section>
       </main>
-      <footer class="max-w-full bg-[#23233F] h-[704px] mt-24">
+      <footer class="max-w-full hidden sm:block bg-[#23233F] h-[704px] mt-24">
         <section
-          class="max-w-[1408px] mx-auto pt-[5.5rem] *:text-white grid grid-cols-3"
+          class="max-w-[1408px] mx-auto pt-[5.938rem] *:text-white grid grid-cols-3"
         >
           <div class="pl-2 pt-2">
             <img src="./img/footer.png" alt="" />
-            <p class="text-[15px] font-[400] w-[448px] pt-[1rem] leading-7">
+            <p class="text-[15px] font-[400] w-full pt-[1rem] leading-7">
               Chúng tôi luôn chắc chắn về mục đích thiết kế website của khách
               hàng. Website chuyên nghiệp trước hết phải phù hợp với hệ thống
               nhận diện thương hiệu của doanh nghiệp, logic nội dung chặt chẽ và
@@ -796,6 +882,7 @@
           <div><img src="./img/image 406.png" alt="" /></div>
         </section>
       </footer>
+      <div class="max-w-full sm:hidden bg-[#23233F] h-[704px] mt-24"></div>
       <!-- ======================================End Dự án webOps Agency ====================== -->
     </div>
   </body>
