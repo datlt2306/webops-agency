@@ -10,6 +10,16 @@ module.exports = {
         'normal': '0 0 6px 2px rgb(0 0 0 / 0.1)',
       }
     },
+    screens: {
+      '394px': '394px',
+      '1444px': '1444px',
+      '1500px': '1500px',
+      '1600px': '1600px',
+      '1686px': '1686px',
+      '1748px': '1748px',
+      '1800px': '1800px',
+      '1818px': '1818px',
+    },
     fontFamily: {
       Nunito: ['Nunito', 'sans-serif']
     },
