@@ -44,43 +44,92 @@
     <title>Document</title>
   </head>
   <body>
-    <header class="flex mr-[240px] justify-between items-center">
+    <header class="py-5 overflow-hidden">
       <div
-        class="bg-border w-[515px] h-[102px] bg-gradient-to-r from-blue-600 to-blue-400 relative overflow-hidden flex items-center justify-end"
+        class="max-w-[343px] xl:max-w-[87.0625rem] flex justify-between items-center mx-auto relative"
       >
-        <img
-          class="absolute bottom-[-5px] left-[-55px]"
-          src="./src/images/microChip.svg"
-          alt=""
-        />
+        <div class="overflow-hidden absolute left-[-22.6%] bottom-[-30%] -z-10">
+          <img class="max-w-max" src="./src/images/backGroundLogo.png" alt="" />
+        </div>
+        <a href="#"
+          ><img
+            class="w-[14%] xl:w-auto"
+            src="./src/images/logo.svg"
+            alt="Logo"
+        /></a>
 
-        <img class="absolute mr-[165px]" src="./src/images/logo.svg" alt="" />
-      </div>
-      <nav>
-        <ul
-          class="flex *:text-lg *:text-[#00355D] font-bold items-center gap-2.5"
-        >
-          <!-- <li class="px-3 border border-b-[#28EFE2]">
+        <div>
+          <button
+            data-collapse-toggle="navbar-default"
+            type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden focus:outline-none focus:ring-2 focus:ring-gray-200"
+            aria-controls="navbar-default"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M4 24V21.3333H28V24H4ZM4 17.3333V14.6667H28V17.3333H4ZM4 10.6667V8H28V10.6667H4Z"
+                fill="white"
+              />
+            </svg>
+          </button>
+
+          <nav class="-mr-4 xl:w-auto" id="navbar-default">
+            <ul
+              class="flex *:text-lg *:text-[#00355D] font-bold items-center gap-2.5"
+            >
+              <!-- <li class="px-3 border border-b-[#28EFE2]">
             <a class="text-[#28EFE2]" href="#">Về chúng tôi</a>
           </li> -->
-          <li>
-            <a class="px-2" href="#">Về chúng tôi</a>
-          </li>
-          <li><a class="px-2" href="#">Dự án</a></li>
-          <li><a class="px-2" href="#">Dịch vụ</a></li>
-          <li><a class="px-2" href="#">Bảng giá</a></li>
-          <li><a class="px-2" href="#">Tin tức</a></li>
-          <li><a class="px-2" href="#">Liên hệ</a></li>
-          <li
-            class="font-extrabold bg-red-300 py-[0.625rem] px-[25px] rounded-full bg-gradient-to-r from-[#10B8C4] to-[#2AD8CD]"
-          >
-            <a class="flex items-center gap-3" href="#"
-              ><i class="fa-solid fa-phone-volume text-xl text-white"></i>
-              <span class="text-white">098 - 888 - 8888</span></a
-            >
-          </li>
-        </ul>
-      </nav>
+              <li
+                class="hover:border-b hover:border-b-[#28EFE2] hover:text-[#28EFE2]"
+              >
+                <a class="px-2" href="#">Về chúng tôi</a>
+              </li>
+              <li
+                class="hover:border-b hover:border-b-[#28EFE2] hover:text-[#28EFE2]"
+              >
+                <a class="px-2" href="#">Dự án</a>
+              </li>
+              <li
+                class="hover:border-b hover:border-b-[#28EFE2] hover:text-[#28EFE2]"
+              >
+                <a class="px-2" href="#">Dịch vụ</a>
+              </li>
+              <li
+                class="hover:border-b hover:border-b-[#28EFE2] hover:text-[#28EFE2]"
+              >
+                <a class="px-2" href="#">Bảng giá</a>
+              </li>
+              <li
+                class="hover:border-b hover:border-b-[#28EFE2] hover:text-[#28EFE2]"
+              >
+                <a class="px-2" href="#">Tin tức</a>
+              </li>
+              <li
+                class="hover:border-b hover:border-b-[#28EFE2] hover:text-[#28EFE2]"
+              >
+                <a class="px-2" href="#">Liên hệ</a>
+              </li>
+              <li
+                class="font-extrabold bg-red-300 py-[0.625rem] px-[25px] rounded-full bg-gradient-to-r from-[#10B8C4] to-[#2AD8CD]"
+              >
+                <a class="flex items-center gap-3" href="#"
+                  ><i class="fa-solid fa-phone-volume text-xl text-white"></i>
+                  <span class="text-white">098 - 888 - 8888</span></a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
     </header>
     <!-- End Header -->
 
@@ -89,7 +138,7 @@
       <!-- Hero Section -->
       <section class="pt-[6.125rem] pb-[5.875rem] max-w-[87.0625rem] m-auto">
         <div class="grid grid-cols-[42.3125rem_45rem]">
-          <div>
+          <div class="max-w-[87.0625rem]">
             <h3 class="text-[2.5rem] mb-11 mt-1">DỊCH VỤ</h3>
             <h1 class="m-0 text-7xl font-extrabold text-[#00355D]">
               THIẾT KẾ WEBSITE
@@ -124,7 +173,7 @@
       <!-- End Hero Section -->
 
       <!--  Greeting Section -->
-      <section class="w-full relative bg-[#264AB9] mt-[70px]">
+      <section class="w-full relative bg-[#264AB9] mt-[70px] sm:bg-red-700">
         <!-- C1: Giới hạn width của ảnh lại để không bị scroll-x (Do màn hình chỉ dài 1903px - Nếu màn dài 1920 thì không cần giảm width hay margin-left) -->
         <!-- class="absolute right-0 mr-[-17px] top-[-70px]" -->
         <img
@@ -904,7 +953,7 @@
                     alt=""
                   />
                 </div>
-                <!-- <div
+                <div
                   class="swiper-slide text-center text-lg flex justify-center items-center"
                 >
                   <img
@@ -912,7 +961,7 @@
                     src="src/images/Rectangle 236.png"
                     alt=""
                   />
-                </div> -->
+                </div>
                 <div
                   class="swiper-slide text-center text-lg flex justify-center items-center"
                 >
@@ -945,7 +994,7 @@
             </div>
           </div>
           <div
-            class="flex flex-col z-10 gap-[3.0625rem] pb-[3.375rem] -mr-[1.0625rem] justify-center mt-[0.125rem] max-1500px:absolute max-1500px:top-[10%] max-1500px:gap-0 max-1500px:w-[628px]"
+            class="flex flex-col -mt-[84px] z-10 gap-[3.0625rem] pb-[3.375rem] -mr-[1.0625rem] justify-center max-1500px:absolute max-1500px:top-[10%] max-1500px:gap-0 max-1500px:w-[628px]"
           >
             <div class="max-1500px:flex max-1500px:justify-center">
               <img
@@ -2422,5 +2471,3 @@
     </script>
   </body>
 </html>
-
-<!-- <div class="bg-gradient-to-r from-#264ab9 via-63% #6b92ff"> -->
