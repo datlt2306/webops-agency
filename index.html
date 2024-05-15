@@ -44,82 +44,77 @@
     <title>Document</title>
   </head>
   <body>
-    <header class="py-5 overflow-hidden">
-      <div
-        class="max-w-[343px] xl:max-w-[87.0625rem] flex justify-between items-center mx-auto relative"
-      >
-        <div class="overflow-hidden absolute left-[-22.6%] bottom-[-30%] -z-10">
-          <img class="max-w-max" src="./src/images/backGroundLogo.png" alt="" />
+    <header>
+      <div class="overflow-hidden py-5">
+        <div
+          class="max-w-[353px] xl:max-w-[87.0625rem] flex justify-between items-center mx-auto relative"
+        >
+          <div
+            class="overflow-hidden absolute left-[-22.6%] bottom-[-67%] xl:bottom-[-30%] -z-10"
+          >
+            <img
+              class="max-w-max"
+              src="./src/images/backGroundLogo.png"
+              alt=""
+            />
+          </div>
+          <a href="#"
+            ><img
+              class="w-[51%] xl:w-auto"
+              src="./src/images/logo.svg"
+              alt="Logo"
+          /></a>
         </div>
-        <a href="#"
-          ><img
-            class="w-[14%] xl:w-auto"
-            src="./src/images/logo.svg"
-            alt="Logo"
-        /></a>
 
-        <div>
+        <div
+          class="flex flex-col xl:flex-row absolute z-10 top-[2.8%] right-[4%] xl:items-baseline xl:mr-[9.4%] xl:mt-1"
+        >
           <button
             data-collapse-toggle="navbar-default"
             type="button"
-            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden focus:outline-none focus:ring-2 focus:ring-gray-200"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-200"
             aria-controls="navbar-default"
             aria-expanded="false"
           >
-            <span class="sr-only">Open main menu</span>
-            <svg
-              width="32"
-              height="32"
-              viewBox="0 0 32 32"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M4 24V21.3333H28V24H4ZM4 17.3333V14.6667H28V17.3333H4ZM4 10.6667V8H28V10.6667H4Z"
-                fill="white"
-              />
-            </svg>
+            <img class="max-w-max" src="./src/icons/hamburger.svg" alt="" />
           </button>
 
-          <nav class="-mr-4 xl:w-auto" id="navbar-default">
+          <nav class="-mr-4 xl:w-auto hidden xl:block" id="navbar-default">
             <ul
-              class="flex *:text-lg *:text-[#00355D] font-bold items-center gap-2.5"
+              class="flex flex-col xl:flex-row absolute xl:relative right-[2%] font-bold xl:right-0 w-[22.0625rem] xl:w-auto border xl:border-none rounded-lg bg-white *:text-lg *:text-[#00355D] xl:items-center xl:pb-0 pb-3 gap-2.5"
             >
-              <!-- <li class="px-3 border border-b-[#28EFE2]">
-            <a class="text-[#28EFE2]" href="#">Về chúng tôi</a>
-          </li> -->
               <li
                 class="hover:border-b hover:border-b-[#28EFE2] hover:text-[#28EFE2]"
               >
-                <a class="px-2" href="#">Về chúng tôi</a>
+                <a class="pl-3 pr-[13rem] xl:px-2" href="#">Về chúng tôi</a>
               </li>
               <li
                 class="hover:border-b hover:border-b-[#28EFE2] hover:text-[#28EFE2]"
               >
-                <a class="px-2" href="#">Dự án</a>
+                <a class="pl-3 pr-[13rem] xl:px-2" href="#">Dự án</a>
               </li>
               <li
                 class="hover:border-b hover:border-b-[#28EFE2] hover:text-[#28EFE2]"
               >
-                <a class="px-2" href="#">Dịch vụ</a>
+                <a class="pl-3 pr-[13rem] xl:px-2" href="#">Dịch vụ</a>
               </li>
               <li
                 class="hover:border-b hover:border-b-[#28EFE2] hover:text-[#28EFE2]"
               >
-                <a class="px-2" href="#">Bảng giá</a>
+                <a class="pl-3 pr-[13rem] xl:px-2" href="#">Bảng giá</a>
               </li>
               <li
                 class="hover:border-b hover:border-b-[#28EFE2] hover:text-[#28EFE2]"
               >
-                <a class="px-2" href="#">Tin tức</a>
+                <a class="pl-3 pr-[13rem] xl:px-2" href="#">Tin tức</a>
               </li>
               <li
                 class="hover:border-b hover:border-b-[#28EFE2] hover:text-[#28EFE2]"
               >
-                <a class="px-2" href="#">Liên hệ</a>
+                <a class="pl-3 pr-[13rem] xl:px-2" href="#">Liên hệ</a>
               </li>
               <li
-                class="font-extrabold bg-red-300 py-[0.625rem] px-[25px] rounded-full bg-gradient-to-r from-[#10B8C4] to-[#2AD8CD]"
+                class="font-extrabold py-[0.625rem] px-[25px] rounded-full bg-gradient-to-r from-[#10B8C4] to-[#2AD8CD]"
               >
                 <a class="flex items-center gap-3" href="#"
                   ><i class="fa-solid fa-phone-volume text-xl text-white"></i>
@@ -136,34 +131,44 @@
     <!-- Start Main -->
     <main>
       <!-- Hero Section -->
-      <section class="pt-[6.125rem] pb-[5.875rem] max-w-[87.0625rem] m-auto">
-        <div class="grid grid-cols-[42.3125rem_45rem]">
-          <div class="max-w-[87.0625rem]">
-            <h3 class="text-[2.5rem] mb-11 mt-1">DỊCH VỤ</h3>
-            <h1 class="m-0 text-7xl font-extrabold text-[#00355D]">
+      <section
+        class="pt-[0.9rem] xl:pt-[6.125rem] xl:pb-[5.875rem] max-w-[353px] xl:max-w-[87.0625rem] m-auto"
+      >
+        <div class="grid grid-cols-1 xl:grid-cols-[42.3125rem_45rem]">
+          <div
+            class="flex flex-col items-center xl:block xl:max-w-[87.0625rem]"
+          >
+            <h3
+              class="text-base leading-[3rem] xl:text-[2.5rem] mb-[5px] xl:mb-10 ml-0 mt-[5px] xl:mt-1"
+            >
+              DỊCH VỤ
+            </h3>
+            <h1
+              class="m-0 mt-0 mb-[6px] text-[2rem] xl:text-7xl font-extrabold text-[#00355D]"
+            >
               THIẾT KẾ WEBSITE
             </h1>
             <h1
-              class="text-7xl m-0 pt-7 font-extrabold text-[#14b8a6] tracking-[-0.5px]"
+              class="text-[2rem] xl:text-7xl ml-[-2px] mb-0 xl:ml-0 mt-0 xl:pt-7 font-extrabold text-[#14b8a6] tracking-[-0.5px]"
             >
               #1 TẠI VIỆT NAM
             </h1>
             <p
-              class="text-2xl text-[#A1A1AA] mt-[2.875rem] leading-9 max-w-[37.5rem] mb-[2.8375rem]"
+              class="text-[14px] xl:text-2xl text-[#A1A1AA] mt-[10px] xl:mt-[42px] leading-5 text-center xl:text-left xl:leading-9 max-w-[37.5rem] mb-3 xl:mb-[2.8375rem]"
             >
               Thấu hiểu bối cảnh doanh nghiệp, đưa ra giải pháp tối ưu, WebOps
               Agency sẵn sàng đồng hành cùng thương hiệu cất cánh.
             </p>
 
             <a
-              class="text-lg font-bold py-4 px-8 text-white rounded-full bg-gradient-to-r from-[#00B8C4] to-[#2AD8CD]"
+              class="text-[14px] xl:text-lg font-bold py-[0.625rem] px-6 xl:py-4 xl:px-8 text-white rounded-full bg-gradient-to-r from-[#00B8C4] to-[#2AD8CD]"
               href="#"
               >Nhận tư vấn ngay</a
             >
           </div>
           <div>
             <img
-              class="w-full object-cover ml-3"
+              class="w-full object-cover xl:ml-3 mt-9 xl:mt-0"
               src="./src/images/hero.svg"
               alt="Hero Image"
             />
@@ -173,40 +178,46 @@
       <!-- End Hero Section -->
 
       <!--  Greeting Section -->
-      <section class="w-full relative bg-[#264AB9] mt-[70px] sm:bg-red-700">
+      <section class="w-full relative bg-[#264AB9] mt-[42px] xl:mt-[70px]">
         <!-- C1: Giới hạn width của ảnh lại để không bị scroll-x (Do màn hình chỉ dài 1903px - Nếu màn dài 1920 thì không cần giảm width hay margin-left) -->
         <!-- class="absolute right-0 mr-[-17px] top-[-70px]" -->
         <img
-          class="absolute right-0 top-[-4.375rem] w-[48.125rem]"
+          class="absolute right-0 w-[10.125rem] top-[-0.9rem] xl:top-[-4.375rem] xl:w-[48.125rem]"
           src="./src/images/squareCutLeft.svg"
           alt="square"
         />
         <div>
-          <div class="max-w-[87.0625rem] m-auto flex gap-[4.8125rem] pb-24">
+          <div
+            class="max-w-[353px] xl:max-w-[87.0625rem] mx-auto flex gap-[4.8125rem] pb-4 xl:pb-24"
+          >
             <img
-              class="mt-20 ml-[2.75rem] max-w-max z-10"
+              class="mt-20 ml-[2.75rem] max-w-max z-10 hidden xl:block"
               src="./src/images/Tech_isometric_concept.svg"
               alt="Tech_isometric_concept Image"
             />
 
-            <div class="mt-[9.875rem] z-10">
+            <div class="mt-[14px] xl:mt-[9.875rem] z-10">
               <h2
-                class="font-extrabold text-5xl max-w-[35.5rem] leading-[4.0625rem] text-white"
+                class="font-extrabold text-lg xl:text-5xl xl:max-w-[35.5rem] xl:leading-[4.0625rem] text-white text-center xl:text-left"
               >
                 Chào mừng đến với WebOps Agency
               </h2>
 
-              <span class="h-[3px] w-[5.5rem] bg-white block mt-3"></span>
+              <span
+                class="h-[3px] w-[5.5rem] bg-white mt-3 hidden xl:block"
+              ></span>
 
               <p
-                class="leading-8 text-lg text-white mt-8 text-left mb-8 font-medium w-[43rem]"
+                class="text-[14px] xl:text-lg xl:leading-8 text-white mb-4 mt-[11px] leading-[19px] xl:mt-8 xl:mb-8 font-medium xl:w-[43rem] text-center xl:text-left"
               >
                 Website được xem là cầu nối cực kỳ quan trọng giữa doanh nghiệp,
                 công ty với khách hàng, đối tác. Việc thiết kế website cho doanh
                 nghiệp chuyên nghiệp hóa, tối ưu SEO giúp mang đến hiệu quả đáng
                 kinh ngạc.
               </p>
-              <p class="leading-8 text-lg text-white text-left font-medium">
+              <p
+                class="xl:leading-8 text-[14px] xl:text-lg text-white mt-[19px] xl:mt-auto leading-[19px] font-medium text-center xl:text-left"
+              >
                 Website chuyên nghiệp sẽ là một hệ thống quản lý hiệu quả về cả
                 thông tin, sản phẩm, dịch vụ đến dữ liệu, chăm sóc khách hàng.
                 Bên cạnh đó, sự chuyên nghiệp của website còn giúp quá trình tìm
@@ -228,25 +239,29 @@
 
       <!--  Commitment To Quality Section -->
       <section
-        class="pt-[6.1875rem] pb-24 overflow-hidden"
+        class="pt-[34px] xl:pt-[6.1875rem] pb-[21px] xl:pb-24 overflow-hidden"
         style="
           background: url('./src/images/hanoiline.svg') center bottom no-repeat,
             linear-gradient(to right, #f0f7ff, #e2ebf6);
         "
       >
-        <div class="flex h-full max-w-[87.0625rem] m-auto relative">
-          <div class="max-w-[43rem]">
-            <h3 class="text-2xl text-[#00B8C4] font-extrabold mb-3">
+        <div
+          class="flex xl:flex-row max-w-[353px] xl:max-w-[87.0625rem] m-auto relative"
+        >
+          <div class="xl:max-w-[43rem]">
+            <h3
+              class="text-[14px] xl:text-2xl text-[#00B8C4] font-bold xl:font-extrabold mb-[5px] xl:mb-3"
+            >
               WebOps Agency luôn đồng hành cùng bạn
             </h3>
 
             <h2
-              class="font-extrabold text-5xl leading-[4.0625rem] text-[#00355D] mb-[0.875rem]"
+              class="font-extrabold text-2xl xl:text-5xl xl:leading-[4.0625rem] text-[#00355D] mb-[0.875rem]"
             >
               Trên hành trình lập nghiệp kinh doanh đầy tự hào
             </h2>
             <p
-              class="leading-8 text-lg text-left font-medium w-full text-[#00355D]"
+              class="leading-8 text-lg text-left font-medium w-full text-[#00355D] hidden xl:block"
             >
               Webops là một công ty thiết kế website được thành lập vào năm
               2018. Sau một thời gian dài hoạt động, chúng tôi đã mở rộng hoạt
@@ -261,24 +276,28 @@
               tính chuyển đổi số trong thời đại 4.0.
             </p>
 
-            <div class="grid grid-cols-[20.5rem_20.5rem] gap-8 mt-[2.0625rem]">
+            <div
+              class="xl:grid xl:grid-cols-[20.5rem_20.5rem] xl:gap-8 flex flex-col gap-5 mt-[22px] xl:mt-[2.0625rem]"
+            >
               <!-- Box 1 -->
-              <div class="bg-white rounded-[1.25rem] h-[13.125rem]">
+              <div
+                class="bg-white rounded-lg xl:rounded-[1.25rem] h-[106px] w-[166px] xl:w-auto xl:h-[13.125rem]"
+              >
                 <div class="flex flex-col items-center">
-                  <div class="mt-6 ml-[2px]">
+                  <div class="mt-[15.3px] xl:mt-6 ml-10 xl:ml-[2px]">
                     <img
-                      class=""
+                      class="w-[37.5%] xl:w-auto"
                       src="./src/images/userIcon.svg"
                       alt="User Icon"
                     />
                   </div>
                   <h2
-                    class="font-extrabold text-5xl leading-[3.9375rem] text-[#00355D] mt-[1.0625rem] ml-[2px]"
+                    class="font-extrabold text-2xl xl:text-5xl xl:leading-[3.9375rem] text-[#00355D] xl:mt-[1.0625rem] ml-[2px] mr-[3px] xl:mr-0"
                   >
                     70+
                   </h2>
                   <span
-                    class="text-[#00355D] font-medium text-lg mt-[-6px] ml-[1px]"
+                    class="text-[#00355D] font-medium text-[14px] xl:text-lg mt-[3px] xl:mt-[-6px] ml-[1px]"
                     >Khách hàng</span
                   >
                 </div>
@@ -286,22 +305,24 @@
               <!-- End Box 1 -->
 
               <!-- Box 2 -->
-              <div class="bg-white rounded-[1.25rem] h-[13.125rem]">
+              <div
+                class="bg-white rounded-lg xl:rounded-[1.25rem] h-[106px] w-[166px] xl:w-auto xl:h-[13.125rem] order-3 xl:order-none"
+              >
                 <div class="flex flex-col items-center">
-                  <div class="mt-6 ml-[2px]">
+                  <div class="mt-[15.3px] xl:mt-6 ml-10 xl:ml-[2px]">
                     <img
-                      class=""
+                      class="w-[37.5%] xl:w-auto"
                       src="./src/images/folderIcon.svg"
-                      alt="Folder Icon"
+                      alt="User Icon"
                     />
                   </div>
                   <h2
-                    class="font-extrabold text-5xl leading-[3.9375rem] text-[#00355D] mt-[1.0625rem] ml-2"
+                    class="font-extrabold text-2xl xl:text-5xl xl:leading-[3.9375rem] text-[#00355D] xl:mt-[1.0625rem] ml-[2px] mr-[3px] xl:mr-0 xl:ml-[9px]"
                   >
                     500+
                   </h2>
                   <span
-                    class="text-[#00355D] font-medium text-lg mt-[-6px] ml-[1px]"
+                    class="text-[#00355D] font-medium text-[14px] xl:text-lg mt-[3px] xl:mt-[-6px] ml-[1px]"
                     >Dự án đã hoàn thành</span
                   >
                 </div>
@@ -309,22 +330,24 @@
               <!-- End Box 2 -->
 
               <!-- Box 3 -->
-              <div class="bg-white rounded-[1.25rem] h-[13.125rem]">
+              <div
+                class="bg-white rounded-lg xl:rounded-[1.25rem] h-[106px] w-[166px] xl:w-auto xl:h-[13.125rem] order-2 xl:order-none"
+              >
                 <div class="flex flex-col items-center">
-                  <div class="mt-6 ml-[2px]">
+                  <div class="mt-[15.3px] xl:mt-6 ml-10 xl:ml-[2px]">
                     <img
-                      class=""
+                      class="w-[37.5%] xl:w-auto"
                       src="./src/images/libraryIcon.svg"
-                      alt="Library Icon"
+                      alt="User Icon"
                     />
                   </div>
                   <h2
-                    class="font-extrabold text-5xl leading-[3.9375rem] text-[#00355D] mt-[1.0625rem] ml-[8px]"
+                    class="font-extrabold text-2xl xl:text-5xl xl:leading-[3.9375rem] text-[#00355D] xl:mt-[1.0625rem] ml-[2px] xl:ml-[9px] mr-[3px] xl:mr-0"
                   >
                     300+
                   </h2>
                   <span
-                    class="text-[#00355D] font-medium text-lg mt-[-6px] ml-[1px]"
+                    class="text-[#00355D] font-medium text-[14px] xl:text-lg mt-[3px] xl:mt-[-6px] ml-[1px]"
                     >Template đã phát triển</span
                   >
                 </div>
@@ -332,22 +355,24 @@
               <!-- End Box 3 -->
 
               <!-- Box 4 -->
-              <div class="bg-white rounded-[1.25rem] h-[13.125rem]">
+              <div
+                class="bg-white rounded-lg xl:rounded-[1.25rem] h-[106px] w-[166px] xl:w-auto xl:h-[13.125rem] order-4 xl:order-none"
+              >
                 <div class="flex flex-col items-center">
-                  <div class="mt-6 ml-[2px]">
+                  <div class="mt-[15.3px] xl:mt-6 ml-10 xl:ml-[2px]">
                     <img
-                      class=""
+                      class="w-[37.5%] xl:w-auto"
                       src="./src/images/heartIcon.svg"
-                      alt="Heart Icon"
+                      alt="User Icon"
                     />
                   </div>
                   <h2
-                    class="font-extrabold text-5xl leading-[3.9375rem] text-[#00355D] mt-[1.0625rem] ml-4"
+                    class="font-extrabold text-2xl xl:text-5xl xl:leading-[3.9375rem] text-[#00355D] xl:mt-[1.0625rem] ml-[2px] xl:ml-4 mr-[3px] xl:mr-0"
                   >
                     100%
                   </h2>
                   <span
-                    class="text-[#00355D] font-medium text-lg mt-[-6px] ml-[1px]"
+                    class="text-[#00355D] font-medium text-[14px] xl:text-lg mt-[3px] xl:mt-[-6px] ml-[1px]"
                     >Khách hàng hài lòng</span
                   >
                 </div>
@@ -355,15 +380,18 @@
               <!-- End Box 4 -->
             </div>
           </div>
-          <div class="animate-bounce h-16">
+
+          <div
+            class="animate-bounce h-16 absolute top-[30.9%] right-[-51.3%] xl:right-[11.1%] xl:top-[5.4%]"
+          >
             <img
-              class="ml-[12.6875rem] mt-[3.25rem]"
+              class="w-[47.9%] xl:w-auto"
               src="./src/images/rocket.svg"
               alt="Rocket Image "
             />
           </div>
           <img
-            class="absolute right-[-19.3%] bottom-[-10%]"
+            class="absolute right-[-6%] bottom-[-3.4%] xl:right-[-19.3%] xl:bottom-[-10%] w-[61.4%] xl:w-auto"
             src="./src/images/cloud.svg"
             alt="Cloud SVG"
           />
