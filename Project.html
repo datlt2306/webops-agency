@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link
       rel="stylesheet"
       href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
@@ -34,7 +42,7 @@
       </div>
       <!-- /* ================================== HEADER==================================== */ -->
       <header
-        class="max-w-[1394px] h-[50px] lg:h-[103px] items-center header flex justify-between relative z-10 mx-auto"
+        class="lg:max-w-[1394px] max-[1000px]:w-[354px] h-[74px] lg:h-[103px] items-center header flex justify-between relative z-20 mx-auto"
       >
         <!-- Logo -->
         <div
@@ -45,68 +53,65 @@
         <!-- End logo -->
         <!-- Menu -->
         <div
-          class="menu max-lg:hidden lg:flex flex-wrap lg:flex-nowrap menu-mobile -mr-4"
+          class="menu lg:flex flex-wrap lg:flex-nowrap xl:pr-[17px] menu-mobile -mr-4"
         >
-          <ul class="items-center lg:flex">
-            <li class="font-bold leading-6 text-white text-lg">
-              <a
-                class="hover:border-b-2 hover:border-cyan-400 hover:text-cyan-400 m-3"
-                href=""
-                >Về chúng tôi</a
-              >
-            </li>
-            <li class="leading-6 font-bold text-white text-lg">
-              <a
-                class="hover:border-b-2 hover:border-cyan-400 hover:text-cyan-400 m-3"
-                href=""
-                >Dự án</a
-              >
-            </li>
-            <li class="leading-6 font-bold text-white text-lg">
-              <a
-                class="hover:border-b-2 hover:border-cyan-400 hover:text-cyan-400 m-3"
-                href=""
-                >Dịch vụ</a
-              >
-            </li>
-            <li class="leading-6 font-bold text-white text-lg">
-              <a
-                class="hover:border-b-2 hover:border-cyan-400 hover:text-cyan-400 m-3"
-                href=""
-                >Bảng giá</a
-              >
-            </li>
-            <li class="leading-6 font-bold text-white text-lg">
-              <a
-                class="hover:border-b-2 hover:border-cyan-400 hover:text-cyan-400 m-3"
-                href=""
-                >Tin tức</a
-              >
-            </li>
-            <li class="leading-6 font-bold text-white text-lg">
-              <a
-                class="hover:border-b-2 hover:border-cyan-400 hover:text-cyan-400 m-3"
-                href=""
-                >Liên hệ</a
-              >
-            </li>
-          </ul>
-          <div
-            class="ml-3.5 font-bold gap-3 text-white text-lg my-auto flex items-center justify-center bg-[#2AD8CD] rounded-[100px]"
+          <button
+            data-collapse-toggle="navbar-default"
+            type="button"
+            class="inline-flex items-center xl:hidden p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-200"
+            aria-controls="navbar-default"
+            aria-expanded="false"
           >
-            <a class="flex px-6 pt-3 pb-[0.72rem]" href="">
-              <img class="mr-2" src="./img/phone.svg" alt="" />
+            <img class="max-w-max" src="./img/menu mobile.png" alt="" />
+          </button>
 
-              098 - 888 - 8888</a
+          <nav
+            class="-mr-4 xl:w-auto hidden relative xl:block"
+            id="navbar-default"
+          >
+            <ul
+              class="flex flex-col xl:flex-row absolute xl:relative right-[2%] font-bold xl:right-0 w-[22.0625rem] xl:w-auto border xl:border-none rounded-lg max-[394px]:bg-[#264AB9] *:text-lg *:text-white xl:items-center xl:pb-0 pb-3 gap-2.5"
             >
-          </div>
-        </div>
-
-        <div
-          class="ml-3.5 font-bold gap-3 text-white text-lg my-auto items-center justify-center px-6 pt-3 pb-[0.72rem] rounded-[100px] lg:hidden max-lg:block"
-          id="mobileMenuButton"
-        >
-          <img src="./img/menu mobile.png" alt="" />
+              <li
+                class="hover:border-b hover:border-b-[#28EFE2] hover:text-[#28EFE2]"
+              >
+                <a class="pl-3 pr-[13rem] xl:px-2" href="#">Về chúng tôi</a>
+              </li>
+              <li
+                class="hover:border-b hover:border-b-[#28EFE2] hover:text-[#28EFE2]"
+              >
+                <a class="pl-3 pr-[13rem] xl:px-2" href="#">Dự án</a>
+              </li>
+              <li
+                class="hover:border-b hover:border-b-[#28EFE2] hover:text-[#28EFE2]"
+              >
+                <a class="pl-3 pr-[13rem] xl:px-2" href="#">Dịch vụ</a>
+              </li>
+              <li
+                class="hover:border-b hover:border-b-[#28EFE2] hover:text-[#28EFE2]"
+              >
+                <a class="pl-3 pr-[13rem] xl:px-2" href="#">Bảng giá</a>
+              </li>
+              <li
+                class="hover:border-b hover:border-b-[#28EFE2] hover:text-[#28EFE2]"
+              >
+                <a class="pl-3 pr-[13rem] xl:px-2" href="#">Tin tức</a>
+              </li>
+              <li
+                class="hover:border-b hover:border-b-[#28EFE2] hover:text-[#28EFE2]"
+              >
+                <a class="pl-3 pr-[13rem] xl:px-2" href="#">Liên hệ</a>
+              </li>
+              <li
+                class="font-extrabold py-[0.625rem] px-[25px] rounded-full bg-gradient-to-r from-[#10B8C4] to-[#2AD8CD]"
+              >
+                <a class="flex items-center gap-3" href="#"
+                  ><i class="fa-solid fa-phone-volume text-xl text-white"></i>
+                  <span class="text-white">098 - 888 - 8888</span></a
+                >
+              </li>
+            </ul>
+          </nav>
         </div>
         <!-- ENd Menu -->
       </header>
@@ -115,7 +120,7 @@
 
       <main class="main max-w-[1408px] z-10 relative mx-auto">
         <!-- Title Webops -->
-        <div class="title-webOps text-[64px] ml-4">
+        <div class="title-webOps text-[64px] lg:ml-4">
           <p
             class="lg:text-[64px] text-2xl font-extrabold leading-0 lg:leading-[87.3px] text-center lg:pt-[76px] text-white"
           >
@@ -180,7 +185,7 @@
         <!-- End search project -->
         <!-- menu project -->
         <section
-          class="menu-project lg:mr-[4.563rem] max-lg:mt-[20px] lg:mt-[2.9rem] mx-auto lg:max-w-[1246px] lg:h-[49px]"
+          class="menu-project lg:mr-[4.563rem] max-lg:mt-[23px] lg:mt-[2.9rem] mx-auto lg:max-w-[1246px] lg:h-[49px]"
         >
           <div class="max-w-[1232px] overflow-x-hidden mx-auto">
             <ul
@@ -241,11 +246,11 @@
 
         <!-- Conten -->
         <section
-          class="content pt-10 mx-auto min-[600px]:grid min-[600px]:grid-cols-3 xl:grid xl:grid-cols-4 max-lg:grid max-lg:grid-cols-2 lg:gap-x-8 max-lg:gap-y-[10px] lg:gap-y-[2.25rem]"
+          class="content max-[1000px]:pt-[1.5rem] mx-auto min-[600px]:grid min-[600px]:grid-cols-3 lg:mt-[42px] xl:grid xl:grid-cols-4 max-lg:grid max-lg:grid-cols-2 lg:gap-x-8 max-lg:gap-y-[10px] lg:gap-y-[2.25rem]"
         >
           <!-- project -->
           <div
-            class="project relative mx-auto w-full h-[432px] max-lg:w-[167px] cursor-pointer group max-lg:h-[214px]"
+            class="project relative mx-auto w-full h-[432px] max-lg:w-[167px] cursor-pointer group max-lg:h-[224px]"
           >
             <a class="w-full h-full max-w-[312px] max-h-[333px]" href="">
               <div class="relative max-w-[312px] max-h-[333px] mx-auto">
@@ -295,7 +300,7 @@
           <!-- end project -->
           <!-- project -->
           <div
-            class="project relative mx-auto w-full h-[432px] max-lg:w-[167px] cursor-pointer group max-lg:h-[214px]"
+            class="project relative mx-auto w-full h-[432px] max-lg:w-[167px] cursor-pointer group max-lg:h-[224px]"
           >
             <a class="w-full h-full max-w-[312px] max-h-[333px]" href="">
               <div class="relative max-w-[312px] max-h-[333px] mx-auto">
@@ -346,7 +351,7 @@
 
           <!-- project -->
           <div
-            class="project relative mx-auto w-full h-[432px] max-lg:w-[167px] cursor-pointer group max-lg:h-[214px]"
+            class="project relative mx-auto w-full h-[432px] max-lg:w-[167px] cursor-pointer group max-lg:h-[224px]"
           >
             <a class="w-full h-full max-w-[312px] max-h-[333px]" href="">
               <div class="relative max-w-[312px] max-h-[333px] mx-auto">
@@ -396,7 +401,7 @@
           <!-- end project -->
           <!-- project -->
           <div
-            class="project relative mx-auto w-full h-[432px] max-lg:w-[167px] cursor-pointer group max-lg:h-[214px]"
+            class="project relative mx-auto w-full h-[432px] max-lg:w-[167px] cursor-pointer group max-lg:h-[224px]"
           >
             <a class="w-full h-full max-w-[312px] max-h-[333px]" href="">
               <div class="relative max-w-[312px] max-h-[333px] mx-auto">
@@ -447,7 +452,7 @@
 
           <!-- project -->
           <div
-            class="project relative mx-auto w-full h-[432px] max-lg:w-[167px] cursor-pointer group max-lg:h-[214px]"
+            class="project relative mx-auto w-full h-[432px] max-lg:w-[167px] cursor-pointer group max-lg:h-[224px]"
           >
             <a class="w-full h-full max-w-[312px] max-h-[333px]" href="">
               <div class="relative max-w-[312px] max-h-[333px] mx-auto">
@@ -497,7 +502,7 @@
           <!-- end project -->
           <!-- project -->
           <div
-            class="project relative mx-auto w-full h-[432px] max-lg:w-[167px] cursor-pointer group max-lg:h-[214px]"
+            class="project relative mx-auto w-full h-[432px] max-lg:w-[167px] cursor-pointer group max-lg:h-[224px]"
           >
             <a class="w-full h-full max-w-[312px] max-h-[333px]" href="">
               <div class="relative max-w-[312px] max-h-[333px] mx-auto">
@@ -548,7 +553,7 @@
 
           <!-- project -->
           <div
-            class="project relative mx-auto w-full h-[432px] max-lg:w-[167px] cursor-pointer group max-lg:h-[214px]"
+            class="project relative mx-auto w-full h-[432px] max-lg:w-[167px] cursor-pointer group max-lg:h-[224px]"
           >
             <a class="w-full h-full max-w-[312px] max-h-[333px]" href="">
               <div class="relative max-w-[312px] max-h-[333px] mx-auto">
@@ -598,7 +603,7 @@
           <!-- end project -->
 
           <div
-            class="project relative mx-auto w-full h-[432px] max-lg:w-[167px] cursor-pointer group max-lg:h-[214px]"
+            class="project relative mx-auto w-full h-[432px] max-lg:w-[167px] cursor-pointer group max-lg:h-[224px]"
           >
             <a class="w-full h-full max-w-[312px] max-h-[333px]" href="">
               <div class="relative max-w-[312px] max-h-[333px] mx-auto">
@@ -650,10 +655,10 @@
         <!--end Conten -->
 
         <section
-          class="mx-auto pl-[10px] flex justify-center lg:pt-[10px] items-center text-lg font-bold text-white mb-24 mt-[45px] w-[250px] h-[49px]"
+          class="mx-auto pl-[10px] flex justify-center lg:pt-[10px] items-center text-lg font-bold text-white max-[1000px]:text-[14px] lg:mb-24 max-[1000px]:w-[187px] max-[1000px]:h-[35px] max-[1000px]:mt-3.5 lg:mt-[45px] lg:w-[250px] lg:h-[49px]"
         >
           <a
-            class="bg-[#00B8C4] ml-[10px] gap-1 w-[219px] h-[49px] items-center rounded-[100px] justify-center flex"
+            class="bg-[#00B8C4] max-[1000px]:w-full max-[1000px]:h-full ml-[10px] max-[1000px]:-ml-[3px] gap-1 lg:w-[219px] lg:h-[49px] items-center rounded-[100px] justify-center flex"
             href=""
             >Xem thêm dự án
 
@@ -666,7 +671,7 @@
         </section>
         <!-- end dự án -->
         <section
-          class="max-w-[1409px] h-[728px] items-center lg:relative flex justify-center"
+          class="lg:max-w-[1409px] lg:h-[728px] items-center lg:relative flex justify-center"
         >
           <div
             class="z-50 absolute h-[374px] left-[4.438rem] top-40 font-extrabold lg:block max-lg:hidden max-w-[350px]"
@@ -689,7 +694,7 @@
             class="lg:w-[688px] lg:h-[478px] lg:absolute w-full font-bold lg:right-[6.938rem] text-white z-40"
           >
             <h1
-              class="lg:text-[32px] lg:text-white text-[#00355D] lg:pt-[10px] text-2xl text-center mb-[2.8rem]"
+              class="lg:text-[32px] lg:text-white text-[#00355D] lg:pt-[5px] text-2xl text-center mb-[2.8rem]"
             >
               ĐĂNG KÝ NHẬN TƯ VẤN MIỄN PHÍ
             </h1>
@@ -698,28 +703,28 @@
               class="lg:grid max-lg:w-[90%] max-lg:mx-auto lg:grid-cols-2 lg:gap-y-[9px] lg:gap-x-8 lg:justify-end lg:items-center"
             >
               <input
-                class="text-white rounded-[10px] text-[14px] max-lg:w-full my-3 text-left pr-[54px] pl-[12px] placeholder-[#A1A1AA] lg:placeholder-white py-2 lg:text-lg font-bold bg-transparent border-2 border-[#A1A1AA] lg:border-white outline-none"
+                class="text-white rounded-[10px] text-[14px] max-lg:w-full my-1.5 text-left pr-[54px] pl-[12px] placeholder-[#A1A1AA] lg:placeholder-white py-2 lg:text-lg font-bold bg-transparent border-2 border-[#A1A1AA] lg:border-white outline-none"
                 type="text"
                 placeholder="Họ Tên"
               />
               <input
-                class="text-white rounded-[10px] text-[14px] w-full my-3 text-left pr-[54px] pl-[12px] placeholder-[#A1A1AA] lg:placeholder-white py-2 lg:text-lg font-bold bg-transparent border-2 border-[#A1A1AA] lg:border-white outline-none"
+                class="text-white rounded-[10px] text-[14px] w-full my-1.5 text-left pr-[54px] pl-[12px] placeholder-[#A1A1AA] lg:placeholder-white py-2 lg:text-lg font-bold bg-transparent border-2 border-[#A1A1AA] lg:border-white outline-none"
                 type="number"
                 min="0"
                 placeholder="Số điện thoại"
               />
               <input
-                class="text-white rounded-[10px] text-[14px] w-full my-3 text-left pr-[54px] pl-[12px] placeholder-[#A1A1AA] lg:placeholder-white py-2 lg:text-lg font-bold bg-transparent border-2 border-[#A1A1AA] lg:border-white outline-none"
+                class="text-white rounded-[10px] text-[14px] w-full my-1.5 text-left pr-[54px] pl-[12px] placeholder-[#A1A1AA] lg:placeholder-white py-2 lg:text-lg font-bold bg-transparent border-2 border-[#A1A1AA] lg:border-white outline-none"
                 type="email"
                 placeholder="Email"
               />
               <input
-                class="text-white rounded-[10px] text-[14px] w-full my-3 text-left pr-[54px] pl-[12px] placeholder-[#A1A1AA] lg:placeholder-white py-2 lg:text-lg font-bold bg-transparent border-2 border-[#A1A1AA] lg:border-white outline-none"
+                class="text-white rounded-[10px] text-[14px] w-full my-1.5 text-left pr-[54px] pl-[12px] placeholder-[#A1A1AA] lg:placeholder-white py-2 lg:text-lg font-bold bg-transparent border-2 border-[#A1A1AA] lg:border-white outline-none"
                 type="text"
                 placeholder="Dịch vụ cần từ vấn"
               />
               <textarea
-                class="outline-none text-[14px] lg:text-lg w-full lg:my-3 h-[120px] bg-transparent font-bold text-white placeholder-[#A1A1AA] lg:placeholder-white lg:w-[688px] lg:h-[143px] py-2 pl-3 borde r-2 border-2 border-[#A1A1AA] lg:border-white rounded-[10px]"
+                class="outline-none text-[14px] lg:text-lg w-full max-[1000px]:mt-2 lg:my-3 h-[120px] bg-transparent font-bold text-white placeholder-[#A1A1AA] lg:placeholder-white lg:w-[688px] lg:h-[143px] py-2 pl-3 borde r-2 border-2 border-[#A1A1AA] lg:border-white rounded-[10px]"
                 name=""
                 id=""
                 placeholder="Nội dung"
@@ -885,5 +890,6 @@
       <div class="max-w-full sm:hidden bg-[#23233F] h-[704px] mt-24"></div>
       <!-- ======================================End Dự án webOps Agency ====================== -->
     </div>
+    <script src="./node_modules/flowbite/dist/flowbite.min.js"></script>
   </body>
 </html>
