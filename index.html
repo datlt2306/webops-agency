@@ -45,12 +45,14 @@
   </head>
   <body>
     <header>
-      <div class="overflow-hidden py-5">
+      <nav
+        class="relative border-gray-200 dark:bg-gray-900 xl:max-w-[1393px] mx-auto"
+      >
         <div
-          class="max-w-[353px] xl:max-w-[87.0625rem] flex justify-between items-center mx-auto relative"
+          class="max-w-[353px] xl:max-w-[1393px] flex flex-wrap items-center justify-between mx-auto pt-4 xl:pt-[21px] pl-[1px] xl:pl-2 pb-1 xl:pb-[10px]"
         >
           <div
-            class="overflow-hidden absolute left-[-22.6%] bottom-[-67%] xl:bottom-[-30%] -z-10"
+            class="overflow-hidden absolute xl:left-[-22.7%] left-[-3.3%] w-[103.4%] bottom-[-20%] xl:bottom-[-10%] -z-10"
           >
             <img
               class="max-w-max"
@@ -64,24 +66,36 @@
               src="./src/images/logo.svg"
               alt="Logo"
           /></a>
-        </div>
-
-        <div
-          class="flex flex-col xl:flex-row absolute z-10 top-[2.8%] right-[4%] xl:items-baseline xl:mr-[9.4%] xl:mt-1"
-        >
           <button
             data-collapse-toggle="navbar-default"
             type="button"
-            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-200"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
             aria-controls="navbar-default"
             aria-expanded="false"
           >
-            <img class="max-w-max" src="./src/icons/hamburger.svg" alt="" />
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-5 h-5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 17 14"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15"
+              />
+            </svg>
           </button>
-
-          <nav class="-mr-4 xl:w-auto hidden xl:block" id="navbar-default">
+          <div
+            class="absolute xl:relative bottom-[-14%] right-[4%] xl:right-0 hidden w-full md:block md:w-auto"
+            id="navbar-default"
+          >
             <ul
-              class="flex flex-col xl:flex-row absolute xl:relative right-[2%] font-bold xl:right-0 w-[22.0625rem] xl:w-auto border xl:border-none rounded-lg bg-white *:text-lg *:text-[#00355D] xl:items-center xl:pb-0 pb-3 gap-2.5"
+              class="flex flex-col xl:flex-row absolute xl:relative right-[2%] font-bold xl:right-0 xl:-mr-2 w-[22.0625rem] xl:w-auto border xl:border-none rounded-lg bg-white *:text-lg *:text-[#00355D] xl:items-center xl:pb-0 pb-3 gap-2.5"
             >
               <li
                 class="hover:border-b hover:border-b-[#28EFE2] hover:text-[#28EFE2]"
@@ -122,9 +136,9 @@
                 >
               </li>
             </ul>
-          </nav>
+          </div>
         </div>
-      </div>
+      </nav>
     </header>
     <!-- End Header -->
 
@@ -132,7 +146,7 @@
     <main>
       <!-- Hero Section -->
       <section
-        class="pt-[0.9rem] xl:pt-[6.125rem] xl:pb-[5.875rem] max-w-[353px] xl:max-w-[87.0625rem] m-auto"
+        class="pt-[1.6rem] xl:pt-[6.7rem] xl:pb-[5.875rem] max-w-[353px] xl:max-w-[87.0625rem] m-auto"
       >
         <div class="grid grid-cols-1 xl:grid-cols-[42.3125rem_45rem]">
           <div
@@ -391,7 +405,7 @@
             />
           </div>
           <img
-            class="absolute right-[-6%] bottom-[-3.4%] xl:right-[-19.3%] xl:bottom-[-10%] w-[61.4%] xl:w-auto"
+            class="absolute right-[-6%] bottom-[-3.4%] xl:right-[-18.6%] xl:bottom-[-10%] w-[61.4%] xl:w-auto"
             src="./src/images/cloud.svg"
             alt="Cloud SVG"
           />
@@ -425,12 +439,12 @@
             </p>
           </div>
 
-          <div class="relative xl:ml-[2.0625rem] mt-6 xl:mt-0">
+          <div class="relative xl:ml-[2.0625rem] mt-6 xl:mt-0 mx-auto">
             <div
               class="h-[9.4rem] xl:h-[17.5625rem] w-[393px] xl:w-[58rem] bg-gradient-to-b from-[#6B92FF] to-[#264AB9] rounded-lg xl:rounded-[1.75rem] absolute top-0 left-0"
             ></div>
 
-            <div class="ml-5 xl:ml-12 w-[353px] xl:w-[832px] mx-auto">
+            <div class="ml-5 xl:ml-12 w-[353px] xl:w-[832px]">
               <div class="swiper mySwiper2">
                 <div class="swiper-wrapper mt-5 xl:mt-12 pb-[10px]">
                   <!-- Block 1 -->
@@ -618,7 +632,7 @@
 
       <!--  Procedure Section -->
       <section
-        class="bg-[#264AB9] w-full relative mt-10 xl:mt-[4.4375rem] pb-[4.75rem]"
+        class="bg-[#264AB9] w-full relative mt-10 xl:mt-[4.4375rem] pb-[2.3rem] xl:pb-[4.75rem]"
       >
         <img
           class="absolute w-[41%] xl:w-auto mt-[-1.375rem] xl:mt-[-4.375rem]"
@@ -1106,58 +1120,38 @@
 
       <!-- Section Các Dự Án Tiêu Biểu -->
       <section
-        class="overflow-hidden bg-gradient-to-r from-[##F0F7FF] to-[#E2EBF6] py-[30.5625rem] relative z-0 flex justify-center items-center"
+        class="overflow-hidden bg-[#E2EBF6] pt-[32.3rem] pb-[25.8rem] xl:py-[30.5625rem] relative z-0 flex justify-center items-center"
       >
         <div
-          class="absolute -top-[11.1875rem] left-[0.0625rem] max-1500px:-left-3"
+          class="absolute -top-[0.1875rem] xl:-top-[11.1875rem] left-[3.1875rem] xl:left-[0.0625rem]"
         >
           <img src="./src/images/2987331 1.svg" alt="" />
         </div>
 
         <div
-          class="absolute h-full flex justify-center items-center gap-[10rem]"
+          class="absolute h-full flex flex-col-reverse xl:flex-row justify-center items-center gap-5 xl:gap-[10rem]"
         >
           <div
-            class="absolute overflow-hidden -right-[8.5rem] z-0 mt-[0.125rem] max-1686px:-right-[4.75rem] max-1600px:-right-[2rem] max-1500px:hidden"
+            class="absolute overflow-hidden -right-[8.5rem] z-0 mt-[0.125rem] hidden xl:block"
           >
             <img src="./src/images/Rectangle 236.svg" alt="" />
           </div>
 
-          <div class="w-[58rem] pt-[0.125rem]">
-            <div class="swiper mySwiper w-full h-full">
-              <div class="swiper-wrapper">
-                <div
-                  class="swiper-slide text-center text-lg flex justify-center items-center"
-                >
+          <div
+            class="w-[353px] xl:w-[58rem] pt-[0.125rem] flex flex-col xl:block"
+          >
+            <div class="w-full h-full">
+              <div class="flex flex-col xl:flex-row gap-4 xl:gap-8">
+                <div class="flex justify-center items-center z-10">
                   <img
-                    class="block w-full h-full object-cover"
+                    class="block xl:w-full xl:h-full object-cover"
                     src="./src/images/Rectangle 235.png"
                     alt=""
                   />
                 </div>
-                <div
-                  class="swiper-slide text-center text-lg flex justify-center items-center"
-                >
+                <div class="flex justify-center items-center z-10">
                   <img
-                    class="block w-full h-full object-cover"
-                    src="src/images/Rectangle 236.png"
-                    alt=""
-                  />
-                </div>
-                <div
-                  class="swiper-slide text-center text-lg flex justify-center items-center"
-                >
-                  <img
-                    class="block w-full h-full object-cover"
-                    src="./src/images/Rectangle 235.png"
-                    alt=""
-                  />
-                </div>
-                <div
-                  class="swiper-slide text-center text-lg flex justify-center items-center"
-                >
-                  <img
-                    class="block w-full h-full object-cover"
+                    class="block xl:w-full xl:h-full object-cover"
                     src="src/images/Rectangle 236.png"
                     alt=""
                   />
@@ -1165,42 +1159,37 @@
               </div>
             </div>
             <div
-              class="flex justify-center items-center gap-8 pt-8 mr-1 pl-[0.25rem] z-30"
+              class="flex justify-center items-center gap-5 xl:gap-8 pt-4 xl:pt-8 mr-1 pl-[0.25rem] z-30"
             >
-              <div class="button-prev">
+              <div class="button-prev w-6 xl:w-auto">
                 <img src="src/icons/arrow-left.svg" alt="" />
               </div>
-              <div class="button-next">
+              <div class="button-next w-6 xl:w-auto">
                 <img src="src/icons/arrow-right.svg" alt="" />
               </div>
             </div>
           </div>
           <div
-            class="flex flex-col -mt-[84px] z-10 gap-[3.0625rem] pb-[3.375rem] -mr-[1.0625rem] justify-center max-1500px:absolute max-1500px:top-[10%] max-1500px:gap-0 max-1500px:w-[628px]"
+            class="flex flex-col -mt-[104px] xl:-mt-[84px] z-10 xl:gap-[3.0625rem] xl:pb-[3.375rem] xl:-mr-[1.0625rem] justify-center items-center xl:items-end"
           >
-            <div class="max-1500px:flex max-1500px:justify-center">
+            <div class="mb-[13px] xl:mb-0">
               <img
-                class="float-right max-1500px:float-none max-1500px:hidden"
+                class="xl:float-right hidden xl:block"
                 src="src/icons/archive.svg"
                 alt=""
               />
               <img
-                class="hidden max-1500px:block max-1500px:w-1/5"
-                src="src/icons/archive-mobile.svg"
+                class="block xl:hidden"
+                src="src/icons/archive-mobile.png"
                 alt=""
               />
             </div>
             <div>
               <h1
-                class="text-[4rem] font-extrabold text-white leading-[5.4375rem] text-right m-0 pb-[1px] max-1500px:hidden"
+                class="text-2xl xl:text-[4rem] font-extrabold text-[#00355D] xl:text-white xl:leading-[5.4375rem] text-right m-0 pb-[1px]"
               >
                 Các Dự Án
-                <span class="block">Tiêu Biểu</span>
-              </h1>
-              <h1
-                class="hidden max-1500px:block text-[4rem] font-extrabold text-tahiti leading-[5.4375rem] text-right m-0 pb-[1px]"
-              >
-                Các Dự Án Tiêu Biểu
+                <span class="xl:block">Tiêu Biểu</span>
               </h1>
             </div>
           </div>
@@ -1210,73 +1199,73 @@
 
       <!-- Section Hiện Thị Danh Sách -->
       <section
-        class="pt-24 pb-[10.1875rem] relative overflow-hidden"
+        class="pt-8 xl:pt-24 xl:pb-[10.1875rem] relative overflow-hidden"
         style="
           background: url('./src/images/hanoiline [Converted] 1.svg') center
             bottom no-repeat;
         "
       >
-        <div class="max-w-[87.0625rem] m-auto">
+        <div class="max-w-[353px] xl:max-w-[87.0625rem] m-auto">
           <div class="flex flex-col justify-center items-center">
             <h4
-              class="font-semibold text-[2rem] text-[#00355D] ml-[1.125rem] mt-1"
+              class="font-semibold text-[14px] xl:text-[2rem] text-[#00355D] xl:ml-[1.125rem] mt-1"
             >
               Xây dựng website chuyên nghiệp, sáng tạo
             </h4>
             <h3
-              class="text-[2rem] font-bold ml-[1.0625rem] mt-[0.9375rem] pt-[1.1875rem] pb-5 px-[2.90625rem] rounded-full max-w-[48.375rem] bg-gradient-to-r from-[#264AB9] to-[#6B92FF] text-white"
+              class="text-[14px] xl:text-[2rem] font-bold xl:ml-[1.0625rem] mt-2 xl:mt-[0.875rem] px-[15px] py-[10px] xl:pt-[1.1875rem] xl:pb-5 xl:px-[2.90625rem] rounded-full max-w-[48.375rem] bg-gradient-to-r from-[#264AB9] to-[#6B92FF] text-white xl:uppercase"
             >
-              KHÔNG CHỈ ĐẸP MẮT, MÀ CÒN CHUẨN SEO
+              Không chỉ đẹp mắt mà còn chuẩn SEO
             </h3>
           </div>
           <ul
-            class="flex items-center *:font-bold *:text-lg *:text-[#00355D] border border-[#264AB9] rounded-full h-[3.0625rem] max-w-[77.25rem] m-auto mt-[2.875rem] mr-[4.3125rem] z-10"
+            class="flex items-center *:font-bold *:text-[14px] xl:*:text-lg *:text-[#00355D] border border-[#264AB9] rounded-full h-[35px] xl:h-[3.0625rem] w-[951px] xl:w-[77.25rem] m-auto mt-[23px] xl:mt-[2.875rem] mr-[4.3125rem] z-10 overflow-x-scroll xl:overflow-x-visible"
           >
             <li>
               <a
-                class="py-3 px-8 hover:bg-gradient-to-r from-[#264AB9] to-[#6B92FF] hover:text-white rounded-full"
+                class="px-6 py-2 xl:py-3 xl:px-8 hover:bg-gradient-to-r from-[#264AB9] to-[#6B92FF] hover:text-white rounded-full"
                 href="#"
                 >Tài chính</a
               >
             </li>
             <li>
               <a
-                class="py-3 px-8 hover:bg-gradient-to-r from-[#264AB9] to-[#6B92FF] hover:text-white rounded-full"
+                class="px-6 py-2 xl:py-3 xl:px-8 hover:bg-gradient-to-r from-[#264AB9] to-[#6B92FF] hover:text-white rounded-full"
                 href="#"
                 >Giáo dục</a
               >
             </li>
             <li>
               <a
-                class="py-3 px-8 hover:bg-gradient-to-r from-[#264AB9] to-[#6B92FF] hover:text-white rounded-full"
+                class="px-6 py-2 xl:py-3 xl:px-8 hover:bg-gradient-to-r from-[#264AB9] to-[#6B92FF] hover:text-white rounded-full"
                 href="#"
                 >Thương mại điện tử</a
               >
             </li>
             <li>
               <a
-                class="py-3 px-8 hover:bg-gradient-to-r from-[#264AB9] to-[#6B92FF] hover:text-white rounded-full"
+                class="px-6 py-2 xl:py-3 xl:px-8 hover:bg-gradient-to-r from-[#264AB9] to-[#6B92FF] hover:text-white rounded-full"
                 href="#"
                 >Bất động sản</a
               >
             </li>
             <li>
               <a
-                class="py-3 px-8 hover:bg-gradient-to-r from-[#264AB9] to-[#6B92FF] hover:text-white rounded-full"
+                class="px-6 py-2 xl:py-3 xl:px-8 hover:bg-gradient-to-r from-[#264AB9] to-[#6B92FF] hover:text-white rounded-full"
                 href="#"
                 >Du lịch - Giải trí</a
               >
             </li>
             <li>
               <a
-                class="py-3 px-8 hover:bg-gradient-to-r from-[#264AB9] to-[#6B92FF] hover:text-white rounded-full"
+                class="px-6 py-2 xl:py-3 xl:px-8 hover:bg-gradient-to-r from-[#264AB9] to-[#6B92FF] hover:text-white rounded-full"
                 href="#"
                 >Spa - Làm đẹp</a
               >
             </li>
             <li>
               <a
-                class="py-3 px-8 hover:bg-gradient-to-r from-[#264AB9] to-[#6B92FF] hover:text-white rounded-full"
+                class="px-6 py-2 xl:py-3 xl:px-8 hover:bg-gradient-to-r from-[#264AB9] to-[#6B92FF] hover:text-white rounded-full"
                 href="#"
                 >Truyền thông</a
               >
@@ -1284,186 +1273,200 @@
           </ul>
 
           <div>
-            <button class="z-10 absolute top-[57.8%] left-[11.6%]">
+            <button
+              class="z-10 absolute top-[57.8%] left-[11.6%] hidden xl:block"
+            >
               <img src="./src/icons/arrow-left.svg" alt="arrow left" />
             </button>
 
             <div
-              class="sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 pt-10 items-center gap-x-12 gap-y-[2.4rem] mx-auto grid grid-cols-1"
+              class="sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 pt-[7.75rem] xl:pt-10 items-center gap-x-[20px] xl:gap-x-12 xl:gap-y-[2.4rem] mx-auto grid grid-cols-1"
             >
               <!-- project -->
-              <div class="project relative mx-auto w-[20.5rem] h-[27rem]">
+              <div
+                class="project relative mx-auto w-[10.4375rem] xl:w-[20.5rem] h-[213px] xl:h-[27rem]"
+              >
                 <div
-                  class="w-[20.5rem] h-[5.3125rem] bg-[#00355D] rounded-[1.25rem] pt-2 absolute z-20 left-0 bottom-1"
+                  class="w-[163px] xl:w-[20.5rem] xl:h-[5.3125rem] bg-[#00355D] rounded-[1.25rem] xl:pt-2 absolute z-20 left-[2px] xl:left-0 xl:bottom-1 top-[69.5%] xl:top-auto"
                 >
                   <img
-                    class="absolute z-20 left-0 bottom-[5.2rem]"
+                    class="absolute w-[53%] xl:w-auto z-20 left-0 bottom-[5.2rem]"
                     src="./src/images/tamgiactrai.svg"
                     alt=""
                   />
                   <img
-                    class="absolute z-20 right-0 bottom-[5.2rem]"
+                    class="absolute w-[53%] xl:w-auto z-20 right-0 bottom-[5.2rem]"
                     src="./src/images/tamgiacphai.svg"
                     alt=""
                   />
                 </div>
                 <a href="">
                   <img
-                    class="absolute z-10 ml-2 transition-transform transform hover:translate-y-[-6px]"
+                    class="absolute top-[-51%] xl:top-auto w-[157px] xl:w-auto z-10 ml-[5px] xl:ml-2 transition-transform transform hover:translate-y-[-6px]"
                     src="./src/images/project1.png"
                     alt=""
                 /></a>
                 <a
                   href=""
-                  class="text-project absolute z-20 bottom-5 ml-[0.8rem] mx-auto"
+                  class="text-project absolute z-20 top-[31.3%] xl:top-auto xl:bottom-5 ml-[1.2rem] xl:ml-[0.8rem] mx-auto"
                 >
                   <div
-                    class="text-[#FFFFFF] z-20 w-[19rem] text-center m font-bold text-lg"
+                    class="text-[#FFFFFF] z-20 w-auto xl:w-[19rem] text-center m font-bold text-xs xl:text-lg"
                   >
                     Thẩm Mỹ Viện
                   </div>
                   <div
-                    class="text text-[#FFFFFF] z-20 w-[19rem] text-center m font-bold text-lg"
+                    class="text-[#FFFFFF] z-20 w-auto xl:w-[19rem] text-center m font-bold text-xs xl:text-lg"
                   >
                     Beauty Angel Academy
                   </div>
                 </a>
                 <div
-                  class="backgroud-project bg-[#00355D] absolute bottom-1 w-[20.5rem] h-[10.5625rem] rounded-[1.25rem]"
+                  class="backgroud-project bg-[#00355D] absolute xl:bottom-1 w-[10.4375rem] xl:w-[20.5rem] h-[5.375rem] xl:h-[10.5625rem] rounded-lg xl:rounded-[1.25rem] top-[10.5%] xl:top-auto"
                 ></div>
               </div>
               <!-- end project -->
-
               <!-- project -->
-              <div class="project relative mx-auto w-[20.5rem] h-[27rem]">
+              <div
+                class="project relative mx-auto w-[10.4375rem] xl:w-[20.5rem] h-[213px] xl:h-[27rem]"
+              >
                 <div
-                  class="w-[20.5rem] h-[5.3125rem] bg-[#00355D] rounded-[1.25rem] pt-2 absolute z-20 left-0 bottom-1"
+                  class="w-[163px] xl:w-[20.5rem] xl:h-[5.3125rem] bg-[#00355D] rounded-[1.25rem] xl:pt-2 absolute z-20 left-[2px] xl:left-0 xl:bottom-1 top-[69.5%] xl:top-auto"
                 >
                   <img
-                    class="absolute z-20 left-1 bottom-[5.2rem]"
+                    class="absolute w-[53%] xl:w-auto z-20 left-0 bottom-[5.2rem]"
                     src="./src/images/tamgiactrai.svg"
                     alt=""
                   />
                   <img
-                    class="absolute z-20 right-1 bottom-[5.2rem]"
+                    class="absolute w-[53%] xl:w-auto z-20 right-0 bottom-[5.2rem]"
                     src="./src/images/tamgiacphai.svg"
                     alt=""
                   />
                 </div>
                 <a href="">
                   <img
-                    class="absolute z-10 ml-2 transition-transform transform hover:translate-y-[-6px]"
-                    src="./src/images/project2.png"
+                    class="absolute top-[-51%] xl:top-auto w-[157px] xl:w-auto z-10 ml-[5px] xl:ml-2 transition-transform transform hover:translate-y-[-6px]"
+                    src="./src/images/project1.png"
                     alt=""
                 /></a>
                 <a
                   href=""
-                  class="text-project absolute z-20 bottom-5 ml-[0.8rem] mx-auto"
+                  class="text-project absolute z-20 top-[31.3%] xl:top-auto xl:bottom-5 ml-[1.2rem] xl:ml-[0.8rem] mx-auto"
                 >
                   <div
-                    class="text-[#FFFFFF] z-20 w-[19rem] text-center m font-bold text-lg"
+                    class="text-[#FFFFFF] z-20 w-auto xl:w-[19rem] text-center m font-bold text-xs xl:text-lg"
                   >
-                    Công Ty Cổ Phần Gỗ Ép
+                    Thẩm Mỹ Viện
                   </div>
                   <div
-                    class="text text-[#FFFFFF] z-20 w-[19rem] text-center m font-bold text-lg"
+                    class="text-[#FFFFFF] z-20 w-auto xl:w-[19rem] text-center m font-bold text-xs xl:text-lg"
                   >
-                    Great Wood
+                    Beauty Angel Academy
                   </div>
                 </a>
                 <div
-                  class="backgroud-project bg-[#00355D] absolute bottom-1 w-[20.5rem] h-[10.5625rem] rounded-[1.25rem]"
+                  class="backgroud-project bg-[#00355D] absolute xl:bottom-1 w-[10.4375rem] xl:w-[20.5rem] h-[5.375rem] xl:h-[10.5625rem] rounded-lg xl:rounded-[1.25rem] top-[10.5%] xl:top-auto"
                 ></div>
               </div>
               <!-- end project -->
-
               <!-- project -->
-              <div class="project relative mx-auto w-[20.5rem] h-[27rem]">
+              <div
+                class="project relative mx-auto w-[10.4375rem] xl:w-[20.5rem] h-[213px] xl:h-[27rem] hidden xl:block"
+              >
                 <div
-                  class="w-[20.5rem] h-[5.3125rem] bg-[#00355D] rounded-[1.25rem] pt-2 absolute z-20 left-0 bottom-1"
+                  class="w-[163px] xl:w-[20.5rem] xl:h-[5.3125rem] bg-[#00355D] rounded-[1.25rem] xl:pt-2 absolute z-20 left-[2px] xl:left-0 xl:bottom-1 top-[69.5%] xl:top-auto"
                 >
                   <img
-                    class="absolute z-20 left-0 bottom-[5.2rem]"
+                    class="absolute w-[53%] xl:w-auto z-20 left-0 bottom-[5.2rem]"
                     src="./src/images/tamgiactrai.svg"
                     alt=""
                   />
                   <img
-                    class="absolute z-20 right-0 bottom-[5.2rem]"
+                    class="absolute w-[53%] xl:w-auto z-20 right-0 bottom-[5.2rem]"
                     src="./src/images/tamgiacphai.svg"
                     alt=""
                   />
                 </div>
                 <a href="">
                   <img
-                    class="absolute z-10 ml-2 transition-transform transform hover:translate-y-[-6px]"
-                    src="./src/images/project3.png"
+                    class="absolute top-[-51%] xl:top-auto w-[157px] xl:w-auto z-10 ml-[5px] xl:ml-2 transition-transform transform hover:translate-y-[-6px]"
+                    src="./src/images/project1.png"
                     alt=""
                 /></a>
                 <a
                   href=""
-                  class="text-project absolute z-20 bottom-[2.875rem] ml-[0.8rem] mx-auto"
+                  class="text-project absolute z-20 top-[31.3%] xl:top-auto xl:bottom-5 ml-[1.2rem] xl:ml-[0.8rem] mx-auto"
                 >
                   <div
-                    class="text-[#FFFFFF] text-center z-20 w-[19rem] m font-bold text-lg overflow-hidden whitespace-nowrap"
+                    class="text-[#FFFFFF] z-20 w-auto xl:w-[19rem] text-center m font-bold text-xs xl:text-lg"
                   >
-                    Công Ty Cổ Phần Gỗ Ép Great Wood
+                    Thẩm Mỹ Viện
+                  </div>
+                  <div
+                    class="text-[#FFFFFF] z-20 w-auto xl:w-[19rem] text-center m font-bold text-xs xl:text-lg"
+                  >
+                    Beauty Angel Academy
                   </div>
                 </a>
                 <div
-                  class="backgroud-project bg-[#00355D] absolute bottom-1 w-[20.5rem] h-[10.5625rem] rounded-[1.25rem]"
+                  class="backgroud-project bg-[#00355D] absolute xl:bottom-1 w-[10.4375rem] xl:w-[20.5rem] h-[5.375rem] xl:h-[10.5625rem] rounded-lg xl:rounded-[1.25rem] top-[10.5%] xl:top-auto"
                 ></div>
               </div>
               <!-- end project -->
-
               <!-- project -->
-              <div class="project relative mx-auto w-[20.5rem] h-[27rem]">
+              <div
+                class="project relative mx-auto w-[10.4375rem] xl:w-[20.5rem] h-[213px] xl:h-[27rem] hidden xl:block"
+              >
                 <div
-                  class="w-[20.5rem] h-[5.3125rem] bg-[#00355D] rounded-[1.25rem] pt-2 absolute z-20 left-0 bottom-1"
+                  class="w-[163px] xl:w-[20.5rem] xl:h-[5.3125rem] bg-[#00355D] rounded-[1.25rem] xl:pt-2 absolute z-20 left-[2px] xl:left-0 xl:bottom-1 top-[69.5%] xl:top-auto"
                 >
                   <img
-                    class="absolute z-20 left-0 bottom-[5.2rem]"
+                    class="absolute w-[53%] xl:w-auto z-20 left-0 bottom-[5.2rem]"
                     src="./src/images/tamgiactrai.svg"
                     alt=""
                   />
                   <img
-                    class="absolute z-20 right-0 bottom-[5.2rem]"
+                    class="absolute w-[53%] xl:w-auto z-20 right-0 bottom-[5.2rem]"
                     src="./src/images/tamgiacphai.svg"
                     alt=""
                   />
                 </div>
                 <a href="">
                   <img
-                    class="absolute z-10 ml-2 transition-transform transform hover:translate-y-[-6px]"
-                    src="./src/images/project4.png"
+                    class="absolute top-[-51%] xl:top-auto w-[157px] xl:w-auto z-10 ml-[5px] xl:ml-2 transition-transform transform hover:translate-y-[-6px]"
+                    src="./src/images/project1.png"
                     alt=""
                 /></a>
                 <a
                   href=""
-                  class="text-project absolute z-20 bottom-5 ml-[0.8rem] mx-auto"
+                  class="text-project absolute z-20 top-[31.3%] xl:top-auto xl:bottom-5 ml-[1.2rem] xl:ml-[0.8rem] mx-auto"
                 >
                   <div
-                    class="text-[#FFFFFF] z-20 w-[19rem] text-center m font-bold text-lg"
+                    class="text-[#FFFFFF] z-20 w-auto xl:w-[19rem] text-center m font-bold text-xs xl:text-lg"
                   >
-                    Công Ty Cổ Phần Du Học
+                    Thẩm Mỹ Viện
                   </div>
                   <div
-                    class="text text-[#FFFFFF] z-20 w-[19rem] text-center m font-bold text-lg"
+                    class="text-[#FFFFFF] z-20 w-auto xl:w-[19rem] text-center m font-bold text-xs xl:text-lg"
                   >
-                    Rinku
+                    Beauty Angel Academy
                   </div>
                 </a>
                 <div
-                  class="backgroud-project bg-[#00355D] absolute bottom-1 w-[20.5rem] h-[10.5625rem] rounded-[1.25rem]"
+                  class="backgroud-project bg-[#00355D] absolute xl:bottom-1 w-[10.4375rem] xl:w-[20.5rem] h-[5.375rem] xl:h-[10.5625rem] rounded-lg xl:rounded-[1.25rem] top-[10.5%] xl:top-auto"
                 ></div>
               </div>
               <!-- end project -->
             </div>
-            <button class="z-10 absolute top-[57.8%] right-[11%]">
+            <button
+              class="z-10 absolute top-[57.8%] right-[11%] hidden xl:block"
+            >
               <img src="./src/icons/arrow-right.svg" alt="arrow right" />
             </button>
           </div>
           <button
-            class="bg-gradient-to-r from-[#00B8C4] to-[#2AD8CD] flex gap-2 text-lg font-bold text-white rounded-full px-6 py-[0.8rem] mt-[2.6875rem] items-center z-10 absolute left-[50.4%] transform -translate-x-1/2"
+            class="bg-gradient-to-r from-[#00B8C4] to-[#2AD8CD] flex gap-2 text-[14px] xl:text-lg font-bold text-white rounded-full px-4 xl:px-6 py-2 xl:py-[0.8rem] mt-[-5rem] xl:mt-[2.6875rem] items-center z-10 absolute left-[50.4%] transform -translate-x-1/2"
           >
             Xem tất cả dự án
             <span><img src="./src/icons/arrow-right-white.svg" alt="" /></span>
@@ -2643,14 +2646,24 @@
     <script>
       //Slide
 
-      var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 2,
-        spaceBetween: 32,
-        navigation: {
-          nextEl: ".button-next",
-          prevEl: ".button-prev",
-        },
-      });
+      // var swiper = new Swiper(".mySwiper", {
+      //   slidesPerView: 1,
+      //   // spaceBetween: 32,
+      //   navigation: {
+      //     nextEl: ".button-next",
+      //     prevEl: ".button-prev",
+      //   },
+      //   breakpoints: {
+      //     320: {
+      //       slidesPerView: 1,
+      //       // spaceBetween: 20,
+      //     },
+      //     640: {
+      //       slidesPerView: 2,
+      //       spaceBetween: 32,
+      //     },
+      //   },
+      // });
 
       var swiper2 = new Swiper(".mySwiper2", {
         slidesPerView: 3,
