@@ -45,8 +45,11 @@ module.exports = {
       'bluebold': '#264AB9',
       'lightblue': '#6B92FF',
       'border1': '#C2C2BF',
-      'transparent': 'transparent'
-
+      'transparent': 'transparent',
+      'custext2': '#00355D',
+      'Zinc-400': '#a1a1aa',
+      'linearcus1': '#00B8C4',
+      'linearcus2': '#2AD8CD',
     },
   },
   plugins: [

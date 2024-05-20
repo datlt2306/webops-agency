@@ -1,28 +1,67 @@
-<script>
-    function animateNumber(start, end, duration) {
-        const element = document.getElementById('number'); // Lấy phần tử HTML với id 'number'.
-        const range = end - start; // Tính khoảng cách từ số bắt đầu đến số kết thúc.
-        const minTimer = 50; // Thiết lập thời gian tối thiểu giữa các lần cập nhật số là 50ms.
-        let stepTime = Math.abs(Math.floor(duration / range)); // Tính thời gian giữa các lần cập nhật số.
-        stepTime = Math.max(stepTime, minTimer); // Đảm bảo thời gian giữa các lần cập nhật không nhỏ hơn 50ms.
+<!DOCTYPE html>
+<html lang="en">
 
-        let startTime = new Date().getTime(); // Lấy thời gian hiện tại khi bắt đầu hoạt ảnh.
-        let endTime = startTime + duration; // Tính thời gian kết thúc hoạt ảnh.
+<head>
+    <meta charset="utf-8" />
+    <title>Swiper demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
 
-        let timer; // Khai báo biến `timer` để lưu trữ giá trị của `setInterval`.
-
-        function run() {
-            let now = new Date().getTime(); // Lấy thời gian hiện tại.
-            let remaining = Math.max((endTime - now) / duration, 0); // Tính tỉ lệ thời gian còn lại của hoạt ảnh.
-            let value = Math.round(end - (remaining * range)); // Tính giá trị số hiện tại dựa trên tỉ lệ thời gian còn lại.
-            element.textContent = value; // Cập nhật nội dung của phần tử HTML với giá trị số hiện tại.
-            if (value === end) { // Kiểm tra nếu giá trị hiện tại bằng giá trị kết thúc.
-                clearInterval(timer); // Dừng hàm `setInterval` khi đạt giá trị kết thúc.
-            }
+    <style>
+        html,
+        body {
+            position: relative;
+            height: 100%;
         }
 
-        timer = setInterval(run, stepTime); // Đặt hàm `run` được gọi lại mỗi `stepTime` mili giây.
-        run(); // Gọi hàm `run` ngay lập tức để bắt đầu quá trình cập nhật số.
-    }
+        body {
+            background: #eee;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
 
-</script>
+        swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+
+        swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+
+    <swiper-container class="mySwiper flex-col" pagination="true" pagination-clickable="true" space-between="30"
+        slides-per-view="2">
+        <swiper-slide>Slide 1</swiper-slide>
+        <swiper-slide>Slide 2</swiper-slide>
+        <swiper-slide>Slide 3</swiper-slide>
+        <swiper-slide>Slide 4</swiper-slide>
+        <swiper-slide>Slide 5</swiper-slide>
+        <swiper-slide>Slide 6</swiper-slide>
+        <swiper-slide>Slide 7</swiper-slide>
+        <swiper-slide>Slide 8</swiper-slide>
+        <swiper-slide>Slide 9</swiper-slide>
+    </swiper-container>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+</body>
+
+</html>
