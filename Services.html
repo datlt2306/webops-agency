@@ -1,274 +1,495 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="stylesheet"
-      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
-    />
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" />
     <link rel="stylesheet" href="styles.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="./output.css" rel="stylesheet" />
     <!-- Font-awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
-  </head>
+</head>
 
-  <body>
+<body>
     <header>
-      <div class="overflow-hidden py-5">
-        <div
-          class="max-w-[353px] xl:max-w-[87.0625rem] flex justify-between items-center mx-auto relative"
-        >
-          <div
-            class="overflow-hidden absolute left-[-22.6%] bottom-[-67%] xl:bottom-[-30%] -z-10"
-          >
-            <img class="max-w-max" src="./img/header servies.jpg" alt="" />
-          </div>
-          <a href="#"
-            ><img class="w-[51%] xl:w-auto" src="./img/logo 1.svg" alt="Logo"
-          /></a>
-        </div>
+        <div class="overflow-hidden py-5">
+            <div class="max-w-[353px] xl:max-w-[87.0625rem] flex justify-between items-center mx-auto relative">
+                <div class="overflow-hidden absolute left-[-22.6%] bottom-[-67%] xl:bottom-[-30%] -z-10">
+                    <img class="max-w-max" src="./img/header servies.jpg" alt />
+                </div>
+                <a href="#"><img class="w-[51%] xl:w-auto" src="./img/logo 1.svg" alt="Logo" /></a>
+            </div>
 
-        <div
-          class="flex flex-col xl:flex-row absolute z-10 top-[2.8%] right-[4%] xl:items-baseline xl:mr-[9.4%]"
-        >
-          <button
-            data-collapse-toggle="navbar-default"
-            type="button"
-            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-200"
-            aria-controls="navbar-default"
-            aria-expanded="false"
-          >
-            <img class="max-w-max" src="./img/menu mobile.png" alt="" />
-          </button>
+            <div class="flex flex-col xl:flex-row absolute z-10 top-[2.8%] right-[4%] xl:items-baseline xl:mr-[9.4%]">
+                <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-default" aria-expanded="false">
+                        <img class="max-w-max" src="./img/menu mobile.png"
+                            alt />
+                    </button>
 
-          <nav class="-mr-4 xl:w-auto hidden xl:block" id="navbar-default">
-            <ul
-              class="flex flex-col xl:flex-row absolute xl:relative right-[2%] font-bold xl:right-0 w-[22.0625rem] xl:w-auto border xl:border-none rounded-lg bg-white *:text-lg *:text-[#00355D] xl:items-center xl:pb-0 pb-3 gap-2.5"
-            >
-              <li
-                class="hover:border-b hover:border-b-[#28EFE2] hover:text-[#28EFE2]"
-              >
-                <a class="pl-3 pr-[13rem] xl:px-2" href="#">Về chúng tôi</a>
-              </li>
-              <li
-                class="hover:border-b hover:border-b-[#28EFE2] hover:text-[#28EFE2]"
-              >
-                <a class="pl-3 pr-[13rem] xl:px-2" href="#">Dự án</a>
-              </li>
-              <li
-                class="hover:border-b hover:border-b-[#28EFE2] hover:text-[#28EFE2]"
-              >
-                <a class="pl-3 pr-[13rem] xl:px-2" href="#">Dịch vụ</a>
-              </li>
-              <li
-                class="hover:border-b hover:border-b-[#28EFE2] hover:text-[#28EFE2]"
-              >
-                <a class="pl-3 pr-[13rem] xl:px-2" href="#">Bảng giá</a>
-              </li>
-              <li
-                class="hover:border-b hover:border-b-[#28EFE2] hover:text-[#28EFE2]"
-              >
-                <a class="pl-3 pr-[13rem] xl:px-2" href="#">Tin tức</a>
-              </li>
-              <li
-                class="hover:border-b hover:border-b-[#28EFE2] hover:text-[#28EFE2]"
-              >
-                <a class="pl-3 pr-[13rem] xl:px-2" href="#">Liên hệ</a>
-              </li>
-              <li
-                class="font-extrabold py-[0.625rem] px-[25px] rounded-full bg-gradient-to-r from-[#10B8C4] to-[#2AD8CD]"
-              >
-                <a class="flex items-center gap-3" href="#"
-                  ><i class="fa-solid fa-phone-volume text-xl text-white"></i>
-                  <span class="text-white">098 - 888 - 8888</span></a
-                >
-              </li>
-            </ul>
-          </nav>
+                <nav class="-mr-4 xl:w-auto hidden xl:block" id="navbar-default">
+                    <ul class="flex flex-col xl:flex-row absolute xl:relative right-[2%] font-bold xl:right-0 w-[22.0625rem] xl:w-auto border xl:border-none rounded-lg bg-white *:text-lg *:text-[#00355D] xl:items-center xl:pb-0 pb-3 gap-2.5">
+                        <li class="hover:border-b hover:border-b-[#28EFE2] hover:text-[#28EFE2]">
+                            <a class="pl-3 pr-[13rem] xl:px-2" href="#">Về
+                                    chúng tôi</a>
+                        </li>
+                        <li class="hover:border-b hover:border-b-[#28EFE2] hover:text-[#28EFE2]">
+                            <a class="pl-3 pr-[13rem] xl:px-2" href="#">Dự
+                                    án</a>
+                        </li>
+                        <li class="hover:border-b hover:border-b-[#28EFE2] hover:text-[#28EFE2]">
+                            <a class="pl-3 pr-[13rem] xl:px-2" href="#">Dịch
+                                    vụ</a>
+                        </li>
+                        <li class="hover:border-b hover:border-b-[#28EFE2] hover:text-[#28EFE2]">
+                            <a class="pl-3 pr-[13rem] xl:px-2" href="#">Bảng
+                                    giá</a>
+                        </li>
+                        <li class="hover:border-b hover:border-b-[#28EFE2] hover:text-[#28EFE2]">
+                            <a class="pl-3 pr-[13rem] xl:px-2" href="#">Tin
+                                    tức</a>
+                        </li>
+                        <li class="hover:border-b hover:border-b-[#28EFE2] hover:text-[#28EFE2]">
+                            <a class="pl-3 pr-[13rem] xl:px-2" href="#">Liên
+                                    hệ</a>
+                        </li>
+                        <li class="font-extrabold py-[0.625rem] px-[25px] rounded-full bg-gradient-to-r from-[#10B8C4] to-[#2AD8CD]">
+                            <a class="flex items-center gap-3" href="#"><i
+                                        class="fa-solid fa-phone-volume text-xl text-white"></i>
+                                    <span class="text-white">098 - 888 -
+                                        8888</span></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </div>
-      </div>
     </header>
     <!-- End Header -->
     <main>
-      <!-- banner Section -->
-      <section
-        class="xl:pt-[6.125rem] xl:pb-[5.875rem] max-w-[87.0625rem] m-auto"
-      >
-        <div
-          class="xl:grid xl:grid-cols-[42.3125rem_50.375rem] max-[394px]:text-center max-[394px]:gap-[51px] max-[394px]:flex-col max-[394px]:flex"
-        >
-          <div class="xl:pt-[31px] max-[394px]:pt-[33px]">
-            <h3
-              class="xl:text-[2.5rem] xl:mb-[34px] max-[394px]:text-[16px] xl:mt-1"
-            >
-              GIẢI PHÁP
-            </h3>
-            <h1
-              class="m-0 xl:text-7xl max-[394px]:mt-[6px] max-[394px]:text-[32px] font-extrabold text-[#00355D]"
-            >
-              THIẾT KẾ WEBSITE
-            </h1>
-            <h1
-              class="xl:text-7xl m-0 xl:pt-7 max-[394px]:text-[32px] font-extrabold xl:text-[#14b8a6] xl:tracking-[-0.5px]"
-            >
-              CHUYÊN NGHIỆP
-            </h1>
-            <p
-              class="xl:text-2xl xl:max-w-[465px] max-[394px]:mx-auto max-[394px]:pb-[15px] max-[394px]:max-w-[205px] text-[#A1A1AA] xl:mt-[1.875rem] max-[394px]:text-[14px] max-[394px]:mt-[7px] xl:leading-9 xl:mb-[2.8375rem]"
-            >
-              Phù hợp với tất cả doanh nghiệp, cửa hàng quy mô lớn, vừa & nhỏ
-            </p>
+        <!-- banner Section -->
+        <section class="xl:pt-[6.125rem] xl:pb-[5.875rem] max-w-[87.0625rem] m-auto">
+            <div class="xl:grid xl:grid-cols-[42.3125rem_50.375rem] max-[394px]:text-center max-[394px]:gap-[51px] max-[394px]:flex-col max-[394px]:flex">
+                <div class="xl:pt-[31px] max-[394px]:pt-[33px]">
+                    <h3 class="xl:text-[2.5rem] xl:mb-[34px] max-[394px]:text-[16px] xl:mt-1">
+                        GIẢI PHÁP
+                    </h3>
+                    <h1 class="m-0 xl:text-7xl max-[394px]:mt-[6px] max-[394px]:text-[32px] font-extrabold text-[#00355D]">
+                        THIẾT KẾ WEBSITE
+                    </h1>
+                    <h1 class="xl:text-7xl m-0 xl:pt-7 max-[394px]:text-[32px] font-extrabold xl:text-[#14b8a6] xl:tracking-[-0.5px]">
+                        CHUYÊN NGHIỆP
+                    </h1>
+                    <p class="xl:text-2xl xl:max-w-[465px] max-[394px]:mx-auto max-[394px]:pb-[15px] max-[394px]:max-w-[205px] text-[#A1A1AA] xl:mt-[1.875rem] max-[394px]:text-[14px] max-[394px]:mt-[7px] xl:leading-9 xl:mb-[2.8375rem]">
+                        Phù hợp với tất cả doanh nghiệp, cửa hàng quy mô lớn, vừa & nhỏ
+                    </p>
 
-            <a
-              class="text-lg font-bold max-[394px]:text-[14px] xl:py-4 xl:px-8 max-[394px]:py-2 max-[394px]:px-5 text-white rounded-full bg-gradient-to-r from-[#00B8C4] to-[#2AD8CD]"
-              href="#"
-              >Nhận tư vấn ngay</a
-            >
-          </div>
-          <div
-            class="xl:absolute xl:top-[9.875rem] max-[394px]:max-w-[352px] max-[394px]:h-[261px] max-[394px]:pl-[17px] xl:w-[818px] xl:h-[605px] xl:right-[15.25rem]"
-          >
-            <img
-              class="w-full object-cover ml-3"
-              src="./img/banner services.png"
-              alt="services"
-            />
-          </div>
-        </div>
-      </section>
-      <!-- End banner Section -->
-      <!--  website design Section -->
-      <section
-        class="w-full xl:mt-[6.75rem] max-[394px]:relative max-[394px]:mt-[30px] xl:h-[850px] max-[394px]:h-[761px] bg-[#F0F7FF]"
-      >
-        <img
-          class="xl:absolute max-[394px]:hidden xl:block lg:h-[850px] lg:w-full"
-          src="./img/hanoiline [Converted] 2.png"
-          alt=""
-        />
-        <div
-          class="banner xl:absolute xl:top-[50.6rem] max-[393px]:absolute max-[393px]:-top-[23px] xl:max-w-[771px] xl:max-h-[815px] max-[394px]:w-[164px] max-[394px]:h-[166px] right-0"
-        >
-          <img class="w-full" src="./img/banner webdesign.png" alt="" />
-        </div>
-        <div class="xl:max-w-[1408px] relative xl:pt-[6.6rem] mx-auto">
-          <div
-            class="text-center xl:text-5xl xl:ml-[22px] max-[394px]:text-2xl max-[394px]:pt-[32px] font-bold"
-          >
-            <h1>Thiết kế website tại WebOps, chúng tôi có...</h1>
-          </div>
-          <div class="menu xl:pt-[2.625rem] max-[394px]:p-[15px] xl:pr-[42px]">
-            <!-- menu -->
-            <ul
-              class="xl:max-w-[589px] max-[394px]:max-w-[478px] xl:overflow-x-hidden max-[394px]:h-[43px] whitespace-nowrap overflow-y-hidden grid xl:grid-cols-[225px_216px_148px] max-[394px]:grid-cols-[173px_160px_145px] xl:h-[49px] bg-[#DEE9F6] mx-auto border-2 border-[#FFFFFF] rounded-[100px]"
-            >
-              <li class="flex">
-                <a
-                  class="w-full h-full hover:border-2 hover:border-white text-[#00355D] hover:text-white hover:rounded-[100px] hover:bg-[#264AB9] flex justify-center items-center text-center xl:text-lg font-bold"
-                  href=""
-                  >400+ giao diện đẹp</a
-                >
-              </li>
-              <li class="flex">
-                <a
-                  class="w-full h-full hover:border-2 hover:border-white text-[#00355D] hover:text-white hover:rounded-[100px] hover:bg-[#264AB9] flex justify-center items-center text-center xl:text-lg font-bold"
-                  href=""
-                  >Tăng tốc độ tải trang</a
-                >
-              </li>
-              <li class="flex">
-                <a
-                  class="w-full h-full hover:border-2 hover:border-white text-[#00355D] hover:text-white hover:rounded-[100px] hover:bg-[#264AB9] flex justify-center items-center text-center xl:text-lg font-bold"
-                  href=""
-                  >Tối ưu SEO</a
-                >
-              </li>
-            </ul>
-            <!-- End menu -->
-          </div>
-          <div
-            class="xl:grid xl:grid-cols-[688px_729px] max-[394px]:flex max-[394px]:flex-col max-[394px]:pt-[19px] xl:pt-[66px]"
-          >
-            <div
-              class="max-[394px]:w-[353px] max-[394px]:h-[179px] max-[394px]:mx-auto"
-            >
-              <img
-                class="max-[394px]:w-full"
-                src="./img/layer webdesign.png"
-                alt=""
-              />
+                    <a class="text-lg font-bold max-[394px]:text-[14px] xl:py-4 xl:px-8 max-[394px]:py-2 max-[394px]:px-5 text-white rounded-full bg-gradient-to-r from-[#00B8C4] to-[#2AD8CD]" href="#">Nhận tư vấn ngay</a>
+                </div>
+                <div class="xl:absolute xl:top-[9.875rem] max-[394px]:max-w-[352px] max-[394px]:h-[261px] max-[394px]:pl-[17px] xl:w-[818px] xl:h-[605px] xl:ml-[36.313rem]">
+                    <img class="w-full object-cover ml-3" src="./img/banner services.png" alt="services" />
+                </div>
             </div>
-            <div class="">
-              <div
-                class="xl:pl-[2.313rem] max-[394px]:pl-[1.313rem] max-[394px]:pt-[15px]"
-              >
-                <div
-                  class="flex xl:text-2xl max-[394px]:text-[18px] max-[394px]:pt-[16px] xl:gap-5 max-[394px]:gap-[7px] font-bold items-center"
-                >
-                  <img
-                    class="xl:w-6 xl:h-6 maxx-[394px]:h-[16px] max-[394px]:w-[16px]"
-                    src="./img/icon webdesign.png"
-                    alt=""
-                  />
-                  <h1>Giao diện chuẩn SEO</h1>
-                </div>
-                <p
-                  class="lg:text-[18px] max-[394px]:text-[14px] max-[394px]:w-[329px] lg:text-[#00355D] max-[394px]:pt-[6px] font-medium lg:mt-[13px] max-[394px]:pl-[23px] xl:pl-[44px] xl:leading-[30px] max-[394px]:leading-[20px]"
-                >
-                  Mọi giao diện tại WebOps Agency được thiết kế hiện đại, tối ưu
-                  chất lượng dựa theo tiêu chí xếp hạng và đánh giá của các công
-                  cụ tìm kiếm
-                </p>
-                <div
-                  class="flex xl:pt-[28px] xl:text-2xl max-[394px]:text-[18px] max-[394px]:pt-[17px] xl:gap-5 max-[394px]:gap-[7px] font-bold items-center"
-                >
-                  <img
-                    class="xl:w-6 xl:h-6 maxx-[394px]:h-[16px] max-[394px]:w-[16px]"
-                    src="./img/icon webdesign.png"
-                    alt=""
-                  />
-                  <h1>Đa dạng ngành nghề</h1>
-                </div>
-                <p
-                  class="lg:text-[18px] max-[394px]:w-[353px] max-[394px]:text-[14px] max-[394px]:pt-[6px] lg:text-[#00355D] lg:mt-[13px] font-medium max-[394px]:pl-[23px] xl:pl-[44px] xl:leading-[30px] max-[394px]:leading-[20px]"
-                >
-                  Dịch vụ thiết kế website WebOps Agency cung cấp giao diện đảm
-                  bảo UX-UI đáp ứng hầu hết tất cả nhu cầu của khách hàng với
-                  hơn 50 ngành nghề, lĩnh vực khác nhau.
-                </p>
-                <div
-                  class="flex xl:text-2xl xl:pt-[28px] max-[394px]:text-[18px] max-[394px]:pt-[16px] xl:gap-5 max-[394px]:gap-[7px] font-bold items-center"
-                >
-                  <img
-                    class="xl:w-6 xl:h-6 maxx-[394px]:h-[16px] max-[394px]:w-[16px]"
-                    src="./img/icon webdesign.png"
-                    alt=""
-                  />
-                  <h1>Hiển thị tốt trên mọi thiết bị</h1>
-                </div>
-                <p
-                  class="lg:text-[18px] max-[394px]:w-[360px] max-[394px]:text-[14px] max-[394px]:pt-[5px] lg:text-[#00355D] xl:pt-[14px] font-medium max-[394px]:pl-[23px] xl:pl-[44px] xl:leading-[30px] max-[394px]:leading-0"
-                >
-                  Tất cả các giao diện sử dụng công nghệ Responsive, đồng bộ
-                  hiển thị tất cả thiết bị: PC, Laptop, Table & Mobile.
-                </p>
-              </div>
+        </section>
+        <!-- End banner Section -->
+        <!--  website design Section -->
+        <section class="w-full xl:mt-[6.75rem] max-[394px]:relative max-[394px]:mt-[30px] xl:h-[850px] max-[394px]:h-[761px] bg-[#F0F7FF]">
+            <img class="xl:absolute max-[394px]:hidden xl:block lg:h-[850px] lg:w-full" src="./img/hanoiline [Converted] 2.png" alt />
+            <div class="banner xl:absolute xl:top-[50.6rem] max-[393px]:absolute max-[393px]:-top-[23px] xl:max-w-[771px] xl:max-h-[815px] max-[394px]:w-[164px] max-[394px]:h-[166px] right-0">
+                <img class="w-full" src="./img/banner webdesign.png" alt />
             </div>
-          </div>
-        </div>
-      </section>
-      <!-- website design  Greeting Section -->
+            <div class="xl:max-w-[1408px] relative xl:pt-[6.6rem] mx-auto">
+                <div class="text-center xl:text-5xl xl:ml-[22px] max-[394px]:text-2xl max-[394px]:pt-[32px] font-bold">
+                    <h1>Thiết kế website tại WebOps, chúng tôi có...</h1>
+                </div>
+                <div class="menu xl:pt-[2.625rem] max-[394px]:p-[15px] xl:pr-[42px]">
+                    <!-- menu -->
+                    <ul class="xl:max-w-[589px] max-[394px]:max-w-[478px] xl:overflow-x-hidden max-[394px]:h-[43px] whitespace-nowrap overflow-y-hidden grid xl:grid-cols-[225px_216px_148px] max-[394px]:grid-cols-[173px_160px_145px] xl:h-[49px] bg-[#DEE9F6] mx-auto border-2 border-[#FFFFFF] rounded-[100px]">
+                        <li class="flex">
+                            <a class="w-full h-full hover:border-2 hover:border-white text-[#00355D] hover:text-white hover:rounded-[100px] hover:bg-[#264AB9] flex justify-center items-center text-center xl:text-lg font-bold" href>400+ giao diện đẹp</a>
+                        </li>
+                        <li class="flex">
+                            <a class="w-full h-full hover:border-2 hover:border-white text-[#00355D] hover:text-white hover:rounded-[100px] hover:bg-[#264AB9] flex justify-center items-center text-center xl:text-lg font-bold" href>Tăng tốc độ tải trang</a>
+                        </li>
+                        <li class="flex">
+                            <a class="w-full h-full hover:border-2 hover:border-white text-[#00355D] hover:text-white hover:rounded-[100px] hover:bg-[#264AB9] flex justify-center items-center text-center xl:text-lg font-bold" href>Tối ưu SEO</a>
+                        </li>
+                    </ul>
+                    <!-- End menu -->
+                </div>
+                <div class="xl:grid xl:grid-cols-[688px_729px] max-[394px]:flex max-[394px]:flex-col max-[394px]:pt-[19px] xl:pt-[66px]">
+                    <div class="max-[394px]:w-[353px] max-[394px]:h-[179px] max-[394px]:mx-auto">
+                        <img class="max-[394px]:w-full" src="./img/layer webdesign.png" alt />
+                    </div>
+                    <div class>
+                        <div class="xl:pl-[2.313rem] max-[394px]:pl-[1.313rem] max-[394px]:pt-[15px]">
+                            <div class="flex xl:text-2xl max-[394px]:text-[18px] max-[394px]:pt-[16px] xl:gap-5 max-[394px]:gap-[7px] font-bold items-center">
+                                <img class="xl:w-6 xl:h-6 maxx-[394px]:h-[16px] max-[394px]:w-[16px]" src="./img/icon webdesign.png" alt />
+                                <h1>Giao diện chuẩn SEO</h1>
+                            </div>
+                            <p class="lg:text-[18px] max-[394px]:text-[14px] max-[394px]:w-[329px] lg:text-[#00355D] max-[394px]:pt-[6px] font-medium lg:mt-[13px] max-[394px]:pl-[23px] xl:pl-[44px] xl:leading-[30px] max-[394px]:leading-[20px]">
+                                Mọi giao diện tại WebOps Agency được thiết kế hiện đại, tối ưu chất lượng dựa theo tiêu chí xếp hạng và đánh giá của các công cụ tìm kiếm
+                            </p>
+                            <div class="flex xl:pt-[28px] xl:text-2xl max-[394px]:text-[18px] max-[394px]:pt-[17px] xl:gap-5 max-[394px]:gap-[7px] font-bold items-center">
+                                <img class="xl:w-6 xl:h-6 maxx-[394px]:h-[16px] max-[394px]:w-[16px]" src="./img/icon webdesign.png" alt />
+                                <h1>Đa dạng ngành nghề</h1>
+                            </div>
+                            <p class="lg:text-[18px] max-[394px]:w-[353px] max-[394px]:text-[14px] max-[394px]:pt-[6px] lg:text-[#00355D] lg:mt-[13px] font-medium max-[394px]:pl-[23px] xl:pl-[44px] xl:leading-[30px] max-[394px]:leading-[20px]">
+                                Dịch vụ thiết kế website WebOps Agency cung cấp giao diện đảm bảo UX-UI đáp ứng hầu hết tất cả nhu cầu của khách hàng với hơn 50 ngành nghề, lĩnh vực khác nhau.
+                            </p>
+                            <div class="flex xl:text-2xl xl:pt-[28px] max-[394px]:text-[18px] max-[394px]:pt-[16px] xl:gap-5 max-[394px]:gap-[7px] font-bold items-center">
+                                <img class="xl:w-6 xl:h-6 maxx-[394px]:h-[16px] max-[394px]:w-[16px]" src="./img/icon webdesign.png" alt />
+                                <h1>Hiển thị tốt trên mọi thiết bị</h1>
+                            </div>
+                            <p class="lg:text-[18px] max-[394px]:w-[360px] max-[394px]:text-[14px] max-[394px]:pt-[5px] lg:text-[#00355D] xl:pt-[14px] font-medium max-[394px]:pl-[23px] xl:pl-[44px] xl:leading-[30px] max-[394px]:leading-0">
+                                Tất cả các giao diện sử dụng công nghệ Responsive, đồng bộ hiển thị tất cả thiết bị: PC, Laptop, Table & Mobile.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- website design Section -->
+        <!-- Quản trị đơn giản -->
+        <section class="xl:pt-[6.125rem] max-[394px]:pt-[32px] xl:pb-[5.875rem] max-w-[87.0625rem] m-auto">
+            <div class="xl:-mt-[6px] xl:ml-3">
+                <button class="bg-gradient-to-r flex justify-center mx-auto from-[#264AB9] to-[#6B92FF] max-[394px]:w-[218px] max-[394px]:h-[41px] max-[394px]:text-[18px] max-[394px]:items-center max-[394px]:text-white  text-center font-bold rounded-[100px] xl:px-[50px] xl:py-[18.7px] xl:text-[40px] xl:text-white">
+                        Quản Trị Đơn Giản
+                    </button>
+                <h1 class="xl:text-[#00355D] xl:mt-4 max-[394px]:text-[18px] max-[394px]:mt-[10px] max-[394px]:text-[#00355D] text-center xl:text-5xl font-bold">
+                    Tự Điều Chỉnh Website Dễ Dàng
+                </h1>
+            </div>
+            <div class="xl:grid max-[394px]:flex max-[394px]:flex-col-reverse xl:gap-[31px] xl:pt-[46px] xl:grid-cols-[688px_688px]">
+                <div>
+                    <div class="xl:grid xl:grid-cols-[20.5rem_20.5rem] xl:gap-8 max-[394px]:justify-center max-[394px]:grid max-[394px]:grid-cols-[166px_166px] gap-5 mt-[22px] xl:mt-[2.0625rem]">
+                        <!-- Box 1 -->
+                        <div class="bg-whiteh-[250px]  shadow-[0_3px_10px_-1px_rgba(0,0,0,0.3)] rounded-lg xl:rounded-[1.25rem]  max-[394px]:h-[121px] max-[394px]:w-[166px] xl:w-auto xl:h-[250px]">
+                            <div class="flex flex-col items-center">
+                                <div class="mt-[15.3px] xl:mt-[32px]  xl:ml-[2px]">
+                                    <img class="w-[24px] h-[24px] xl:w-[96px] xl:h-[96px] " src="./img/icon box1.png" alt="User Icon" />
+                                </div>
+                                <h2 class="font-semibold max-[394px]:text-[14px] max-[394px]:mt-[13px] xl:text-2xl xl:text-center xl:w-[264px] text-[#00355D] xl:mt-[1.0625rem] ml-[2px]  xl:mr-0 max-[394px]:w-[134px] max-[394px]:text-center">
+                                    Hệ thống quản lý rõ ràng, thao tác ngắn gọn
+                                </h2>
+
+                            </div>
+                        </div>
+                        <!-- End Box 1 -->
+
+                        <!-- Box 2 -->
+                        <div class="bg-white shadow-[0_3px_10px_-1px_rgba(0,0,0,0.3)] rounded-lg xl:rounded-[1.25rem]  max-[394px]:h-[121px] max-[394px]:w-[166px] xl:w-auto xl:h-[250px] order-3 xl:order-none">
+                            <div class="flex flex-col items-center">
+                                <div class="mt-[15.3px] xl:mt-[32px]  xl:ml-[2px]">
+                                    <img class="w-[24px] h-[24px] xl:w-[96px] xl:h-[96px] " src="./img/icon box2.png" alt="User Icon" />
+                                </div>
+                                <h2 class="font-semibold max-[394px]:mt-[19px] max-[394px]:text-[14px] xl:text-2xl xl:text-center xl:w-[264px] text-[#00355D] xl:mt-[1.0625rem] ml-[2px]  xl:mr-0 max-[394px]:w-[134px] max-[394px]:text-center">
+                                    Tự điều chỉnh giao diện theo ý muốn
+                                </h2>
+                            </div>
+                        </div>
+                        <!-- End Box 2 -->
+                        <!-- Box 3 -->
+                        <div class="bg-whiteh-[250px] max-[394px]:order-last  shadow-[0_3px_10px_-1px_rgba(0,0,0,0.3)] rounded-lg xl:rounded-[1.25rem]  max-[394px]:h-[121px] max-[394px]:w-[166px] xl:w-auto xl:h-[250px]  xl:order-none">
+                            <div class="flex flex-col items-center max-[394px]:mt-[8px]">
+                                <div class="mt-[15.3px] xl:mt-[32px]  xl:ml-[2px]">
+                                    <img class="w-[24px] h-[24px] xl:w-[96px] xl:h-[96px] " src="./img/icon box3.png" alt="User Icon" />
+                                </div>
+                                <h2 class="font-semibold max-[394px]:text-[14px] max-[394px]:mt-[10px] xl:text-2xl xl:text-center xl:w-[264px] text-[#00355D] xl:mt-[1.0625rem] ml-[2px]  xl:mr-0 max-[394px]:w-[134px] max-[394px]:text-center">
+                                    Website dễ dàng nâng cấp, bảo trì
+                                </h2>
+                            </div>
+                        </div>
+                        <!-- End Box 3 -->
+                        <!-- Box 4 -->
+                        <div class="bg-white max-[394px]:order-last xl:h-[250px] shadow-[0_3px_10px_-1px_rgba(0,0,0,0.3)] rounded-lg xl:rounded-[1.25rem]   max-[394px]:h-[121px] max-[394px]:w-[166px] xl:w-auto  order-4 xl:order-none">
+                            <div class="flex flex-col items-center max-[394px]:mt-[8px]">
+                                <div class="mt-[15.3px] xl:mt-[32px]  xl:ml-[2px]">
+                                    <img class="w-[24px] h-[24px] xl:w-[96px] xl:h-[96px] " src="./img/carbon_settings-edit.png" alt="User Icon" />
+                                </div>
+                                <h2 class="font-semibold max-[394px]:text-[14px] xl:text-2xl max-[394px]:mt-[10px] xl:text-center xl:w-[264px] text-[#00355D] xl:mt-[1.0625rem] ml-[2px]  xl:mr-0 max-[394px]:w-[134px] max-[394px]:text-center">
+                                    Dễ dàng tự thêm/bớt các tính năng
+                                </h2>
+                            </div>
+                        </div>
+                        <!-- End Box 4 -->
+                    </div>
+
+                </div>
+                <div class="xl:mt-[114px] max-[394px]:ml-[19px] max-[394px]:mt-[34px] max-[394px]:w-[353px] max-[394px]:h-[185px]">
+                    <img class="w-full" src="./img/Layer tu dieu chinh web.png" alt />
+                </div>
+        </section>
+        <!-- end Quản trị đơn giản -->
+        <!-- thiết kế website chuyên nghiệp theo ngành nghề -->
+        <section class="xl:w-[1903px] xl:mx-auto xl:relative">
+            <div class="xl:grid xl:grid-cols-[1065px_auto]">
+                <div class="relative xl:w-full xl:h-[900px] xl:flex xl:justify-center">
+                    <img class="xl:w-full xl:h-full max-[394px]:hidden" src="./img/banner thiet ke web theo nganh nghe.png" alt>
+                    <div class="xl:absolute xl:w-[448px] xl:h-[435px] max-[394px]:mt-[38px] max-[394px]:w-[353px] max-[394px]:h-[210px] max-[394px]:mx-auto xl:mr-[6.75rem] xl:top-[14.5rem]">
+                        <span class="xl:text-2xl xl:text-white max-[394px]:text-[16px] max-[394px]:text-[#00355D] max-[394px]:font-[400] ">GIẢI
+                                    PHÁP</span>
+                        <h1 class="xl:text-5xl xl:font-bold max-[394px]:font-bold xl:text-white max-[394px]:text-[24px] max-[394px]:text-[#00355D] xl:mt-[20px] xl:leading-[63px]">Thiết Kế Website Chuyên Nghiệp Theo Ngành Nghề
+                        </h1>
+                        <p class="xl:font-medium max-[394px]:font-medium max-[394px]:leading-[19px] max-[394px]:mt-[10px] max-[394px]:text-[#00355D] max-[394px]:text-[14px] xl:mt- xl:text-[18px] xl:text-white xl:leading-[32px] xl:mt-[36px]">
+                            Không chỉ thiết kế website chuẩn giao diện và trải nghiệm người dùng, WebOps Agency với hệ sinh thái các giải pháp xây dựng website toàn diện sẽ là điểm tựa vững chắc giúp doanh nghiệp của bạn phát triển lâu dài và bền vững.</p>
+                    </div>
+                </div>
+                <div class="xl:absolute xl:top-[7.938rem] xl:ml-[46.063rem] max-[394px]:w-[353px] max-[394px]:mx-auto xl:w-[1166px]">
+                    <div class="max-[394px]:flex max-[394px]:gap-x-[21px] max-[394px]:mt-[10px]">
+                        <div class="overflow-x-hidden xl:flex xl:gap-8 xl:mt-[10px]  ">
+                            <img class="xl:w-[448px] max-[394px]:w-[167px] max-[394px]:mb-[19px] max-[394px]:h-[111px] xl:h-[296px]" src="./img/Rectangle 308.png" alt>
+                            <img class="xl:w-[448px] max-[394px]:w-[167px] max-[394px]:mb-[19px] max-[394px]:h-[111px] xl:h-[296px]" src="./img/Rectangle 310.png" alt>
+                            <img class="xl:w-[448px] max-[394px]:w-[167px] max-[394px]:mb-[19px] max-[394px]:h-[111px] xl:h-[296px]" src="./img/Rectangle 312.png" alt>
+                        </div>
+                        <div class="overflow-x-hidden xl:flex xl:gap-8 xl:mt-[10px] xl:pt-[21px]  ">
+                            <img class="xl:w-[448px] xl:h-[296px] max-[394px]:w-[167px] max-[394px]:mb-[19px] max-[394px]:h-[111px] " src="./img/Rectangle 308.png" alt>
+                            <img class="xl:w-[448px] xl:h-[296px] max-[394px]:w-[167px] max-[394px]:mb-[19px] max-[394px]:h-[111px] " src="./img/Rectangle 310.png" alt>
+                            <img class="xl:w-[448px] xl:h-[296px] max-[394px]:w-[167px] max-[394px]:mb-[19px] max-[394px]:h-[111px] " src="./img/Rectangle 312.png" alt>
+                        </div>
+                    </div>
+                    <div class="xl:flex xl:gap-2 xl:ml-[28.625rem] max-[394px]:flex max-[394px]:gap-2 max-[394px]:ml-[63px] xl:justify-center xl:mt-[33px]">
+                        <img src="./img/Rectangle 314.png" alt>
+                        <img src="./img/Rectangle 314.png" alt>
+                        <img src="./img/Rectangle 314.png" alt>
+                        <img src="./img/Rectangle 314.png" alt>
+                        <img src="./img/Rectangle 314.png" alt>
+                    </div>
+                    <div class="xl:flex xl:gap-[1.5rem] xl:ml-[37.063rem] max-[394px]:flex xl:mt-[20px] xl:justify-center max-[394px]:mt-[18px] max-[394px]:justify-center max-[394px]:gap-[1.5rem] ">
+                        <img class="xl:w-[32px] xl:h-[32px] max-[394px]:w-[24px] max-[394px]:h-[24px]" src="./img/arrow-right.png" alt>
+                        <img class="xl:w-[32px] xl:h-[32px] max-[394px]:w-[24px] max-[394px]:h-[24px]" src="./img/arrow-left.png" alt>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!--End thiết kế website chuyên nghiệp theo ngành nghề -->
+        <!-- Khách hàng nói về WebOps Agency -->
+        <section class="xl:w-[1903px]  xl:mt-[97px] xl:mx-auto">
+            <div class="xl:grid xl:grid-cols-[962px_712px] max-[394px]:flex max-[394px]:flex-col-reverse">
+                <div class="xl:relative">
+                    <img class="max-[394px]:w-[94%] max-[394px]:mt-[18px]" src="./img/Rectangle 322.png" alt>
+                    <img class="xl:absolute xl:top-[7rem] xl:-right-[8.438rem] xl:z-10 max-[394px]:w-[353px] max-[394px]:h-[204px] max-[394px]:mx-auto max-[394px]:-mt-[9.625rem]" src="./img/Group 1327.png" alt="">
+                    <div class="xl:flex xl:gap-2 xl:mr-[13.625rem] max-[394px]:flex max-[394px]:gap-[8px] max-[394px]:justify-center max-[394px]:mt-[18px] xl:justify-center xl:mt-[30px]">
+                        <img src="./img/Rectangle 314.png" alt>
+                        <img src="./img/Rectangle 314.png" alt>
+                        <img src="./img/Rectangle 314.png" alt>
+                        <img src="./img/Rectangle 314.png" alt>
+                        <img src="./img/Rectangle 314.png" alt>
+                    </div>
+                    <div class="xl:flex xl:gap-[1.5rem] xl:mr-[23rem] max-[394px]:flex max-[394px]:mt-[18px] max-[394px]:gap-[18px] max-[394px]:justify-center xl:mt-[17px] xl:justify-center">
+                        <img class="max-[394px]:w-[24px] max-[394px]:h-[24px]" src="./img/arrow-right.png" alt>
+                        <img class="max-[394px]:w-[24px] max-[394px]:h-[24px]" src="./img/arrow-left.png" alt>
+                    </div>
+                </div>
+                <div>
+                    <div class="xl:text-5xl xl:font-bold xl:text-[#000000] max-[394px]:mt-[28px] max-[394px]:text-center xl:w-[554px] xl:leading-[91px] max-[394px]:text-[24px] max-[394px]:font-bold max-[394px]:text-[#000000]  xl:mt-[45px] xl:ml-[9.313rem]  xl:text-right">
+                        <h1 class="xl:text-5xl xl:font-bold xl:text-[#000000] max-[394px]:text-[24px] max-[394px]:text-[#000000] max-[394px]:font-bold xl:text-right">Khách Hàng
+                        </h1>
+                        Nói Về WebOps Agency
+                    </div>
+                    <div class="xl:mt-[42px] xl:relative  xl:ml-[14px] max-[394px]:h-[345px] ">
+                        <div class="xl:w-[688px] max-[394px]:relative max-[394px]:mt-[18px] max-[394px]:h-[344px] xl:h-[500px] max-[394px]:bg-[linear-gradient(to_bottom,#6B92FF,#264AB9)]">
+                            <img class="xl:w-[688px] max-[394px]:h-[344px] xl:h-[500px] max-[394px]:hidden" src="./img/Rectangle 236.png" alt>
+                        </div>
+                        <div class="xl:absolute xl:top-4 xl:w-[532px] max-[394px]:w-[353px] max-[394px]:mx-auto xl:right-3 max-[394px]:-top-[20.125rem] xl:mr-[33px] max-[394px]:relative">
+                            <img class="xl:w-[68px] xl:h-[48px] max-[394px]:w-[34px] max-[394px]:ml-[9.875rem] max-[394px]:h-[24px] xl:absolute xl:right-[1px] xl:top-[32px]" src="./img/fontisto_quote-left.png" alt>
+                            <p class="xl:text-[18px] max-[394px]:text-[14px] max-[394px]:mt-[23px] max-[394px]:text-white max-[394px]:font-bold xl:font-bold xl:text-white xl:text-right xl:mt-[7.188rem] max-[394px]:text-center">
+                                Nhận thấy website là một kênh thông tin chính thống, thể hiện sự chuyên nghiệp và uy tín nên Shippo quyết định hợp tác với Webops Agency để xây dựng website giới thiệu doanh nghiệp. Website của Webops Agency rất dễ sử dụng, nhiều khả năng mở rộng và đáp
+                                ứng tốt nhu cầu của chúng tôi.
+                            </p>
+                        </div>
+                        <div class="xl:absolute xl:bottom-[4.5rem] max-[394px]:ml-[27px] max-[394px]:w-[353px] max-[394px]:-top-[19.125rem] max-[394px]:grid max-[394px]:grid-cols-[231px_163px] xl:flex xl:w-[455px] xl:right-[46px] max-[394px]:relative ">
+                            <div>
+                                <button class="xl:text-lg max-[394px]:text-[14px] max-[394px]:font-bold max-[394px]:text-white max-[394px]:mt-[13px] max-[394px]:ml-[8px] max-[394px]:bg-[linear-gradient(to_right,#00B8C4,#2AD8CD)] xl:font-semibold max-[394px]:h-[35px] max-[394px]:w-[204px]  xl:w-[290px] xl:ml-[23px] xl:mt-[6px] xl:h-[44px] xl:bg-[linear-gradient(to_right,#00B8C4,#2AD8CD)] xl:rounded-[100px]  max-[394px]:rounded-[100px] xl:text-white">  <span class="xl:font-medium xl:text-[14px]">Bà</span> Hoàng Thanh Phương </button>
+                                <p class="xl:font-bold xl:text-[16px] xl:w-[290px] max-[394px]:w-[204px] max-[394px]:mt-[6px] max-[394px]:ml-[8px] max-[394px]:text-[12px] max-[394px]:font-bold max-[394px]:text-white max-[394px]:text-center xl:h-[56px] xl:text-white xl:text-center xl:mt-[12px] xl:ml-[23px]">Trưởng phòng Marketing - Công ty CPDV chuyển phát thông minh</p>
+                            </div>
+                            <div class="xl:w-[168px] max-[394px]:w-[100px] max-[394px]:border-2 max-[394px]:border-white max-[394px]:rounded-[144.5px] max-[394px]:h-[100px] xl:h-[120px] xl:border-2 xl:border-white xl:rounded-[144.5px] xl:ml-[26px]">
+                                <img class="xl:w-full xl:h-full max-[394px]:w-full max-[394px]:h-full max-[394px]:rounded-[144.5px] xl:rounded-[144.5px] " src="./img/65d0cc0b2315b85cbf3c35751adc7f9e.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end Khách hàng nói về WebOps Agency  -->
+        <!-- FORM DANG KI -->
+        <main class="main max-w-[1408px] z-10 relative mx-auto">
+            <section class="lg:max-w-[1409px] lg:h-[728px] items-center xl:mt-[89px] xl:ml-[11px] lg:relative flex justify-center">
+                <div class="z-50 absolute h-[374px] left-[4.438rem] top-40 font-extrabold lg:block max-lg:hidden max-w-[350px]">
+                    <div><img class="pb-12" src="./img/lienhe.png" alt="" /></div>
+                    <div class="*:leading-[66px]">
+                        <h3 class="text-5xl text-white">Liên Hệ</h3>
+                        <h3 class="text-5xl text-white">Với Chúng Tôi Ngay Bây Giờ</h3>
+                    </div>
+                </div>
+                <img class="lg:block max-lg:hidden absolute left-0 z-40" src="./img/Rectangle 252.png" alt="" />
+                <div class="max-w-[1280px] absolute z-10 lg:block max-lg:hidden w-full rounded-[30px] h-[728px] bg-[#264AB9]"></div>
+                <div class="lg:w-[688px] lg:h-[478px] lg:absolute w-full font-bold lg:right-[6.938rem] text-white z-40">
+                    <h1 class="lg:text-[32px] lg:text-white text-[#00355D] max-[394px]:mt-[31px] lg:pt-[5px] text-2xl text-center mb-[0.8rem]">
+                        <span class="max-[394px]:w-[283px]">ĐĂNG KÝ</span> <br class="xl:hidden"> NHẬN TƯ VẤN MIỄN PHÍ
+                    </h1>
+                    <!-- From  Signup -->
+                    <form class="lg:grid max-lg:w-[90%] max-lg:mx-auto lg:grid-cols-2 lg:gap-y-[21px] lg:gap-x-8 lg:justify-end lg:items-center">
+                        <input class="text-white rounded-[10px] text-[14px] max-lg:w-full my-1.5 text-left pr-[54px] pl-[12px] placeholder-[#A1A1AA] lg:placeholder-white py-2 lg:text-lg font-bold bg-transparent border-2 border-[#A1A1AA] lg:border-white outline-none" type="text"
+                            placeholder="Họ Tên" />
+                        <input class="text-white rounded-[10px] text-[14px] w-full my-1.5 text-left pr-[54px] pl-[12px] placeholder-[#A1A1AA] lg:placeholder-white py-2 lg:text-lg font-bold bg-transparent border-2 border-[#A1A1AA] lg:border-white outline-none" type="number" min="0"
+                            placeholder="Số điện thoại" />
+                        <input class="text-white rounded-[10px] text-[14px] w-full my-1.5 text-left pr-[54px] pl-[12px] placeholder-[#A1A1AA] lg:placeholder-white py-2 lg:text-lg font-bold bg-transparent border-2 border-[#A1A1AA] lg:border-white outline-none" type="email" placeholder="Email"
+                        />
+                        <input class="text-white rounded-[10px] text-[14px] w-full my-1.5 text-left pr-[54px] pl-[12px] placeholder-[#A1A1AA] lg:placeholder-white py-2 lg:text-lg font-bold bg-transparent border-2 border-[#A1A1AA] lg:border-white outline-none" type="text" placeholder="Dịch vụ cần từ vấn"
+                        />
+                        <textarea class="outline-none text-[14px] lg:text-lg w-full max-[1000px]:mt-2 lg:my-3 h-[120px] bg-transparent font-bold text-white placeholder-[#A1A1AA] lg:placeholder-white lg:w-[688px] lg:h-[143px] py-2 pl-3 borde r-2 border-2 border-[#A1A1AA] lg:border-white rounded-[10px]"
+                            name="" id="" placeholder="Nội dung"></textarea>
+                        <div></div>
+                        <button class="absolute lg:-bottom-[5px] left-[37%] lg:text-lg font-bold lg:transform text-[14px] px-5 py-3 [-translate-x-1/2 -translate-y-1/2] bg-[#2DD4BF] lg:px-[32px] rounded-[100px] lg:py-[10px]">
+                Liên Hệ Ngay
+              </button>
+                    </form>
+                    <!-- From  Signup -->
+                </div>
+                <img class="absolute z-20 lg:block max-lg:hidden" src="./img/Rectangle 142.png" alt="" />
+                <div class="h-[600px] xl:block max-lg:hidden w-[208px] rounded-[30px] bg-[#E2EBF6] bottom-[76px] absolute right-0"></div>
+            </section>
+        </main>
+        <!-- END FORM DANG KI -->
+        <!-- footer -->
+        <footer class="max-w-full hidden sm:block bg-[#23233F] h-[704px] mt-24">
+            <section class="max-w-[1408px] mx-auto pt-[88px] *:text-white grid grid-cols-3">
+                <div class="pl-2 pt-2">
+                    <img src="./img/footer.png" alt="" />
+                    <p class="text-[15px] font-[400] w-full pt-[1rem] leading-7">
+                        Chúng tôi luôn chắc chắn về mục đích thiết kế website của khách hàng. Website chuyên nghiệp trước hết phải phù hợp với hệ thống nhận diện thương hiệu của doanh nghiệp, logic nội dung chặt chẽ và ổn định
+                    </p>
+                    <div class="menu-footer pt-11">
+                        <h3 class="text-lg font-semibold">DỊCH VỤ</h3>
+                        <ul class="*:mt-2">
+                            <li>
+                                <a href="">Dịch vụ</a>
+                            </li>
+                            <li>
+                                <a href="">Dịch vụ</a>
+                            </li>
+                            <li>
+                                <a href="">Dịch vụ</a>
+                            </li>
+                            <li>
+                                <a href="">Dịch vụ</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <div class="menu-footer pl-[17px] pt-1">
+                        <h1 class="text-lg font-semibold mt-1 leading-6">VỀ CHÚNG TÔI</h1>
+                        <ul class="text-[16px] *:mt-[0.49rem] font-medium">
+                            <li>
+                                <a href="">List item</a>
+                            </li>
+                            <li>
+                                <a href="">List item</a>
+                            </li>
+                            <li>
+                                <a href="">List item</a>
+                            </li>
+                            <li>
+                                <a href="">List item</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="menu-footer pt-[5.8rem] pl-[18px]">
+                        <h1 class="font-semibold text-[18px]">CHÍNH SÁCH</h1>
+
+                        <ul class="*:mt-2">
+                            <li>
+                                <a href="">Chính sách</a>
+                            </li>
+                            <li>
+                                <a href="">Chính sách</a>
+                            </li>
+                            <li>
+                                <a href="">Chính sách</a>
+                            </li>
+                            <li>
+                                <a href="">Chính sách</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="max-w-[446px]">
+                    <div class="menu-footer pt-[7px] pl-7">
+                        <h1 class="text-[18px] text-white font-semibold">LIÊN HỆ</h1>
+
+                        <ul class="*:flex *:leading-[1.3rem] *:tracking-[0.4px] *:gap-4 *:pt-[10px]">
+                            <li>
+                                <img class="w-4 h-5" src="./img/address.png" alt="" />
+                                <a class="text-[16px] tracking-[0.4px] font-normal" href="">Số 102 Trần Phú, Phường Mộ Lao, Quận Hà Đông, TP.Hà Nội.</a
+                      >
+                    </li>
+                    <li>
+                      <img class="w-5 h-5" src="./img/phone-footer.png" alt="" />
+                      <a class="text-[16px] font-normal" href=""
+                        >Hotline: 0973-258-886</a
+                      >
+                    </li>
+                    <li>
+                      <img class="w-5 h-5" src="./img/mail.png" alt="" />
+                      <a class="text-[16px] font-normal" href=""
+                        >info@webopsagency.com</a
+                      >
+                    </li>
+                    <li>
+                      <img
+                        class="w-5 h-5"
+                        src="./img/description_FILL0_wght400_GRAD0_opsz24 1.png"
+                        alt=""
+                      />
+                      <a class="text-[16px] font-normal" href=""
+                        >GPKD: 0107756568</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+    
+                <div class="pt-[4.6rem]">
+                  <h1 class="font-semibold text-lg pl-[28px]">
+                    THEO DÕI CHÚNG TÔI
+                  </h1>
+    
+                  <ul class="flex gap-[32px] pt-[10px] pl-[28px]">
+                    <li>
+                      <a href=""><img src="./img/facebook-square.png" alt="" /></a>
+                            </li>
+                            <li>
+                                <a href=""><img src="./img/instagram.png" alt="" /></a>
+                            </li>
+                            <li>
+                                <a href=""><img src="./img/image 40.png" alt="" /></a>
+                            </li>
+                            <li>
+                                <a href=""><img src="./img/twitter-square.png" alt="" /></a>
+                            </li>
+                            <li>
+                                <a href=""><img src="./img/youtube-square.png" alt="" /></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="max-w-[1408px] pl-2 mt-11 flex border-t-2 border-white pt-[22px] justify-between mx-auto">
+                <div class="font-semibold text-[16px] text-white">
+                    Copyright WebOpsAgency
+                </div>
+                <div><img src="./img/image 406.png" alt="" /></div>
+            </section>
+        </footer>
+        <div class="max-w-full sm:hidden bg-[#23233F] h-[704px] mt-24"></div>
+        <!--end  footer -->
     </main>
     <script src="./node_modules/flowbite/dist/flowbite.min.js"></script>
-  </body>
+</body>
+
 </html>
