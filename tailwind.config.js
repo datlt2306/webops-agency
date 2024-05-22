@@ -7,9 +7,13 @@ module.exports = {
       boxShadow: {
         custom: "0 4px 8px 0 rgba(0, 0, 0, 0.25)",
         custom2: "3px 3pxpx 6px 0 rgba(0, 0, 0, 0.2)",
+        custom3: "0 0 8px 0 rgba(0, 0, 0, 0.2)",
       },
       fontFamily: {
         roboto: ["Roboto", "sans-serif"],
+      },
+      backgroundImage: {
+        praise: "#264ab9, url('./images/Rectangle 142.png') ",
       },
     },
     screens: {

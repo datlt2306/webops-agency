@@ -13,3 +13,23 @@
   display: block !important;
   visibility: visible !important;
 } */
+
+.swiper-cus {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  z-index: 1;
+  display: block;
+}
+
+/* .bg-praise {
+  background: #264ab9 url("./images/Rectangle 142.png") no-repeat center center;
+  background-size: contain;
+} */
+
+.bg-praise-mb {
+  background: #264ab9 url("./images/Rectangle 285.png") no-repeat center center;
+  background-size: contain;
+}
