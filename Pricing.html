@@ -2,66 +2,794 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <title>Swiper demo</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
-
-    <style>
-        html,
-        body {
-            position: relative;
-            height: 100%;
-        }
-
-        body {
-            background: #eee;
-            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-            font-size: 14px;
-            color: #000;
-            margin: 0;
-            padding: 0;
-        }
-
-        swiper-container {
-            width: 100%;
-            height: 100%;
-        }
-
-        swiper-slide {
-            text-align: center;
-            font-size: 18px;
-            background: #fff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        swiper-slide img {
-            display: block;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="src/output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body>
+    <div class="w-full h-auto font-Nunito">
+        <!-- =====================================Logo & Header===================================== -->
+        <div class="mx-auto min-h-[1238px] overflow-hidden relative max-394px:min-h-[2128px]">
+            <div class="mx-auto relative">
+                <div class="mx-auto w-full h-full overflow-hidden">
+                    <img class="mix-blend-multiply absolute overflow-hidden h-[53.125rem] top-0 z-10 w-full max-394px:h-[298px]"
+                        src="src/images/Rectangle 111.jpg" alt="" />
+                </div>
+                <div class="mx-auto w-full h-full overflow-hidden">
+                    <img class="mix-blend-multiply absolute overflow-hidden h-[53.125rem] top-0 z-10 w-full max-394px:h-[298px]"
+                        src="src/images/Rectangle 304.jpg" alt="" />
+                </div>
+            </div>
 
-    <swiper-container class="mySwiper flex-col" pagination="true" pagination-clickable="true" space-between="30"
-        slides-per-view="2">
-        <swiper-slide>Slide 1</swiper-slide>
-        <swiper-slide>Slide 2</swiper-slide>
-        <swiper-slide>Slide 3</swiper-slide>
-        <swiper-slide>Slide 4</swiper-slide>
-        <swiper-slide>Slide 5</swiper-slide>
-        <swiper-slide>Slide 6</swiper-slide>
-        <swiper-slide>Slide 7</swiper-slide>
-        <swiper-slide>Slide 8</swiper-slide>
-        <swiper-slide>Slide 9</swiper-slide>
-    </swiper-container>
+            <!-- /* ================================== HEADER==================================== */ -->
+            <header
+                class="w-[88rem] flex items-center justify-between relative z-20 mx-auto py-5 max-394px:w-full max-394px:pl-[21px] max-394px:pr-[16px] max-394px:pt-[16px] max-394px:pb-[17px] max-394px:flex-wrap max-394px:z-40">
+                <!-- Logo -->
+                <div class="logo max-394px:w-[13.6%]">
+                    <a href="#"> <img src="src/images/logo 1.svg" alt="" /></a>
+                </div>
+                <!-- End logo -->
+                <!-- Menu -->
+                <div class="menu flex max-394px:hidden">
+                    <ul class="flex items-center mt-[1px]">
+                        <li
+                            class="font-bold leading-[1.75rem] text-[#FFFFFF] text-[18px] hover:border-b-2 hover:border-Teal-400 hover:text-Teal-400 hover:pt-[2px]">
+                            <a class="m-3" href="">Về chúng
+                                tôi</a>
+                        </li>
+                        <li class="leading-6 font-bold text-[#FFFFFF] text-[18px]">
+                            <a class="m-3 " href="">Dự án</a>
+                        </li>
+                        <li class="leading-6 font-bold text-[#FFFFFF] text-[18px]">
+                            <a class="m-3" href="">Dịch vụ</a>
+                        </li>
+                        <li class="leading-6 font-bold text-[#FFFFFF] text-[18px]">
+                            <a class="m-3" href="">Bảng giá</a>
+                        </li>
+                        <li class="leading-6 font-bold text-[#FFFFFF] text-[18px]">
+                            <a class="m-3" href="">Tin tức</a>
+                        </li>
+                        <li class="leading-6 font-bold text-[#FFFFFF] text-[18px]">
+                            <a class="m-3" href="">Liên hệ</a>
+                        </li>
+                    </ul>
+                    <div
+                        class="ml-[0.8125rem] font-bold gap-[10px] text-[#FFFFFF] text-[18px] w-[226px] flex items-center justify-center h-[49px] bg-[#2AD8CD] rounded-[100px] mt-[2px]">
+                        <img class="pl-[3px]" src="src/icons/Vector.svg" alt="" />
+                        <a class="pl-[2px]">098 - 888 - 8888</a>
+                    </div>
+                </div>
+                <!-- ========================Menu-Mobile================================ -->
+                <button data-collapse-toggle="navbar-default" type="button"
+                    class="hidden max-394px:inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg md:hidden  focus:outline-none focus:ring-2 focus:border dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                    aria-controls="navbar-default" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 1h15M1 7h15M1 13h15" />
+                    </svg>
+                </button>
+                <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                    <ul
+                        class="font-semibold flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 max-394px:absolute max-394px:w-[89%]">
+                        <li>
+                            <a href="#"
+                                class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
+                                aria-current="page">Home</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Services</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Pricing</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- ======================End-Menu-Mobile================================ -->
+                <!-- ENd Menu -->
+            </header>
+            <!-- /* ================================== END HEADER==================================== */ -->
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
 
+            <!-- =============================Bảng giá thiết kế Website============================== -->
+            <section class="absolute w-[88rem] h-[91.5%] left-1/2 -translate-x-1/2 z-10 max-394px:w-full">
+                <div
+                    class="w-full h-auto font-extrabold text-[32px] text-center leading-[125px] pt-[58px] text-white max-394px:pt-0 max-394px:leading-[37px] max-394px:pb-[43px]">
+                    <h1 class="m-0 max-394px:font-extrabold max-394px:text-[24px]">Bảng giá thiết kế Website</h1>
+                </div>
+                <div
+                    class="w-full h-[84%] mx-auto flex justify-between pt-[92px] relative max-394px:flex-col max-394px:items-center max-394px:pt-0 max-394px:justify-normal max-394px:h-[96%] max-394px:gap-[150px]">
+                    <div
+                        class="relative w-[31.8%] h-[92%] top-16 max-394px:w-[89.83%] max-394px:top-0 max-394px:h-[28.51%]">
+                        <div class="absolute left-[50%] -translate-x-1/2 w-[68%] -top-[16px] max-394px:-top-[13px]">
+                            <div
+                                class="px-[152px] py-[160px] bg-linearcus1 rounded-[10px] max-394px:px-[120px] max-394px:py-[119.5px]">
+                            </div>
+                        </div>
+                        <div
+                            class="absolute -bottom-[3px] left-1/2 -translate-x-1/2 w-[68%] max-394px:-bottom-[18px] max-394px:w-[67.7%]">
+                            <img src="src/images/Rectangle 288.svg" alt="">
+                        </div>
+                        <div class="absolute">
+                            <div class="absolute w-[60.8%] left-1/2 -top-4 -translate-x-1/2 max-394px:-top-[13px] z-10">
+                                <img src="src/images/Rectangle 289.svg" alt="">
+                                <h1
+                                    class="absolute text-tahiti font-black text-[32px] left-1/2 -translate-x-1/2 top-[22%] -translate-y-1/2 max-394px:font-black max-394px:text-[24px] max-394px:top-[27%]">
+                                    Basic</h1>
+                            </div>
+                            <img class="w-full drop-shadow-3xl max-394px:hidden" src="src/images/Rectangle 291.svg"
+                                alt="">
+                            <img class="w-full drop-shadow-3xl text-shadow-md hidden max-394px:block"
+                                src="src/images/Rectangle 290-mobile2.svg" alt="">
+                            <div
+                                class="absolute text-blk top-[16%] left-1/2 -translate-x-1/2 font-black text-[40px] w-[90%] max-394px:pt-[12px]">
+                                <h1 class="m-0 text-[40px] text-black text-center max-394px:text-[24px]">5.000.000
+                                    <span>VNĐ</span>
+                                </h1>
+                                <ul
+                                    class="font-medium text-[18px] text-tahiti pt-7 pl-[9px] list-none max-394px:*:text-[14px] max-394px:pl-[2px] max-394px:pt-[18px]">
+                                    <li
+                                        class="relative pl-[29px] before:absolute before:content-[''] mb-2 flex bg-no-repeat leading-7 before:bg-icon before:bg-contain before:w-[20px] before:h-[20px] before:bg-no-repeat before:left-0 before:top-1 max-394px:before:w-[16px] max-394px:before:top-[2px] max-394px:pl-[25px] max-394px:leading-[19px] max-394px:mb-[12px]">
+                                        Giao diện có
+                                        sẵn, tùy chỉnh màu sắc</li>
+                                    <li
+                                        class="relative pl-[29px] before:absolute before:content-[''] mb-2 flex bg-no-repeat leading-7 before:bg-icon before:bg-contain before:w-[20px] before:h-[20px] before:bg-no-repeat before:left-0 before:top-1 max-394px:before:w-[16px] max-394px:before:top-[2px] max-394px:pl-[25px] max-394px:leading-[19px] max-394px:mb-[12px]">
+                                        Thời gian bàn
+                                        giao: 5 - 7 ngày</li>
+                                    <li
+                                        class="relative pl-[29px] before:absolute before:content-[''] mb-2 flex bg-no-repeat leading-7 before:bg-icon before:bg-contain before:w-[20px] before:h-[20px] before:bg-no-repeat before:left-0 before:top-1 max-394px:before:w-[16px] max-394px:before:top-[2px] max-394px:pl-[25px] max-394px:leading-[19px] max-394px:mb-[12px]">
+                                        Bảo hành trọn
+                                        đời website</li>
+                                    <li
+                                        class="relative pl-[29px] before:absolute before:content-[''] mb-2 flex bg-no-repeat leading-7 before:bg-icon before:bg-contain before:w-[20px] before:h-[20px] before:bg-no-repeat before:left-0 before:top-1 max-394px:before:w-[16px] max-394px:before:top-[2px] max-394px:pl-[25px] max-394px:leading-[19px] max-394px:mb-[12px]">
+                                        Cam kết tốc độ
+                                        tải trang dưới 3s.</li>
+                                    <li
+                                        class="relative pl-[29px] before:absolute before:content-[''] mb-2 flex bg-no-repeat leading-7 before:bg-icon before:bg-contain before:w-[20px] before:h-[20px] before:bg-no-repeat before:left-0 before:top-1 max-394px:before:w-[16px] max-394px:before:top-[2px] max-394px:pl-[25px] max-394px:leading-[19px] max-394px:mb-[12px]">
+                                        Hỗ trợ nhập 10
+                                        đơn vị bài viết / sản phẩm</li>
+                                    <li
+                                        class="relative pl-[29px] before:absolute before:content-[''] mb-2 flex bg-no-repeat leading-7 before:bg-icon before:bg-contain before:w-[20px] before:h-[20px] before:bg-no-repeat before:left-0 before:top-1 max-394px:before:w-[16px] max-394px:before:top-[2px] max-394px:pl-[25px] max-394px:leading-[19px] max-394px:mb-[12px]">
+                                        Tối ưu hỗ trợ
+                                        SEO Google. Giao diện tương thích trên di động</li>
+                                    <li
+                                        class="relative pl-[29px] before:absolute before:content-[''] mb-2 flex bg-no-repeat leading-7 before:bg-icon before:bg-contain before:w-[20px] before:h-[20px] before:bg-no-repeat before:left-0 before:top-1 max-394px:before:w-[16px] max-394px:before:top-[2px] max-394px:pl-[25px] max-394px:leading-[19px] max-394px:mb-[12px]">
+                                        Tặng: 1 banner
+                                    </li>
+                                    <li
+                                        class="relative pl-[29px] before:absolute before:content-[''] mb-2 flex bg-no-repeat leading-7 before:bg-icon before:bg-contain before:w-[20px] before:h-[20px] before:bg-no-repeat before:left-0 before:top-1 max-394px:before:w-[16px] max-394px:before:top-[2px] max-394px:pl-[25px] max-394px:leading-[19px] max-394px:mb-[12px]">
+                                        Bàn giao mã
+                                        nguồn website</li>
+                                    <li
+                                        class="relative pl-[29px] before:absolute before:content-[''] mb-2 flex bg-no-repeat leading-7 before:bg-icon before:bg-contain before:w-[20px] before:h-[20px] before:bg-no-repeat before:left-0 before:top-1 max-394px:before:w-[16px] max-394px:before:top-[2px] max-394px:pl-[25px] max-394px:leading-[19px] max-394px:mb-[12px]">
+                                        Sao lưu dữ liệu
+                                        website hàng tuần</li>
+                                    <li
+                                        class="relative pl-[29px] before:absolute before:content-[''] mb-2 flex bg-no-repeat leading-7 before:bg-icon before:bg-contain before:w-[20px] before:h-[20px] before:bg-no-repeat before:left-0 before:top-1 max-394px:before:w-[16px] max-394px:before:top-[2px] max-394px:pl-[25px] max-394px:leading-[19px] max-394px:mb-[12px]">
+                                        Hướng dẫn quản
+                                        trị: 2h</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="relative w-[31.8%] h-[92%] max-394px:w-[89.83%] max-394px:top-0 max-394px:h-[28.51%]">
+                        <div class="absolute left-[50%] -translate-x-1/2 w-[68%] -top-[16px] max-394px:-top-[13px]">
+                            <div
+                                class="px-[152px] py-[160px] bg-linearcus1 rounded-[10px] max-394px:px-[120px] max-394px:py-[119.5px]">
+                            </div>
+                        </div>
+                        <div
+                            class="absolute -bottom-[3px] left-1/2 -translate-x-1/2 w-[68%] max-394px:-bottom-[18px] max-394px:w-[67.7%]">
+                            <img src="src/images/Rectangle 288.svg" alt="">
+                        </div>
+                        <div class="absolute">
+                            <div class="absolute w-[60.8%] left-1/2 -top-4 -translate-x-1/2 max-394px:-top-[13px] z-10">
+                                <img src="src/images/Rectangle 289.svg" alt="">
+                                <h1
+                                    class="absolute text-tahiti font-black text-[32px] left-1/2 -translate-x-1/2 top-[22%] -translate-y-1/2 max-394px:font-black max-394px:text-[24px] max-394px:top-[27%]">
+                                    Basic</h1>
+                            </div>
+                            <img class="w-full drop-shadow-3xl max-394px:hidden" src="src/images/Rectangle 291.svg"
+                                alt="">
+                            <img class="w-full drop-shadow-3xl hidden max-394px:block"
+                                src="src/images/Rectangle 290-mobile2.svg" alt="">
+                            <div
+                                class="absolute text-blk top-[16%] left-1/2 -translate-x-1/2 font-black text-[40px] w-[90%] max-394px:pt-[12px]">
+                                <h1 class="m-0 text-[40px] text-black text-center max-394px:text-[24px]">5.000.000
+                                    <span>VNĐ</span>
+                                </h1>
+                                <ul
+                                    class="font-medium text-[18px] text-tahiti pt-7 pl-[9px] list-none max-394px:*:text-[14px] max-394px:pl-[2px] max-394px:pt-[18px]">
+                                    <li
+                                        class="relative pl-[29px] before:absolute before:content-[''] mb-2 flex bg-no-repeat leading-7 before:bg-icon before:bg-contain before:w-[20px] before:h-[20px] before:bg-no-repeat before:left-0 before:top-1 max-394px:before:w-[16px] max-394px:before:top-[2px] max-394px:pl-[25px] max-394px:leading-[19px] max-394px:mb-[12px]">
+                                        Giao diện có
+                                        sẵn, tùy chỉnh màu sắc</li>
+                                    <li
+                                        class="relative pl-[29px] before:absolute before:content-[''] mb-2 flex bg-no-repeat leading-7 before:bg-icon before:bg-contain before:w-[20px] before:h-[20px] before:bg-no-repeat before:left-0 before:top-1 max-394px:before:w-[16px] max-394px:before:top-[2px] max-394px:pl-[25px] max-394px:leading-[19px] max-394px:mb-[12px]">
+                                        Thời gian bàn
+                                        giao: 5 - 7 ngày</li>
+                                    <li
+                                        class="relative pl-[29px] before:absolute before:content-[''] mb-2 flex bg-no-repeat leading-7 before:bg-icon before:bg-contain before:w-[20px] before:h-[20px] before:bg-no-repeat before:left-0 before:top-1 max-394px:before:w-[16px] max-394px:before:top-[2px] max-394px:pl-[25px] max-394px:leading-[19px] max-394px:mb-[12px]">
+                                        Bảo hành trọn
+                                        đời website</li>
+                                    <li
+                                        class="relative pl-[29px] before:absolute before:content-[''] mb-2 flex bg-no-repeat leading-7 before:bg-icon before:bg-contain before:w-[20px] before:h-[20px] before:bg-no-repeat before:left-0 before:top-1 max-394px:before:w-[16px] max-394px:before:top-[2px] max-394px:pl-[25px] max-394px:leading-[19px] max-394px:mb-[12px]">
+                                        Cam kết tốc độ
+                                        tải trang dưới 3s.</li>
+                                    <li
+                                        class="relative pl-[29px] before:absolute before:content-[''] mb-2 flex bg-no-repeat leading-7 before:bg-icon before:bg-contain before:w-[20px] before:h-[20px] before:bg-no-repeat before:left-0 before:top-1 max-394px:before:w-[16px] max-394px:before:top-[2px] max-394px:pl-[25px] max-394px:leading-[19px] max-394px:mb-[12px]">
+                                        Hỗ trợ nhập 10
+                                        đơn vị bài viết / sản phẩm</li>
+                                    <li
+                                        class="relative pl-[29px] before:absolute before:content-[''] mb-2 flex bg-no-repeat leading-7 before:bg-icon before:bg-contain before:w-[20px] before:h-[20px] before:bg-no-repeat before:left-0 before:top-1 max-394px:before:w-[16px] max-394px:before:top-[2px] max-394px:pl-[25px] max-394px:leading-[19px] max-394px:mb-[12px]">
+                                        Tối ưu hỗ trợ
+                                        SEO Google. Giao diện tương thích trên di động</li>
+                                    <li
+                                        class="relative pl-[29px] before:absolute before:content-[''] mb-2 flex bg-no-repeat leading-7 before:bg-icon before:bg-contain before:w-[20px] before:h-[20px] before:bg-no-repeat before:left-0 before:top-1 max-394px:before:w-[16px] max-394px:before:top-[2px] max-394px:pl-[25px] max-394px:leading-[19px] max-394px:mb-[12px]">
+                                        Tặng: 1 banner
+                                    </li>
+                                    <li
+                                        class="relative pl-[29px] before:absolute before:content-[''] mb-2 flex bg-no-repeat leading-7 before:bg-icon before:bg-contain before:w-[20px] before:h-[20px] before:bg-no-repeat before:left-0 before:top-1 max-394px:before:w-[16px] max-394px:before:top-[2px] max-394px:pl-[25px] max-394px:leading-[19px] max-394px:mb-[12px]">
+                                        Bàn giao mã
+                                        nguồn website</li>
+                                    <li
+                                        class="relative pl-[29px] before:absolute before:content-[''] mb-2 flex bg-no-repeat leading-7 before:bg-icon before:bg-contain before:w-[20px] before:h-[20px] before:bg-no-repeat before:left-0 before:top-1 max-394px:before:w-[16px] max-394px:before:top-[2px] max-394px:pl-[25px] max-394px:leading-[19px] max-394px:mb-[12px]">
+                                        Sao lưu dữ liệu
+                                        website hàng tuần</li>
+                                    <li
+                                        class="relative pl-[29px] before:absolute before:content-[''] mb-2 flex bg-no-repeat leading-7 before:bg-icon before:bg-contain before:w-[20px] before:h-[20px] before:bg-no-repeat before:left-0 before:top-1 max-394px:before:w-[16px] max-394px:before:top-[2px] max-394px:pl-[25px] max-394px:leading-[19px] max-394px:mb-[12px]">
+                                        Hướng dẫn quản
+                                        trị: 2h</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="relative w-[31.8%] h-[92%] top-16 max-394px:w-[89.83%] max-394px:top-0 max-394px:h-[28.51%]">
+                        <div class="absolute left-[50%] -translate-x-1/2 w-[68%] -top-[16px] max-394px:-top-[13px]">
+                            <div
+                                class="px-[152px] py-[160px] bg-linearcus1 rounded-[10px] max-394px:px-[120px] max-394px:py-[119.5px]">
+                            </div>
+                        </div>
+                        <div
+                            class="absolute -bottom-[3px] left-1/2 -translate-x-1/2 w-[68%] max-394px:-bottom-[18px] max-394px:w-[67.7%]">
+                            <img src="src/images/Rectangle 288.svg" alt="">
+                        </div>
+                        <div class="absolute">
+                            <div class="absolute w-[60.8%] left-1/2 -top-4 -translate-x-1/2 max-394px:-top-[13px] z-10">
+                                <img src="src/images/Rectangle 289.svg" alt="">
+                                <h1
+                                    class="absolute text-tahiti font-black text-[32px] left-1/2 -translate-x-1/2 top-[22%] -translate-y-1/2 max-394px:font-black max-394px:text-[24px] max-394px:top-[27%]">
+                                    Basic</h1>
+                            </div>
+                            <img class="w-full drop-shadow-xl max-394px:hidden" src="src/images/Rectangle 291.svg"
+                                alt="">
+                            <img class="w-full drop-shadow-xl text-shadow-md hidden max-394px:block"
+                                src="src/images/Rectangle 290-mobile2.svg" alt="">
+                            <div
+                                class="absolute text-blk top-[16%] left-1/2 -translate-x-1/2 font-black text-[40px] w-[90%] max-394px:pt-[12px]">
+                                <h1 class="m-0 text-[40px] text-black text-center max-394px:text-[24px]">5.000.000
+                                    <span>VNĐ</span>
+                                </h1>
+                                <ul
+                                    class="font-medium text-[18px] text-tahiti pt-7 pl-[9px] list-none max-394px:*:text-[14px] max-394px:pl-[2px] max-394px:pt-[18px]">
+                                    <li
+                                        class="relative pl-[29px] before:absolute before:content-[''] mb-2 flex bg-no-repeat leading-7 before:bg-icon before:bg-contain before:w-[20px] before:h-[20px] before:bg-no-repeat before:left-0 before:top-1 max-394px:before:w-[16px] max-394px:before:top-[2px] max-394px:pl-[25px] max-394px:leading-[19px] max-394px:mb-[12px]">
+                                        Giao diện có
+                                        sẵn, tùy chỉnh màu sắc</li>
+                                    <li
+                                        class="relative pl-[29px] before:absolute before:content-[''] mb-2 flex bg-no-repeat leading-7 before:bg-icon before:bg-contain before:w-[20px] before:h-[20px] before:bg-no-repeat before:left-0 before:top-1 max-394px:before:w-[16px] max-394px:before:top-[2px] max-394px:pl-[25px] max-394px:leading-[19px] max-394px:mb-[12px]">
+                                        Thời gian bàn
+                                        giao: 5 - 7 ngày</li>
+                                    <li
+                                        class="relative pl-[29px] before:absolute before:content-[''] mb-2 flex bg-no-repeat leading-7 before:bg-icon before:bg-contain before:w-[20px] before:h-[20px] before:bg-no-repeat before:left-0 before:top-1 max-394px:before:w-[16px] max-394px:before:top-[2px] max-394px:pl-[25px] max-394px:leading-[19px] max-394px:mb-[12px]">
+                                        Bảo hành trọn
+                                        đời website</li>
+                                    <li
+                                        class="relative pl-[29px] before:absolute before:content-[''] mb-2 flex bg-no-repeat leading-7 before:bg-icon before:bg-contain before:w-[20px] before:h-[20px] before:bg-no-repeat before:left-0 before:top-1 max-394px:before:w-[16px] max-394px:before:top-[2px] max-394px:pl-[25px] max-394px:leading-[19px] max-394px:mb-[12px]">
+                                        Cam kết tốc độ
+                                        tải trang dưới 3s.</li>
+                                    <li
+                                        class="relative pl-[29px] before:absolute before:content-[''] mb-2 flex bg-no-repeat leading-7 before:bg-icon before:bg-contain before:w-[20px] before:h-[20px] before:bg-no-repeat before:left-0 before:top-1 max-394px:before:w-[16px] max-394px:before:top-[2px] max-394px:pl-[25px] max-394px:leading-[19px] max-394px:mb-[12px]">
+                                        Hỗ trợ nhập 10
+                                        đơn vị bài viết / sản phẩm</li>
+                                    <li
+                                        class="relative pl-[29px] before:absolute before:content-[''] mb-2 flex bg-no-repeat leading-7 before:bg-icon before:bg-contain before:w-[20px] before:h-[20px] before:bg-no-repeat before:left-0 before:top-1 max-394px:before:w-[16px] max-394px:before:top-[2px] max-394px:pl-[25px] max-394px:leading-[19px] max-394px:mb-[12px]">
+                                        Tối ưu hỗ trợ
+                                        SEO Google. Giao diện tương thích trên di động</li>
+                                    <li
+                                        class="relative pl-[29px] before:absolute before:content-[''] mb-2 flex bg-no-repeat leading-7 before:bg-icon before:bg-contain before:w-[20px] before:h-[20px] before:bg-no-repeat before:left-0 before:top-1 max-394px:before:w-[16px] max-394px:before:top-[2px] max-394px:pl-[25px] max-394px:leading-[19px] max-394px:mb-[12px]">
+                                        Tặng: 1 banner
+                                    </li>
+                                    <li
+                                        class="relative pl-[29px] before:absolute before:content-[''] mb-2 flex bg-no-repeat leading-7 before:bg-icon before:bg-contain before:w-[20px] before:h-[20px] before:bg-no-repeat before:left-0 before:top-1 max-394px:before:w-[16px] max-394px:before:top-[2px] max-394px:pl-[25px] max-394px:leading-[19px] max-394px:mb-[12px]">
+                                        Bàn giao mã
+                                        nguồn website</li>
+                                    <li
+                                        class="relative pl-[29px] before:absolute before:content-[''] mb-2 flex bg-no-repeat leading-7 before:bg-icon before:bg-contain before:w-[20px] before:h-[20px] before:bg-no-repeat before:left-0 before:top-1 max-394px:before:w-[16px] max-394px:before:top-[2px] max-394px:pl-[25px] max-394px:leading-[19px] max-394px:mb-[12px]">
+                                        Sao lưu dữ liệu
+                                        website hàng tuần</li>
+                                    <li
+                                        class="relative pl-[29px] before:absolute before:content-[''] mb-2 flex bg-no-repeat leading-7 before:bg-icon before:bg-contain before:w-[20px] before:h-[20px] before:bg-no-repeat before:left-0 before:top-1 max-394px:before:w-[16px] max-394px:before:top-[2px] max-394px:pl-[25px] max-394px:leading-[19px] max-394px:mb-[12px]">
+                                        Hướng dẫn quản
+                                        trị: 2h</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ===========================End Bảng giá thiết kế Website============================== -->
+        </div>
+        <!-- ===================================End Logo & Header=================================== -->
+
+        <!-- ==================================Quy trình thiết kế=================================== -->
+        <section class="w-full  max-394px:h-[1758px]">
+            <div class="w-[88rem] mx-auto py-24 max-394px:hidden">
+                <div
+                    class="w-full *:font-bold *:text-[40px] *:leading-[54.56px] *:text-center flex flex-col items-center justify-center gap-[17px]">
+                    <h1 class="m-0 bg-gradient-to-tr from-bluebold to-lightblue text-white px-12 py-4 rounded-full">
+                        Quy Trình Thiết Kế Website
+                    </h1>
+                    <h1 class="m-0">Chuyên Nghiệp Tại WebOps Agency</h1>
+                </div>
+                <div class="w-full pt-[95px] flex flex-col gap-[150px]">
+                    <div class="flex relative justify-between items-center">
+                        <div class="w-[31.82%] border border-gray-300 px-[23px] py-[23px] h-[280px]">
+                            <div class="flex relative items-center justify-between">
+                                <div>
+                                    <img src="src/icons/lab.svg" alt="">
+                                </div>
+                                <div
+                                    class="font-bold text-[18px] w-[70%] leading-[24px] absolute left-1/2 -translate-x-1/2 text-center">
+                                    <p>Nhận yêu cầu từ khách hàng</p>
+                                </div>
+                                <div class="rounded-full bg-linearcus1 px-[25px] py-[25px] text-white relative">
+                                    <p
+                                        class="font-bold text-[32px] absolute left-1/2 top-[54%] -translate-x-1/2 -translate-y-1/2">
+                                        1</p>
+                                </div>
+                            </div>
+                            <div class="font-normal text-[18px] leading-[28px] pt-[30px]">
+                                <p>Gặp gỡ, trao đổi và tiếp nhận yêu cầu từ phía khách hàng</p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="absolute border-2 border-linearcus1 pl-[238px] pr-[237px] py-[27px] border-b-0 border-dashed -top-[49px] left-[28.5%]">
+                            <div><img class="absolute -bottom-[11px] -left-1" src="src/icons/tinydot.svg" alt=""></div>
+                            <div><img class="absolute -bottom-2 -right-2" src="src/icons/tinyarrow.svg" alt=""></div>
+                        </div>
+
+                        <div class="w-[31.82%] border border-gray-300 px-[23px] py-[23px] h-[280px]">
+                            <div class="flex relative items-center justify-between">
+                                <div>
+                                    <img src="src/icons/date.svg" alt="">
+                                </div>
+                                <div
+                                    class="font-bold text-[18px] w-[70%] leading-[24px] absolute left-1/2 -translate-x-1/2 text-center">
+                                    <p>Nghiên cứu và phân tích yêu cầu</p>
+                                </div>
+                                <div class="rounded-full bg-gray-300 px-[25px] py-[25px] text-white relative">
+                                    <p
+                                        class="font-bold text-[32px] absolute left-1/2 top-[54%] -translate-x-1/2 -translate-y-1/2">
+                                        2</p>
+                                </div>
+                            </div>
+                            <div class="font-normal text-[18px] leading-[28px] pt-[30px] text-gray-500">
+                                <p>Phân tích thông tin từ khách hàng để hiểu rõ nhu cầu và mục tiêu của họ</p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="absolute border-2 border-linearcus1 pl-[132px] pr-[133px] py-[27px] border-t-0 border-dashed -bottom-[42px] right-[21.9%]">
+                            <div><img class="absolute -top-1 -left-1" src="src/icons/tinydot.svg" alt=""></div>
+                            <div><img class="absolute -top-[6px] -right-2 transform rotate-180"
+                                    src="src/icons/tinyarrow.svg" alt="">
+                            </div>
+                        </div>
+
+                        <div class="w-[31.82%] border border-gray-300 px-[23px] py-[23px] h-[280px]">
+                            <div class="flex relative items-center justify-between">
+                                <div>
+                                    <img src="src/icons/pencil.svg" alt="">
+                                </div>
+                                <div
+                                    class="font-bold text-[18px] w-[70%] leading-[24px] absolute left-1/2 -translate-x-1/2 text-center">
+                                    <p>Thiết kế giao diện trên figma</p>
+                                </div>
+                                <div class="rounded-full bg-gray-300 px-[25px] py-[25px] text-white relative">
+                                    <p
+                                        class="font-bold text-[32px] absolute left-1/2 top-[54%] -translate-x-1/2 -translate-y-1/2">
+                                        3</p>
+                                </div>
+                            </div>
+                            <div class="font-normal text-[18px] leading-[28px] pt-[30px] text-gray-500">
+                                <p>Dựa vào yêu cầu của khách hàng, tiến hành xây dựng concept. Sau khi khách hàng chốt
+                                    phương án thì bắt đầu thiết kế chi tiết.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="flex relative justify-between items-center">
+                        <div class="w-[31.82%] border border-gray-300 px-[23px] py-[23px] h-[280px]">
+                            <div class="flex relative items-center justify-between">
+                                <div>
+                                    <img src="src/icons/bi_card-checklist.svg" alt="">
+                                </div>
+                                <div
+                                    class="font-bold text-[18px] w-[70%] leading-[24px] absolute left-1/2 -translate-x-1/2 text-center">
+                                    <p>Audit chuẩn SEO</p>
+                                </div>
+                                <div class="rounded-full bg-gray-300 px-[25px] py-[25px] text-white relative">
+                                    <p
+                                        class="font-bold text-[32px] absolute left-1/2 top-[54%] -translate-x-1/2 -translate-y-1/2">
+                                        6</p>
+                                </div>
+                            </div>
+                            <div class="font-normal text-[18px] leading-[28px] pt-[14px]">
+                                <p>Project consistency is important to have a well-functioning site that provides a
+                                    seamless user experience. Testing the working of all features on all devices and
+                                    platforms is also crucial. </p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="absolute border-2 border-linearcus1 px-[238px] py-[27px] border-b-0 border-dashed -top-[48px] left-[28.3%]">
+                            <div><img class="absolute -bottom-2 -left-2" src="src/icons/tinyarrow.svg" alt=""></div>
+                            <div><img class="absolute -bottom-[6px] -right-1" src="src/icons/tinydot.svg" alt=""></div>
+                        </div>
+
+                        <div class="w-[31.82%] border border-gray-300 px-[23px] py-[23px] h-[280px]">
+                            <div class="flex relative items-center justify-between">
+                                <div>
+                                    <img src="src/icons/carbon_settings-check.svg" alt="">
+                                </div>
+                                <div
+                                    class="font-bold text-[18px] w-[70%] leading-[24px] absolute left-1/2 -translate-x-1/2 text-center">
+                                    <p>Tiến hành lập trình</p>
+                                </div>
+                                <div class="rounded-full bg-gray-300 px-[25px] py-[25px] text-white relative">
+                                    <p
+                                        class="font-bold text-[32px] absolute left-1/2 top-[54%] -translate-x-1/2 -translate-y-1/2">
+                                        5</p>
+                                </div>
+                            </div>
+                            <div class="font-normal text-[18px] leading-[28px] pt-[14px] text-gray-500">
+                                <p>Đây là giai đoạn được tiến hành sau khi khách đã chốt xong được thiết kế. Dev sẽ bắt
+                                    tay vào code giao diện và chức năng cho website</p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="absolute border-2 border-linearcus1 py-[86px] border-dashed border-l-0 -top-[164px] right-[48px]">
+                            <div><img class="absolute max-w-max -top-1 -right-1" src="src/icons/tinydot.svg" alt="">
+                            </div>
+                            <div><img class="absolute max-w-max -bottom-[10px] -right-2" src="src/icons/tinyarrow.svg"
+                                    alt="">
+                            </div>
+                        </div>
+
+                        <div class="w-[31.82%] border border-gray-300 px-[23px] py-[23px] h-[280px]">
+                            <div class="flex relative items-center justify-between gap-[20px]">
+                                <div>
+                                    <img class="max-w-max" src="src/icons/code_black_24dp 1.svg" alt="">
+                                </div>
+                                <div class="font-bold text-[18px] leading-[24px]">
+                                    <p>Tiếp nhận phản hồi từ khách hàng và cập nhật thiết kế</p>
+                                </div>
+                                <div class="rounded-full bg-gray-300 px-[25px] py-[25px] text-white relative">
+                                    <p
+                                        class="font-bold text-[32px] absolute left-1/2 top-[54%] -translate-x-1/2 -translate-y-1/2">
+                                        4</p>
+                                </div>
+                            </div>
+                            <div class="font-normal text-[18px] leading-[28px] pt-[14px] text-gray-500">
+                                <p>Sau khi gửi khách bản thiết kế chi tiết và nhận được phản hồi từ khách hàng, chúng
+                                    tôi bắt đầu cập nhật lại theo feedback</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="flex relative gap-[32px] items-center">
+                        <div class="w-[31.82%] border border-gray-300 px-[23px] py-[23px] h-[280px]">
+                            <div class="flex relative items-center justify-between">
+                                <div>
+                                    <img src="src/icons/all_inbox_black_24dp 1.svg" alt="">
+                                </div>
+                                <div
+                                    class="font-bold text-[18px] w-[70%] leading-[24px] absolute left-1/2 -translate-x-1/2 text-center">
+                                    <p>Hướng dẫn sử dụng và hỗ trợ</p>
+                                </div>
+                                <div class="rounded-full bg-gray-300 px-[25px] py-[25px] text-white relative">
+                                    <p
+                                        class="font-bold text-[32px] absolute left-1/2 top-[54%] -translate-x-1/2 -translate-y-1/2">
+                                        7</p>
+                                </div>
+                            </div>
+                            <div class="font-normal text-[18px] leading-[28px] pt-[14px]">
+                                <p>Once you receive the stamp of approval from the QA team, the website or app is
+                                    finally ready for deployment. Using File Transfer Protocol, the app is hosted on the
+                                    web servers and is available to the viewers. </p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="absolute border-2 border-linearcus1 py-[85px] border-dashed border-l-0 -top-[164px] left-[225px]">
+                            <div><img class="absolute max-w-max -top-1 -right-1" src="src/icons/tinydot.svg" alt="">
+                            </div>
+                            <div><img class="absolute max-w-max -bottom-[10px] -right-2" src="src/icons/tinyarrow.svg"
+                                    alt="">
+                            </div>
+                        </div>
+
+                        <div class="w-[31.82%] border border-gray-300 px-[23px] py-[23px] h-[280px]">
+                            <div class="flex relative items-center justify-between">
+                                <div>
+                                    <img src="src/icons/all_inbox_black_24dp 1.svg" alt="">
+                                </div>
+                                <div
+                                    class="font-bold text-[18px] w-[70%] leading-[24px] absolute left-1/2 -translate-x-1/2 text-center">
+                                    <p>Bàn giao dự án</p>
+                                </div>
+                                <div class="rounded-full bg-gray-300 px-[25px] py-[25px] text-white relative">
+                                    <p
+                                        class="font-bold text-[32px] absolute left-1/2 top-[54%] -translate-x-1/2 -translate-y-1/2">
+                                        8</p>
+                                </div>
+                            </div>
+                            <div class="font-normal text-[18px] leading-[28px] pt-[14px] text-gray-500">
+                                <p>Once you receive the stamp of approval from the QA team, the website or app is
+                                    finally ready for deployment. Using File Transfer Protocol, the app is hosted on the
+                                    web servers and is available to the viewers. </p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="absolute border-2 border-linearcus1 pl-[132px] pr-[133px] py-7 border-t-0 border-dashed -bottom-[42px] left-[24.35%]">
+                            <div><img class="absolute -top-[2px] -left-1" src="src/icons/tinydot.svg" alt=""></div>
+                            <div><img class="absolute -top-1 -right-2 transform rotate-180"
+                                    src="src/icons/tinyarrow.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ================================End Quy trình thiết kế================================= -->
+
+        <!-- ============================Bảng giá Hosting cho cá nhân=============================== -->
+        <section class="w-full relative">
+            <div class="w-full h-[950px] absolute bg-gradient-to-t from-bluebold to-lightblue mt-[42px] max-394px:hidden"
+                style="clip-path:
+                polygon( 0% 0%,76.244% 0%,76.244% 0%,76.871% 0.076%,77.48% 0.3%,78.066% 0.665%,78.623% 1.162%,79.147%
+                1.786%,79.63% 2.528%,80.069% 3.382%,80.458% 4.339%,80.792% 5.394%,81.064% 6.538%,100% 100%,0% 100%,0% 0%
+                )">
+            </div>
+            <div class="w-full h-[950px] absolute bg-gradient-to-t from-bluebold to-lightblue mt-[42px]"></div>
+            <div
+                class="w-[88rem] h-auto absolute left-1/2 -translate-x-1/2 top-[137px] max-394px:w-full max-394px:top-[74px]">
+                <div
+                    class="w-full h-auto text-center text-white font-extrabold leading-[65.47px] max-394px:leading-[33px] max-394px:mb-[45px]">
+                    <h1 class="m-0 text-[48px] max-394px:text-[24px] max-394px:flex max-394px:flex-col">Bảng giá <span
+                            class="text-[48px] max-394px:text-[24px] max-394px:pr-2"> Hosting cho cá
+                            nhân</span></h1>
+                </div>
+                <div class="w-full h-auto flex justify-between max-394px:flex max-394px:flex-col">
+                    <div
+                        class="relative w-[31.8%] h-[92%] top-16 max-394px:w-[89.83%] max-394px:top-0 max-394px:h-[28.51%] max-394px:mx-auto">
+                        <div class="absolute left-[50%] -translate-x-1/2 w-[68%] -top-[16px] max-394px:-top-[13px]">
+                            <div
+                                class="px-[152px] py-[160px] bg-linearcus1 rounded-[10px] max-394px:px-[119.5px] max-394px:py-[40px]">
+                            </div>
+                        </div>
+                        <div
+                            class="absolute top-[250px] left-1/2 -translate-x-1/2 w-[68%] max-394px:-bottom-[18px] max-394px:w-[67.7%]">
+                            <img src="src/images/Rectangle 288.svg" alt="">
+                        </div>
+                        <div class="absolute">
+                            <div class="absolute w-[60.8%] left-1/2 -top-4 -translate-x-1/2 max-394px:-top-[13px] z-10">
+                                <img src="src/images/Rectangle 289.svg" alt="">
+                                <h1
+                                    class="absolute text-tahiti font-black text-[32px] left-1/2 -translate-x-1/2 top-[22%] -translate-y-1/2 w-full text-center max-394px:font-black max-394px:text-[24px] max-394px:top-[27%]">
+                                    Personal 1</h1>
+                            </div>
+                            <img class="w-full drop-shadow-3xl max-394px:hidden" src="src/images/Rectangle 17288.svg"
+                                alt="">
+                            <img class="w-full drop-shadow-3xl hidden max-394px:block"
+                                src="src/images/Rectangle 17288-mobile.svg" alt="">
+                            <div
+                                class="absolute text-blk top-[23.7%] left-1/2 -translate-x-1/2 text-[18px] w-[90%] max-394px:pt-[12px] max-394px:text-[14px]">
+                                <ul>
+                                    <li
+                                        class="relative pl-[38px] pr-[7px] before:absolute before:content-[''] mb-2 flex justify-between bg-no-repeat leading-7 before:bg-icon before:bg-contain before:w-[20px] before:h-[20px] before:bg-no-repeat before:left-[2.5%] before:top-1 max-394px:before:w-[16px] max-394px:before:top-[2px] max-394px:pl-[25px] max-394px:leading-[19px] max-394px:mb-[12px]">
+                                        <p class="font-medium w-[68%]">Phí khởi tạo</p>
+                                        <span class="font-black">Miễn phí</span>
+                                    </li>
+                                    <li
+                                        class="relative pl-[38px] pr-[7px] before:absolute before:content-[''] mb-2 flex justify-between bg-no-repeat leading-7 before:bg-icon before:bg-contain before:w-[20px] before:h-[20px] before:bg-no-repeat before:left-[2.5%] before:top-1 max-394px:before:w-[16px] max-394px:before:top-[2px] max-394px:pl-[25px] max-394px:leading-[19px] max-394px:mb-[12px]">
+                                        <p class="font-medium w-[68%]">Dung lượng</p>
+                                        <span class="font-black">400 MB</span>
+                                    </li>
+                                    <li
+                                        class="relative pl-[38px] pr-[7px] before:absolute before:content-[''] mb-2 flex justify-between bg-no-repeat leading-7 before:bg-icon before:bg-contain before:w-[20px] before:h-[20px] before:bg-no-repeat before:left-[2.5%] before:top-1 max-394px:before:w-[16px] max-394px:before:top-[2px] max-394px:pl-[25px] max-394px:leading-[19px] max-394px:mb-[12px]">
+                                        <p class="font-medium w-[68%]">Băng thông</p>
+                                        <span class="font-black">Unlimited</span>
+                                    </li>
+                                    <li
+                                        class="relative pl-[38px] pr-[7px] before:absolute before:content-[''] mb-2 flex justify-between bg-no-repeat leading-7 before:bg-icon before:bg-contain before:w-[20px] before:h-[20px] before:bg-no-repeat before:left-[2.5%] before:top-1 max-394px:before:w-[16px] max-394px:before:top-[2px] max-394px:pl-[25px] max-394px:leading-[19px] max-394px:mb-[12px]">
+                                        <p class="font-medium w-[68%]">Tài khoản FTP/Database/ Addon domain</p>
+                                        <span class="font-black">3</span>
+                                    </li>
+                                    <li
+                                        class="relative pl-[38px] pr-[7px] before:absolute before:content-[''] mb-2 flex justify-between bg-no-repeat leading-7 before:bg-icon before:bg-contain before:w-[20px] before:h-[20px] before:bg-no-repeat before:left-[2.5%] before:top-1 max-394px:before:w-[16px] max-394px:before:top-[2px] max-394px:pl-[25px] max-394px:leading-[19px] max-394px:mb-[12px]">
+                                        <p class="font-medium w-[68%]">Subdomain/Park domain</p>
+                                        <span class="font-black">3</span>
+                                    </li>
+                                    <li
+                                        class="relative pl-[38px] pr-[7px] before:absolute before:content-[''] mb-2 flex justify-between bg-no-repeat leading-7 before:bg-icon before:bg-contain before:w-[20px] before:h-[20px] before:bg-no-repeat before:left-[2.5%] before:top-1 max-394px:before:w-[16px] max-394px:before:top-[2px] max-394px:pl-[25px] max-394px:leading-[19px] max-394px:mb-[12px]">
+                                        <p class="font-medium w-[68%]">Phí hàng tháng</p>
+                                        <span class="font-black">30.000 VNĐ</span>
+                                    </li>
+                                    <li
+                                        class="relative pl-[38px] pr-[7px] before:absolute before:content-[''] mb-2 flex justify-between bg-no-repeat leading-7 before:bg-icon before:bg-contain before:w-[20px] before:h-[20px] before:bg-no-repeat before:left-[2.5%] before:top-1 max-394px:before:w-[16px] max-394px:before:top-[2px] max-394px:pl-[25px] max-394px:leading-[19px] max-394px:mb-[12px]">
+                                        <p class="font-medium w-[68%]">Thanh toán tối thiểu</p>
+                                        <span class="font-black">12 tháng</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="relative w-[31.8%] h-[92%] top-16 max-394px:w-[89.83%] max-394px:top-0 max-394px:h-[28.51%] max-394px:hidden">
+                        <div class="absolute left-[50%] -translate-x-1/2 w-[68%] -top-[16px] max-394px:-top-[13px]">
+                            <div
+                                class="px-[152px] py-[160px] bg-linearcus1 rounded-[10px] max-394px:w-[239px] max-394px:px-0 max-394px:h-1 max-394px:py-[40px]">
+                            </div>
+                        </div>
+                        <div
+                            class="absolute top-[250px] left-1/2 -translate-x-1/2 w-[68%] max-394px:-bottom-[18px] max-394px:w-[67.7%]">
+                            <img src="src/images/Rectangle 288.svg" alt="">
+                        </div>
+                        <div class="absolute">
+                            <div class="absolute w-[60.8%] left-1/2 -top-4 -translate-x-1/2 max-394px:-top-[13px] z-10">
+                                <img src="src/images/Rectangle 289.svg" alt="">
+                                <h1
+                                    class="absolute text-tahiti font-black text-[32px] left-1/2 -translate-x-1/2 top-[22%] -translate-y-1/2 w-full text-center max-394px:font-black max-394px:text-[24px] max-394px:top-[27%]">
+                                    Personal 1</h1>
+                            </div>
+                            <img class="w-full drop-shadow-3xl max-394px:hidden" src="src/images/Rectangle 17288.svg"
+                                alt="">
+                            <div
+                                class="absolute text-blk top-[23.7%] left-1/2 -translate-x-1/2 text-[18px] w-[90%] max-394px:pt-[12px] max-394px:*:text-[14px]">
+                                <ul>
+                                    <li
+                                        class="relative pl-[38px] pr-[7px] before:absolute before:content-[''] mb-2 flex justify-between bg-no-repeat leading-7 before:bg-icon before:bg-contain before:w-[20px] before:h-[20px] before:bg-no-repeat before:left-[2.5%] before:top-1 max-394px:before:w-[16px] max-394px:before:top-[2px] max-394px:pl-[25px] max-394px:leading-[19px] max-394px:mb-[12px]">
+                                        <p class="font-medium w-[68%]">Phí khởi tạo</p>
+                                        <span class="font-black">Miễn phí</span>
+                                    </li>
+                                    <li
+                                        class="relative pl-[38px] pr-[7px] before:absolute before:content-[''] mb-2 flex justify-between bg-no-repeat leading-7 before:bg-icon before:bg-contain before:w-[20px] before:h-[20px] before:bg-no-repeat before:left-[2.5%] before:top-1 max-394px:before:w-[16px] max-394px:before:top-[2px] max-394px:pl-[25px] max-394px:leading-[19px] max-394px:mb-[12px]">
+                                        <p class="font-medium w-[68%]">Dung lượng</p>
+                                        <span class="font-black">400 MB</span>
+                                    </li>
+                                    <li
+                                        class="relative pl-[38px] pr-[7px] before:absolute before:content-[''] mb-2 flex justify-between bg-no-repeat leading-7 before:bg-icon before:bg-contain before:w-[20px] before:h-[20px] before:bg-no-repeat before:left-[2.5%] before:top-1 max-394px:before:w-[16px] max-394px:before:top-[2px] max-394px:pl-[25px] max-394px:leading-[19px] max-394px:mb-[12px]">
+                                        <p class="font-medium w-[68%]">Băng thông</p>
+                                        <span class="font-black">Unlimited</span>
+                                    </li>
+                                    <li
+                                        class="relative pl-[38px] pr-[7px] before:absolute before:content-[''] mb-2 flex justify-between bg-no-repeat leading-7 before:bg-icon before:bg-contain before:w-[20px] before:h-[20px] before:bg-no-repeat before:left-[2.5%] before:top-1 max-394px:before:w-[16px] max-394px:before:top-[2px] max-394px:pl-[25px] max-394px:leading-[19px] max-394px:mb-[12px]">
+                                        <p class="font-medium w-[68%]">Tài khoản FTP/Database/ Addon domain</p>
+                                        <span class="font-black">3</span>
+                                    </li>
+                                    <li
+                                        class="relative pl-[38px] pr-[7px] before:absolute before:content-[''] mb-2 flex justify-between bg-no-repeat leading-7 before:bg-icon before:bg-contain before:w-[20px] before:h-[20px] before:bg-no-repeat before:left-[2.5%] before:top-1 max-394px:before:w-[16px] max-394px:before:top-[2px] max-394px:pl-[25px] max-394px:leading-[19px] max-394px:mb-[12px]">
+                                        <p class="font-medium w-[68%]">Subdomain/Park domain</p>
+                                        <span class="font-black">3</span>
+                                    </li>
+                                    <li
+                                        class="relative pl-[38px] pr-[7px] before:absolute before:content-[''] mb-2 flex justify-between bg-no-repeat leading-7 before:bg-icon before:bg-contain before:w-[20px] before:h-[20px] before:bg-no-repeat before:left-[2.5%] before:top-1 max-394px:before:w-[16px] max-394px:before:top-[2px] max-394px:pl-[25px] max-394px:leading-[19px] max-394px:mb-[12px]">
+                                        <p class="font-medium w-[68%]">Phí hàng tháng</p>
+                                        <span class="font-black">30.000 VNĐ</span>
+                                    </li>
+                                    <li
+                                        class="relative pl-[38px] pr-[7px] before:absolute before:content-[''] mb-2 flex justify-between bg-no-repeat leading-7 before:bg-icon before:bg-contain before:w-[20px] before:h-[20px] before:bg-no-repeat before:left-[2.5%] before:top-1 max-394px:before:w-[16px] max-394px:before:top-[2px] max-394px:pl-[25px] max-394px:leading-[19px] max-394px:mb-[12px]">
+                                        <p class="font-medium w-[68%]">Thanh toán tối thiểu</p>
+                                        <span class="font-black">12 tháng</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="relative w-[31.8%] h-[92%] top-16 max-394px:w-[89.83%] max-394px:top-0 max-394px:h-[28.51%] max-394px:hidden">
+                        <div class="absolute left-[50%] -translate-x-1/2 w-[68%] -top-[16px] max-394px:-top-[13px]">
+                            <div
+                                class="px-[152px] py-[160px] bg-linearcus1 rounded-[10px] max-394px:px-[119.5px] max-394px:py-[40px]">
+                            </div>
+                        </div>
+                        <div
+                            class="absolute top-[250px] left-1/2 -translate-x-1/2 w-[68%] max-394px:-bottom-[18px] max-394px:w-[67.7%]">
+                            <img src="src/images/Rectangle 288.svg" alt="">
+                        </div>
+                        <div class="absolute">
+                            <div class="absolute w-[60.8%] left-1/2 -top-4 -translate-x-1/2 max-394px:-top-[13px] z-10">
+                                <img src="src/images/Rectangle 289.svg" alt="">
+                                <h1
+                                    class="absolute text-tahiti font-black text-[32px] left-1/2 -translate-x-1/2 top-[22%] -translate-y-1/2 w-full text-center max-394px:font-black max-394px:text-[24px] max-394px:top-[27%]">
+                                    Personal 1</h1>
+                            </div>
+                            <img class="w-full drop-shadow-3xl max-394px:w-[353px]" src="src/images/Rectangle 17288.svg"
+                                alt="">
+                            <div
+                                class="absolute text-blk top-[23.7%] left-1/2 -translate-x-1/2 text-[18px] w-[90%] max-394px:pt-[12px]">
+                                <ul>
+                                    <li
+                                        class="relative pl-[38px] pr-[7px] before:absolute before:content-[''] mb-2 flex justify-between bg-no-repeat leading-7 before:bg-icon before:bg-contain before:w-[20px] before:h-[20px] before:bg-no-repeat before:left-[2.5%] before:top-1 max-394px:before:w-[16px] max-394px:before:top-[2px] max-394px:pl-[25px] max-394px:leading-[19px] max-394px:mb-[12px]">
+                                        <p class="font-medium w-[68%]">Phí khởi tạo</p>
+                                        <span class="font-black">Miễn phí</span>
+                                    </li>
+                                    <li
+                                        class="relative pl-[38px] pr-[7px] before:absolute before:content-[''] mb-2 flex justify-between bg-no-repeat leading-7 before:bg-icon before:bg-contain before:w-[20px] before:h-[20px] before:bg-no-repeat before:left-[2.5%] before:top-1 max-394px:before:w-[16px] max-394px:before:top-[2px] max-394px:pl-[25px] max-394px:leading-[19px] max-394px:mb-[12px]">
+                                        <p class="font-medium w-[68%]">Dung lượng</p>
+                                        <span class="font-black">400 MB</span>
+                                    </li>
+                                    <li
+                                        class="relative pl-[38px] pr-[7px] before:absolute before:content-[''] mb-2 flex justify-between bg-no-repeat leading-7 before:bg-icon before:bg-contain before:w-[20px] before:h-[20px] before:bg-no-repeat before:left-[2.5%] before:top-1 max-394px:before:w-[16px] max-394px:before:top-[2px] max-394px:pl-[25px] max-394px:leading-[19px] max-394px:mb-[12px]">
+                                        <p class="font-medium w-[68%]">Băng thông</p>
+                                        <span class="font-black">Unlimited</span>
+                                    </li>
+                                    <li
+                                        class="relative pl-[38px] pr-[7px] before:absolute before:content-[''] mb-2 flex justify-between bg-no-repeat leading-7 before:bg-icon before:bg-contain before:w-[20px] before:h-[20px] before:bg-no-repeat before:left-[2.5%] before:top-1 max-394px:before:w-[16px] max-394px:before:top-[2px] max-394px:pl-[25px] max-394px:leading-[19px] max-394px:mb-[12px]">
+                                        <p class="font-medium w-[68%]">Tài khoản FTP/Database/ Addon domain</p>
+                                        <span class="font-black">3</span>
+                                    </li>
+                                    <li
+                                        class="relative pl-[38px] pr-[7px] before:absolute before:content-[''] mb-2 flex justify-between bg-no-repeat leading-7 before:bg-icon before:bg-contain before:w-[20px] before:h-[20px] before:bg-no-repeat before:left-[2.5%] before:top-1 max-394px:before:w-[16px] max-394px:before:top-[2px] max-394px:pl-[25px] max-394px:leading-[19px] max-394px:mb-[12px]">
+                                        <p class="font-medium w-[68%]">Subdomain/Park domain</p>
+                                        <span class="font-black">3</span>
+                                    </li>
+                                    <li
+                                        class="relative pl-[38px] pr-[7px] before:absolute before:content-[''] mb-2 flex justify-between bg-no-repeat leading-7 before:bg-icon before:bg-contain before:w-[20px] before:h-[20px] before:bg-no-repeat before:left-[2.5%] before:top-1 max-394px:before:w-[16px] max-394px:before:top-[2px] max-394px:pl-[25px] max-394px:leading-[19px] max-394px:mb-[12px]">
+                                        <p class="font-medium w-[68%]">Phí hàng tháng</p>
+                                        <span class="font-black">30.000 VNĐ</span>
+                                    </li>
+                                    <li
+                                        class="relative pl-[38px] pr-[7px] before:absolute before:content-[''] mb-2 flex justify-between bg-no-repeat leading-7 before:bg-icon before:bg-contain before:w-[20px] before:h-[20px] before:bg-no-repeat before:left-[2.5%] before:top-1 max-394px:before:w-[16px] max-394px:before:top-[2px] max-394px:pl-[25px] max-394px:leading-[19px] max-394px:mb-[12px]">
+                                        <p class="font-medium w-[68%]">Thanh toán tối thiểu</p>
+                                        <span class="font-black">12 tháng</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ==========================End Bảng giá Hosting cho cá nhân============================= -->
+    </div>
 </body>
+<script src="./node_modules/flowbite/dist/flowbite.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 </html>

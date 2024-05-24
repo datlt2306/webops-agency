@@ -8,6 +8,13 @@ module.exports = {
       },
       boxShadow: {
         'normal': '0 0 6px 2px rgb(0 0 0 / 0.1)',
+      },
+      dropShadow: {
+        '3xl': '0 0 5px rgba(0, 0, 0, 0.15)'
+
+      },
+      backgroundImage: {
+        'icon': "url('./icons/checkmark-circle.svg')",
       }
     },
     screens: {
