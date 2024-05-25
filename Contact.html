@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="./src/output.css" rel="stylesheet" />
+
+    <!-- Reset CSS -->
+    <link
+      rel="stylesheet"
+      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+    />
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Contact</title>
+  </head>
+  <body>
+    <!-- Start Header -->
+    <header>
+      <nav
+        class="relative bg-[#264AB9] z-10 py-[9px] xl:py-0 xl:bg-transparent border-gray-200 dark:bg-gray-900 xl:max-w-[1393px] mx-auto"
+      >
+        <div
+          class="max-w-[353px] relative xl:max-w-[1393px] flex flex-wrap items-center justify-between mx-auto pt-[10px] xl:pt-[21px] pl-[1px] xl:pl-2 pb-1 xl:pb-[10px]"
+        >
+          <div
+            class="overflow-hidden absolute xl:left-[-22.8%] left-[-3.3%] w-[103.4%] bottom-[-16%] xl:bottom-[-10%] -z-10"
+          >
+            <img
+              class="hidden xl:block max-w-max"
+              src="./src/images/backGroundLogo.png"
+              alt=""
+            />
+
+            <img
+              class="block xl:hidden"
+              src="./src/images/Mask group.png"
+              alt=""
+            />
+          </div>
+          <a href="#"
+            ><img
+              class="w-[51%] xl:w-auto"
+              src="./src/images/logo.svg"
+              alt="Logo"
+          /></a>
+          <button
+            data-collapse-toggle="navbar-default"
+            type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-default"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <img class="max-w-max" src="./src/icons/hamburger.svg" alt="" />
+          </button>
+          <!-- class="absolute xl:relative bottom-[-14%] right-[4%] xl:right-0 hidden w-full md:block md:w-auto" -->
+          <div
+            class="absolute xl:relative bottom-[-14%] right-[4%] xl:right-0 hidden w-full xl:block xl:w-auto"
+            id="navbar-default"
+          >
+            <ul
+              class="flex flex-col xl:flex-row absolute xl:relative right-[2%] font-bold xl:right-0 xl:-mr-4 w-[22.0625rem] xl:w-auto border xl:border-none rounded-lg bg-white *:text-lg *:text-[#00355D] xl:items-center xl:pb-0 pb-3 gap-2.5"
+            >
+              <li
+                class="hover:border-b hover:border-b-[#28EFE2] hover:text-[#28EFE2]"
+              >
+                <a class="pl-3 pr-[13rem] xl:px-2" href="#">Về chúng tôi</a>
+              </li>
+              <li
+                class="hover:border-b hover:border-b-[#28EFE2] hover:text-[#28EFE2]"
+              >
+                <a class="pl-3 pr-[13rem] xl:px-2" href="#">Dự án</a>
+              </li>
+              <li
+                class="hover:border-b hover:border-b-[#28EFE2] hover:text-[#28EFE2]"
+              >
+                <a class="pl-3 pr-[13rem] xl:px-2" href="#">Dịch vụ</a>
+              </li>
+              <li
+                class="hover:border-b hover:border-b-[#28EFE2] hover:text-[#28EFE2]"
+              >
+                <a class="pl-3 pr-[13rem] xl:px-2" href="#">Bảng giá</a>
+              </li>
+              <li
+                class="hover:border-b hover:border-b-[#28EFE2] hover:text-[#28EFE2]"
+              >
+                <a class="pl-3 pr-[13rem] xl:px-2" href="#">Tin tức</a>
+              </li>
+              <li
+                class="hover:border-b hover:border-b-[#28EFE2] hover:text-[#28EFE2]"
+              >
+                <a class="pl-3 pr-[13rem] xl:px-2" href="#">Liên hệ</a>
+              </li>
+              <li
+                class="font-extrabold py-[0.625rem] px-[25px] rounded-full bg-gradient-to-r from-[#10B8C4] to-[#2AD8CD]"
+              >
+                <a class="flex items-center gap-3" href="#"
+                  ><i class="fa-solid fa-phone-volume text-xl text-white"></i>
+                  <span class="text-white">098 - 888 - 8888</span></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- End Header -->
+
+    <!-- Start Main -->
+    <main>
+      <!-- Hero Section -->
+      <section
+        class="pt-[14px] xl:pt-[14.5rem] xl:pb-[16.7rem] overflow-hidden"
+      >
+        <div
+          class="flex flex-col xl:flex-row max-w-[393px] xl:max-w-[87.0625rem] mx-auto relative"
+        >
+          <div class="flex flex-col items-center xl:block">
+            <h1
+              class="mb-0 mt-[18px] xl:mt-0 text-2xl xl:leading-[4.6rem] xl:text-[4rem] font-extrabold text-[#00355D]"
+            >
+              HÃY ĐỂ CHÚNG TÔI
+            </h1>
+            <h1
+              class="text-2xl xl:leading-[4.6rem] xl:text-[4rem] mb-0 mt-[9px] ml-[-2px] xl:ml-0 xl:mt-[23px] tracking-normal font-extrabold text-[#14b8a6]"
+            >
+              KẾT NỐI VÀ ĐỒNG HÀNH
+            </h1>
+            <h1
+              class="mt-[9px] mb-0 xl:mt-7 xl:mb-[66px] text-2xl xl:leading-[4.6rem] xl:text-[4rem] font-extrabold text-[#00355D]"
+            >
+              CÙNG BẠN<span class="hidden xl:inline">!</span>
+            </h1>
+
+            <a
+              class="text-[14px] ml-[2px] xl:text-lg font-bold py-[0.625rem] mt-[33px] xl:mt-0 px-5 xl:py-4 xl:px-8 text-white rounded-full bg-gradient-to-r from-[#00B8C4] to-[#2AD8CD]"
+              href="#"
+              >Liên hệ với chúng tôi ngay</a
+            >
+          </div>
+          <div class="relative xl:absolute xl:right-[-31.2%] xl:top-[-68%]">
+            <img
+              class="xl:max-w-max object-cover xl:ml-3 xl:mt-0"
+              src="./src/images/3127 [Converted] 2.png"
+              alt="Hero Image"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- End Hero Section -->
+
+      <!-- Section Info -->
+      <section
+        class="relative bg-[#e2ebf6] overflow-hidden pt-[31px] xl:pt-[6.4rem] pb-[30px] xl:pb-[8.7rem]"
+      >
+        <div
+          class="max-w-[353px] xl:max-w-[88rem] mx-auto flex flex-col justify-center relative z-10"
+        >
+          <img
+            class="hidden xl:block -z-10 absolute max-w-max right-[-18.7%] bottom-[-35%]"
+            src="./src/images/saigon_line [Converted] 1.png"
+            alt=""
+          />
+
+          <div
+            class="xl:bg-white xl:ml-14 xl:mt-[89px] rounded-lg xl:rounded-2xl shadow-custom2"
+          >
+            <div
+              class="flex flex-col xl:flex-row gap-9 xl:gap-24 xl:py-12 xl:pl-[41px]"
+            >
+              <div class="flex gap-[10px] xl:gap-6">
+                <div
+                  class="py-[6px] pl-[6px] xl:p-[10px] border-2 border-[#00B8C4] rounded-[10px] xl:rounded-2xl self-start"
+                >
+                  <img
+                    class="w-[80%] xl:w-auto"
+                    src="./src/icons/loocation-icon.png"
+                    alt="locaton-icon"
+                  />
+                </div>
+                <div class="mt-[2px] xl:mt-[6px]">
+                  <h3
+                    class="text-2xl leading-[47px] xl:text-[40px] text-[#00355D] font-extrabold mb-[6px] xl:mb-[27px]"
+                  >
+                    Văn Phòng
+                  </h3>
+                  <p
+                    class="text-sm xl:text-lg text-[#00355D] font-semibold w-44 xl:w-60 tracking-[0.7px] xl:tracking-[0.9px] mb-2"
+                  >
+                    P1912 - toà nhà A2
+                    <span class="uppercase xl:lowercase">c</span>hung cư THT New
+                    City
+                  </p>
+                  <p
+                    class="text-sm xl:text-lg text-[#00355D] font-semibold tracking-[0.7px] xl:tracking-[0.9px] xl:w-60"
+                  >
+                    Ngày nghỉ xin vui lòng liên hệ Hotline
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex gap-[10px] xl:gap-6">
+                <div
+                  class="py-[6px] pl-[6px] xl:p-[10px] border-2 border-[#00B8C4] rounded-[10px] xl:rounded-2xl self-start"
+                >
+                  <img
+                    class="w-[80%] xl:w-auto"
+                    src="./src/icons/contacts-icon.png"
+                    alt="contact-icon"
+                  />
+                </div>
+                <div class="mt-[2px] xl:mt-[6px]">
+                  <h3
+                    class="text-2xl leading-[47px] xl:text-[40px] text-[#00355D] font-extrabold mb-[6px] xl:mb-[27px]"
+                  >
+                    Liên Hệ
+                  </h3>
+                  <p
+                    class="text-sm xl:text-lg text-[#00355D] font-semibold tracking-[0.7px] xl:tracking-[0.9px] mb-[7px] xl:mb-2"
+                  >
+                    Hotline: 098-888-8888
+                  </p>
+                  <p
+                    class="text-sm xl:text-lg text-[#00355D] font-semibold tracking-[0.7px] xl:tracking-[0.9px] mb-[7px] xl:mb-2"
+                  >
+                    Zalo: 098-888-8888
+                  </p>
+                  <p
+                    class="text-sm xl:text-lg text-[#00355D] font-semibold tracking-[0.7px] xl:tracking-[0.9px] mb-[7px] xl:mb-2"
+                  >
+                    Email: contact@webopsagency.vn
+                  </p>
+                  <p
+                    class="text-sm xl:text-lg text-[#00355D] font-semibold tracking-[0.7px] xl:tracking-[0.9px]"
+                  >
+                    Website: webopsagency.vn
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex mt-[21px] xl:mt-0 gap-[10px] xl:gap-6">
+                <div
+                  class="py-[6px] pl-[6px] xl:p-[10px] border-2 border-[#00B8C4] rounded-[10px] xl:rounded-2xl self-start"
+                >
+                  <img
+                    class="w-[80%] xl:w-auto"
+                    src="./src/icons/share-icon.png"
+                    alt="share-icon"
+                  />
+                </div>
+                <div class="mt-[2px] xl:mt-[6px]">
+                  <h3
+                    class="text-2xl leading-[47px] xl:text-[40px] text-[#00355D] font-extrabold mb-[5px] xl:mb-[27px]"
+                  >
+                    Mạng Xã Hội
+                  </h3>
+                  <div class="flex items-center gap-5">
+                    <!-- FB -->
+                    <img
+                      class="w-8 xl:w-auto"
+                      src="./src/icons/facebook-square-brown.png"
+                      alt="FB"
+                    />
+
+                    <!-- Instagram -->
+                    <img
+                      class="w-8 xl:w-auto"
+                      src="./src/icons/instagram-brown.png"
+                      alt="Instagram"
+                    />
+
+                    <!-- TikTok -->
+                    <img
+                      class="w-7 xl:w-auto"
+                      src="./src/icons/tiktok-brown.png"
+                      alt="TikTok"
+                    />
+
+                    <!-- Twitter -->
+                    <img
+                      class="w-8 xl:w-auto"
+                      src="./src/icons/twitter-square-brown.png"
+                      alt="Twitter"
+                    />
+
+                    <!-- Youtube -->
+                    <img
+                      class="w-8 xl:w-auto"
+                      src="./src/icons/youtube-square-brown.png"
+                      alt="Youtube"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="absolute left-2 top-[-5%] xl:top-[-1.9%] -z-10">
+            <img
+              class="hidden xl:block"
+              src="./src/images/Rectangle 248.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+      <!-- End Section Info -->
+
+      <!-- Section Contact -->
+      <section
+        class="max-w-[393px] xl:max-w-[1393px] xl:h-[728px] items-center flex justify-center relative mx-auto xl:pl-4 pb-[0.125rem] mt-[22px] xl:mt-[6.1rem]"
+      >
+        <div
+          class="z-50 absolute h-[374px] left-[3.6rem] top-40 font-extrabold max-w-[350px] max-1444px:left-[11rem]"
+        >
+          <div class="-mt-[0.0625rem] w-[29%] xl:w-auto hidden xl:block">
+            <img
+              class="pb-12"
+              src="src/icons/lucide_contact-round.svg"
+              alt=""
+            />
+          </div>
+          <div
+            class="*:leading-[65px] hidden xl:block text-[3rem] text-white max-1444px:text-[2.5rem] ml-1"
+          >
+            <h3 class="">Liên Hệ</h3>
+            <h3 class="">Với Chúng Tôi Ngay Bây Giờ</h3>
+          </div>
+        </div>
+        <img
+          class="absolute hidden xl:block left-0 z-40 max-1444px:w-[32%] max-1444px:left-[8.5rem]"
+          src="src/images/Rectangle 252.png"
+          alt=""
+        />
+        <div
+          class="max-w-[1280px] absolute z-10 w-full rounded-[30px] h-[45.5rem] xl:bg-[#264AB9]"
+        ></div>
+
+        <div
+          class="w-[353px] mx-auto xl:w-[688px] h-[478px] relative xl:absolute font-bold xl:right-[104px] text-[#00355D] xl:text-white z-40 mt-[0.625rem]"
+        >
+          <h1
+            class="text-2xl xl:text-[32px] text-center m-0 mb-7 xl:mb-[2.8rem]"
+          >
+            ĐĂNG KÝ <span class="block xl:inline">NHẬN TƯ VẤN MIỄN PHÍ</span>
+          </h1>
+          <!-- From  Signup -->
+          <form
+            class="grid grid-cols-1 xl:grid-cols-2 gap-4 xl:gap-8 justify-end items-center xl:pt-3"
+          >
+            <div class="flex flex-col gap-4 xl:gap-9">
+              <input
+                class="text-[#A1A1AA] xl:text-white rounded-md xl:rounded-[10px] text-left pr-[54px] pl-[12px] placeholder-[#A1A1AA] xl:placeholder-white py-[5px] xl:py-2 text-sm xl:text-lg font-bold bg-transparent border-2 border-[#A1A1AA] xl:border-white outline-none"
+                type="text"
+                placeholder="Họ Tên"
+              />
+
+              <input
+                class="text-[#A1A1AA] xl:text-white rounded-md xl:rounded-[10px] text-left pr-[54px] pl-[12px] placeholder-[#A1A1AA] xl:placeholder-white py-[5px] xl:py-2 text-sm xl:text-lg font-bold bg-transparent border-2 border-[#A1A1AA] xl:border-white outline-none"
+                type="email"
+                placeholder="Email"
+              />
+            </div>
+
+            <div class="flex flex-col gap-4 xl:gap-9">
+              <input
+                class="text-[#A1A1AA] xl:text-white rounded-md xl:rounded-[10px] text-left pr-[54px] pl-[12px] placeholder-[#A1A1AA] xl:placeholder-white py-[5px] xl:py-2 text-sm xl:text-lg font-bold bg-transparent border-2 border-[#A1A1AA] xl:border-white outline-none foc"
+                type="number"
+                min="0"
+                placeholder="Số điện thoại"
+              />
+
+              <input
+                class="text-[#A1A1AA] xl:text-white rounded-md xl:rounded-[10px] text-left pr-[54px] pl-[12px] placeholder-[#A1A1AA] xl:placeholder-white py-[5px] xl:py-2 text-sm xl:text-lg font-bold bg-transparent border-2 border-[#A1A1AA] xl:border-white outline-none"
+                type="text"
+                placeholder="Dịch vụ cần từ vấn"
+              />
+            </div>
+
+            <textarea
+              class="outline-none text-sm xl:text-lg bg-transparent font-bold text-[#A1A1AA] xl:text-white placeholder-[#A1A1AA] xl:placeholder-white xl:w-[688px] h-[120px] xl:h-[143px] py-2 pl-3 border-2 border-[#A1A1AA] xl:border-white rounded-md xl:rounded-[10px]"
+              name=""
+              id=""
+              placeholder="Nội dung"
+            ></textarea>
+            <div></div>
+
+            <button
+              class="text-sm xl:text-lg place-self-center xl:col-start-1 xl:col-end-3 font-bold transform bg-[#2DD4BF] px-4 xl:px-[32px] rounded-[100px] pt-[10px] mt-[-15px] xl:mt-0 pb-2 xl:pb-[11px]"
+            >
+              Liên Hệ Ngay
+            </button>
+          </form>
+          <!-- From  Signup -->
+        </div>
+        <img
+          class="absolute hidden xl:block z-20 w-auto max-1444px:w-[75%]"
+          src="src/images/Rectangle 142.png"
+          alt=""
+        />
+        <div
+          class="hidden xl:block h-[600px] w-[208px] rounded-[30px] bg-[#E2EBF6] bottom-[4.9375rem] absolute -right-[1rem] max-1444px:w-[20%]"
+        ></div>
+      </section>
+      <!-- End Section Contact -->
+    </main>
+    <!-- End Main -->
+
+    <!-- Start Footer -->
+    <footer
+      class="max-w-full bg-[#23233F] mt-[61px] h-[921px] xl:h-auto xl:mt-[5.9375rem]"
+    >
+      <section
+        class="max-w-[1408px] mx-auto pt-[5.5rem] *:text-white hidden xl:grid grid-cols-3"
+      >
+        <div class="pl-2 pt-2">
+          <img src="src/images/footer.png" alt="" />
+          <p class="text-[15px] font-[400] w-[448px] pt-[1rem] leading-7">
+            Chúng tôi luôn chắc chắn về mục đích thiết kế website của khách
+            hàng. Website chuyên nghiệp trước hết phải phù hợp với hệ thống nhận
+            diện thương hiệu của doanh nghiệp, logic nội dung chặt chẽ và ổn
+            định
+          </p>
+          <div class="menu-footer pt-11">
+            <h3 class="text-lg font-semibold">DỊCH VỤ</h3>
+            <ul class="*:mt-[0.75rem]">
+              <li>
+                <a href="">Dịch vụ</a>
+              </li>
+              <li>
+                <a href="">Dịch vụ</a>
+              </li>
+              <li>
+                <a href="">Dịch vụ</a>
+              </li>
+              <li>
+                <a href="">Dịch vụ</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <div class="menu-footer pl-[17px] pt-1">
+            <h1 class="text-lg font-semibold mt-1 leading-6">VỀ CHÚNG TÔI</h1>
+            <ul class="text-[16px] *:mt-[0.75rem] font-medium">
+              <li>
+                <a href="">List item</a>
+              </li>
+              <li>
+                <a href="">List item</a>
+              </li>
+              <li>
+                <a href="">List item</a>
+              </li>
+              <li>
+                <a href="">List item</a>
+              </li>
+            </ul>
+          </div>
+          <div class="menu-footer pt-[5.8rem] pl-[18px]">
+            <h1 class="font-semibold text-[18px]">CHÍNH SÁCH</h1>
+
+            <ul class="*:mt-3">
+              <li>
+                <a href="">Chính sách</a>
+              </li>
+              <li>
+                <a href="">Chính sách</a>
+              </li>
+              <li>
+                <a href="">Chính sách</a>
+              </li>
+              <li>
+                <a href="">Chính sách</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="max-w-[446px]">
+          <div class="menu-footer pt-[7px] pl-7">
+            <h1 class="text-[18px] text-white font-semibold m-0 mb-[0.4375rem]">
+              LIÊN HỆ
+            </h1>
+
+            <ul
+              class="*:flex *:leading-[1.3rem] *:tracking-[0.4px] *:gap-4 *:pt-[10px]"
+            >
+              <li>
+                <img class="w-4 h-5" src="src/icons/address.svg" alt="" />
+                <a class="text-[16px] tracking-[0.4px] font-normal" href=""
+                  >Số 102 Trần Phú, Phường Mộ Lao, Quận Hà Đông, TP.Hà Nội.</a
+                >
+              </li>
+              <li>
+                <img class="w-5 h-5" src="src/icons/phone.svg" alt="" />
+                <a class="text-[16px] font-normal" href=""
+                  >Hotline: 0973-258-886</a
+                >
+              </li>
+              <li>
+                <img class="w-5 h-5" src="src/icons/mail.svg" alt="" />
+                <a class="text-[16px] font-normal" href=""
+                  >info@webopsagency.com</a
+                >
+              </li>
+              <li>
+                <img
+                  class="w-5 h-5"
+                  src="src/icons/description_FILL0_wght400_GRAD0_opsz24 1.svg"
+                  alt=""
+                />
+                <a class="text-[16px] font-normal" href="">GPKD: 0107756568</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="pt-[4.6rem]">
+            <h1 class="font-semibold text-lg pl-[28px] m-0">
+              THEO DÕI CHÚNG TÔI
+            </h1>
+
+            <ul class="flex gap-[32px] pt-[10px] pl-[28px]">
+              <li>
+                <a href=""
+                  ><img src="src/icons/facebook-square.svg" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href=""><img src="src/icons/instagram.svg" /></a>
+              </li>
+              <li>
+                <a href=""><img src="src/icons/tiktok.svg" alt="" /></a>
+              </li>
+              <li>
+                <a href=""><img src="src/icons/twitter-square.svg" alt="" /></a>
+              </li>
+              <li>
+                <a href=""><img src="src/icons/youtube-square.svg" alt="" /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section
+        class="hidden xl:block max-w-[1426px] mt-[49px] mx-auto max-1444px:px-[17px]"
+      >
+        <div
+          class="border-t-2 border-white flex pt-[22px] justify-between mx-auto ml-[17px] max-1444px:ml-0"
+        >
+          <div class="font-semibold text-[16px] text-white pt-[6px]">
+            Copyright WebOpsAgency
+          </div>
+          <div class="-mt-[2px]">
+            <img src="src/images/image 406.png" alt="" />
+          </div>
+        </div>
+      </section>
+    </footer>
+    <!-- End Footer -->
+
+    <script src="./node_modules/flowbite/dist/flowbite.min.js"></script>
+  </body>
+</html>
