@@ -76,7 +76,7 @@
           <button
             data-collapse-toggle="navbar-default"
             type="button"
-            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            class="inline-flex xl:hidden items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
             aria-controls="navbar-default"
             aria-expanded="false"
           >
@@ -84,7 +84,7 @@
             <img class="max-w-max" src="./src/icons/hamburger.svg" alt="" />
           </button>
           <div
-            class="absolute xl:relative bottom-[-14%] right-[4%] xl:right-0 hidden w-full md:block md:w-auto"
+            class="absolute xl:relative bottom-[-14%] right-[4%] xl:right-0 hidden w-full xl:block xl:w-auto"
             id="navbar-default"
           >
             <ul
@@ -195,8 +195,14 @@
         />
         <div>
           <div
-            class="max-w-[353px] xl:max-w-[87.0625rem] mx-auto flex gap-[4.8125rem] pb-4 xl:pb-24"
+            class="max-w-[353px] xl:max-w-[87.0625rem] relative mx-auto flex gap-[4.8125rem] pb-4 xl:pb-24"
           >
+            <img
+              class="absolute top-0 bottom-0 xl:max-w-max right-[5%] xl:right-[-3%]"
+              src="./src/icons/microChip.svg"
+              alt="Chip"
+            />
+
             <img
               class="mt-20 ml-[2.75rem] max-w-max z-10 hidden xl:block"
               src="./src/images/Tech_isometric_concept.svg"
@@ -234,12 +240,6 @@
               </p>
             </div>
           </div>
-
-          <img
-            class="absolute top-[0] overflow-hidden"
-            src="./src/icons/microChip.svg"
-            alt="Chip"
-          />
         </div>
       </section>
       <!-- End  Greeting Section -->
