@@ -1262,10 +1262,6 @@ html {
   right: -3.4%;
 }
 
-.right-\[-5\%\] {
-  right: -5%;
-}
-
 .right-\[-5\.8\%\] {
   right: -5.8%;
 }
@@ -1292,6 +1288,10 @@ html {
 
 .right-\[4\%\] {
   right: 4%;
+}
+
+.right-\[5\%\] {
+  right: 5%;
 }
 
 .right-\[9\%\] {
@@ -1428,10 +1428,6 @@ html {
 
 .top-\[91\.4\%\] {
   top: 91.4%;
-}
-
-.right-\[5\%\] {
-  right: 5%;
 }
 
 .isolate {
@@ -6254,6 +6250,10 @@ html {
     height: 6.625rem;
   }
 
+  .xl\:h-\[720px\] {
+    height: 720px;
+  }
+
   .xl\:h-\[728px\] {
     height: 728px;
   }
@@ -6832,6 +6832,18 @@ html {
 
   .xl\:pt-\[97px\] {
     padding-top: 97px;
+  }
+
+  .xl\:pb-\[99px\] {
+    padding-bottom: 99px;
+  }
+
+  .xl\:pb-\[98px\] {
+    padding-bottom: 98px;
+  }
+
+  .xl\:pb-\[97px\] {
+    padding-bottom: 97px;
   }
 
   .xl\:text-left {
