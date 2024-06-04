@@ -1250,10 +1250,6 @@ html {
   right: -1%;
 }
 
-.right-\[-18\.3\%\] {
-  right: -18.3%;
-}
-
 .right-\[-18\.7\%\] {
   right: -18.7%;
 }
@@ -6250,10 +6246,6 @@ html {
     height: 6.625rem;
   }
 
-  .xl\:h-\[720px\] {
-    height: 720px;
-  }
-
   .xl\:h-\[728px\] {
     height: 728px;
   }
@@ -6730,6 +6722,10 @@ html {
     padding-bottom: 94px;
   }
 
+  .xl\:pb-\[98px\] {
+    padding-bottom: 98px;
+  }
+
   .xl\:pl-2 {
     padding-left: 0.5rem;
   }
@@ -6814,10 +6810,6 @@ html {
     padding-top: 49px;
   }
 
-  .xl\:pt-\[6\.1875rem\] {
-    padding-top: 6.1875rem;
-  }
-
   .xl\:pt-\[6\.4rem\] {
     padding-top: 6.4rem;
   }
@@ -6832,18 +6824,6 @@ html {
 
   .xl\:pt-\[97px\] {
     padding-top: 97px;
-  }
-
-  .xl\:pb-\[99px\] {
-    padding-bottom: 99px;
-  }
-
-  .xl\:pb-\[98px\] {
-    padding-bottom: 98px;
-  }
-
-  .xl\:pb-\[97px\] {
-    padding-bottom: 97px;
   }
 
   .xl\:text-left {
