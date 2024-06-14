@@ -28,79 +28,81 @@
         <div class="mx-auto">
           <img
             class="mix-blend-multiply absolute overflow-hidden h-[53.125rem] top-0 z-10 max-[600px]:w-[677px] max-[1024px]:w-full max-[1024px]:h-[298px] w-full"
-            src="./img/color-backgroud.png"
+            src="./src/img/color-backgroud.png"
             alt=""
           />
         </div>
         <div class="mx-auto">
           <img
             class="mix-blend-multiply absolute overflow-hidden h-[53.125rem] top-0 z-10 max-[600px]:w-[677px] max-[1024px]:w-full max-[1024px]:h-[298px] w-full"
-            src="./img/Rectangle 300.png"
+            src="./src/img/Rectangle 300.png"
             alt=""
           />
         </div>
       </div>
       <!-- /* ================================== HEADER==================================== */ -->
       <header
-        class="lg:max-w-[1394px] max-[1000px]:w-[354px] h-[74px] lg:h-[103px] items-center header flex justify-between relative z-20 mx-auto"
+        class="lg:max-w-[1394px] lg:p-0 p-[30px] h-[74px] lg:h-[103px] items-center header flex justify-between relative z-20 mx-auto"
       >
         <!-- Logo -->
         <div
           class="logo lg:max-w-[92px] lg:h-[61px] max-lg:w-[47.67px] max-lg:h-[32px]"
         >
-          <a href="#"><img class="w-full" src="./img/logo 1.svg" alt="" /></a>
+          <a href="#"
+            ><img class="w-full" src="./src/img/logo 1.svg" alt=""
+          /></a>
         </div>
         <!-- End logo -->
         <!-- Menu -->
         <div
-          class="menu lg:flex flex-wrap lg:flex-nowrap xl:pr-[17px] menu-mobile -mr-4"
+          class="menu lg:flex flex-wrap lg:flex-nowrap lg:pr-[17px] menu-mobile -mr-4"
         >
           <button
             data-collapse-toggle="navbar-default"
             type="button"
-            class="inline-flex items-center xl:hidden p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-200"
+            class="inline-flex items-center lg:hidden p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-200"
             aria-controls="navbar-default"
             aria-expanded="false"
           >
-            <img class="max-w-max" src="./img/menu mobile.png" alt="" />
+            <img class="max-w-max" src="./src/img/menu mobile.png" alt="" />
           </button>
 
           <nav
-            class="-mr-4 xl:w-auto hidden relative xl:block"
+            class="-mr-4 lg:w-auto hidden relative lg:block"
             id="navbar-default"
           >
             <ul
-              class="flex flex-col xl:flex-row absolute xl:relative right-[2%] font-bold xl:right-0 w-[22.0625rem] xl:w-auto border xl:border-none rounded-lg max-[394px]:bg-[#264AB9] *:text-lg *:text-white xl:items-center xl:pb-0 pb-3 gap-2.5"
+              class="flex flex-col lg:flex-row absolute lg:relative right-[2%] font-bold lg:right-0 w-[22.0625rem] lg:w-auto border lg:border-none rounded-lg *:text-lg *:text-white lg:items-center lg:pb-0 pb-3 gap-2.5"
             >
               <li
                 class="hover:border-b hover:border-b-[#28EFE2] hover:text-[#28EFE2]"
               >
-                <a class="pl-3 pr-[13rem] xl:px-2" href="#">Về chúng tôi</a>
+                <a class="pl-3 pr-[13rem] lg:px-2" href="#">Về chúng tôi</a>
               </li>
               <li
                 class="hover:border-b hover:border-b-[#28EFE2] hover:text-[#28EFE2]"
               >
-                <a class="pl-3 pr-[13rem] xl:px-2" href="#">Dự án</a>
+                <a class="pl-3 pr-[13rem] lg:px-2" href="#">Dự án</a>
               </li>
               <li
                 class="hover:border-b hover:border-b-[#28EFE2] hover:text-[#28EFE2]"
               >
-                <a class="pl-3 pr-[13rem] xl:px-2" href="#">Dịch vụ</a>
+                <a class="pl-3 pr-[13rem] lg:px-2" href="#">Dịch vụ</a>
               </li>
               <li
                 class="hover:border-b hover:border-b-[#28EFE2] hover:text-[#28EFE2]"
               >
-                <a class="pl-3 pr-[13rem] xl:px-2" href="#">Bảng giá</a>
+                <a class="pl-3 pr-[13rem] lg:px-2" href="#">Bảng giá</a>
               </li>
               <li
                 class="hover:border-b hover:border-b-[#28EFE2] hover:text-[#28EFE2]"
               >
-                <a class="pl-3 pr-[13rem] xl:px-2" href="#">Tin tức</a>
+                <a class="pl-3 pr-[13rem] lg:px-2" href="#">Tin tức</a>
               </li>
               <li
                 class="hover:border-b hover:border-b-[#28EFE2] hover:text-[#28EFE2]"
               >
-                <a class="pl-3 pr-[13rem] xl:px-2" href="#">Liên hệ</a>
+                <a class="pl-3 pr-[13rem] lg:px-2" href="#">Liên hệ</a>
               </li>
               <li
                 class="font-extrabold py-[0.625rem] px-[25px] rounded-full bg-gradient-to-r from-[#10B8C4] to-[#2AD8CD]"
@@ -117,28 +119,24 @@
       </header>
       <!-- /* ================================== END HEADER==================================== */ -->
       <!-- =====================================Banner=========================================== -->
-      <section
-        class="xl:w-[1408px] relative z-10 xl:mx-auto max-[394px]:w-[353px] max-[394px]:mx-auto"
-      >
-        <div class="text-center xl:mt-[4.438rem] xl:ml-[18px]">
-          <h1
-            class="xl:text-[64px] text-white max-[394px]:text-[24px] font-extrabold"
-          >
+      <section class="relative z-10 lg:mx-auto p-[20px] mx-auto">
+        <div class="text-center lg:mt-[3.3rem] lg:ml-[18px]">
+          <h1 class="lg:text-[64px] text-white text-[24px] font-extrabold">
             Tin Tức
           </h1>
           <p
-            class="max-[394px]:text-[14px] font-bold xl:text-lg text-white max-[394px]:mt-[8px] xl:mt-[12px]"
+            class="text-[14px] font-bold lg:text-lg text-white mt-[8px] lg:mt-[12px]"
           >
             Cùng WebOps Agency cập nhật những tin tức mới nhất về lĩnh vực thiết
             kế website
           </p>
         </div>
         <div
-          class="xl:mt-[35px] xl:w-full max-[394px]:mt-[33px] xl:h-[550px] xl:ml-2"
+          class="lg:mt-[35px] lg:max-w-[1408px] mx-auto mt-[33px] lg:h-[550px]"
         >
           <img
-            class="xl:w-full xl:h-full xl:object-cover"
-            src="./img/Rectangle 286.png"
+            class="lg:w-full rounded-[30px] lg:h-full lg:object-cover"
+            src="./src/img/Rectangle 286.png"
             alt=""
           />
         </div>
@@ -146,56 +144,56 @@
       <!-- =====================================end Banner=========================================== -->
       <!-- ==================================== Menu new ========================================== -->
       <section
-        class="xl:w-[1408px] xl:mt-[96px] xl:relative xl:z-10 xl:mx-auto"
+        class="lg:mt-[74px] lg:pl-3 lg:pr-3 lg:relative lg:z-10 lg:mx-auto"
       >
         <ul
-          class="max-[394px]:overflow-x-auto max-[394px]:whitespace-nowrap max-[394px]:mt-[34px] max-[394px]:h-[35px] max-[394px]:grid max-[394px]:grid-cols-[107px_107px_150px_120px_150px_130px_120px] xl:w-[1237px] border-2 xl:mx-auto xl:items-center xl:ml-[5.875rem] xl:border-white max-[394px]:border-[#264AB9] rounded-[100px] xl:h-[49px] xl:grid xl:grid-cols-[140px_140px_1fr_1fr_1fr_1fr_1fr] xl:text-center"
+          class="overflow-x-auto lg:max-w-[1237px] whitespace-nowrap mt-[34px] h-[35px] grid grid-cols-[107px_107px_150px_120px_150px_130px_120px] border-2 lg:mx-auto lg:items-center lg:border-white border-[#264AB9] rounded-[100px] lg:h-[49px] lg:grid lg:grid-cols-[140px_140px_1fr_1fr_1fr_1fr_1fr] lg:text-center"
         >
           <li class="flex items-center justify-center w-full h-full">
             <a
-              class="xl:text-lg hover:text-white text-[#00355D] xl:font-bold w-full h-full flex items-center justify-center xl:hover:border-2 xl:hover:border-white hover:rounded-[100px] hover:bg-gradient-to-r from-[#264AB9] to-[#6B92FF] max-[394px]:text-[14px] max-[394px]:font-bold max-[394px]:text-[#00355D]"
+              class="lg:text-lg hover:text-white lg:font-bold w-full h-full flex items-center justify-center lg:hover:border-2 lg:hover:border-white hover:rounded-[100px] hover:bg-gradient-to-r from-[#264AB9] to-[#6B92FF] text-[14px] font-bold text-[#00355D]"
               href=""
               >Tài chính</a
             >
           </li>
           <li class="flex items-center justify-center w-full h-full">
             <a
-              class="xl:text-lg hover:text-white text-[#00355D] xl:font-bold w-full h-full flex items-center justify-center xl:hover:border-2 xl:hover:border-white hover:rounded-[100px] hover:bg-gradient-to-r from-[#264AB9] to-[#6B92FF] max-[394px]:text-[14px] max-[394px]:font-bold max-[394px]:text-[#00355D]"
+              class="lg:text-lg hover:text-white lg:font-bold w-full h-full flex items-center justify-center lg:hover:border-2 lg:hover:border-white hover:rounded-[100px] hover:bg-gradient-to-r from-[#264AB9] to-[#6B92FF] text-[14px] font-bold text-[#00355D]"
               href=""
               >Giáo dục</a
             >
           </li>
           <li class="flex items-center justify-center w-full h-full">
             <a
-              class="xl:text-lg hover:text-white text-[#00355D] xl:font-bold w-full h-full flex items-center justify-center xl:hover:border-2 xl:hover:border-white hover:rounded-[100px] hover:bg-gradient-to-r from-[#264AB9] to-[#6B92FF] max-[394px]:text-[14px] max-[394px]:font-bold max-[394px]:text-[#00355D]"
+              class="lg:text-lg hover:text-white lg:font-bold w-full h-full flex items-center justify-center lg:hover:border-2 lg:hover:border-white hover:rounded-[100px] hover:bg-gradient-to-r from-[#264AB9] to-[#6B92FF] text-[14px] font-bold text-[#00355D]"
               href=""
               >Thương mại điện tử</a
             >
           </li>
           <li class="flex items-center justify-center w-full h-full">
             <a
-              class="xl:text-lg hover:text-white text-[#00355D] xl:font-bold w-full h-full flex items-center justify-center xl:hover:border-2 xl:hover:border-white hover:rounded-[100px] hover:bg-gradient-to-r from-[#264AB9] to-[#6B92FF] max-[394px]:text-[14px] max-[394px]:font-bold max-[394px]:text-[#00355D]"
+              class="lg:text-lg hover:text-white lg:font-bold w-full h-full flex items-center justify-center lg:hover:border-2 lg:hover:border-white hover:rounded-[100px] hover:bg-gradient-to-r from-[#264AB9] to-[#6B92FF] text-[14px] font-bold text-[#00355D]"
               href=""
               >Bất động sản</a
             >
           </li>
           <li class="flex items-center justify-center w-full h-full">
             <a
-              class="xl:text-lg hover:text-white text-[#00355D] xl:font-bold w-full h-full flex items-center justify-center xl:hover:border-2 xl:hover:border-white hover:rounded-[100px] hover:bg-gradient-to-r from-[#264AB9] to-[#6B92FF] max-[394px]:text-[14px] max-[394px]:font-bold max-[394px]:text-[#00355D]"
+              class="lg:text-lg hover:text-white lg:font-bold w-full h-full flex items-center justify-center lg:hover:border-2 lg:hover:border-white hover:rounded-[100px] hover:bg-gradient-to-r from-[#264AB9] to-[#6B92FF] text-[14px] font-bold text-[#00355D]"
               href=""
               >Du lịch - Giải trí</a
             >
           </li>
           <li class="flex items-center justify-center w-full h-full">
             <a
-              class="xl:text-lg hover:text-white text-[#00355D] xl:font-bold w-full h-full flex items-center justify-center xl:hover:border-2 xl:hover:border-white hover:rounded-[100px] hover:bg-gradient-to-r from-[#264AB9] to-[#6B92FF] max-[394px]:text-[14px] max-[394px]:font-bold max-[394px]:text-[#00355D]"
+              class="lg:text-lg hover:text-white lg:font-bold w-full h-full flex items-center justify-center lg:hover:border-2 lg:hover:border-white hover:rounded-[100px] hover:bg-gradient-to-r from-[#264AB9] to-[#6B92FF] text-[14px] font-bold text-[#00355D]"
               href=""
               >Spa - Làm đẹp</a
             >
           </li>
           <li class="flex items-center justify-center w-full h-full">
             <a
-              class="xl:text-lg hover:text-white text-[#00355D] xl:font-bold w-full h-full flex items-center justify-center xl:hover:border-2 xl:hover:border-white hover:rounded-[100px] hover:bg-gradient-to-r from-[#264AB9] to-[#6B92FF] max-[394px]:text-[14px] max-[394px]:font-bold max-[394px]:text-[#00355D]"
+              class="lg:text-lg hover:text-white lg:font-bold w-full h-full flex items-center justify-center lg:hover:border-2 lg:hover:border-white hover:rounded-[100px] hover:bg-gradient-to-r from-[#264AB9] to-[#6B92FF] text-[14px] font-bold text-[#00355D]"
               href=""
               >Truyền thông</a
             >
@@ -204,426 +202,406 @@
       </section>
       <!-- ==================================== ENd Menu new ========================================== -->
       <!--  san pham news -->
-      <main class="xl:mt-[32px] xl:w-[1408px] xl:mx-auto">
-        <section class="xl:grid xl:grid-cols-[448px_448px_448px] xl:gap-[50px]">
+      <main class="lg:mt-[12px] lg:max-w-[1408px] lg:mx-auto">
+        <section class="lg:grid lg:grid-cols-3 lg:gap-8 lg:p-0 p-[20px]">
           <div
-            class="bg-[#FFFFFF] max-[394px]:w-[353px] max-[394px]:mx-auto max-[394px]:mt-[20px] max-[394px]:h-[435px] xl:relative xl:rounded-[36px] max-[394px]:rounded-[30px]"
+            class="bg-[#FFFFFF] mx-auto mt-[20px] lg:relative lg:rounded-[36px] rounded-[30px]"
           >
             <div
-              class="w-[48px] text-white absolute max-[394px]:mt-[47px] xl:top-[60px] text-center h-[48px] bg-[#00B8C4]"
+              class="w-[48px] text-white absolute lg:top-[8.6%] text-center h-[48px] bg-[#00B8C4]"
             >
               <h1 class="font-extrabold text-[24px]">17</h1>
               <p class="font-bold text-[14px] -mt-[12px]">Oct</p>
             </div>
-            <div class="xl:w-[448px] xl:h-[320px]">
+            <div class="">
               <img
-                class="xl:w-full xl:h-full xl:object-cover"
-                src="./img/Rectangle 91.png"
+                class="w-full h-full object-cover"
+                src="./src/img/Rectangle 91.png"
                 alt=""
               />
             </div>
             <div
-              class="xl:w-[410px] xl:ml-[28px] max-[394px]:ml-[16px] max-[394px]:w-[320px] xl:mt-[21px] xl:mx-auto max-[394px]:mt-[12px]"
+              class="lg:max-w-[410px] px-3 mx-auto pt-[12px] max-w-[320px] lg:mt-[21px] lg:mx-auto mt-[12px] lg:pt-0"
             >
-              <h3
-                class="text-[#00355D] max-[394px]:text-[14px] xl:text-lg font-bold"
-              >
+              <h3 class="text-[#00355D] text-[14px] lg:text-lg font-bold">
                 Mẫu website du lịch hiện đại và tươi mới
               </h3>
-              <p
-                class="xl:text-lg max-[394px]:text-[14px] text-[#00355D] mt-[10px]"
-              >
+              <p class="lg:text-lg text-[14px] text-[#00355D] mt-[10px]">
                 Mẫu theme có sự kết hợp giữa màu sắc tươi mới, đổ bóng mượt mà
                 và sự chuyển màu tinh tế trên các nút, card, overlay và section.
               </p>
+            </div>
+            <div class="pb-[16px] flex justify-center lg:pb-0">
               <button
-                class="xl:w-[408px] max-[394px]:w-[321px] max-[394px]:h-[43px] max-[394px]:rounded-[100px] max-[394px]:mt-[16px] max-[394px]:text-white max-[394px]:text-[14px] max-[394px]:font-bold max-[394px]:justify-center max-[394px]:items-center max-[394px]:gap-[10px] max-[394px]:flex xl:flex xl:rounded-[100px] xl:mt-[23px] xl:mb-[20px] xl:justify-center xl:items-center xl:h-[49px] bg-gradient-to-r from-[#00B8C4] to-[#2AD8CD] xl:gap-[10px]"
+                class="lg:w-[90%] min-w-[320px] h-[43px] rounded-[100px] mt-[16px] text-white text-[14px] font-bold justify-center items-center gap-[10px] flex lg:flex lg:rounded-[100px] lg:mt-[23px] lg:mb-[20px] lg:justify-center lg:items-center lg:h-[49px] bg-gradient-to-r from-[#00B8C4] to-[#2AD8CD] lg:gap-[10px]"
               >
-                <span class="xl:font-semibold xl:text-lg xl:text-white xl:gap-4"
+                <span class="lg:font-semibold lg:text-lg lg:text-white lg:gap-4"
                   >Xem chi tiết</span
                 >
-                <img src="./img/Vector.png" alt="" />
+                <img src="./src/img/Vector.png" alt="" />
               </button>
             </div>
           </div>
           <div
-            class="bg-[#FFFFFF] max-[394px]:w-[353px] max-[394px]:mx-auto max-[394px]:mt-[20px] max-[394px]:h-[435px] xl:relative xl:rounded-[36px] max-[394px]:rounded-[30px]"
+            class="bg-[#FFFFFF] mx-auto mt-[20px] lg:relative lg:rounded-[36px] rounded-[30px]"
           >
             <div
-              class="w-[48px] text-white absolute max-[394px]:mt-[47px] xl:top-[60px] text-center h-[48px] bg-[#00B8C4]"
+              class="w-[48px] text-white absolute lg:top-[8.6%] text-center h-[48px] bg-[#00B8C4]"
             >
               <h1 class="font-extrabold text-[24px]">17</h1>
               <p class="font-bold text-[14px] -mt-[12px]">Oct</p>
             </div>
-            <div class="xl:w-[448px] xl:h-[320px]">
+            <div class="">
               <img
-                class="xl:w-full xl:h-full xl:object-cover"
-                src="./img/Rectangle 91.png"
+                class="w-full h-full object-cover"
+                src="./src/img/Rectangle 91.png"
                 alt=""
               />
             </div>
             <div
-              class="xl:w-[410px] xl:ml-[28px] max-[394px]:ml-[16px] max-[394px]:w-[320px] xl:mt-[21px] xl:mx-auto max-[394px]:mt-[12px]"
+              class="lg:max-w-[410px] px-3 mx-auto pt-[12px] max-w-[320px] lg:mt-[21px] lg:mx-auto mt-[12px] lg:pt-0"
             >
-              <h3
-                class="text-[#00355D] max-[394px]:text-[14px] xl:text-lg font-bold"
-              >
+              <h3 class="text-[#00355D] text-[14px] lg:text-lg font-bold">
                 Mẫu website du lịch hiện đại và tươi mới
               </h3>
-              <p
-                class="xl:text-lg max-[394px]:text-[14px] text-[#00355D] mt-[10px]"
-              >
+              <p class="lg:text-lg text-[14px] text-[#00355D] mt-[10px]">
                 Mẫu theme có sự kết hợp giữa màu sắc tươi mới, đổ bóng mượt mà
                 và sự chuyển màu tinh tế trên các nút, card, overlay và section.
               </p>
+            </div>
+            <div class="pb-[16px] flex justify-center lg:pb-0">
               <button
-                class="xl:w-[408px] max-[394px]:w-[321px] max-[394px]:h-[43px] max-[394px]:rounded-[100px] max-[394px]:mt-[16px] max-[394px]:text-white max-[394px]:text-[14px] max-[394px]:font-bold max-[394px]:justify-center max-[394px]:items-center max-[394px]:gap-[10px] max-[394px]:flex xl:flex xl:rounded-[100px] xl:mt-[23px] xl:mb-[20px] xl:justify-center xl:items-center xl:h-[49px] bg-gradient-to-r from-[#00B8C4] to-[#2AD8CD] xl:gap-[10px]"
+                class="lg:w-[90%] min-w-[320px] h-[43px] rounded-[100px] mt-[16px] text-white text-[14px] font-bold justify-center items-center gap-[10px] flex lg:flex lg:rounded-[100px] lg:mt-[23px] lg:mb-[20px] lg:justify-center lg:items-center lg:h-[49px] bg-gradient-to-r from-[#00B8C4] to-[#2AD8CD] lg:gap-[10px]"
               >
-                <span class="xl:font-semibold xl:text-lg xl:text-white xl:gap-4"
+                <span class="lg:font-semibold lg:text-lg lg:text-white lg:gap-4"
                   >Xem chi tiết</span
                 >
-                <img src="./img/Vector.png" alt="" />
+                <img src="./src/img/Vector.png" alt="" />
               </button>
             </div>
           </div>
           <div
-            class="bg-[#FFFFFF] max-[394px]:w-[353px] max-[394px]:mx-auto max-[394px]:mt-[20px] max-[394px]:h-[435px] xl:relative xl:rounded-[36px] max-[394px]:rounded-[30px]"
+            class="bg-[#FFFFFF] mx-auto mt-[20px] lg:relative lg:rounded-[36px] rounded-[30px]"
           >
             <div
-              class="w-[48px] text-white absolute max-[394px]:mt-[47px] xl:top-[60px] text-center h-[48px] bg-[#00B8C4]"
+              class="w-[48px] text-white absolute lg:top-[8.6%] text-center h-[48px] bg-[#00B8C4]"
             >
               <h1 class="font-extrabold text-[24px]">17</h1>
               <p class="font-bold text-[14px] -mt-[12px]">Oct</p>
             </div>
-            <div class="xl:w-[448px] xl:h-[320px]">
+            <div class="">
               <img
-                class="xl:w-full xl:h-full xl:object-cover"
-                src="./img/Rectangle 91.png"
+                class="w-full h-full object-cover"
+                src="./src/img/Rectangle 91.png"
                 alt=""
               />
             </div>
             <div
-              class="xl:w-[410px] xl:ml-[28px] max-[394px]:ml-[16px] max-[394px]:w-[320px] xl:mt-[21px] xl:mx-auto max-[394px]:mt-[12px]"
+              class="lg:max-w-[410px] px-3 mx-auto pt-[12px] max-w-[320px] lg:mt-[21px] lg:mx-auto mt-[12px] lg:pt-0"
             >
-              <h3
-                class="text-[#00355D] max-[394px]:text-[14px] xl:text-lg font-bold"
-              >
+              <h3 class="text-[#00355D] text-[14px] lg:text-lg font-bold">
                 Mẫu website du lịch hiện đại và tươi mới
               </h3>
-              <p
-                class="xl:text-lg max-[394px]:text-[14px] text-[#00355D] mt-[10px]"
-              >
+              <p class="lg:text-lg text-[14px] text-[#00355D] mt-[10px]">
                 Mẫu theme có sự kết hợp giữa màu sắc tươi mới, đổ bóng mượt mà
                 và sự chuyển màu tinh tế trên các nút, card, overlay và section.
               </p>
+            </div>
+            <div class="pb-[16px] flex justify-center lg:pb-0">
               <button
-                class="xl:w-[408px] max-[394px]:w-[321px] max-[394px]:h-[43px] max-[394px]:rounded-[100px] max-[394px]:mt-[16px] max-[394px]:text-white max-[394px]:text-[14px] max-[394px]:font-bold max-[394px]:justify-center max-[394px]:items-center max-[394px]:gap-[10px] max-[394px]:flex xl:flex xl:rounded-[100px] xl:mt-[23px] xl:mb-[20px] xl:justify-center xl:items-center xl:h-[49px] bg-gradient-to-r from-[#00B8C4] to-[#2AD8CD] xl:gap-[10px]"
+                class="lg:w-[90%] min-w-[320px] h-[43px] rounded-[100px] mt-[16px] text-white text-[14px] font-bold justify-center items-center gap-[10px] flex lg:flex lg:rounded-[100px] lg:mt-[23px] lg:mb-[20px] lg:justify-center lg:items-center lg:h-[49px] bg-gradient-to-r from-[#00B8C4] to-[#2AD8CD] lg:gap-[10px]"
               >
-                <span class="xl:font-semibold xl:text-lg xl:text-white xl:gap-4"
+                <span class="lg:font-semibold lg:text-lg lg:text-white lg:gap-4"
                   >Xem chi tiết</span
                 >
-                <img src="./img/Vector.png" alt="" />
+                <img src="./src/img/Vector.png" alt="" />
               </button>
             </div>
           </div>
           <div
-            class="bg-[#FFFFFF] max-[394px]:w-[353px] max-[394px]:mx-auto max-[394px]:mt-[20px] max-[394px]:h-[435px] xl:relative xl:rounded-[36px] max-[394px]:rounded-[30px]"
+            class="bg-[#FFFFFF] mx-auto mt-[20px] lg:relative lg:rounded-[36px] rounded-[30px]"
           >
             <div
-              class="w-[48px] text-white absolute max-[394px]:mt-[47px] xl:top-[60px] text-center h-[48px] bg-[#00B8C4]"
+              class="w-[48px] text-white absolute lg:top-[8.6%] text-center h-[48px] bg-[#00B8C4]"
             >
               <h1 class="font-extrabold text-[24px]">17</h1>
               <p class="font-bold text-[14px] -mt-[12px]">Oct</p>
             </div>
-            <div class="xl:w-[448px] xl:h-[320px]">
+            <div class="">
               <img
-                class="xl:w-full xl:h-full xl:object-cover"
-                src="./img/Rectangle 91.png"
+                class="w-full h-full object-cover"
+                src="./src/img/Rectangle 91.png"
                 alt=""
               />
             </div>
             <div
-              class="xl:w-[410px] xl:ml-[28px] max-[394px]:ml-[16px] max-[394px]:w-[320px] xl:mt-[21px] xl:mx-auto max-[394px]:mt-[12px]"
+              class="lg:max-w-[410px] px-3 mx-auto pt-[12px] max-w-[320px] lg:mt-[21px] lg:mx-auto mt-[12px] lg:pt-0"
             >
-              <h3
-                class="text-[#00355D] max-[394px]:text-[14px] xl:text-lg font-bold"
-              >
+              <h3 class="text-[#00355D] text-[14px] lg:text-lg font-bold">
                 Mẫu website du lịch hiện đại và tươi mới
               </h3>
-              <p
-                class="xl:text-lg max-[394px]:text-[14px] text-[#00355D] mt-[10px]"
-              >
+              <p class="lg:text-lg text-[14px] text-[#00355D] mt-[10px]">
                 Mẫu theme có sự kết hợp giữa màu sắc tươi mới, đổ bóng mượt mà
                 và sự chuyển màu tinh tế trên các nút, card, overlay và section.
               </p>
+            </div>
+            <div class="pb-[16px] flex justify-center lg:pb-0">
               <button
-                class="xl:w-[408px] max-[394px]:w-[321px] max-[394px]:h-[43px] max-[394px]:rounded-[100px] max-[394px]:mt-[16px] max-[394px]:text-white max-[394px]:text-[14px] max-[394px]:font-bold max-[394px]:justify-center max-[394px]:items-center max-[394px]:gap-[10px] max-[394px]:flex xl:flex xl:rounded-[100px] xl:mt-[23px] xl:mb-[20px] xl:justify-center xl:items-center xl:h-[49px] bg-gradient-to-r from-[#00B8C4] to-[#2AD8CD] xl:gap-[10px]"
+                class="lg:w-[90%] min-w-[320px] h-[43px] rounded-[100px] mt-[16px] text-white text-[14px] font-bold justify-center items-center gap-[10px] flex lg:flex lg:rounded-[100px] lg:mt-[23px] lg:mb-[20px] lg:justify-center lg:items-center lg:h-[49px] bg-gradient-to-r from-[#00B8C4] to-[#2AD8CD] lg:gap-[10px]"
               >
-                <span class="xl:font-semibold xl:text-lg xl:text-white xl:gap-4"
+                <span class="lg:font-semibold lg:text-lg lg:text-white lg:gap-4"
                   >Xem chi tiết</span
                 >
-                <img src="./img/Vector.png" alt="" />
+                <img src="./src/img/Vector.png" alt="" />
               </button>
             </div>
           </div>
           <div
-            class="bg-[#FFFFFF] max-[394px]:w-[353px] max-[394px]:mx-auto max-[394px]:mt-[20px] max-[394px]:h-[435px] xl:relative xl:rounded-[36px] max-[394px]:rounded-[30px]"
+            class="bg-[#FFFFFF] mx-auto mt-[20px] lg:relative lg:rounded-[36px] rounded-[30px]"
           >
             <div
-              class="w-[48px] text-white absolute max-[394px]:mt-[47px] xl:top-[60px] text-center h-[48px] bg-[#00B8C4]"
+              class="w-[48px] text-white absolute lg:top-[8.6%] text-center h-[48px] bg-[#00B8C4]"
             >
               <h1 class="font-extrabold text-[24px]">17</h1>
               <p class="font-bold text-[14px] -mt-[12px]">Oct</p>
             </div>
-            <div class="xl:w-[448px] xl:h-[320px]">
+            <div class="">
               <img
-                class="xl:w-full xl:h-full xl:object-cover"
-                src="./img/Rectangle 91.png"
+                class="w-full h-full object-cover"
+                src="./src/img/Rectangle 91.png"
                 alt=""
               />
             </div>
             <div
-              class="xl:w-[410px] xl:ml-[28px] max-[394px]:ml-[16px] max-[394px]:w-[320px] xl:mt-[21px] xl:mx-auto max-[394px]:mt-[12px]"
+              class="lg:max-w-[410px] px-3 mx-auto pt-[12px] max-w-[320px] lg:mt-[21px] lg:mx-auto mt-[12px] lg:pt-0"
             >
-              <h3
-                class="text-[#00355D] max-[394px]:text-[14px] xl:text-lg font-bold"
-              >
+              <h3 class="text-[#00355D] text-[14px] lg:text-lg font-bold">
                 Mẫu website du lịch hiện đại và tươi mới
               </h3>
-              <p
-                class="xl:text-lg max-[394px]:text-[14px] text-[#00355D] mt-[10px]"
-              >
+              <p class="lg:text-lg text-[14px] text-[#00355D] mt-[10px]">
                 Mẫu theme có sự kết hợp giữa màu sắc tươi mới, đổ bóng mượt mà
                 và sự chuyển màu tinh tế trên các nút, card, overlay và section.
               </p>
+            </div>
+            <div class="pb-[16px] flex justify-center lg:pb-0">
               <button
-                class="xl:w-[408px] max-[394px]:w-[321px] max-[394px]:h-[43px] max-[394px]:rounded-[100px] max-[394px]:mt-[16px] max-[394px]:text-white max-[394px]:text-[14px] max-[394px]:font-bold max-[394px]:justify-center max-[394px]:items-center max-[394px]:gap-[10px] max-[394px]:flex xl:flex xl:rounded-[100px] xl:mt-[23px] xl:mb-[20px] xl:justify-center xl:items-center xl:h-[49px] bg-gradient-to-r from-[#00B8C4] to-[#2AD8CD] xl:gap-[10px]"
+                class="lg:w-[90%] min-w-[320px] h-[43px] rounded-[100px] mt-[16px] text-white text-[14px] font-bold justify-center items-center gap-[10px] flex lg:flex lg:rounded-[100px] lg:mt-[23px] lg:mb-[20px] lg:justify-center lg:items-center lg:h-[49px] bg-gradient-to-r from-[#00B8C4] to-[#2AD8CD] lg:gap-[10px]"
               >
-                <span class="xl:font-semibold xl:text-lg xl:text-white xl:gap-4"
+                <span class="lg:font-semibold lg:text-lg lg:text-white lg:gap-4"
                   >Xem chi tiết</span
                 >
-                <img src="./img/Vector.png" alt="" />
+                <img src="./src/img/Vector.png" alt="" />
               </button>
             </div>
           </div>
           <div
-            class="bg-[#FFFFFF] max-[394px]:w-[353px] max-[394px]:mx-auto max-[394px]:mt-[20px] max-[394px]:h-[435px] xl:relative xl:rounded-[36px] max-[394px]:rounded-[30px]"
+            class="bg-[#FFFFFF] mx-auto mt-[20px] lg:relative lg:rounded-[36px] rounded-[30px]"
           >
             <div
-              class="w-[48px] text-white absolute max-[394px]:mt-[47px] xl:top-[60px] text-center h-[48px] bg-[#00B8C4]"
+              class="w-[48px] text-white absolute lg:top-[8.6%] text-center h-[48px] bg-[#00B8C4]"
             >
               <h1 class="font-extrabold text-[24px]">17</h1>
               <p class="font-bold text-[14px] -mt-[12px]">Oct</p>
             </div>
-            <div class="xl:w-[448px] xl:h-[320px]">
+            <div class="">
               <img
-                class="xl:w-full xl:h-full xl:object-cover"
-                src="./img/Rectangle 91.png"
+                class="w-full h-full object-cover"
+                src="./src/img/Rectangle 91.png"
                 alt=""
               />
             </div>
             <div
-              class="xl:w-[410px] xl:ml-[28px] max-[394px]:ml-[16px] max-[394px]:w-[320px] xl:mt-[21px] xl:mx-auto max-[394px]:mt-[12px]"
+              class="lg:max-w-[410px] px-3 mx-auto pt-[12px] max-w-[320px] lg:mt-[21px] lg:mx-auto mt-[12px] lg:pt-0"
             >
-              <h3
-                class="text-[#00355D] max-[394px]:text-[14px] xl:text-lg font-bold"
-              >
+              <h3 class="text-[#00355D] text-[14px] lg:text-lg font-bold">
                 Mẫu website du lịch hiện đại và tươi mới
               </h3>
-              <p
-                class="xl:text-lg max-[394px]:text-[14px] text-[#00355D] mt-[10px]"
-              >
+              <p class="lg:text-lg text-[14px] text-[#00355D] mt-[10px]">
                 Mẫu theme có sự kết hợp giữa màu sắc tươi mới, đổ bóng mượt mà
                 và sự chuyển màu tinh tế trên các nút, card, overlay và section.
               </p>
+            </div>
+            <div class="pb-[16px] flex justify-center lg:pb-0">
               <button
-                class="xl:w-[408px] max-[394px]:w-[321px] max-[394px]:h-[43px] max-[394px]:rounded-[100px] max-[394px]:mt-[16px] max-[394px]:text-white max-[394px]:text-[14px] max-[394px]:font-bold max-[394px]:justify-center max-[394px]:items-center max-[394px]:gap-[10px] max-[394px]:flex xl:flex xl:rounded-[100px] xl:mt-[23px] xl:mb-[20px] xl:justify-center xl:items-center xl:h-[49px] bg-gradient-to-r from-[#00B8C4] to-[#2AD8CD] xl:gap-[10px]"
+                class="lg:w-[90%] min-w-[320px] h-[43px] rounded-[100px] mt-[16px] text-white text-[14px] font-bold justify-center items-center gap-[10px] flex lg:flex lg:rounded-[100px] lg:mt-[23px] lg:mb-[20px] lg:justify-center lg:items-center lg:h-[49px] bg-gradient-to-r from-[#00B8C4] to-[#2AD8CD] lg:gap-[10px]"
               >
-                <span class="xl:font-semibold xl:text-lg xl:text-white xl:gap-4"
+                <span class="lg:font-semibold lg:text-lg lg:text-white lg:gap-4"
                   >Xem chi tiết</span
                 >
-                <img src="./img/Vector.png" alt="" />
+                <img src="./src/img/Vector.png" alt="" />
               </button>
             </div>
           </div>
           <div
-            class="bg-[#FFFFFF] max-[394px]:w-[353px] max-[394px]:mx-auto max-[394px]:mt-[20px] max-[394px]:h-[435px] xl:relative xl:rounded-[36px] max-[394px]:rounded-[30px]"
+            class="bg-[#FFFFFF] mx-auto mt-[20px] lg:relative lg:rounded-[36px] rounded-[30px]"
           >
             <div
-              class="w-[48px] text-white absolute max-[394px]:mt-[47px] xl:top-[60px] text-center h-[48px] bg-[#00B8C4]"
+              class="w-[48px] text-white absolute lg:top-[8.6%] text-center h-[48px] bg-[#00B8C4]"
             >
               <h1 class="font-extrabold text-[24px]">17</h1>
               <p class="font-bold text-[14px] -mt-[12px]">Oct</p>
             </div>
-            <div class="xl:w-[448px] xl:h-[320px]">
+            <div class="">
               <img
-                class="xl:w-full xl:h-full xl:object-cover"
-                src="./img/Rectangle 91.png"
+                class="w-full h-full object-cover"
+                src="./src/img/Rectangle 91.png"
                 alt=""
               />
             </div>
             <div
-              class="xl:w-[410px] xl:ml-[28px] max-[394px]:ml-[16px] max-[394px]:w-[320px] xl:mt-[21px] xl:mx-auto max-[394px]:mt-[12px]"
+              class="lg:max-w-[410px] px-3 mx-auto pt-[12px] max-w-[320px] lg:mt-[21px] lg:mx-auto mt-[12px] lg:pt-0"
             >
-              <h3
-                class="text-[#00355D] max-[394px]:text-[14px] xl:text-lg font-bold"
-              >
+              <h3 class="text-[#00355D] text-[14px] lg:text-lg font-bold">
                 Mẫu website du lịch hiện đại và tươi mới
               </h3>
-              <p
-                class="xl:text-lg max-[394px]:text-[14px] text-[#00355D] mt-[10px]"
-              >
+              <p class="lg:text-lg text-[14px] text-[#00355D] mt-[10px]">
                 Mẫu theme có sự kết hợp giữa màu sắc tươi mới, đổ bóng mượt mà
                 và sự chuyển màu tinh tế trên các nút, card, overlay và section.
               </p>
+            </div>
+            <div class="pb-[16px] flex justify-center lg:pb-0">
               <button
-                class="xl:w-[408px] max-[394px]:w-[321px] max-[394px]:h-[43px] max-[394px]:rounded-[100px] max-[394px]:mt-[16px] max-[394px]:text-white max-[394px]:text-[14px] max-[394px]:font-bold max-[394px]:justify-center max-[394px]:items-center max-[394px]:gap-[10px] max-[394px]:flex xl:flex xl:rounded-[100px] xl:mt-[23px] xl:mb-[20px] xl:justify-center xl:items-center xl:h-[49px] bg-gradient-to-r from-[#00B8C4] to-[#2AD8CD] xl:gap-[10px]"
+                class="lg:w-[90%] min-w-[320px] h-[43px] rounded-[100px] mt-[16px] text-white text-[14px] font-bold justify-center items-center gap-[10px] flex lg:flex lg:rounded-[100px] lg:mt-[23px] lg:mb-[20px] lg:justify-center lg:items-center lg:h-[49px] bg-gradient-to-r from-[#00B8C4] to-[#2AD8CD] lg:gap-[10px]"
               >
-                <span class="xl:font-semibold xl:text-lg xl:text-white xl:gap-4"
+                <span class="lg:font-semibold lg:text-lg lg:text-white lg:gap-4"
                   >Xem chi tiết</span
                 >
-                <img src="./img/Vector.png" alt="" />
+                <img src="./src/img/Vector.png" alt="" />
               </button>
             </div>
           </div>
           <div
-            class="bg-[#FFFFFF] max-[394px]:w-[353px] max-[394px]:mx-auto max-[394px]:mt-[20px] max-[394px]:h-[435px] xl:relative xl:rounded-[36px] max-[394px]:rounded-[30px]"
+            class="bg-[#FFFFFF] mx-auto mt-[20px] lg:relative lg:rounded-[36px] rounded-[30px]"
           >
             <div
-              class="w-[48px] text-white absolute max-[394px]:mt-[47px] xl:top-[60px] text-center h-[48px] bg-[#00B8C4]"
+              class="w-[48px] text-white absolute lg:top-[8.6%] text-center h-[48px] bg-[#00B8C4]"
             >
               <h1 class="font-extrabold text-[24px]">17</h1>
               <p class="font-bold text-[14px] -mt-[12px]">Oct</p>
             </div>
-            <div class="xl:w-[448px] xl:h-[320px]">
+            <div class="">
               <img
-                class="xl:w-full xl:h-full xl:object-cover"
-                src="./img/Rectangle 91.png"
+                class="w-full h-full object-cover"
+                src="./src/img/Rectangle 91.png"
                 alt=""
               />
             </div>
             <div
-              class="xl:w-[410px] xl:ml-[28px] max-[394px]:ml-[16px] max-[394px]:w-[320px] xl:mt-[21px] xl:mx-auto max-[394px]:mt-[12px]"
+              class="lg:max-w-[410px] px-3 mx-auto pt-[12px] max-w-[320px] lg:mt-[21px] lg:mx-auto mt-[12px] lg:pt-0"
             >
-              <h3
-                class="text-[#00355D] max-[394px]:text-[14px] xl:text-lg font-bold"
-              >
+              <h3 class="text-[#00355D] text-[14px] lg:text-lg font-bold">
                 Mẫu website du lịch hiện đại và tươi mới
               </h3>
-              <p
-                class="xl:text-lg max-[394px]:text-[14px] text-[#00355D] mt-[10px]"
-              >
+              <p class="lg:text-lg text-[14px] text-[#00355D] mt-[10px]">
                 Mẫu theme có sự kết hợp giữa màu sắc tươi mới, đổ bóng mượt mà
                 và sự chuyển màu tinh tế trên các nút, card, overlay và section.
               </p>
+            </div>
+            <div class="pb-[16px] flex justify-center lg:pb-0">
               <button
-                class="xl:w-[408px] max-[394px]:w-[321px] max-[394px]:h-[43px] max-[394px]:rounded-[100px] max-[394px]:mt-[16px] max-[394px]:text-white max-[394px]:text-[14px] max-[394px]:font-bold max-[394px]:justify-center max-[394px]:items-center max-[394px]:gap-[10px] max-[394px]:flex xl:flex xl:rounded-[100px] xl:mt-[23px] xl:mb-[20px] xl:justify-center xl:items-center xl:h-[49px] bg-gradient-to-r from-[#00B8C4] to-[#2AD8CD] xl:gap-[10px]"
+                class="lg:w-[90%] min-w-[320px] h-[43px] rounded-[100px] mt-[16px] text-white text-[14px] font-bold justify-center items-center gap-[10px] flex lg:flex lg:rounded-[100px] lg:mt-[23px] lg:mb-[20px] lg:justify-center lg:items-center lg:h-[49px] bg-gradient-to-r from-[#00B8C4] to-[#2AD8CD] lg:gap-[10px]"
               >
-                <span class="xl:font-semibold xl:text-lg xl:text-white xl:gap-4"
+                <span class="lg:font-semibold lg:text-lg lg:text-white lg:gap-4"
                   >Xem chi tiết</span
                 >
-                <img src="./img/Vector.png" alt="" />
+                <img src="./src/img/Vector.png" alt="" />
               </button>
             </div>
           </div>
           <div
-            class="bg-[#FFFFFF] max-[394px]:w-[353px] max-[394px]:mx-auto max-[394px]:mt-[20px] max-[394px]:h-[435px] xl:relative xl:rounded-[36px] max-[394px]:rounded-[30px]"
+            class="bg-[#FFFFFF] mx-auto mt-[20px] lg:relative lg:rounded-[36px] rounded-[30px]"
           >
             <div
-              class="w-[48px] text-white absolute max-[394px]:mt-[47px] xl:top-[60px] text-center h-[48px] bg-[#00B8C4]"
+              class="w-[48px] text-white absolute lg:top-[8.6%] text-center h-[48px] bg-[#00B8C4]"
             >
               <h1 class="font-extrabold text-[24px]">17</h1>
               <p class="font-bold text-[14px] -mt-[12px]">Oct</p>
             </div>
-            <div class="xl:w-[448px] xl:h-[320px]">
+            <div class="">
               <img
-                class="xl:w-full xl:h-full xl:object-cover"
-                src="./img/Rectangle 91.png"
+                class="w-full h-full object-cover"
+                src="./src/img/Rectangle 91.png"
                 alt=""
               />
             </div>
             <div
-              class="xl:w-[410px] xl:ml-[28px] max-[394px]:ml-[16px] max-[394px]:w-[320px] xl:mt-[21px] xl:mx-auto max-[394px]:mt-[12px]"
+              class="lg:max-w-[410px] px-3 mx-auto pt-[12px] max-w-[320px] lg:mt-[21px] lg:mx-auto mt-[12px] lg:pt-0"
             >
-              <h3
-                class="text-[#00355D] max-[394px]:text-[14px] xl:text-lg font-bold"
-              >
+              <h3 class="text-[#00355D] text-[14px] lg:text-lg font-bold">
                 Mẫu website du lịch hiện đại và tươi mới
               </h3>
-              <p
-                class="xl:text-lg max-[394px]:text-[14px] text-[#00355D] mt-[10px]"
-              >
+              <p class="lg:text-lg text-[14px] text-[#00355D] mt-[10px]">
                 Mẫu theme có sự kết hợp giữa màu sắc tươi mới, đổ bóng mượt mà
                 và sự chuyển màu tinh tế trên các nút, card, overlay và section.
               </p>
+            </div>
+            <div class="pb-[16px] flex justify-center lg:pb-0">
               <button
-                class="xl:w-[408px] max-[394px]:w-[321px] max-[394px]:h-[43px] max-[394px]:rounded-[100px] max-[394px]:mt-[16px] max-[394px]:text-white max-[394px]:text-[14px] max-[394px]:font-bold max-[394px]:justify-center max-[394px]:items-center max-[394px]:gap-[10px] max-[394px]:flex xl:flex xl:rounded-[100px] xl:mt-[23px] xl:mb-[20px] xl:justify-center xl:items-center xl:h-[49px] bg-gradient-to-r from-[#00B8C4] to-[#2AD8CD] xl:gap-[10px]"
+                class="lg:w-[90%] min-w-[320px] h-[43px] rounded-[100px] mt-[16px] text-white text-[14px] font-bold justify-center items-center gap-[10px] flex lg:flex lg:rounded-[100px] lg:mt-[23px] lg:mb-[20px] lg:justify-center lg:items-center lg:h-[49px] bg-gradient-to-r from-[#00B8C4] to-[#2AD8CD] lg:gap-[10px]"
               >
-                <span class="xl:font-semibold xl:text-lg xl:text-white xl:gap-4"
+                <span class="lg:font-semibold lg:text-lg lg:text-white lg:gap-4"
                   >Xem chi tiết</span
                 >
-                <img src="./img/Vector.png" alt="" />
+                <img src="./src/img/Vector.png" alt="" />
               </button>
             </div>
           </div>
         </section>
         <!-- Phan trang -->
-        <section
-          class="xl:mt-[43px] xl:ml-[7px] max-[394px]:ml-[22px] max-[394px]:mt-[32px]"
-        >
+        <section class="lg:mt-[43px] lg:ml-[7px] ml-[22px] mt-[32px]">
           <ul
-            class="xl:grid max-[394px]:grid max-[394px]:grid-cols-[32px_32px_32px_32px_32px_32px] xl:grid-cols-[48px_48px_48px_48px_48px] max-[394px]:gap-[13px] xl:gap-[13px]"
+            class="lg:grid grid grid-cols-[32px_32px_32px_32px_32px_32px] lg:grid-cols-[48px_48px_48px_48px_48px] gap-[13px] lg:gap-[13px]"
           >
             <li
-              class="xl:w-full xl:hidden max-[394px]:block max-[394px]:border-[1px] max-[394px]:border-[#A1A1AA] max-[394px]:rounded-[5px] max-[394px]:w-full max-[394px]:h-[32px] xl:h-[48px] xl:justify-center xl:items-center xl:border-[1px] xl:border-[#A1A1AA] xl:hover:border-[1px] xl:hover:border-[#00B8C4] xl:rounded-[10px]"
+              class="lg:w-full lg:hidden block border-[1px] border-[#A1A1AA] rounded-[5px] w-full h-[32px] lg:h-[48px] lg:justify-center lg:items-center lg:border-[1px] lg:border-[#A1A1AA] lg:hover:border-[1px] lg:hover:border-[#00B8C4] lg:rounded-[10px]"
             >
               <a
-                class="xl:w-full max-[394px]:flex max-[394px]:justify-center max-[394px]:items-center max-[394px]:w-full max-[394px]:h-[32px] xl:flex xl:justify-center xl:items-center xl:h-full"
+                class="lg:w-full flex justify-center items-center w-full h-[32px] lg:flex lg:justify-center lg:items-center lg:h-full"
                 href=""
                 ><i class="fa-solid text-[#A1A1AA] fa-arrow-left"></i
               ></a>
             </li>
             <li
-              class="xl:w-full max-[394px]:border-[1px] max-[394px]:border-[#A1A1AA] max-[394px]:rounded-[5px] max-[394px]:w-full max-[394px]:h-[32px] xl:h-[48px] xl:hover:border-[1px] xl:border-[#00B8C4] xl:text-[#00B8C4] xl:border-[1px] xl:rounded-[10px] xl:flex xl:justify-center xl:items-center"
+              class="lg:w-full border-[1px] border-[#A1A1AA] rounded-[5px] w-full h-[32px] lg:h-[48px] lg:hover:border-[1px] lg:border-[#00B8C4] lg:text-[#00B8C4] lg:border-[1px] lg:rounded-[10px] lg:flex lg:justify-center lg:items-center"
             >
               <a
-                class="xl:w-full max-[394px]:w-full max-[394px]:h-[32px] max-[394px]:text-[#A1A1AA] flex justify-center items-center xl:h-full"
+                class="lg:w-full w-full h-[32px] text-[#A1A1AA] flex justify-center items-center lg:h-full"
                 href=""
                 >1</a
               >
             </li>
             <li
-              class="xl:w-full max-[394px]:border-[1px] max-[394px]:border-[#A1A1AA] max-[394px]:rounded-[5px] max-[394px]:w-full max-[394px]:h-[32px] xl:h-[48px] xl:hover:border-[1px] xl:border-[1px] xl:border-[#A1A1AA] xl:rounded-[10px] xl:flex xl:justify-center xl:items-center"
+              class="lg:w-full border-[1px] border-[#A1A1AA] rounded-[5px] w-full h-[32px] lg:h-[48px] lg:hover:border-[1px] lg:border-[1px] lg:border-[#A1A1AA] lg:rounded-[10px] lg:flex lg:justify-center lg:items-center"
             >
               <a
-                class="xl:w-full max-[394px]:w-full max-[394px]:h-[32px] max-[394px]:text-[#A1A1AA] flex justify-center items-center xl:h-full"
+                class="lg:w-full w-full h-[32px] text-[#A1A1AA] flex justify-center items-center lg:h-full"
                 href=""
                 >2</a
               >
             </li>
             <li
-              class="xl:w-full max-[394px]:border-[1px] max-[394px]:border-[#A1A1AA] max-[394px]:rounded-[5px] max-[394px]:w-full max-[394px]:h-[32px] xl:h-[48px] xl:hover:border-[1px] xl:border-[1px] xl:border-[#A1A1AA] xl:rounded-[10px] xl:flex xl:justify-center xl:items-center"
+              class="lg:w-full border-[1px] border-[#A1A1AA] rounded-[5px] w-full h-[32px] lg:h-[48px] lg:hover:border-[1px] lg:border-[1px] lg:border-[#A1A1AA] lg:rounded-[10px] lg:flex lg:justify-center lg:items-center"
             >
               <a
-                class="xl:w-full max-[394px]:w-full max-[394px]:h-[32px] max-[394px]:text-[#A1A1AA] flex justify-center items-center xl:h-full"
+                class="lg:w-full w-full h-[32px] text-[#A1A1AA] flex justify-center items-center lg:h-full"
                 href=""
                 >3</a
               >
             </li>
             <li
-              class="xl:w-full max-[394px]:border-[1px] max-[394px]:border-[#A1A1AA] max-[394px]:rounded-[5px] xl:h-[48px] max-[394px]:w-full max-[394px]:h-[32px] xl:hover:border-[1px] xl:border-[1px] xl:border-[#A1A1AA] xl:rounded-[10px] xl:flex xl:justify-center xl:items-center"
+              class="lg:w-full border-[1px] border-[#A1A1AA] rounded-[5px] lg:h-[48px] w-full h-[32px] lg:hover:border-[1px] lg:border-[1px] lg:border-[#A1A1AA] lg:rounded-[10px] lg:flex lg:justify-center lg:items-center"
             >
               <a
-                class="xl:w-full max-[394px]:w-full max-[394px]:h-[32px] max-[394px]:text-[#A1A1AA] flex justify-center items-center xl:h-full"
+                class="lg:w-full w-full h-[32px] text-[#A1A1AA] flex justify-center items-center lg:h-full"
                 href=""
                 >4</a
               >
             </li>
             <li
-              class="xl:w-full max-[394px]:border-[1px] max-[394px]:border-[#A1A1AA] max-[394px]:rounded-[5px] max-[394px]:w-full max-[394px]:h-[32px] xl:h-[48px] xl:flex xl:justify-center xl:items-center xl:border-[1px] xl:border-[#A1A1AA] xl:hover:border-[1px] xl:hover:border-[#00B8C4] xl:rounded-[10px]"
+              class="lg:w-full border-[1px] border-[#A1A1AA] rounded-[5px] w-full h-[32px] lg:h-[48px] lg:flex lg:justify-center lg:items-center lg:border-[1px] lg:border-[#A1A1AA] lg:hover:border-[1px] lg:hover:border-[#00B8C4] lg:rounded-[10px]"
             >
               <a
-                class="xl:w-full max-[394px]:flex max-[394px]:justify-center max-[394px]:items-center max-[394px]:w-full max-[394px]:h-[32px] xl:flex xl:justify-center xl:items-center xl:h-full"
+                class="lg:w-full flex justify-center items-center w-full h-[32px] lg:flex lg:justify-center lg:items-center lg:h-full"
                 href=""
                 ><i class="fa-solid text-[#A1A1AA] fa-arrow-right"></i
               ></a>
@@ -635,12 +613,12 @@
       <!-- end san pham news -->
       <!-- footer -->
       <footer class="max-w-full sm:block bg-[#23233F] h-[704px] mt-24">
-        <div class="max-[394px]:hidden xl:block">
+        <div class="hidden lg:block p-[20px] lg:p-0">
           <section
             class="max-w-[1408px] mx-auto pt-[88px] *:text-white grid grid-cols-3"
           >
             <div class="pl-2 pt-2">
-              <img src="./img/footer.png" alt="" />
+              <img src="./src/img/footer.png" alt="" />
               <p class="text-[15px] font-[400] w-full pt-[1rem] leading-7">
                 Chúng tôi luôn chắc chắn về mục đích thiết kế website của khách
                 hàng. Website chuyên nghiệp trước hết phải phù hợp với hệ thống
@@ -712,20 +690,24 @@
                   class="*:flex *:leading-[1.3rem] *:tracking-[0.4px] *:gap-4 *:pt-[10px]"
                 >
                   <li>
-                    <img class="w-4 h-5" src="./img/address.png" alt="" />
+                    <img class="w-4 h-5" src="./src/img/address.png" alt="" />
                     <a class="text-[16px] tracking-[0.4px] font-normal" href=""
                       >Số 102 Trần Phú, Phường Mộ Lao, Quận Hà Đông, TP.Hà
                       Nội.</a
                     >
                   </li>
                   <li>
-                    <img class="w-5 h-5" src="./img/phone-footer.png" alt="" />
+                    <img
+                      class="w-5 h-5"
+                      src="./src/img/phone-footer.png"
+                      alt=""
+                    />
                     <a class="text-[16px] font-normal" href=""
                       >Hotline: 0973-258-886</a
                     >
                   </li>
                   <li>
-                    <img class="w-5 h-5" src="./img/mail.png" alt="" />
+                    <img class="w-5 h-5" src="./src/img/mail.png" alt="" />
                     <a class="text-[16px] font-normal" href=""
                       >info@webopsagency.com</a
                     >
@@ -733,7 +715,7 @@
                   <li>
                     <img
                       class="w-5 h-5"
-                      src="./img/description_FILL0_wght400_GRAD0_opsz24 1.png"
+                      src="./src/img/description_FILL0_wght400_GRAD0_opsz24 1.png"
                       alt=""
                     />
                     <a class="text-[16px] font-normal" href=""
@@ -751,20 +733,24 @@
                 <ul class="flex gap-[32px] pt-[10px] pl-[28px]">
                   <li>
                     <a href=""
-                      ><img src="./img/facebook-square.png" alt=""
+                      ><img src="./src/img/facebook-square.png" alt=""
                     /></a>
                   </li>
                   <li>
-                    <a href=""><img src="./img/instagram.png" alt="" /></a>
+                    <a href=""><img src="./src/img/instagram.png" alt="" /></a>
                   </li>
                   <li>
-                    <a href=""><img src="./img/image 40.png" alt="" /></a>
+                    <a href=""><img src="./src/img/image 40.png" alt="" /></a>
                   </li>
                   <li>
-                    <a href=""><img src="./img/twitter-square.png" alt="" /></a>
+                    <a href=""
+                      ><img src="./src/img/twitter-square.png" alt=""
+                    /></a>
                   </li>
                   <li>
-                    <a href=""><img src="./img/youtube-square.png" alt="" /></a>
+                    <a href=""
+                      ><img src="./src/img/youtube-square.png" alt=""
+                    /></a>
                   </li>
                 </ul>
               </div>
@@ -776,7 +762,7 @@
             <div class="font-semibold text-[16px] text-white">
               Copyright WebOpsAgency
             </div>
-            <div><img src="./img/image 406.png" alt="" /></div>
+            <div><img src="./src/img/image 406.png" alt="" /></div>
           </section>
         </div>
       </footer>
