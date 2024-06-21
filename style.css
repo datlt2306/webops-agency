@@ -33,3 +33,7 @@
   background: #264ab9 url("./images/Rectangle 285.png") no-repeat center center;
   background-size: contain;
 }
+
+.clip-img {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 79.5%, 50% 97.5%, 0% 79.3%);
+}
