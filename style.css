@@ -8,12 +8,6 @@
   }
 }
 
-/* .button-prev-dich-vu,
-.button-next-dich-vu {
-  display: block !important;
-  visibility: visible !important;
-} */
-
 .swiper-cus {
   margin-left: auto;
   margin-right: auto;
@@ -36,4 +30,8 @@
 
 .clip-img {
   clip-path: polygon(0% 0%, 100% 0%, 100% 79.5%, 50% 97.5%, 0% 79.3%);
+}
+
+.layout-project--lg {
+  @apply grid lg:grid-cols-[minmax(0,_328px)_minmax(0,_328px)_minmax(0,_328px)_minmax(0,_328px)] md:grid-cols-[minmax(0,_328px)_minmax(0,_328px)_minmax(0,_328px)] grid-cols-[minmax(0,_328px)_minmax(0,_328px)];
 }
