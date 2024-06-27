@@ -1,0 +1,2122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./src/output.css" rel="stylesheet" />
+
+    <!-- Reset CSS -->
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" />
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet" />
+
+    <!-- Font Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet" />
+
+    <!-- Font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Start Header -->
+    <header>
+        <nav
+            class="px-5 834px:px-[24px] 21408px:px-0 relative bg-[#264AB9] z-10 py-[9px] 1408px:py-0 834px:bg-transparent border-gray-200 dark:bg-gray-900 max-w-[1408px] mx-auto">
+            <div
+                class="relative max-w-[1408px] flex flex-wrap items-center justify-between mx-auto pt-[10px] 1408px:pt-[21px] pb-1 1408px:pb-[10px]">
+                <div
+                    class="overflow-hidden absolute 1408px:left-[-22.7%] left-[-3.3%] w-[103.4%] bottom-[-16%] 834px:bottom-[-22%] 1408px:bottom-[-10%] -z-10">
+                    <img class="hidden 834px:block 834px:w-[37%] 1408px:w-auto 1408px:max-w-max"
+                        src="./src/images/backGroundLogo.png" alt="" />
+
+                    <img class="block 834px:hidden" src="./src/images/Mask group.png" alt="" />
+                </div>
+                <a href="#"><img class="w-[51%] 834px:w-[68%] 1408px:w-auto" src="./src/images/logo.svg"
+                        alt="Logo" /></a>
+                <button data-collapse-toggle="navbar-default" type="button"
+                    class="inline-flex 834px:hidden items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg"
+                    aria-controls="navbar-default" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <img class="max-w-max" src="./src/icons/hamburger.svg" alt="" />
+                </button>
+                <div class="absolute 834px:relative bottom-[-14%] 834px:right-[1%] 1408px:right-0 hidden w-full 834px:block 834px:w-auto"
+                    id="navbar-default">
+                    <ul
+                        class="flex flex-col 834px:flex-row absolute 834px:relative font-bold 834px:right-0 834px:mr-0 w-full 834px:w-auto border 834px:border-none rounded-lg bg-white 834px:*:text-sm 1408px:*:text-lg *:text-[#00355D] 834px:items-center p-4 834px:p-0 834px:gap-2 1408px:gap-2.5">
+                        <li class="hover:border-b hover:border-b-[#28EFE2] hover:text-[#28EFE2]">
+                            <a class="pl-3 py-3 bg-[#264AB9] rounded text-white 834px:text-inherit block 834px:bg-transparent 834px:px-1 1408px:px-2"
+                                href="#">Về chúng tôi</a>
+                        </li>
+                        <li class="hover:border-b hover:border-b-[#28EFE2] hover:text-[#28EFE2]">
+                            <a class="pl-3 py-3 block 834px:bg-transparent 834px:px-1 1408px:px-2" href="#">Dự án</a>
+                        </li>
+                        <li class="hover:border-b hover:border-b-[#28EFE2] hover:text-[#28EFE2]">
+                            <a class="pl-3 py-3 block 834px:bg-transparent 834px:px-1 1408px:px-2" href="#">Dịch vụ</a>
+                        </li>
+                        <li class="hover:border-b hover:border-b-[#28EFE2] hover:text-[#28EFE2]">
+                            <a class="pl-3 py-3 block 834px:bg-transparent 834px:px-1 1408px:px-2" href="#">Bảng giá</a>
+                        </li>
+                        <li class="hover:border-b hover:border-b-[#28EFE2] hover:text-[#28EFE2]">
+                            <a class="pl-3 py-3 block 834px:bg-transparent 834px:px-1 1408px:px-2" href="#">Tin tức</a>
+                        </li>
+                        <li class="hover:border-b hover:border-b-[#28EFE2] hover:text-[#28EFE2]">
+                            <a class="pl-3 py-3 block 834px:bg-transparent 834px:px-1 1408px:px-2" href="#">Liên hệ</a>
+                        </li>
+                        <li
+                            class="hidden 834px:block font-extrabold py-[0.625rem] px-[25px] 834px:px-4 1408px:px-[25px] rounded-full bg-gradient-to-r from-[#10B8C4] to-[#2AD8CD]">
+                            <a class="flex items-center gap-3" href="#"><i
+                                    class="fa-solid fa-phone-volume text-xl 834px:text-base 1408px:text-xl text-white"></i>
+                                <span class="text-white">098 - 888 - 8888</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- End Header -->
+
+    <!-- Start Main -->
+    <main>
+        <!-- Hero Section -->
+        <section class="834px:pb-[44px] pt-[14px] 1408px:pt-[6.7rem] 1408px:pb-[5.875rem] max-w-[1408px] mx-auto">
+            <div
+                class="px-5 834px:px-[24px] 21408px:px-0 flex flex-col 834px:flex-row justify-items-center 834px:justify-between items-center 834px:items-start">
+                <div class="flex flex-col items-center 834px:block">
+                    <h3
+                        class="text-base 834px:text-2xl leading-[3rem] lg:text-3xl 1408px:text-[2.5rem] mb-[5px] 834px:pb-4 1408px:pb-0 1408px:mb-[43px] ml-0 mt-[5px] 834px:mt-[38px] 1408px:mt-[11px]">
+                        DỊCH VỤ
+                    </h3>
+                    <h1
+                        class="m-0 mt-0 mb-[6px] 1200:mb-4 21408px:mb-8 text-[2rem] 834px:text-[40px] lg:text-5xl 1408px:text-6xl 21408px:text-7xl font-extrabold text-[#00355D]">
+                        THIẾT KẾ WEBSITE
+                    </h1>
+                    <h1
+                        class="text-[2rem] 834px:text-[40px] lg:text-5xl 1408px:text-6xl 21408px:text-7xl ml-[-2px] mb-0 1408px:ml-0 mt-0 font-extrabold text-[#14b8a6] tracking-[-0.5px]">
+                        #1 TẠI VIỆT NAM
+                    </h1>
+                    <p
+                        class="text-[14px] 926:text-[15px] lg:text-lg 1300:text-2xl text-[#A1A1AA] mt-[10px] 834px:mt-8 834px:mr-[44px] 1408px:mt-[42px] leading-5 834px:leading-[21px] text-center 834px:text-left 1300:leading-9 max-w-[37.5rem] mb-3 834px:mb-[25px] 1200:mb-9 1408px:mb-[2.8375rem]">
+                        Thấu hiểu bối cảnh doanh nghiệp, đưa ra giải pháp tối ưu, WebOps
+                        Agency sẵn sàng đồng hành cùng thương hiệu cất cánh.
+                    </p>
+
+                    <a class="text-[14px] 834px:text-base 1408px:text-lg font-bold py-[0.625rem] 834px:px-4 px-6 834px:py-2 lg:py-4 lg:px-8 text-white rounded-full bg-gradient-to-r from-[#00B8C4] to-[#2AD8CD]"
+                        href="#">Nhận tư vấn ngay</a>
+                </div>
+                <!-- <div> -->
+                <img class="max-w-[495px] w-full 834px:max-w-none 834px:w-[52%] 1408px:w-[57%] 21408px:w-[51.2%] object-cover mt-9 834px:mt-0"
+                    src="./src/images/hero.svg" alt="Hero Image" />
+                <!-- </div> -->
+            </div>
+        </section>
+        <!-- End Hero Section -->
+
+        <!--  Greeting Section -->
+        <section class="w-full relative bg-[#264AB9] mt-[42px] 1408px:mt-[70px]">
+            <img class="absolute right-0 w-[10.125rem] 834px:w-[41%] top-[-0.9rem] 834px:top-[-1.7rem] 1408px:top-[-4.375rem] 1408px:w-[802px]"
+                src="./src/images/squareCutLeft.svg" alt="square" />
+            <div>
+                <div
+                    class="px-5 834px:px-[24px] 21408px:px-0 max-w-[1408px] relative mx-auto flex 834px:gap-[23px] 1408px:gap-[4.8125rem] pb-4 834px:pb-[1.9rem] 1408px:pb-[98px] overflow-hidden 21408px:overflow-visible items-center">
+                    <img class="absolute h-[221px] 1408px:h-auto top-0 bottom-0 1408px:max-w-max right-[5%] 1408px:right-[-3%]"
+                        src="./src/icons/microChip.svg" alt="Chip" />
+
+                    <img class="834px:mt-[33px] 1408px:mt-20 1408px:ml-[2.75rem] 834px:w-[48.5%] 1408px:w-auto max-w-max z-10 hidden 834px:block"
+                        src="./src/images/Tech_isometric_concept.svg" alt="Tech_isometric_concept Image" />
+
+                    <div class="mt-[14px] 834px:mt-[23px] 1408px:mt-[6.5rem] z-10">
+                        <h2
+                            class="font-extrabold text-lg 834px:text-[32px] 1408px:text-5xl 1408px:max-w-[35.5rem] 834px:leading-[42px] 1408px:leading-[4.0625rem] text-white text-center 834px:text-left">
+                            Chào mừng đến với WebOps Agency
+                        </h2>
+
+                        <span
+                            class="834px:h-[2px] 1408px:h-[3px] w-[5.5rem] bg-white 834px:mt-[10px] 1408px:mt-3 hidden 834px:block"></span>
+
+                        <p
+                            class="text-[14px] 1408px:text-lg 1408px:leading-8 text-white mb-4 mt-[11px] 834px:mt-[18px] leading-[19px] 834px:leading-[21px] 1408px:mt-8 1408px:mb-8 font-medium 21408px:w-[43rem] text-center 834px:text-left">
+                            Website được xem là cầu nối cực kỳ quan trọng giữa doanh nghiệp,
+                            công ty với khách hàng, đối tác. Việc thiết kế website cho doanh
+                            nghiệp chuyên nghiệp hóa, tối ưu SEO giúp mang đến hiệu quả đáng
+                            kinh ngạc.
+                        </p>
+                        <p
+                            class="1408px:leading-8 text-[14px] 1408px:text-lg text-white mt-[19px] 1408px:mt-auto leading-[19px] 834px:leading-[21px] font-medium text-center 834px:text-left">
+                            Website chuyên nghiệp sẽ là một hệ thống quản lý hiệu quả về cả
+                            thông tin, sản phẩm, dịch vụ đến dữ liệu, chăm sóc khách hàng.
+                            Bên cạnh đó, sự chuyên nghiệp của website còn giúp quá trình tìm
+                            kiếm, cập nhật dễ dàng, nhanh chóng hơn. Mang đến hiệu quả công
+                            việc tốt hơn cho tất cả các khâu liên quan trong công ty, doanh
+                            nghiệp.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End  Greeting Section -->
+
+        <!--  Commitment To Quality Section -->
+        <section
+            class="pt-[34px] 834px:pt-[30px] 1408px:pt-[97px] pb-[21px] 644:pb-9 834px:pb-[54px] 1408px:pb-24 overflow-hidden"
+            style="
+          background: url('./src/images/hanoiline.svg') center bottom no-repeat,
+            linear-gradient(to right, #f0f7ff, #e2ebf6);
+        ">
+            <div
+                class="flex gap-[21px] 834px:gap-6 lg:gap-32 1408px:gap-[202px] 1408px:flex-row px-5 834px:px-[24px] 1408px:px-5 21408px:px-0 max-w-[1408px] mx-auto relative items-center">
+                <div class="834px:max-w-[516px] 1408px:max-w-[43rem]">
+                    <h3
+                        class="text-[14px] 834px:text-base 834px:tracking-[0.13px] 1408px:tracking-normal 1408px:text-2xl text-[#00B8C4] font-bold 1408px:font-extrabold mb-[5px] 834px:mb-[8px] 1408px:mb-3">
+                        WebOps Agency luôn đồng hành cùng bạn
+                    </h3>
+
+                    <h2
+                        class="font-extrabold text-2xl 834px:text-[32px] 1408px:text-5xl 834px:leading-[43px] 1408px:leading-[4.0625rem] text-[#00355D] mb-[0.875rem] 834px:mb-[19px] 1408px:mb-[14px] 834px:w-[405px] 1408px:w-auto">
+                        Trên hành trình lập nghiệp kinh doanh đầy tự hào
+                    </h2>
+                    <p
+                        class="834px:text-sm lg:text-base 1408px:text-lg 834px:leading-[21.6px] 1408px:leading-8 text-left font-medium w-full text-[#00355D] hidden 834px:block">
+                        Webops là một công ty thiết kế website được thành lập vào năm
+                        2018. Sau một thời gian dài hoạt động, chúng tôi đã mở rộng hoạt
+                        động đến 3 thị trường chính là Việt Nam, Nhật Bản và Châu Âu.
+                        Webops tự hào mang đến cho quý khách hàng dịch vụ thiết kế website
+                        uy tín và chất lượng nhất. Với đội ngũ chuyên gia có nhiều năm
+                        kinh nghiệm, chúng tôi có khả năng áp dụng nhiều công nghệ mới
+                        nhất để tạo ra các trang web hiệu suất cao. Các trang web được
+                        thiết kế bởi Webops không chỉ đẹp mắt mà còn đáp ứng được các tiêu
+                        chí khắt khe về SEO của Google. Điều này giúp tạo ra các trang web
+                        mang lại nhiều lợi ích nhất cho khách hàng, đồng thời nâng cao
+                        tính chuyển đổi số trong thời đại 4.0.
+                    </p>
+
+                    <div
+                        class="hidden 834px:grid gap-x-6 gap-y-5 834px:grid-cols-2 1408px:gap-8 834px:mt-[22px] 1408px:mt-[2.0625rem]">
+                        <!-- Box 1 -->
+                        <div
+                            class="bg-white rounded-lg 1408px:rounded-[1.25rem] h-[106px] w-[166px] 834px:w-[246px] 834px:h-[170px] 1408px:w-auto 1408px:h-[13.125rem]">
+                            <div class="flex flex-col items-center">
+                                <div class="mt-[15.3px] 834px:mt-[23.3px] 1408px:mt-6 ml-10 834px:ml-0 1408px:ml-[2px]">
+                                    <img class="w-[37.5%] 834px:w-10 1408px:w-auto" src="./src/images/userIcon.svg"
+                                        alt="User Icon" />
+                                </div>
+                                <h2
+                                    class="font-extrabold text-2xl 834px:text-[40px] 1408px:text-5xl 1408px:leading-[3.9375rem] text-[#00355D] 834px:mt-[17px] 1408px:mt-[1.0625rem] ml-[2px] mr-[3px] 1408px:mr-0">
+                                    70+
+                                </h2>
+                                <span
+                                    class="text-[#00355D] font-medium text-[14px] 1408px:text-lg mt-[3px] 834px:mt-[17px] 1408px:mt-[-6px] ml-[1px]">Khách
+                                    hàng</span>
+                            </div>
+                        </div>
+                        <!-- End Box 1 -->
+
+                        <!-- Box 2 -->
+                        <div
+                            class="bg-white rounded-lg 1408px:rounded-[1.25rem] h-[106px] w-[166px] 834px:w-[246px] 834px:h-[170px] 1408px:w-auto 1408px:h-[13.125rem] order-3 834px:order-none">
+                            <div class="flex flex-col items-center">
+                                <div class="mt-[15.3px] 834px:mt-[23.3px] 1408px:mt-6 ml-10 834px:ml-0 1408px:ml-[2px]">
+                                    <img class="w-[37.5%] 834px:w-10 1408px:w-auto" src="./src/images/folderIcon.svg"
+                                        alt="User Icon" />
+                                </div>
+                                <h2
+                                    class="font-extrabold text-2xl 834px:text-[40px] 1408px:text-5xl 1408px:leading-[3.9375rem] text-[#00355D] 834px:mt-[17px] 1408px:mt-[1.0625rem] ml-[2px] mr-[3px] 1408px:mr-0 1408px:ml-[9px]">
+                                    500+
+                                </h2>
+                                <span
+                                    class="text-[#00355D] font-medium text-[14px] 1408px:text-lg mt-[3px] 834px:mt-[17px] 1408px:mt-[-6px] ml-[1px]">Dự
+                                    án đã hoàn thành</span>
+                            </div>
+                        </div>
+                        <!-- End Box 2 -->
+
+                        <!-- Box 3 -->
+                        <div
+                            class="bg-white rounded-lg 1408px:rounded-[1.25rem] h-[106px] w-[166px] 834px:w-[246px] 834px:h-[170px] 1408px:w-auto 1408px:h-[13.125rem] order-2 834px:order-none">
+                            <div class="flex flex-col items-center">
+                                <div class="mt-[15.3px] 834px:mt-[23.3px] 1408px:mt-6 ml-10 834px:ml-0 1408px:ml-[2px]">
+                                    <img class="w-[37.5%] 834px:w-10 1408px:w-auto" src="./src/images/libraryIcon.svg"
+                                        alt="User Icon" />
+                                </div>
+                                <h2
+                                    class="font-extrabold text-2xl 834px:text-[40px] 1408px:text-5xl 1408px:leading-[3.9375rem] text-[#00355D] 834px:mt-[17px] 1408px:mt-[1.0625rem] ml-[2px] 1408px:ml-[9px] mr-[3px] 1408px:mr-0">
+                                    300+
+                                </h2>
+                                <span
+                                    class="text-[#00355D] font-medium text-[14px] 1408px:text-lg mt-[3px] 834px:mt-[17px] 1408px:mt-[-6px] ml-[1px]">Template
+                                    đã phát triển</span>
+                            </div>
+                        </div>
+                        <!-- End Box 3 -->
+
+                        <!-- Box 4 -->
+                        <div
+                            class="bg-white rounded-lg 1408px:rounded-[1.25rem] h-[106px] w-[166px] 834px:w-[246px] 834px:h-[170px] 1408px:w-auto 1408px:h-[13.125rem] order-4 834px:order-none">
+                            <div class="flex flex-col items-center">
+                                <div class="mt-[15.3px] 834px:mt-[23.3px] 1408px:mt-6 ml-10 834px:ml-0 1408px:ml-[2px]">
+                                    <img class="w-[37.5%] 834px:w-10 1408px:w-auto" src="./src/images/heartIcon.svg"
+                                        alt="User Icon" />
+                                </div>
+                                <h2
+                                    class="font-extrabold text-2xl 834px:text-[40px] 1408px:text-5xl 1408px:leading-[3.9375rem] text-[#00355D] 834px:mt-[17px] 1408px:mt-[1.0625rem] ml-[2px] 1408px:ml-4 mr-[3px] 1408px:mr-0">
+                                    100%
+                                </h2>
+                                <span
+                                    class="text-[#00355D] font-medium text-[14px] 1408px:text-lg mt-[3px] 834px:mt-[17px] 1408px:mt-[-6px] ml-[1px]">Khách
+                                    hàng hài lòng</span>
+                            </div>
+                        </div>
+                        <!-- End Box 4 -->
+                    </div>
+
+                    <div class="flex gap-[21px] items-center justify-between 834px:hidden">
+                        <!-- flex flex-col gap-5 mt-[22px] -->
+                        <div class="flex flex-col gap-5 mt-[8px]">
+                            <!-- Box 1 -->
+                            <div
+                                class="bg-white rounded-lg 1408px:rounded-[1.25rem] h-[106px] w-[166px] 535:w-[196px] 834px:w-[246px] 834px:h-[170px] 1408px:w-auto 1408px:h-[13.125rem]">
+                                <div class="flex flex-col items-center">
+                                    <div
+                                        class="mt-[15.3px] 834px:mt-[23.3px] 1408px:mt-6 ml-10 834px:ml-0 1408px:ml-[2px]">
+                                        <img class="w-[37.5%] 834px:w-10 1408px:w-auto" src="./src/images/userIcon.svg"
+                                            alt="User Icon" />
+                                    </div>
+                                    <h2
+                                        class="font-extrabold text-2xl 834px:text-[40px] 1408px:text-5xl 1408px:leading-[3.9375rem] text-[#00355D] 834px:mt-[17px] 1408px:mt-[1.0625rem] ml-[2px] mr-[3px] 1408px:mr-0">
+                                        70+
+                                    </h2>
+                                    <span
+                                        class="text-[#00355D] font-medium text-[14px] 1408px:text-lg mt-[3px] 834px:mt-[17px] 1408px:mt-[-6px] ml-[1px]">Khách
+                                        hàng</span>
+                                </div>
+                            </div>
+                            <!-- End Box 1 -->
+
+                            <!-- Box 2 -->
+                            <div
+                                class="bg-white rounded-lg 1408px:rounded-[1.25rem] h-[106px] w-[166px] 535:w-[196px] 834px:w-[246px] 834px:h-[170px] 1408px:w-auto 1408px:h-[13.125rem] order-3 834px:order-none">
+                                <div class="flex flex-col items-center">
+                                    <div
+                                        class="mt-[15.3px] 834px:mt-[23.3px] 1408px:mt-6 ml-10 834px:ml-0 1408px:ml-[2px]">
+                                        <img class="w-[37.5%] 834px:w-10 1408px:w-auto"
+                                            src="./src/images/folderIcon.svg" alt="User Icon" />
+                                    </div>
+                                    <h2
+                                        class="font-extrabold text-2xl 834px:text-[40px] 1408px:text-5xl 1408px:leading-[3.9375rem] text-[#00355D] 834px:mt-[17px] 1408px:mt-[1.0625rem] ml-[2px] mr-[3px] 1408px:mr-0 1408px:ml-[9px]">
+                                        500+
+                                    </h2>
+                                    <span
+                                        class="text-[#00355D] font-medium text-[14px] 1408px:text-lg mt-[3px] 834px:mt-[17px] 1408px:mt-[-6px] ml-[1px]">Dự
+                                        án đã hoàn thành</span>
+                                </div>
+                            </div>
+                            <!-- End Box 2 -->
+
+                            <!-- Box 3 -->
+                            <div
+                                class="bg-white rounded-lg 1408px:rounded-[1.25rem] h-[106px] w-[166px] 535:w-[196px] 834px:w-[246px] 834px:h-[170px] 1408px:w-auto 1408px:h-[13.125rem] order-2 834px:order-none">
+                                <div class="flex flex-col items-center">
+                                    <div
+                                        class="mt-[15.3px] 834px:mt-[23.3px] 1408px:mt-6 ml-10 834px:ml-0 1408px:ml-[2px]">
+                                        <img class="w-[37.5%] 834px:w-10 1408px:w-auto"
+                                            src="./src/images/libraryIcon.svg" alt="User Icon" />
+                                    </div>
+                                    <h2
+                                        class="font-extrabold text-2xl 834px:text-[40px] 1408px:text-5xl 1408px:leading-[3.9375rem] text-[#00355D] 834px:mt-[17px] 1408px:mt-[1.0625rem] ml-[2px] 1408px:ml-[9px] mr-[3px] 1408px:mr-0">
+                                        300+
+                                    </h2>
+                                    <span
+                                        class="text-[#00355D] font-medium text-[14px] 1408px:text-lg mt-[3px] 834px:mt-[17px] 1408px:mt-[-6px] ml-[1px]">Template
+                                        đã phát triển</span>
+                                </div>
+                            </div>
+                            <!-- End Box 3 -->
+
+                            <!-- Box 4 -->
+                            <div
+                                class="bg-white rounded-lg 1408px:rounded-[1.25rem] h-[106px] w-[166px] 535:w-[196px] 834px:w-[246px] 834px:h-[170px] 1408px:w-auto 1408px:h-[13.125rem] order-4 834px:order-none">
+                                <div class="flex flex-col items-center">
+                                    <div
+                                        class="mt-[15.3px] 834px:mt-[23.3px] 1408px:mt-6 ml-10 834px:ml-0 1408px:ml-[2px]">
+                                        <img class="w-[37.5%] 834px:w-10 1408px:w-auto" src="./src/images/heartIcon.svg"
+                                            alt="User Icon" />
+                                    </div>
+                                    <h2
+                                        class="font-extrabold text-2xl 834px:text-[40px] 1408px:text-5xl 1408px:leading-[3.9375rem] text-[#00355D] 834px:mt-[17px] 1408px:mt-[1.0625rem] ml-[2px] 1408px:ml-4 mr-[3px] 1408px:mr-0">
+                                        100%
+                                    </h2>
+                                    <span
+                                        class="text-[#00355D] font-medium text-[14px] 1408px:text-lg mt-[3px] 834px:mt-[17px] 1408px:mt-[-6px] ml-[1px]">Khách
+                                        hàng hài lòng</span>
+                                </div>
+                            </div>
+                            <!-- End Box 4 -->
+                        </div>
+                        <div class="relative">
+                            <img class="mt-[52px] 535:mt-0 w-[166px] 535:w-[190px]" src="./src/images/rocket.svg"
+                                alt="Rocket SVG" />
+                            <img class="absolute left-[-20%] 644:left-[-33%] bottom-[-12.1%] 644:bottom-[-15.1%] max-w-[216px] 535:max-w-[256px] 644:max-w-[308px]"
+                                src="./src/images/cloud.svg" alt="Cloud SVG" />
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Block 2 --- Rocket Image -->
+                <div class="hidden 834px:block">
+                    <div
+                        class="animate-bounce h-16 absolute 834px:right-[3%] 890:right-[2%] 926:right-[1%] lg:right-[8%] 1100:right-[7%] 1200:right-[9%] 1300:right-[12%] 1408px:right-[10%] 21408px:right-[12%] 834px:top-[7%] lg:top-[6%] 1408px:top-[12%]">
+                        <img class="w-[48%] 834px:w-[246px] 834px:mt-[53px] lg:mt-[41px] lg:w-[270px] 1408px:w-auto 1408px:mt-[-66px]"
+                            src="./src/images/rocket.svg" alt="Rocket SVG" />
+                    </div>
+
+                    <img class="absolute hidden 834px:block 834px:w-[540px] lg:w-[700px] 1408px:w-auto 834px:bottom-[-7.6%] lg:bottom-[-7.5%] 834px:right-[-13%] lg:right-[-11%] 1200:right-[-7%] 1300:right-[-3.5%] 1408px:max-w-max 1408px:right-[-19.8%] 21408px:right-[-17.8%] 1408px:bottom-[-10.1%]"
+                        src="./src/images/cloud.svg" alt="Cloud SVG" />
+                </div>
+                <!-- <img
+            class="absolute hidden 834px:block 834px:w-[540px] 1408px:w-auto 834px:bottom-[-7.6%] lg:bottom-[-15.5%] 834px:right-[-13%] lg:right-[-57%] 1408px:max-w-max 1408px:right-[-19.8%] 21408px:right-[-17.8%] 1408px:bottom-[-10.1%]"
+            src="./src/images/cloud.svg"
+            alt="Cloud SVG"
+          /> -->
+            </div>
+        </section>
+        <!-- End  Commitment To Quality Section -->
+
+        <!--  Service Section-->
+        <section class="pt-[33.2px] 1408px:pt-24 1408px:pb-16 max-w-[1408px] 834px:px-5 21408px:px-0 mx-auto relative">
+            <div class="flex flex-col 1408px:flex-row 1408px:gap-8">
+                <div class="flex flex-col items-center 1408px:block mx-auto 1408px:m-0 max-w-[448px]">
+                    <h3
+                        class="text-[14px] 1408px:text-2xl text-[#00B8C4] font-extrabold mb-[7px] 834px:mb-[18px] 1408px:mb-[0.9375rem]">
+                        Dịch vụ
+                    </h3>
+                    <h2
+                        class="font-extrabold text-2xl 834px:text-[32px] 1408px:text-[2.5rem] 834px:leading-[41px] 1408px:leading-[3.4375rem] mt-[-2px] ml-[-1px] text-[#00355D] mb-[19px] 1408px:mb-6 w-full text-center 1408px:text-left">
+                        Chúng Tôi Cung Cấp Dịch Vụ Tuyệt Vời Nhất Đến Bạn
+                    </h2>
+                    <p
+                        class="leading-[18px] w-[353px] 834px:w-[381px] lg:w-auto 1408px:leading-8 text-[14px] 1408px:text-lg text-[#00355D] font-medium pl-2 1408px:pl-4 border-l-4 border-l-[#00B8C4]">
+                        Phục vụ Quý khách nhanh chóng, 24/7 trong suốt quá trình triển
+                        khai, bảo hành, vận hành sản phẩm.
+                    </p>
+                </div>
+
+                <div
+                    class="relative w-full mt-6 834px:mt-10 1408px:mt-0 1408px:ml-0 before:content-[''] before:block before:absolute before:w-full before:bg-gradient-to-b before:from-[#6B92FF] before:to-[#264AB9] before:h-[46.9%] before:1408px:h-[57.7%] before:rounded-lg before:1408px:rounded-[1.75rem] before:-z-10">
+                    <div class="1408px:max-w-[928px] px-5 1408px:px-12">
+                        <div class="swiper-cus mySwiper2">
+                            <div class="swiper-wrapper mt-5 834px:mt-6 1408px:mt-12 pb-[10px]">
+                                <!-- Block 1 -->
+                                <div class="shadow-custom1 rounded-lg 1408px:rounded-2xl overflow-hidden swiper-slide">
+                                    <img class="w-full" src="./src/images/imgHTML.jpg"
+                                        alt="Thiết kế website chuẩn SEO" />
+                                    <div class="p-2 h-[159px] 1408px:px-4 1408px:pt-5 1408px:h-[238px] bg-white">
+                                        <h3
+                                            class="text-base 834px:text-lg 1408px:text-2xl text-[#00355D] font-bold 1408px:font-roboto leading-[22px] 834px:leading-[23px] 1408px:leading-[1.8125rem]">
+                                            Thiết kế website chuẩn SEO
+                                        </h3>
+                                        <p
+                                            class="font-roboto text-[#A1A1AA] text-[14px] 1408px:text-[1.125rem] leading-[19px] 834px:leading-[23px] 1408px:leading-7 mt-[6px] 1408px:mt-[0.6875rem]">
+                                            Định hướng chiến lược rõ ràng, thiết kế mang dấu ấn
+                                            riêng và đem lại trải nghiệm tốt cho người dùng.
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- End Block 1 -->
+
+                                <!-- Block 2 -->
+                                <div class="shadow-custom1 rounded-lg 1408px:rounded-2xl overflow-hidden swiper-slide">
+                                    <img class="w-full" src="./src/images/imgContent.jpg"
+                                        alt="Quản Trị Web, Xây Dựng Nội Dung" />
+                                    <div class="px-2 pt-2 h-[159px] 1408px:px-4 1408px:pt-5 1408px:h-[238px] bg-white">
+                                        <h3
+                                            class="text-base 834px:text-lg 1408px:text-2xl text-[#00355D] font-bold 1408px:font-roboto leading-[22px] 834px:leading-[23px] 1408px:leading-[1.8125rem]">
+                                            Quản Trị Web, Xây Dựng Nội Dung
+                                        </h3>
+                                        <p
+                                            class="font-roboto text-[#A1A1AA] text-[14px] 1408px:text-[1.125rem] leading-[19px] 834px:leading-[23px] 1408px:leading-7 mt-[6px] 1408px:mt-[0.6875rem]">
+                                            Vận hành website ổn định, cập nhật và xây dựng nội dung
+                                            website chuẩn SEO.
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- End Block 2 -->
+
+                                <!-- Block 3 -->
+                                <div class="shadow-custom1 rounded-lg 1408px:rounded-2xl overflow-hidden swiper-slide">
+                                    <img class="w-full" src="./src/images/imgServer.jpg"
+                                        alt="Hosting & Domain cho doanh nghiệp" />
+                                    <div class="px-2 pt-2 h-[159px] 1408px:px-4 1408px:pt-5 1408px:h-[238px] bg-white">
+                                        <h3
+                                            class="text-base 834px:text-lg 1408px:text-2xl text-[#00355D] font-bold 1408px:font-roboto leading-[22px] 834px:leading-[23px] 1408px:leading-[1.8125rem]">
+                                            Hosting & Domain cho doanh nghiệp
+                                        </h3>
+                                        <p
+                                            class="font-roboto text-[#A1A1AA] text-[14px] 1408px:text-[1.125rem] leading-[19px] 834px:leading-[23px] 1408px:leading-7 mt-3 1408px:mt-[0.6875rem]">
+                                            Dịch vụ đảm bảo tính ổn định, an toàn, hỗ trợ nhanh
+                                            chóng, nhiệt tình với chi phí cạnh tranh.
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- End Block 3 -->
+                                <!-- Block 1 -->
+                                <div class="shadow-custom1 rounded-lg 1408px:rounded-2xl overflow-hidden swiper-slide">
+                                    <img class="w-full" src="./src/images/imgHTML.jpg"
+                                        alt="Thiết kế website chuẩn SEO" />
+                                    <div class="p-2 1408px:px-4 1408px:pt-5 bg-white h-[159px] 1408px:h-[238px]">
+                                        <h3
+                                            class="text-base 834px:text-lg 1408px:text-2xl text-[#00355D] font-bold 1408px:font-roboto leading-[22px] 834px:leading-[23px] 1408px:leading-[1.8125rem]">
+                                            Thiết kế website chuẩn SEO
+                                        </h3>
+                                        <p
+                                            class="font-roboto text-[#A1A1AA] text-[14px] 1408px:text-[1.125rem] leading-[19px] 834px:leading-[23px] 1408px:leading-7 mt-[6px] 1408px:mt-[0.6875rem]">
+                                            Định hướng chiến lược rõ ràng, thiết kế mang dấu ấn
+                                            riêng và đem lại trải nghiệm tốt cho người dùng.
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- End Block 1 -->
+
+                                <!-- Block 2 -->
+                                <div class="shadow-custom1 rounded-lg 1408px:rounded-2xl overflow-hidden swiper-slide">
+                                    <img class="w-full" src="./src/images/imgContent.jpg"
+                                        alt="Quản Trị Web, Xây Dựng Nội Dung" />
+                                    <div class="px-2 pt-2 h-[159px] 1408px:px-4 1408px:pt-5 1408px:h-[238px] bg-white">
+                                        <h3
+                                            class="text-base 834px:text-lg 1408px:text-2xl text-[#00355D] font-bold 1408px:font-roboto leading-[22px] 834px:leading-[23px] 1408px:leading-[1.8125rem]">
+                                            Quản Trị Web, Xây Dựng Nội Dung
+                                        </h3>
+                                        <p
+                                            class="font-roboto text-[#A1A1AA] text-[14px] 1408px:text-[1.125rem] leading-[19px] 834px:leading-[23px] 1408px:leading-7 mt-[6px] 1408px:mt-[0.6875rem]">
+                                            Vận hành website ổn định, cập nhật và xây dựng nội dung
+                                            website chuẩn SEO.
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- End Block 2 -->
+
+                                <!-- Block 3 -->
+                                <div class="shadow-custom1 rounded-lg 1408px:rounded-2xl overflow-hidden swiper-slide">
+                                    <img class="w-full" src="./src/images/imgServer.jpg"
+                                        alt="Hosting & Domain cho doanh nghiệp" />
+                                    <div class="px-2 pt-2 h-[159px] 1408px:px-4 1408px:pt-5 1408px:h-[238px] bg-white">
+                                        <h3
+                                            class="text-base 834px:text-lg 1408px:text-2xl text-[#00355D] font-bold 1408px:font-roboto leading-[22px] 834px:leading-[23px] 1408px:leading-[1.8125rem]">
+                                            Hosting & Domain cho doanh nghiệp
+                                        </h3>
+                                        <p
+                                            class="font-roboto text-[#A1A1AA] text-[14px] 1408px:text-[1.125rem] leading-[19px] 834px:leading-[23px] 1408px:leading-7 mt-3 1408px:mt-[0.6875rem]">
+                                            Dịch vụ đảm bảo tính ổn định, an toàn, hỗ trợ nhanh
+                                            chóng, nhiệt tình với chi phí cạnh tranh.
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- End Block 3 -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- button -->
+                    <div
+                        class="flex items-center justify-center mt-2 834px:mt-5 1408px:mt-[5px] gap-[18px] 1408px:gap-8 text-3xl">
+                        <button class="swiper2-button-prev w-6 834px:w-8 1408px:w-auto">
+                            <img src="./src/icons/arrow-left.svg" alt="" />
+                        </button>
+
+                        <button class="swiper2-button-next w-6 834px:w-8 1408px:w-auto">
+                            <img src="./src/icons/arrow-right.svg" alt="" />
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End  Service Section -->
+
+        <!--  Procedure Section -->
+        <section class="bg-[#264AB9] w-full relative mt-10 1408px:mt-[4.4375rem] pb-[2.3rem] 1408px:pb-[4.75rem]">
+            <img class="absolute w-[41%] 1408px:w-auto mt-[-1.375rem] 1408px:mt-[-4.375rem]"
+                src="./src/images/squareCutRight.svg" alt="" />
+            <div class="max-w-[348px] 834px:max-w-[568px] 1408px:max-w-[1408px] m-auto">
+                <div class="1408px:grid 1408px:grid-cols-[28rem_58rem] 21408px:gap-8">
+                    <div class="1408px:z-10 1408px:mt-24">
+                        <img class="mx-auto 1408px:mx-0 w-10 834px:w-[70px] 1408px:w-auto h-[107px] 834px:h-[140px] 1408px:h-auto"
+                            src="./src/icons/carbon_process.svg" alt="" />
+
+                        <h2
+                            class="font-extrabold text-2xl 1408px:text-5xl leading-[3.9375rem] text-white mt-[-2.7rem] text-center 1408px:text-left 1408px:mt-[3.5rem] relative">
+                            Quy Trình
+                            <p class="inline 1408px:block mt-0 1408px:mt-4">Triển Khai Dự Án</p>
+                        </h2>
+                    </div>
+
+                    <!-- Block 2 - Tree -->
+                    <div class="flex items-center justify-center relative">
+                        <div>
+                            <div
+                                class="w-[2px] 834px:w-[3px] 1408px:w-[5px] h-56 834px:h-96 1408px:h-[36.8125rem] block bg-white mt-[3.8rem] 1408px:mt-[11.5625rem] mr-1 1408px:mr-0">
+                            </div>
+                            <!-- Step 1 -->
+                            <div
+                                class="absolute top-[15.7%] 834px:top-[7.8%] 1408px:top-[17.7%] left-[44.79%] 834px:left-[45.1%] 1408px:left-[45%]">
+                                <div class="flex relative">
+                                    <img class="w-[35%] 834px:w-[56%] 1408px:w-auto" src="./src/images/roundLeft.svg"
+                                        alt="" />
+                                    <div
+                                        class="h-[3.2rem] 834px:h-[3.8rem] 1408px:h-[8.0625rem] rounded 1408px:rounded-[0.625rem] w-[3.2rem] 834px:w-[3.8rem] 1408px:w-[8.4375rem] border-[2px] 1408px:border-4 border-white block absolute right-[101%] 1408px:right-[97%] top-[-153%] 834px:top-[-107%] 1408px:top-[-129%]">
+                                        <div
+                                            class="w-full h-full relative before:content-[''] before:absolute before:block before:rounded-full before:top-2/4 before:left-2/4 before:-translate-x-[36%] 834px:before:-translate-x-2/4 1408px:before:-translate-x-2/4 before:-translate-y-[53%] 834px:before:-translate-y-2/4 1408px:before:-translate-y-2/4 before:w-[55%] 1408px:before:w-[49%] before:bg-white before:z-20 before:pb-[55%] 1408px:before:pb-[49%] after:content-[''] after:absolute after:block after:rounded-full after:top-2/4 after:left-2/4 after:-translate-x-[39%] 834px:after:-translate-x-2/4 after:-translate-y-[53%] 834px:after:-translate-y-2/4 after:w-[68%] 834px:after:w-[75%] 1408px:after:w-[65%] after:bg-[#00B8C4] after:z-10 after:pb-[68%] 834px:after:pb-[75%] 1408px:after:pb-[65%]">
+                                            <div class="flex items-center justify-center w-full h-full">
+                                                <img class="z-30 hidden 1408px:block"
+                                                    src="./src/icons/Clipboard-icon.svg" alt="Code" />
+                                                <span
+                                                    class="1408px:hidden z-20 font-extrabold text-[14px] text-[#00B8C4] ml-[7px] 834px:ml-0">1</span>
+                                            </div>
+                                            <span
+                                                class="w-6 h-1 834px:h-2 1408px:h-3 bg-[#00B8C4] block absolute top-[45%]"></span>
+                                            <div
+                                                class="absolute top-[6%] 834px:top-[8%] right-[96%] flex text-left before:content-[''] before:h-full before:w-6 before:absolute before:bg-[#00B8C4] before:right-[-3px] 1408px:before:right-[-7px] before:z-10 before:rounded 1408px:before:rounded-[0.625rem]">
+                                                <div
+                                                    class="bg-white z-30 w-[111px] 834px:w-[131px] 1408px:w-[18.25rem] h-10 834px:h-12 1408px:h-[6.625rem] rounded 1408px:rounded-[0.625rem] pl-[6px] pt-[1px] 1408px:pl-3 1408px:pt-3">
+                                                    <h4
+                                                        class="font-bold text-[1.125rem] text-[#00B8C4] mt-[3px] hidden 1408px:block">
+                                                        Step 1
+                                                    </h4>
+                                                    <p
+                                                        class="font-bold text-[10px] 834px:text-xs 1408px:text-[1.125rem] mt-2 mr-[1px]">
+                                                        Tiếp nhận yêu cầu từ
+                                                        <span
+                                                            class="block 834px:inline 1408px:block mt-[2px] 1408px:mt-[6px]">
+                                                            khách hàng</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Step 1 -->
+
+                            <!-- Step 2 -->
+                            <div
+                                class="absolute top-[37.7%] 834px:top-[30.7%] 1408px:top-[38.7%] left-[44.79%] 834px:left-[45.1%] 1408px:left-[45%]">
+                                <div class="flex relative">
+                                    <img class="w-[35%] 834px:w-[56%] 1408px:w-auto" src="./src/images/roundLeft.svg"
+                                        alt="" />
+                                    <div
+                                        class="h-[3.2rem] 834px:h-[3.8rem] 1408px:h-[8.0625rem] rounded 1408px:rounded-[0.625rem] w-[3.2rem] 834px:w-[3.8rem] 1408px:w-[8.4375rem] border-[2px] 1408px:border-4 border-white block absolute right-[101%] 1408px:right-[97%] top-[-153%] 834px:top-[-107%] 1408px:top-[-129%]">
+                                        <div
+                                            class="w-full h-full relative before:content-[''] before:absolute before:block before:rounded-full before:top-2/4 before:left-2/4 before:-translate-x-[36%] 834px:before:-translate-x-2/4 1408px:before:-translate-x-2/4 before:-translate-y-[53%] 834px:before:-translate-y-2/4 1408px:before:-translate-y-2/4 before:w-[55%] 1408px:before:w-[49%] before:bg-white before:z-20 before:pb-[55%] 1408px:before:pb-[49%] after:content-[''] after:absolute after:block after:rounded-full after:top-2/4 after:left-2/4 after:-translate-x-[39%] 834px:after:-translate-x-2/4 after:-translate-y-[53%] 834px:after:-translate-y-2/4 after:w-[68%] 834px:after:w-[75%] 1408px:after:w-[65%] after:bg-[#00B8C4] after:z-10 after:pb-[68%] 834px:after:pb-[75%] 1408px:after:pb-[65%]">
+                                            <div class="flex items-center justify-center w-full h-full">
+                                                <img class="z-30 hidden 1408px:block" src="./src/icons/Biotech-icon.svg"
+                                                    alt="Code" />
+                                                <span
+                                                    class="1408px:hidden z-20 font-extrabold text-[14px] text-[#00B8C4] ml-[7px] 834px:ml-0">2</span>
+                                            </div>
+                                            <span
+                                                class="w-6 h-1 834px:h-2 1408px:h-3 bg-[#00B8C4] block absolute top-[45%]"></span>
+                                            <div
+                                                class="absolute top-[6%] 834px:top-[8%] right-[96%] flex text-left before:content-[''] before:h-full before:w-6 before:absolute before:bg-[#00B8C4] before:right-[-3px] 1408px:before:right-[-7px] before:z-10 before:rounded 1408px:before:rounded-[0.625rem]">
+                                                <div
+                                                    class="bg-white z-30 w-[111px] 834px:w-[131px] 1408px:w-[18.25rem] h-10 834px:h-12 1408px:h-[6.625rem] rounded 1408px:rounded-[0.625rem] pl-[6px] pt-[1px] 1408px:pl-3 1408px:pt-3">
+                                                    <h4
+                                                        class="font-bold text-[1.125rem] text-[#00B8C4] mt-[3px] hidden 1408px:block">
+                                                        Step 2
+                                                    </h4>
+                                                    <p
+                                                        class="font-bold text-[10px] 834px:text-xs 1408px:text-[1.125rem] mt-2 mr-[1px]">
+                                                        Nghiên cứu và phân tích yêu cầu
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Step 2 -->
+
+                            <!-- Step 3 -->
+                            <div
+                                class="absolute top-[59%] 834px:top-[54%] 1408px:top-[59.9%] left-[44.79%] 834px:left-[45.1%] 1408px:left-[45%]">
+                                <div class="flex relative">
+                                    <img class="w-[35%] 834px:w-[56%] 1408px:w-auto" src="./src/images/roundLeft.svg"
+                                        alt="" />
+                                    <div
+                                        class="h-[3.2rem] 834px:h-[3.8rem] 1408px:h-[8.0625rem] rounded 1408px:rounded-[0.625rem] w-[3.2rem] 834px:w-[3.8rem] 1408px:w-[8.4375rem] border-[2px] 1408px:border-4 border-white block absolute right-[101%] 1408px:right-[97%] top-[-153%] 834px:top-[-107%] 1408px:top-[-129%]">
+                                        <div
+                                            class="w-full h-full relative before:content-[''] before:absolute before:block before:rounded-full before:top-2/4 before:left-2/4 before:-translate-x-[36%] 834px:before:-translate-x-2/4 1408px:before:-translate-x-2/4 before:-translate-y-[53%] 834px:before:-translate-y-2/4 1408px:before:-translate-y-2/4 before:w-[55%] 1408px:before:w-[49%] before:bg-white before:z-20 before:pb-[55%] 1408px:before:pb-[49%] after:content-[''] after:absolute after:block after:rounded-full after:top-2/4 after:left-2/4 after:-translate-x-[39%] 834px:after:-translate-x-2/4 after:-translate-y-[53%] 834px:after:-translate-y-2/4 after:w-[68%] 834px:after:w-[75%] 1408px:after:w-[65%] after:bg-[#00B8C4] after:z-10 after:pb-[68%] 834px:after:pb-[75%] 1408px:after:pb-[65%]">
+                                            <div class="flex items-center justify-center w-full h-full">
+                                                <img class="z-30 hidden 1408px:block"
+                                                    src="./src/icons/Colorpalette-icon.svg" alt="Code" />
+                                                <span
+                                                    class="1408px:hidden z-20 font-extrabold text-[14px] text-[#00B8C4] ml-[7px] 834px:ml-0">3</span>
+                                            </div>
+                                            <span
+                                                class="w-6 h-1 834px:h-2 1408px:h-3 bg-[#00B8C4] block absolute top-[45%]"></span>
+                                            <div
+                                                class="absolute top-[6%] 834px:top-[8%] right-[96%] flex text-left before:content-[''] before:h-full before:w-6 before:absolute before:bg-[#00B8C4] before:right-[-3px] 1408px:before:right-[-7px] before:z-10 before:rounded 1408px:before:rounded-[0.625rem]">
+                                                <div
+                                                    class="bg-white z-30 w-[111px] 834px:w-[131px] 1408px:w-[18.25rem] h-10 834px:h-12 1408px:h-[6.625rem] rounded 1408px:rounded-[0.625rem] pl-[6px] pt-[1px] 1408px:pl-3 1408px:pt-3">
+                                                    <h4
+                                                        class="font-bold text-[1.125rem] text-[#00B8C4] mt-[3px] hidden 1408px:block">
+                                                        Step 3
+                                                    </h4>
+                                                    <p
+                                                        class="font-bold text-[10px] 834px:text-xs 1408px:text-[1.125rem] mt-2 mr-[1px]">
+                                                        Thiết kế giao diện Figma
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Step 3 -->
+
+                            <!-- Step 4 -->
+                            <div
+                                class="absolute top-[80.7%] 834px:top-[77.7%] 1408px:top-[80.9%] left-[44.79%] 834px:left-[45.1%] 1408px:left-[45%]">
+                                <div class="flex relative">
+                                    <img class="w-[35%] 834px:w-[56%] 1408px:w-auto" src="./src/images/roundLeft.svg"
+                                        alt="" />
+                                    <div
+                                        class="h-[3.2rem] 834px:h-[3.8rem] 1408px:h-[8.0625rem] rounded 1408px:rounded-[0.625rem] w-[3.2rem] 834px:w-[3.8rem] 1408px:w-[8.4375rem] border-[2px] 1408px:border-4 border-white block absolute right-[101%] 1408px:right-[97%] top-[-153%] 834px:top-[-107%] 1408px:top-[-129%]">
+                                        <div
+                                            class="w-full h-full relative before:content-[''] before:absolute before:block before:rounded-full before:top-2/4 before:left-2/4 before:-translate-x-[36%] 834px:before:-translate-x-2/4 1408px:before:-translate-x-2/4 before:-translate-y-[53%] 834px:before:-translate-y-2/4 1408px:before:-translate-y-2/4 before:w-[55%] 1408px:before:w-[49%] before:bg-white before:z-20 before:pb-[55%] 1408px:before:pb-[49%] after:content-[''] after:absolute after:block after:rounded-full after:top-2/4 after:left-2/4 after:-translate-x-[39%] 834px:after:-translate-x-2/4 after:-translate-y-[53%] 834px:after:-translate-y-2/4 after:w-[68%] 834px:after:w-[75%] 1408px:after:w-[65%] after:bg-[#00B8C4] after:z-10 after:pb-[68%] 834px:after:pb-[75%] 1408px:after:pb-[65%]">
+                                            <div class="flex items-center justify-center w-full h-full">
+                                                <img class="z-30 hidden 1408px:block"
+                                                    src="./src/icons/Communication-icon.svg" alt="c" />
+                                                <span
+                                                    class="1408px:hidden z-20 font-extrabold text-[14px] text-[#00B8C4] ml-[7px] 834px:ml-0">4</span>
+                                            </div>
+                                            <span
+                                                class="w-6 h-1 834px:h-2 1408px:h-3 bg-[#00B8C4] block absolute top-[45%]"></span>
+                                            <div
+                                                class="absolute top-[6%] 834px:top-[8%] right-[96%] flex text-left before:content-[''] before:h-full before:w-6 before:absolute before:bg-[#00B8C4] before:right-[-3px] 1408px:before:right-[-7px] before:z-10 before:rounded 1408px:before:rounded-[0.625rem]">
+                                                <div
+                                                    class="bg-white z-30 w-[111px] 834px:w-[131px] 1408px:w-[18.25rem] h-10 834px:h-12 1408px:h-[6.625rem] rounded 1408px:rounded-[0.625rem] pl-[6px] pt-[1px] 834px:pr-1 1408px:pr-0 1408px:pl-3 1408px:pt-3">
+                                                    <h4
+                                                        class="font-bold text-[1.125rem] text-[#00B8C4] mt-[3px] hidden 1408px:block">
+                                                        Step 4
+                                                    </h4>
+                                                    <p
+                                                        class="font-bold text-[9px] 834px:text-[11px] 1408px:text-[1.125rem] mt-1 1408px:mt-2 834px:leading-[14px] 1408px:leading-[23px] mr-[1px]">
+                                                        Tiếp nhận phản hồi từ khách hàng và cập nhật thiết
+                                                        kế
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Step 4 -->
+
+                            <!-- Step 5 -->
+                            <div class="absolute top-[26.3%] 834px:top-[19.3%] 1408px:top-[28.3%]">
+                                <div class="flex relative">
+                                    <img class="w-[38%] 834px:w-[56%] 1408px:w-auto" src="./src/images/roundRight.svg"
+                                        alt="" />
+
+                                    <div
+                                        class="h-[3.2rem] 834px:h-[3.8rem] 1408px:h-[8.0625rem] rounded 1408px:rounded-[0.625rem] w-[3.2rem] 834px:w-[3.8rem] 1408px:w-[8.4375rem] border-[2px] 1408px:border-4 border-white block absolute left-[38%] 834px:left-[53%] 1408px:left-[97%] top-[-129%] 834px:top-[-110%] 1408px:834px:top-[-129%]">
+                                        <div
+                                            class="w-full h-full relative before:content-[''] before:absolute before:block before:rounded-full before:top-2/4 before:left-2/4 before:-translate-x-[62%] 834px:before:-translate-x-[53%] 1408px:before:-translate-x-2/4 before:-translate-y-2/4 before:w-[51%] 834px:before:w-[55%] 1408px:before:w-[49%] before:bg-white before:z-20 before:pb-[51%] 834px:before:pb-[55%] 1408px:before:pb-[49%] after:content-[''] after:absolute after:block after:rounded-full after:top-2/4 after:left-2/4 after:-translate-x-[60%] 834px:after:-translate-x-[53%] 1408px:after:-translate-x-2/4 after:-translate-y-2/4 after:w-[67%] 834px:after:w-[75%] 1408px:after:w-[65%] after:bg-[#00B8C4] after:z-10 after:pb-[67%] 834px:after:pb-[75%] 1408px:after:pb-[65%]">
+                                            <div class="flex items-center justify-center w-full h-full">
+                                                <img class="z-30 hidden 1408px:block"
+                                                    src="./src/icons/Codeslash-icon.svg" alt="Code" />
+                                                <span
+                                                    class="1408px:hidden z-20 font-extrabold text-[14px] text-[#00B8C4] mr-[7px] 834px:mr-[2px] 1408px:mr-0">5</span>
+                                            </div>
+
+                                            <span
+                                                class="w-6 h-1 834px:h-2 1408px:h-3 bg-[#00B8C4] block absolute right-[9%] top-[45%]"></span>
+
+                                            <div
+                                                class="absolute top-[6%] left-[96%] 834px:left-[98%] 1408px:left-[96%] flex text-left 1408px:text-right before:content-[''] before:h-full before:w-6 before:absolute before:bg-[#00B8C4] before:left-[-4px] 1408px:before:left-[-7px] before:z-10 before:rounded 1408px:before:rounded-[0.625rem]">
+                                                <div
+                                                    class="flex items-center 1408px:block bg-white z-30 w-[111px] 834px:w-[131px] 1408px:w-[18.25rem] h-10 834px:h-12 1408px:h-[6.625rem] rounded 1408px:rounded-[0.625rem] pl-[6px] pt-[1px] 834px:pr-1 1408px:pr-3 1408px:pt-3">
+                                                    <h4
+                                                        class="font-bold text-[1.125rem] text-[#00B8C4] mr-2 mt-[2px] hidden 1408px:block">
+                                                        Step 5
+                                                    </h4>
+
+                                                    <p
+                                                        class="font-bold text-[10px] 834px:text-xs 1408px:text-[1.125rem] 1408px:mt-2 mr-[1px]">
+                                                        Tiến hành lập trình
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Step 5 -->
+
+                            <!-- Step 6 -->
+                            <div class="absolute top-[48.3%] 834px:top-[42.3%] 1408px:top-[49.3%]">
+                                <div class="flex relative">
+                                    <img class="w-[38%] 834px:w-[56%] 1408px:w-auto" src="./src/images/roundRight.svg"
+                                        alt="" />
+                                    <div
+                                        class="h-[3.2rem] 834px:h-[3.8rem] 1408px:h-[8.0625rem] rounded 1408px:rounded-[0.625rem] w-[3.2rem] 834px:w-[3.8rem] 1408px:w-[8.4375rem] border-[2px] 1408px:border-4 border-white block absolute left-[38%] 834px:left-[53%] 1408px:left-[97%] top-[-129%] 834px:top-[-110%] 1408px:834px:top-[-129%]">
+                                        <div
+                                            class="w-full h-full relative before:content-[''] before:absolute before:block before:rounded-full before:top-2/4 before:left-2/4 before:-translate-x-[62%] 834px:before:-translate-x-[53%] 1408px:before:-translate-x-2/4 before:-translate-y-2/4 before:w-[51%] 834px:before:w-[55%] 1408px:before:w-[49%] before:bg-white before:z-20 before:pb-[51%] 834px:before:pb-[55%] 1408px:before:pb-[49%] after:content-[''] after:absolute after:block after:rounded-full after:top-2/4 after:left-2/4 after:-translate-x-[60%] 834px:after:-translate-x-[53%] 1408px:after:-translate-x-2/4 after:-translate-y-2/4 after:w-[67%] 834px:after:w-[75%] 1408px:after:w-[65%] after:bg-[#00B8C4] after:z-10 after:pb-[67%] 834px:after:pb-[75%] 1408px:after:pb-[65%]">
+                                            <div class="flex items-center justify-center w-full h-full">
+                                                <img class="z-30 hidden 1408px:block" src="./src/icons/SEO-icon.svg"
+                                                    alt="SEO" />
+                                                <span
+                                                    class="1408px:hidden z-20 font-extrabold text-[14px] text-[#00B8C4] mr-[7px] 834px:mr-[2px] 1408px:mr-0">6</span>
+                                            </div>
+
+                                            <span
+                                                class="w-6 h-1 834px:h-2 1408px:h-3 bg-[#00B8C4] block absolute right-[9%] top-[45%]"></span>
+
+                                            <div
+                                                class="absolute top-[6%] left-[96%] 834px:left-[98%] 1408px:left-[96%] flex text-left 1408px:text-right before:content-[''] before:h-full before:w-6 before:absolute before:bg-[#00B8C4] before:left-[-4px] 1408px:before:left-[-7px] before:z-10 before:rounded 1408px:before:rounded-[0.625rem]">
+                                                <div
+                                                    class="flex items-center 1408px:block bg-white z-30 w-[111px] 834px:w-[131px] 1408px:w-[18.25rem] h-10 834px:h-12 1408px:h-[6.625rem] rounded 1408px:rounded-[0.625rem] pl-[6px] pt-[1px] 834px:pr-1 1408px:pr-3 1408px:pt-3">
+                                                    <h4
+                                                        class="font-bold text-[1.125rem] text-[#00B8C4] mr-2 mt-[2px] hidden 1408px:block">
+                                                        Step 6
+                                                    </h4>
+
+                                                    <p
+                                                        class="font-bold text-[10px] 834px:text-xs 1408px:text-[1.125rem] 1408px:mt-2 mr-[1px]">
+                                                        Audit chuẩn SEO
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Step 6 -->
+
+                            <!-- Step 7 -->
+                            <div class="absolute top-[70%] 834px:top-[66%] 1408px:top-[70.3%]">
+                                <div class="flex relative">
+                                    <img class="w-[38%] 834px:w-[56%] 1408px:w-auto" src="./src/images/roundRight.svg"
+                                        alt="" />
+                                    <div
+                                        class="h-[3.2rem] 834px:h-[3.8rem] 1408px:h-[8.0625rem] rounded 1408px:rounded-[0.625rem] w-[3.2rem] 834px:w-[3.8rem] 1408px:w-[8.4375rem] border-[2px] 1408px:border-4 border-white block absolute left-[38%] 834px:left-[53%] 1408px:left-[97%] top-[-129%] 834px:top-[-110%] 1408px:834px:top-[-129%]">
+                                        <div
+                                            class="w-full h-full relative before:content-[''] before:absolute before:block before:rounded-full before:top-2/4 before:left-2/4 before:-translate-x-[62%] 834px:before:-translate-x-[53%] 1408px:before:-translate-x-2/4 before:-translate-y-2/4 before:w-[51%] 834px:before:w-[55%] 1408px:before:w-[49%] before:bg-white before:z-20 before:pb-[51%] 834px:before:pb-[55%] 1408px:before:pb-[49%] after:content-[''] after:absolute after:block after:rounded-full after:top-2/4 after:left-2/4 after:-translate-x-[60%] 834px:after:-translate-x-[53%] 1408px:after:-translate-x-2/4 after:-translate-y-2/4 after:w-[67%] 834px:after:w-[75%] 1408px:after:w-[65%] after:bg-[#00B8C4] after:z-10 after:pb-[67%] 834px:after:pb-[75%] 1408px:after:pb-[65%]">
+                                            <div class="flex items-center justify-center w-full h-full">
+                                                <img class="z-30 hidden 1408px:block" src="./src/icons/Book-icon.svg"
+                                                    alt="Book" />
+                                                <span
+                                                    class="1408px:hidden z-20 font-extrabold text-[14px] text-[#00B8C4] mr-[7px] 834px:mr-[2px] 1408px:mr-0">7</span>
+                                            </div>
+
+                                            <span
+                                                class="w-6 h-1 834px:h-2 1408px:h-3 bg-[#00B8C4] block absolute right-[9%] top-[45%]"></span>
+
+                                            <div
+                                                class="absolute top-[6%] left-[96%] 834px:left-[98%] 1408px:left-[96%] flex text-left 1408px:text-right before:content-[''] before:h-full before:w-6 before:absolute before:bg-[#00B8C4] before:left-[-4px] 1408px:before:left-[-7px] before:z-10 before:rounded 1408px:before:rounded-[0.625rem]">
+                                                <div
+                                                    class="flex items-center 1408px:block bg-white z-30 w-[111px] 834px:w-[131px] 1408px:w-[18.25rem] h-10 834px:h-12 1408px:h-[6.625rem] rounded 1408px:rounded-[0.625rem] pl-[6px] pt-[1px] 834px:pr-1 1408px:pr-3 1408px:pt-3">
+                                                    <h4
+                                                        class="font-bold text-[1.125rem] text-[#00B8C4] mr-2 mt-[2px] hidden 1408px:block">
+                                                        Step 7
+                                                    </h4>
+
+                                                    <p
+                                                        class="font-bold text-[10px] 834px:text-xs 1408px:text-[1.125rem] leading-[14px] 1408px:leading-none 1408px:mt-2 mr-[1px]">
+                                                        Hướng dẫn sử dụng và hỗ trợ
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Step 7 -->
+
+                            <!-- Step 8 -->
+                            <div class="absolute top-[91.4%] 834px:top-[89.4%] 1408px:top-[91.4%]">
+                                <div class="flex relative">
+                                    <img class="w-[38%] 834px:w-[56%] 1408px:w-auto" src="./src/images/roundRight.svg"
+                                        alt="" />
+                                    <div
+                                        class="h-[3.2rem] 834px:h-[3.8rem] 1408px:h-[8.0625rem] rounded 1408px:rounded-[0.625rem] w-[3.2rem] 834px:w-[3.8rem] 1408px:w-[8.4375rem] border-[2px] 1408px:border-4 border-white block absolute left-[38%] 834px:left-[53%] 1408px:left-[97%] top-[-129%] 834px:top-[-110%] 1408px:834px:top-[-129%]">
+                                        <div
+                                            class="w-full h-full relative before:content-[''] before:absolute before:block before:rounded-full before:top-2/4 before:left-2/4 before:-translate-x-[62%] 834px:before:-translate-x-[53%] 1408px:before:-translate-x-2/4 before:-translate-y-2/4 before:w-[51%] 834px:before:w-[55%] 1408px:before:w-[49%] before:bg-white before:z-20 before:pb-[51%] 834px:before:pb-[55%] 1408px:before:pb-[49%] after:content-[''] after:absolute after:block after:rounded-full after:top-2/4 after:left-2/4 after:-translate-x-[60%] 834px:after:-translate-x-[53%] 1408px:after:-translate-x-2/4 after:-translate-y-2/4 after:w-[67%] 834px:after:w-[75%] 1408px:after:w-[65%] after:bg-[#00B8C4] after:z-10 after:pb-[67%] 834px:after:pb-[75%] 1408px:after:pb-[65%]">
+                                            <div class="flex items-center justify-center w-full h-full">
+                                                <img class="z-30 hidden 1408px:block"
+                                                    src="./src/icons/Inventory-icon.svg" alt="Inventory" />
+                                                <span
+                                                    class="1408px:hidden z-20 font-extrabold text-[14px] text-[#00B8C4] mr-[7px] 834px:mr-[2px] 1408px:mr-0">8</span>
+                                            </div>
+
+                                            <span
+                                                class="w-6 h-1 834px:h-2 1408px:h-3 bg-[#00B8C4] block absolute right-[9%] top-[45%]"></span>
+
+                                            <div
+                                                class="absolute top-[6%] left-[96%] 834px:left-[98%] 1408px:left-[96%] flex text-left 1408px:text-right before:content-[''] before:h-full before:w-6 before:absolute before:bg-[#00B8C4] before:left-[-4px] 1408px:before:left-[-7px] before:z-10 before:rounded 1408px:before:rounded-[0.625rem]">
+                                                <div
+                                                    class="flex items-center 1408px:block bg-white z-30 w-[111px] 834px:w-[131px] 1408px:w-[18.25rem] h-10 834px:h-12 1408px:h-[6.625rem] rounded 1408px:rounded-[0.625rem] pl-[6px] pt-[1px] 834px:pr-1 1408px:pr-3 1408px:pt-3">
+                                                    <h4
+                                                        class="font-bold text-[1.125rem] text-[#00B8C4] mr-2 mt-[2px] hidden 1408px:block">
+                                                        Step 8
+                                                    </h4>
+
+                                                    <p
+                                                        class="font-bold text-[10px] 834px:text-xs 1408px:text-[1.125rem] leading-[14px] 1408px:leading-none 1408px:mt-2 mr-[1px]">
+                                                        Bàn giao dự án
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Step 8 -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End  Procedure Section -->
+
+        <!-- Section Các Dự Án Tiêu Biểu  -->
+        <section class="bg-[#E2EBF6] -z-20 834px:py-[100px] 1408px:py-[234px] pb-[31px] relative overflow-hidden">
+            <img class="absolute z-10 w-[100%] 1408px:w-[1563px] 1408px:h-[1042px] 1408px:top-[-22%] 1408px:right-[27%]"
+                src="./src/images/2987331 1.svg" alt="" />
+            <div class="max-w-[1408px] 834px:px-[24px] px-5 1408px:px-5 21408px:px-0 mx-auto">
+                <div
+                    class="flex 834px:gap-[100px] lg:gap-[160px] 1408px:gap-0 flex-col-reverse 834px:flex-row items-center 834px:items-start 1408px:justify-between relative z-20">
+                    <div class="">
+                        <div class="flex flex-col 834px:flex-row gap-4 1408px:gap-8">
+                            <img class="834px:w-[48.4%] 1408px:w-auto" src="./src/images/Rectangle 235.png" />
+                            <img class="834px:w-[48.4%] 1408px:w-auto" src="./src/images/Rectangle 2366.png" />
+                        </div>
+
+                        <div class="flex justify-center gap-[18px] 834px:gap-6 mt-[21px] 1408px:gap-8 1408px:mt-[31px]">
+                            <button>
+                                <img class="w-6 834px:w-8 1408px:w-full" src="src/icons/arrow-left.svg" alt="" />
+                            </button>
+                            <button>
+                                <img class="w-6 834px:w-8 1408px:w-full" src="src/icons/arrow-right.svg" alt="" />
+                            </button>
+                        </div>
+                    </div>
+                    <div class="flex flex-col items-center 1408px:items-end 1408px:mt-2 pt-[31px] 834px:pt-0">
+                        <img class="absolute -z-10 834px:top-[-13%] 834px:right-[-14%] 834px:w-[70%] 834px:h-[127%] 1408px:top-[-17.4%] 1408px:right-[-8.5%] 1408px:w-auto 1408px:h-auto hidden 834px:block"
+                            src="src/images/Rectangle 236.svg" alt="" />
+                        <img class="max-w-[128px] 834px:w-[65%] 1408px:w-auto hidden 834px:block"
+                            src="src/icons/archive.svg" alt="" />
+                        <img class="max-w-[128px] 834px:hidden" src="src/icons/archive-mobile.png" alt="" />
+                        <h1
+                            class="text-2xl 834px:text-3xl lg:text-[36px] 1408px:text-[4rem] 1408px:mt-12 font-extrabold text-[#00355D] 834px:text-white lg:leading-[57px] 1408px:leading-[5.4375rem] text-right m-0 pb-4 1408px:pb-0 pt-[11px] 1408px:pt-0 whitespace-nowrap">
+                            Các Dự Án
+                            <span class="834px:block">Tiêu Biểu</span>
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Section Các Dự Án Tiêu Biểu -->
+
+        <!-- Section Hiện Thị Danh Sách -->
+        <section
+            class="pt-[35px] 1408px:pt-[104px] pb-[131px] 475:pb-[151px] 535:pb-[171px] 644:pb-[191px] lg:pb-[180px] 1408px:pb-[252px] relative overflow-hidden"
+            style="
+          background: url('./src/images/hanoiline [Converted] 1.svg') center
+            bottom no-repeat;
+        ">
+            <div class="max-w-[1408px] px-5 21408px:px-0 mx-auto">
+                <div class="flex flex-col justify-center items-center">
+                    <h4 class="font-semibold text-[14px] 475:text-base 618:text-lg 1408px:text-[2rem] text-[#00355D]">
+                        Xây dựng website chuyên nghiệp, sáng tạo
+                    </h4>
+                    <h3
+                        class="text-[14px] 475:text-base 618:text-lg 1408px:text-[2rem] font-bold mt-2 1408px:mt-5 px-[15px] py-[10px] 1408px:py-[22px] 1408px:px-12 rounded-full bg-gradient-to-r from-[#264AB9] to-[#6B92FF] text-white 1408px:uppercase">
+                        Không chỉ đẹp mắt, mà còn chuẩn SEO
+                    </h3>
+                </div>
+
+                <div class="">
+                    <ul
+                        class="max-w-[951px] 1408px:max-w-[1237px] mx-auto mt-6 1408px:mt-[49px] items-center overflow-y-hidden 1408px:overflow-visible rounded-[100px] h-[35px] lg:h-[40px] 1408px:h-[49px] whitespace-nowrap max-1408px:flex border-2 border-[#264AB9] text-center text-lg leading-6 font-bold text-[#00355D] 1408px:flex">
+                        <li>
+                            <a href=""
+                                class="hover:bg-gradient-to-r from-[#264AB9] to-[#6B92FF] hover:text-white max-1408px:text-[14px] px-6 py-2 618:py-3 1408px:py-3 1408px:px-8 hover:rounded-full">Tài
+                                chính</a>
+                        </li>
+                        <li>
+                            <a href=""
+                                class="hover:bg-gradient-to-r from-[#264AB9] to-[#6B92FF] hover:text-white max-1408px:text-[14px] px-6 py-2 618:py-3 1408px:py-3 1408px:px-8 hover:rounded-full">Giáo
+                                dục</a>
+                        </li>
+                        <li>
+                            <a href=""
+                                class="hover:bg-gradient-to-r from-[#264AB9] to-[#6B92FF] hover:text-white max-1408px:text-[14px] px-6 py-2 618:py-3 1408px:py-3 1408px:px-8 hover:rounded-full">Thương
+                                mại điện tử</a>
+                        </li>
+                        <li>
+                            <a href=""
+                                class="hover:bg-gradient-to-r from-[#264AB9] to-[#6B92FF] hover:text-white max-1408px:text-[14px] px-6 py-2 618:py-3 1408px:py-3 1408px:px-8 hover:rounded-full">Bất
+                                động sản</a>
+                        </li>
+                        <li>
+                            <a href=""
+                                class="hover:bg-gradient-to-r from-[#264AB9] to-[#6B92FF] hover:text-white max-1408px:text-[14px] px-6 py-2 618:py-3 1408px:py-3 1408px:px-8 hover:rounded-full">Du
+                                lịch - Giải trí</a>
+                        </li>
+                        <li>
+                            <a href=""
+                                class="hover:bg-gradient-to-r from-[#264AB9] to-[#6B92FF] hover:text-white max-1408px:text-[14px] px-6 py-2 618:py-3 1408px:py-3 1408px:px-8 hover:rounded-full">Spa
+                                - Làm đẹp</a>
+                        </li>
+                        <li>
+                            <a href=""
+                                class="hover:bg-gradient-to-r from-[#264AB9] to-[#6B92FF] hover:text-white max-1408px:text-[14px] px-6 py-2 618:py-3 1408px:py-3 1408px:px-8 hover:rounded-full">Truyền
+                                thông</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="layout-project--lg justify-between gap-[19px] 1408px:gap-8 mt-3 1408px:mt-[39px] relative">
+                    <button class="z-10 absolute top-[55%] left-[-2.3%] hidden 1466:block">
+                        <img src="./src/icons/arrow-left.svg" alt="arrow left" />
+                    </button>
+
+                    <!-- Project 1 -->
+                    <div
+                        class="relative w-auto flex flex-col items-center justify-center after:content-[''] after:text-white after:absolute after:bottom-[-23.2%] after:block after:w-full after:bg-[#00355D] after:h-[49%] after:1408px:h-[169px] after:rounded-[10px] after:1408px:rounded-[20px] after:-z-10">
+                        <img class="clip-img w-[95.3%] transition-transform transform hover:translate-y-[-6px]"
+                            src="./src/images/project1.png" alt="" />
+                        <a class="absolute bottom-[-19%] font-bold text-xs 475:text-sm 618:text-base 1408px:text-lg text-white text-center"
+                            href="#">
+                            <span class="block">Thẩm Mỹ Viện</span>
+                            <span>Beauty Angel Academy</span>
+                        </a>
+                    </div>
+                    <!-- End Project 1 -->
+
+                    <!-- Project 2 -->
+                    <div
+                        class="relative w-auto flex flex-col items-center justify-center after:content-[''] after:text-white after:absolute after:bottom-[-23.2%] after:block after:w-full after:bg-[#00355D] after:h-[49%] after:1408px:h-[169px] after:rounded-[10px] after:1408px:rounded-[20px] after:-z-10">
+                        <img class="clip-img w-[95.3%] transition-transform transform hover:translate-y-[-6px]"
+                            src="./src/images/project2.png" alt="" />
+                        <a class="absolute bottom-[-19%] font-bold text-xs 475:text-sm 618:text-base 1408px:text-lg text-white text-center"
+                            href="#">
+                            <span class="block">Thẩm Mỹ Viện</span>
+                            <span>Beauty Angel Academy</span>
+                        </a>
+                    </div>
+                    <!-- End Project 2 -->
+
+                    <!-- Project 3 -->
+                    <div
+                        class="relative w-auto hidden 834px:flex flex-col items-center justify-center after:content-[''] after:text-white after:absolute after:bottom-[-23.2%] after:block after:w-full after:bg-[#00355D] after:h-[49%] after:1408px:h-[169px] after:rounded-[10px] after:1408px:rounded-[20px] after:-z-10">
+                        <img class="clip-img w-[95.3%] transition-transform transform hover:translate-y-[-6px]"
+                            src="./src/images/project3.png" alt="" />
+                        <a class="absolute bottom-[-19%] font-bold text-xs 1408px:text-lg text-white text-center"
+                            href="#">
+                            <span class="block">Thẩm Mỹ Viện</span>
+                            <span>Beauty Angel Academy</span>
+                        </a>
+                    </div>
+                    <!-- End Project 3 -->
+
+                    <!-- Project 4 -->
+                    <div
+                        class="relative w-auto hidden lg:flex flex-col items-center justify-center after:content-[''] after:text-white after:absolute after:bottom-[-23.2%] after:block after:w-full after:bg-[#00355D] after:h-[49%] after:1408px:h-[169px] after:rounded-[10px] after:1408px:rounded-[20px] after:-z-10">
+                        <img class="clip-img w-[95.3%] transition-transform transform hover:translate-y-[-6px]"
+                            src="./src/images/project4.png" alt="" />
+                        <a class="absolute bottom-[-19%] font-bold text-xs 1408px:text-lg text-white text-center"
+                            href="#">
+                            <span class="block">Thẩm Mỹ Viện</span>
+                            <span>Beauty Angel Academy</span>
+                        </a>
+                    </div>
+                    <!-- End Project 4 -->
+
+                    <button class="z-10 absolute top-[55%] right-[-2.3%] hidden 1466:block">
+                        <img src="./src/icons/arrow-right.svg" alt="arrow right" />
+                    </button>
+
+                    <button
+                        class="bg-gradient-to-r from-[#00B8C4] to-[#2AD8CD] flex gap-2 text-[14px] 618:text-base 1408px:text-lg font-bold text-white rounded-full px-4 1408px:px-6 py-2 1408px:py-[0.8rem] items-center z-10 absolute left-[50%] bottom-[-55.2%] 585:bottom-[-48.2%] 1408px:bottom-[-51.2%] transform -translate-x-1/2">
+                        Xem tất cả dự án
+                        <span><img src="./src/icons/arrow-right-white.svg" alt="" /></span>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <!-- End Section Hiện Thị Danh Sách -->
+
+        <!-- Section Các Ngành Nghề -->
+        <section class="pt-[14px] 1408px:pt-[91px] pb-[2rem] 1408px:pb-[94px] bg-white 1408px:bg-[#E2EBF6]">
+            <!-- class="max-w-[87.0625rem] px-5 21408px:px-0 m-auto flex flex-col 1408px:grid 1408px:grid-cols-[43rem_43rem] gap-[0.7rem] 1408px:gap-[2.125rem]" -->
+            <div
+                class="max-w-[88rem] px-5 21408px:px-0 m-auto flex flex-col justify-between 1408px:flex-row gap-[0.7rem] 1408px:gap-[2.125rem]">
+                <div class="flex items-center flex-col 1408px:block">
+                    <img class="mt-[18px] 1408px:mt-[21px] ml-[-1px] 1408px:ml-[1px] w-[11.4%] 1408px:w-auto"
+                        src="./src/icons/briefcase.svg" alt="icon briefcase" />
+                    <h1
+                        class="text-2xl text-center 1408px:text-left 1408px:text-[64px] font-extrabold 1408px:font-bold text-[#00355D] mt-[13px] 1408px:mt-[49px] 1408px:leading-[87px] -ml-1 1408px:ml-[1px]">
+                        Các Ngành Nghề <span class="block">Sử Dụng Giải Pháp</span> Của
+                        Webops Agency
+                    </h1>
+                </div>
+
+                <div class="1408px:w-[688px]">
+                    <div class="swiper-cus mySwiper3 p-1">
+                        <div class="swiper-wrapper mt-1">
+                            <!-- Block 1 -->
+                            <div class="bg-white rounded-2xl swiper-slide shadow-custom3">
+                                <div class="flex items-center flex-col pb-[2.8rem] 1408px:pb-[3.0625rem]">
+                                    <img class="w-[23%] 834px:w-auto pt-[2.7rem] 1408px:pt-[49px]"
+                                        src="./src/icons/pc-display-horizontal.svg" alt="pc-icon" />
+                                    <h4
+                                        class="font-bold text-[14px] 1408px:text-lg text-black mt-[21px] 1408px:mt-[0.875rem] text-center">
+                                        CNTT - Truyền thông
+                                    </h4>
+                                </div>
+                            </div>
+
+                            <!-- Block 2 -->
+                            <div class="bg-white rounded-2xl swiper-slide shadow-custom3">
+                                <div class="flex items-center flex-col pb-[2.8rem] 1408px:pb-[3.0625rem]">
+                                    <img class="w-[23%] 834px:w-auto pt-[2.7rem] 1408px:pt-[49px]"
+                                        src="./src/icons/library-outline.svg" alt="library-icon" />
+                                    <h4
+                                        class="font-bold text-[14px] 1408px:text-lg text-black mt-[21px] 1408px:mt-[0.875rem] text-center">
+                                        Giáo dục - Đào tạo
+                                    </h4>
+                                </div>
+                            </div>
+
+                            <!-- Block 3 -->
+                            <div class="bg-white rounded-2xl swiper-slide shadow-custom3">
+                                <div class="flex items-center flex-col pb-[2.8rem] 1408px:pb-[3.0625rem]">
+                                    <img class="w-[23%] 834px:w-auto pt-[2.7rem] 1408px:pt-[49px]"
+                                        src="./src/icons/business-outline.svg" alt="business-icon" />
+                                    <h4
+                                        class="font-bold text-[14px] 1408px:text-lg text-black mt-[21px] 1408px:mt-[0.875rem] text-center">
+                                        Bất động sản
+                                    </h4>
+                                </div>
+                            </div>
+
+                            <!-- Block 4 -->
+                            <div class="bg-white rounded-2xl swiper-slide shadow-custom3">
+                                <div class="flex items-center flex-col pb-[2.8rem] 1408px:pb-[3.0625rem]">
+                                    <img class="w-[23%] 834px:w-auto pt-[2.7rem] 1408px:pt-[49px]"
+                                        src="./src/icons/cart-outline.svg" alt="cart-icon" />
+                                    <h4
+                                        class="font-bold text-[14px] 1408px:text-lg text-black mt-[21px] 1408px:mt-[0.875rem] text-center">
+                                        Thương mại điện tử
+                                    </h4>
+                                </div>
+                            </div>
+
+                            <!-- Block 5 -->
+                            <div class="bg-white rounded-2xl swiper-slide shadow-custom3">
+                                <div class="flex items-center flex-col pb-[2.8rem] 1408px:pb-[3.0625rem]">
+                                    <img class="w-[23%] 834px:w-auto pt-[2.7rem] 1408px:pt-[49px]"
+                                        src="./src/icons/boat-outline.svg" alt="boat-icon" />
+                                    <h4
+                                        class="font-bold text-[14px] 1408px:text-lg text-black mt-[21px] 1408px:mt-[0.875rem] text-center">
+                                        Vận tải - Kho hàng
+                                    </h4>
+                                </div>
+                            </div>
+
+                            <!-- Block 6 -->
+                            <div class="bg-white rounded-2xl swiper-slide shadow-custom3">
+                                <div class="flex items-center flex-col pb-[2.8rem] 1408px:pb-[3.0625rem]">
+                                    <img class="w-[23%] 834px:w-auto pt-[2.7rem] 1408px:pt-[49px]"
+                                        src="./src/icons/airplane-outline.svg" alt="airplane-icon" />
+                                    <h4
+                                        class="font-bold text-[14px] 1408px:text-lg text-black mt-[21px] 1408px:mt-[0.875rem] text-center">
+                                        Du lịch - Giải trí
+                                    </h4>
+                                </div>
+                            </div>
+
+                            <!-- Block 7 -->
+                            <div class="bg-white rounded-2xl swiper-slide shadow-custom3">
+                                <div class="flex items-center flex-col pb-[2.8rem] 1408px:pb-[3.0625rem]">
+                                    <img class="w-[23%] 834px:w-auto pt-[2.7rem] 1408px:pt-[52px]"
+                                        src="./src/icons/hospital.svg" alt="hospital-icon" />
+                                    <h4
+                                        class="font-bold text-[14px] 1408px:text-lg text-black mt-[21px] 1408px:mt-[0.875rem] text-center">
+                                        Y tế
+                                    </h4>
+                                </div>
+                            </div>
+
+                            <!-- Block 8 -->
+                            <div class="bg-white rounded-2xl swiper-slide shadow-custom3">
+                                <div class="flex items-center flex-col pb-[2.8rem] 1408px:pb-[3.0625rem]">
+                                    <img class="w-[23%] 834px:w-auto pt-[2.7rem] 1408px:pt-[49px]"
+                                        src="./src/icons/spa.svg" alt="spa-icon" />
+                                    <h4
+                                        class="font-bold text-[14px] 1408px:text-lg text-black mt-[21px] 1408px:mt-[0.875rem] text-center">
+                                        Spa - Làm đẹp
+                                    </h4>
+                                </div>
+                            </div>
+
+                            <!-- Block 9 -->
+                            <div class="bg-white rounded-2xl swiper-slide shadow-custom3">
+                                <div class="flex items-center flex-col pb-[2.7rem] 1408px:pb-[3.0625rem]">
+                                    <img class="w-[23%] 834px:w-auto pt-[2.7rem] 1408px:pt-[49px]"
+                                        src="./src/icons/bank.svg" alt="bank-icon" />
+                                    <h4
+                                        class="font-bold text-[14px] 1408px:text-lg text-black mt-[21px] 1408px:mt-[0.875rem] text-center">
+                                        Tài chính - Ngân hàng
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="flex items-center justify-center mt-[2px] ml-[30px] gap-[18px] 1408px:gap-8 text-3xl mr-[31px] 1408px:mr-0 1408px:hidden">
+                    <!-- Button Arrow Left -->
+                    <button class="swiper3-button-prev w-6 1408px:w-auto swiper-button-disabled" disabled=""
+                        tabindex="-1" aria-label="Previous slide" aria-controls="swiper-wrapper-afd7c4910c19813d6"
+                        aria-disabled="true">
+                        <img src="./src/icons/arrow-left.svg" alt="" />
+                    </button>
+
+                    <!-- Button Arrow Right -->
+                    <button class="swiper3-button-next w-6 1408px:w-auto" tabindex="0" aria-label="Next slide"
+                        aria-controls="swiper-wrapper-afd7c4910c19813d6" aria-disabled="false">
+                        <img src="./src/icons/arrow-right.svg" alt="" />
+                    </button>
+                </div>
+            </div>
+        </section>
+        <!-- End Section Các Ngành Nghề -->
+
+        <!-- Section Feedback -->
+        <section class="bg-[#264AB9] overflow-hidden -z-20 pb-[35px] 1408px:pb-[97px]" style="
+          background: #264ab9 url('./src/images/backGroundFeedback.svg') center
+            bottom no-repeat;
+        ">
+            <div class="max-w-[1408px] px-5 21408px:px-0 mx-auto">
+                <h3
+                    class="text-white z-20 text-[14px] 834px:text-2xl 1408px:text-[2rem] font-bold 1408px:w-[483px] text-center mx-auto 1408px:leading-[44px] mt-9 1408px:mt-24">
+                    Những đánh giá tốt
+                    <span class="block">về sản phẩm, chất lượng, dịch vụ</span>
+                </h3>
+
+                <h3
+                    class="bg-gradient-to-r from-[#00B8C4] to-[#2AD8CD] max-w-[353px] 834px:max-w-[585px] 1408px:max-w-[51.5rem] text-white text-[14px] 834px:text-2xl 1408px:text-[2rem] font-bold text-center mx-auto mt-[10px] 1408px:mt-1 rounded-full 1408px:leading-[44px] py-2 px-4 1408px:py-4 1408px:px-12">
+                    Là động lực để chúng tôi phát triển hơn mỗi ngày
+                </h3>
+
+                <!-- Gallery -->
+                <div
+                    class="grid grid-cols-2 834px:grid-cols-3 lg:grid-cols-4 justify-items-center gap-5 1408px:gap-8 mt-[25px] 1408px:mt-[2.625rem]">
+                    <div class="flex flex-col gap-4 1408px:gap-8">
+                        <figure class="h-fit">
+                            <img class="h-auto 1408px:max-w-max rounded-[15px] 1408px:rounded-lg"
+                                src="./src/images/feedback-1.png" alt="image feedback-1" />
+                        </figure>
+                        <figure class="h-fit">
+                            <img class="h-auto 1408px:max-w-max rounded-[15px] 1408px:rounded-lg"
+                                src="./src/images/feedback-5.png" alt="image feedback-5" />
+                        </figure>
+                        <figure class="h-fit">
+                            <img class="h-auto 1408px:max-w-max rounded-[15px] 1408px:rounded-lg"
+                                src="./src/images/feedback-8.png" alt="image feedback-8" />
+                        </figure>
+                    </div>
+                    <!-- 2 -->
+                    <div class="flex flex-col gap-4 1408px:gap-8">
+                        <figure class="h-fit">
+                            <img class="h-auto 1408px:max-w-max rounded-[15px] 1408px:rounded-lg"
+                                src="./src/images/feedback-2.png" alt="image feedback-2" />
+                        </figure>
+                        <figure class="h-fit">
+                            <img class="h-auto 1408px:max-w-max rounded-[15px] 1408px:rounded-lg"
+                                src="./src/images/feedback-9.png" alt="image feedback-9" />
+                        </figure>
+                    </div>
+                    <!-- 3 -->
+                    <div class="834px:block hidden">
+                        <div class="flex flex-col gap-4 1408px:gap-8">
+                            <figure class="h-fit">
+                                <img class="h-auto 1408px:max-w-max rounded-[15px] 1408px:rounded-lg"
+                                    src="./src/images/feedback-3.png" alt="image feedback-3" />
+                            </figure>
+                            <figure class="h-fit">
+                                <img class="h-auto 1408px:max-w-max rounded-[15px] 1408px:rounded-lg"
+                                    src="./src/images/feedback-6.png" alt="image feedback-6" />
+                            </figure>
+                            <figure class="h-fit">
+                                <img class="h-auto 1408px:max-w-max rounded-[15px] 1408px:rounded-lg"
+                                    src="./src/images/feedback-10.png" alt="image feedback-10" />
+                            </figure>
+                        </div>
+                    </div>
+                    <!-- 4 -->
+                    <div class="lg:block hidden">
+                        <div class="flex flex-col gap-4 1408px:gap-8">
+                            <figure class="h-fit">
+                                <img class="h-auto 1408px:max-w-max rounded-[15px] 1408px:rounded-lg"
+                                    src="./src/images/feedback-4.png" alt="image feedback-4" />
+                            </figure>
+                            <figure class="h-fit">
+                                <img class="h-auto 1408px:max-w-max rounded-[15px] 1408px:rounded-lg"
+                                    src="./src/images/feedback-7.png" alt="image feedback-7" />
+                            </figure>
+                            <figure class="h-fit">
+                                <img class="h-auto 1408px:max-w-max rounded-[15px] 1408px:rounded-lg"
+                                    src="./src/images/feedback-11.png" alt="image feedback-11" />
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Section Feedback -->
+
+        <!-- Section Praise -->
+        <section class="pt-8 834px:pt-16 lg:pt-24 pb-[31px] 834px:pb-12 lg:pb-[94px]">
+            <div class="px-5 max-w-[1408px] mx-auto">
+                <div
+                    class="834px:bg-[#264AB9] 535:w-[90%] 694:w-[80%] 834px:w-[90%] lg:w-[900px] 1200:w-[1000px] 1408px:w-[1280px] 834px:px-5 21408px:px-0 mx-auto 834px:rounded-[26px] relative 834px:pb-[50px] 1408px:pb-[77px] 834px:pl-6 1408px:pl-16 z-10">
+                    <!-- class="hidden 834px:block 834px:w-[46%] 834px:max-w-[385px] lg:max-w-[440px] 1408px:w-auto 1408px:max-w-full absolute 834px:right-[-1.9%] lg:right-[-1.7%] 1408px:right-[-5%] 834px:top-[12%] lg:top-[8%] 1408px:top-[9%]" -->
+
+                    <img class="absolute -z-10 hidden 834px:block right-0 top-0 h-full w-full object-cover rounded-3xl 1408px:rounded-none"
+                        src="./src/images/Rectangle 142.png" alt="" />
+
+                    <div
+                        class="flex flex-col-reverse lg:pl-8 1408px:pl-16 834px:flex-row justify-between items-center 834px:pt-[50px] before:content-[''] before:hidden before:834px:block before:absolute before:h-[82.42%] before:w-[5%] before:bg-[#E2EBF6] before:left-[-4.9%] before:-z-10 before:rounded-tl-[30px] before:rounded-bl-[30px]">
+                        <div
+                            class="flex flex-col relative overflow-hidden z-10 px-5 834px:px-0 bg-[#264AB9] 834px:bg-transparent items-center 834px:w-[53%] 890:w-[57%] lg:w-[54%] 1408px:w-auto 1408px:max-w-[689px] rounded-lg pt-[18px] 834px:pt-0 pb-[19px] 834px:pb-0">
+                            <img class="absolute -z-10 834px:hidden right-0 top-0 h-full w-full"
+                                src="./src/images/Rectangle 142.png" alt="" />
+                            <div class="w-[53.36%] 834px:w-[65%] 1408px:w-auto relative z-10">
+                                <img class="834px:w-auto" src="./src/images/laptop.svg" alt="Laptop" />
+                                <img class="absolute w-[79.1%] 1408px:w-auto 834px:-z-10 left-[10.4%] 834px:left-[10.4%] top-[1.7%] 834px:top-[1.2%]"
+                                    src="./src/images/hoangthanhphuong.png" alt="User" />
+                            </div>
+                            <p
+                                class="font-bold text-xs 834px:text-sm lg:text-lg 834px:w-auto text-white text-center mt-4 834px:mt-6 1408px:mt-[31px] ml-[-2px]">
+                                Nhận thấy website là một kênh thông tin chính thống, thể hiện
+                                sự chuyên nghiệp và uy tín nên Shippo quyết định hợp tác với
+                                Webops Agency để xây dựng website giới thiệu doanh nghiệp.
+                                Website của Webops Agency rất dễ sử dụng, nhiều khả năng mở
+                                rộng và đáp ứng tốt nhu cầu của chúng tôi.
+                            </p>
+
+                            <h4
+                                class="bg-gradient-to-r from-[#00B8C4] to-[#2AD8CD] rounded-full mt-[15px] 834px:mt-4 1408px:mt-8 text-white font-semibold text-[14px] 834px:text-base py-[10px] px-5 834px:px-8">
+                                Bà
+                                <span class="font-bold text-[14px] 834px:text-lg 1408px:text-2xl">Hoàng Thanh
+                                    Phương</span>
+                            </h4>
+                            <p
+                                class="font-bold text-[10px] 834px:text-sm lg:text-lg text-white mt-[15px] 834px:mt-4 text-center 1408px:text-left">
+                                Trưởng phòng Marketing - Công ty CPDV chuyển phát thông minh
+                            </p>
+                        </div>
+
+                        <!-- Block 2 -->
+                        <div class="lg:mt-[46px] relative 834px:w-[29%] lg:w-[32%]">
+                            <div class="flex flex-col items-center 834px:items-end 834px:gap-4">
+                                <img class="absolute hidden 834px:block 834px:h-[400px] lg:h-[478px] 1408px:w-auto 1408px:h-auto max-w-max 834px:right-[-28%] lg:right-[-19.3%] 1408px:right-[-16.5%] 834px:top-[-16%] lg:top-[-26.7%] 1408px:top-[-21.7%] -z-10"
+                                    src="./src/images/Rectangle 252.svg" alt="" />
+                                <img class="hidden 834px:block 834px:w-20 1408px:w-auto max-w-[128px]"
+                                    src="./src/icons/fontisto_quote-left.svg" alt="" />
+                                <img class="relative block 834px:hidden" src="./src/icons/fontisto_quote-left-small.svg"
+                                    alt="" />
+                                <h1
+                                    class="834px:leading-[48px] lg:leading-[53px] 1408px:leading-[66px] text-2xl 834px:text-[26px] lg:text-4xl 1408px:text-5xl font-extrabold text-[#00355D] 834px:text-white text-center 834px:text-right mt-[13px] lg:mt-8">
+                                    Chúng Tôi
+                                    <span class="block -ml-2 1408px:ml-0">Luôn Mang Đến</span>
+                                    <span class="834px:block">Sự Hài Lòng</span> Cho Bạn
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex items-center justify-center mt-[1.125rem] gap-5 1408px:gap-8 text-3xl">
+                <!-- Button Arrow Left -->
+                <button>
+                    <img class="w-6 1408px:w-auto" src="./src/icons/arrow-left.svg" alt="" />
+                </button>
+
+                <!-- Button Arrow Right -->
+                <button>
+                    <img class="w-6 1408px:w-auto" src="./src/icons/arrow-right.svg" alt="" />
+                </button>
+            </div>
+        </section>
+        <!-- End Section Praise -->
+
+        <!--  Section Đối Tác -->
+        <section
+            class="relative overflow-hidden pt-11 834px:pt-[3.5rem] lg:pt-[4.5rem] 1408px:pt-[6.5rem] 21408px:pt-[9.5rem] pb-[47px] 453:pb-[95px] 834px:pb-[6.0625rem] lg:pb-[10.0625rem] 21408px:pb-[12.0625rem] px-5 21408px:px-0"
+            style="
+          background: #e2ebf6 url('./src/images/saigon_line 1.svg') center
+            bottom no-repeat;
+        ">
+            <div class="max-w-[1408px] mx-auto flex flex-col justify-center relative z-10">
+                <div>
+                    <h1
+                        class="text-[#00355D] font-bold text-2xl 834px:text-4xl lg:text-5xl 1408px:text-[4rem] ml-[38.3%] 585:ml-[31.3%] 890:ml-[28.3%] 1408px:ml-[20.5625rem] mt-[14px] 1408px:mt-[50px]">
+                        Đối Tác Đồng Hành
+                    </h1>
+                    <div
+                        class="flex flex-wrap justify-center gap-y-4 834px:gap-0 bg-white 453:mt-[40px] 834px:mt-[78px] 890:mt-[60px] lg:mt-24 1408px:mt-[53px] rounded-lg 1408px:rounded-2xl shadow-custom2 py-[15px] 1408px:py-[2.8125rem] 1457:py-[5.8125rem] max-w-[1360px] ml-[15px] 453:ml-[30px] 926:ml-10 1408px:ml-12">
+                        <img class="w-[132.48px] 834px:w-[22%] 926:w-[21%] lg:w-[250px] 1200:w-auto"
+                            src="./src/images/Kohler.svg" alt="Kohler Logo" />
+                        <img class="w-[132.48px] 834px:w-[22%] 926:w-[21%] lg:w-[250px] 1200:w-auto"
+                            src="./src/images/Tupper.svg" alt="Tupper Logo" />
+                        <img class="w-[132.48px] 834px:w-[22%] 926:w-[21%] lg:w-[250px] 1200:w-auto"
+                            src="./src/images/image 3.svg" alt="Logo" />
+                        <img class="w-[132.48px] 834px:w-[22%] 926:w-[21%] lg:w-[250px] 1200:w-auto"
+                            src="./src/images/AuxImage.svg" alt="Aux Logo" />
+                        <img class="w-[132.48px] 834px:w-[22%] 926:w-[21%] lg:w-[250px] 1200:w-auto"
+                            src="./src/images/image 5.svg" alt="Logo" />
+                        <img class="w-[132.48px] 834px:w-[22%] 926:w-[21%] lg:w-[250px] 1200:w-auto"
+                            src="./src/images/Egger.svg" alt="Egger Logo" />
+                    </div>
+                </div>
+
+                <div class="absolute left-0 top-[-5%] 1408px:top-[-2%] -z-10">
+                    <img class="hidden 453:w-[75%] 468:w-[59%] 834px:w-[68%] 926:w-[69%] lg:w-[90%] 1408px:w-auto 453:block"
+                        src="./src/images/Rectangle 248.svg" alt="" />
+                    <img class="block 453:hidden" src="./src/images/Rectangle 248-small.png" alt="" />
+                    <img class="absolute w-10 453:w-14 834px:w-[4.5rem] lg:w-[6rem] 1408px:w-auto top-[5.5%] 1408px:top-[4.5%] left-[8%] 1408px:left-[11%]"
+                        src="./src/images/mdi_partnership-outline.svg" alt="" />
+                </div>
+            </div>
+        </section>
+        <!--  End Section Đối Tác -->
+
+        <!--   Section Báo Chí Nói Gì Về Chúng Tôi -->
+        <section class="bg-[#FCFCFC] pt-5 1408px:pt-24">
+            <div class="flex flex-col items-center justify-center max-w-[1408px] mx-auto">
+                <h2
+                    class="font-bold text-[24px] 1408px:text-[2.5rem] leading-[3.4375rem] text-[#00355D] 1408px:ml-[21px] 1408px:mt-0">
+                    Báo Chí Nói Gì Về Chúng Tôi
+                </h2>
+
+                <div
+                    class="flex gap-8 1408px:gap-[6.9375rem] overflow-x-scroll 1408px:overflow-x-visible ml-5 1408px:ml-[1px] mt-[9px] 1408px:mt-[2.4375rem]">
+                    <img class="h-6 834px:h-8 1408px:h-auto object-contain" src="./src/images/vietnamnet.png"
+                        alt="vietnam.net Logo" />
+                    <img class="h-6 834px:h-8 1408px:h-auto object-contain" src="./src/images/vnexpress.png"
+                        alt="vnexpress Logo" />
+                    <img class="h-6 834px:h-8 1408px:h-auto object-contain" src="./src/images/vtc.png" alt="vtc Logo" />
+                    <img class="h-6 834px:h-8 1408px:h-auto object-contain" src="./src/images/baomoi.png"
+                        alt="baomoi Logo" />
+                    <img class="h-6 834px:h-8 1408px:h-auto object-contain" src="./src/images/24h.png" alt="24h Logo" />
+                    <img class="h-6 834px:h-8 1408px:h-auto object-contain" src="./src/images/tuoitre.png"
+                        alt="tuoitre Logo" />
+                </div>
+
+                <h2
+                    class="font-bold text-[14px] 834px:text-lg 1408px:text-[2.5rem] 1408px:leading-[3.4375rem] text-[#00355D] 1408px:ml-0 mt-[34px] 1408px:mt-[94.6px]">
+                    Câu Hỏi Thường Gặp
+                </h2>
+
+                <h3
+                    class="text-[14px] 834px:text-lg 1408px:text-[2.5rem] font-bold 1408px:ml-0 mt-[6px] 1408px:mt-2 px-4 py-[9px] 1408px:py-7 1408px:px-12 rounded-full max-w-[48.375rem] bg-gradient-to-r from-[#264AB9] to-[#6B92FF] text-white">
+                    Khi Tư Vấn Xây Dựng Website
+                </h3>
+
+                <!-- Accordion -->
+                <div class="max-w-[936px] w-full px-5 1408px:px-0 1408px:mt-6 1408px:pl-0 *:border-b border-b-[#D9D9D9]"
+                    id="accordion-color" data-accordion="collapse" data-active-classes="text-[#00B8C4] ml-0"
+                    data-inactive-classes="text-[#00355D]">
+                    <div class="pb-[13px] 1408px:pb-[1.75rem] pt-[22px] 1408px:pt-[25px]">
+                        <h2 id="accordion-color-heading-1">
+                            <button aria-expanded="true" type="button"
+                                class="flex items-center 1408px:ml-[7px] justify-between w-full font-bold rtl:text-right gap-3 text-[14px] 834px:text-base 1408px:text-lg text-[#00355D]"
+                                data-accordion-target="#accordion-color-body-1" aria-controls="accordion-color-body-1">
+                                <div class="flex gap-1 1408px:block">
+                                    <span class="">1.</span>
+                                    <span>Thế nào là một website chuẩn SEO?</span>
+                                </div>
+                                <svg data-accordion-icon class="rotate-180" width="12" height="12" viewBox="0 0 12 12"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M1.49998 9.5003H10.5C10.5911 9.50001 10.6804 9.47488 10.7583 9.42761C10.8362 9.38034 10.8998 9.31271 10.9421 9.23202C10.9844 9.15133 11.0039 9.06062 10.9985 8.96966C10.9931 8.87869 10.963 8.79093 10.9115 8.7158L6.41148 2.2158C6.22498 1.9463 5.77598 1.9463 5.58898 2.2158L1.08898 8.7158C1.03689 8.79077 1.00635 8.87858 1.00066 8.96969C0.99498 9.06081 1.01437 9.15174 1.05674 9.2326C1.0991 9.31346 1.16282 9.38117 1.24096 9.42837C1.31911 9.47556 1.40869 9.50044 1.49998 9.5003Z"
+                                        fill="currentColor" />
+                                </svg>
+                            </button>
+                        </h2>
+                        <div id="accordion-color-body-1" class="hidden" aria-labelledby="accordion-color-heading-1">
+                            <div
+                                class="pl-4 1408px:pr-[1px] 1408px:pl-[37px] pt-3 1408px:pt-6 font-bold text-[14px] 834px:text-base 1408px:text-lg 1408px:leading-7 text-[#A1A1AA]">
+                                <p class="leading-[18px] 1408px:leading-7">
+                                    Một website chuẩn SEO là một website có đầy đủ cấu trúc và
+                                    công cụ để tạo ra các nội dung chuẩn SEO. Nội dung chuẩn SEO
+                                    ở đây là nội dung mà các công cụ tìm kiếm (Google, Yahoo,
+                                    Bing...) có thể dễ dàng thu thập thông tin (Index).
+                                </p>
+                                <p class="leading-5 1408px:leading-7">
+                                    Điều đó có nghĩa là nếu bạn có một website chuẩn SEO Không
+                                    có nghĩa là website của bạn sẽ nằm trên Top Google, mà bạn
+                                    chỉ mới có công cụ, bạn cần nguyên liệu đó là ý tưởng để xây
+                                    dựng nên các nội dung hữu ích và được nhiều người tìm kiếm.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion 2 -->
+                    <div class="pt-[17px] 1408px:pt-7 pb-[17px] 1408px:pb-[30px]">
+                        <h2 id="accordion-color-heading-2 ">
+                            <button aria-expanded="true" type="button"
+                                class="flex 1408px:items-center text-left 1408px:ml-[7px] justify-between w-full font-bold rtl:text-right gap-3 text-[14px] 834px:text-base 1408px:text-lg text-[#00355D]"
+                                data-accordion-target="#accordion-color-body-2" aria-controls="accordion-color-body-2">
+                                <div class="flex gap-1 1408px:block leading-[18px]">
+                                    <span class="">2.</span>
+                                    <span>Khi xây dựng một website mới cần chuẩn bị những gì?</span>
+                                </div>
+                                <svg data-accordion-icon class="rotate-180" width="12" height="12" viewBox="0 0 12 12"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M1.49998 9.5003H10.5C10.5911 9.50001 10.6804 9.47488 10.7583 9.42761C10.8362 9.38034 10.8998 9.31271 10.9421 9.23202C10.9844 9.15133 11.0039 9.06062 10.9985 8.96966C10.9931 8.87869 10.963 8.79093 10.9115 8.7158L6.41148 2.2158C6.22498 1.9463 5.77598 1.9463 5.58898 2.2158L1.08898 8.7158C1.03689 8.79077 1.00635 8.87858 1.00066 8.96969C0.99498 9.06081 1.01437 9.15174 1.05674 9.2326C1.0991 9.31346 1.16282 9.38117 1.24096 9.42837C1.31911 9.47556 1.40869 9.50044 1.49998 9.5003Z"
+                                        fill="currentColor" />
+                                </svg>
+                            </button>
+                        </h2>
+                        <div id="accordion-color-body-2" class="hidden" aria-labelledby="accordion-color-heading-2">
+                            <div
+                                class="pl-4 1408px:pr-[1px] 1408px:pl-[37px] pt-3 1408px:pt-6 font-bold text-[14px] 834px:text-base 1408px:text-lg 1408px:leading-7 text-[#A1A1AA]">
+                                <p class="leading-[18px] 1408px:leading-7">
+                                    Một website chuẩn SEO là một website có đầy đủ cấu trúc và
+                                    công cụ để tạo ra các nội dung chuẩn SEO. Nội dung chuẩn SEO
+                                    ở đây là nội dung mà các công cụ tìm kiếm (Google, Yahoo,
+                                    Bing...) có thể dễ dàng thu thập thông tin (Index).
+                                </p>
+                                <p class="leading-5 1408px:leading-7">
+                                    Điều đó có nghĩa là nếu bạn có một website chuẩn SEO Không
+                                    có nghĩa là website của bạn sẽ nằm trên Top Google, mà bạn
+                                    chỉ mới có công cụ, bạn cần nguyên liệu đó là ý tưởng để xây
+                                    dựng nên các nội dung hữu ích và được nhiều người tìm kiếm.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Accordion 3 -->
+                    <div class="pt-[17px] 1408px:pt-7 pb-[17px] 1408px:pb-[30px]">
+                        <h2 id="accordion-color-heading-2">
+                            <button aria-expanded="true" type="button"
+                                class="flex 1408px:items-center text-left 1408px:ml-[7px] justify-between w-full font-bold rtl:text-right gap-3 text-[14px] 834px:text-base 1408px:text-lg text-[#00355D]"
+                                data-accordion-target="#accordion-color-body-3" aria-controls="accordion-color-body-3">
+                                <div class="flex gap-1 1408px:block leading-[18px]">
+                                    <span class="">3.</span>
+                                    <span>Có phải làm Website là bán được hàng?</span>
+                                </div>
+
+                                <svg data-accordion-icon class="rotate-180" width="12" height="12" viewBox="0 0 12 12"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M1.49998 9.5003H10.5C10.5911 9.50001 10.6804 9.47488 10.7583 9.42761C10.8362 9.38034 10.8998 9.31271 10.9421 9.23202C10.9844 9.15133 11.0039 9.06062 10.9985 8.96966C10.9931 8.87869 10.963 8.79093 10.9115 8.7158L6.41148 2.2158C6.22498 1.9463 5.77598 1.9463 5.58898 2.2158L1.08898 8.7158C1.03689 8.79077 1.00635 8.87858 1.00066 8.96969C0.99498 9.06081 1.01437 9.15174 1.05674 9.2326C1.0991 9.31346 1.16282 9.38117 1.24096 9.42837C1.31911 9.47556 1.40869 9.50044 1.49998 9.5003Z"
+                                        fill="currentColor" />
+                                </svg>
+                            </button>
+                        </h2>
+                        <div id="accordion-color-body-3" class="hidden" aria-labelledby="accordion-color-heading-3">
+                            <div
+                                class="pl-4 1408px:pr-[1px] 1408px:pl-[37px] pt-3 1408px:pt-6 font-bold text-[14px] 834px:text-base 1408px:text-lg 1408px:leading-7 text-[#A1A1AA]">
+                                <p class="leading-[18px] 1408px:leading-7">
+                                    Một website chuẩn SEO là một website có đầy đủ cấu trúc và
+                                    công cụ để tạo ra các nội dung chuẩn SEO. Nội dung chuẩn SEO
+                                    ở đây là nội dung mà các công cụ tìm kiếm (Google, Yahoo,
+                                    Bing...) có thể dễ dàng thu thập thông tin (Index).
+                                </p>
+                                <p class="leading-5 1408px:leading-7">
+                                    Điều đó có nghĩa là nếu bạn có một website chuẩn SEO Không
+                                    có nghĩa là website của bạn sẽ nằm trên Top Google, mà bạn
+                                    chỉ mới có công cụ, bạn cần nguyên liệu đó là ý tưởng để xây
+                                    dựng nên các nội dung hữu ích và được nhiều người tìm kiếm.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Accordion 4 -->
+                    <div class="pt-[17px] 1408px:pt-7 pb-[17px] 1408px:pb-[30px]">
+                        <h2 id="accordion-color-heading-4 ">
+                            <button aria-expanded="true" type="button"
+                                class="flex 1408px:items-center text-left 1408px:ml-[7px] justify-between w-full font-bold rtl:text-right gap-3 text-[14px] 834px:text-base 1408px:text-lg text-[#00355D]"
+                                data-accordion-target="#accordion-color-body-4" aria-controls="accordion-color-body-4">
+                                <div class="flex gap-1 1408px:block leading-[18px] w-[337px] 834px:w-auto">
+                                    <span class="">4.</span>
+                                    <span>Tại sao chi phí thiết kế web giữa các công ty khác nhau
+                                        đáng kể?</span>
+                                </div>
+
+                                <!-- <div class="w-3"> -->
+                                <svg data-accordion-icon class="rotate-180" width="12" height="12" viewBox="0 0 12 12"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M1.49998 9.5003H10.5C10.5911 9.50001 10.6804 9.47488 10.7583 9.42761C10.8362 9.38034 10.8998 9.31271 10.9421 9.23202C10.9844 9.15133 11.0039 9.06062 10.9985 8.96966C10.9931 8.87869 10.963 8.79093 10.9115 8.7158L6.41148 2.2158C6.22498 1.9463 5.77598 1.9463 5.58898 2.2158L1.08898 8.7158C1.03689 8.79077 1.00635 8.87858 1.00066 8.96969C0.99498 9.06081 1.01437 9.15174 1.05674 9.2326C1.0991 9.31346 1.16282 9.38117 1.24096 9.42837C1.31911 9.47556 1.40869 9.50044 1.49998 9.5003Z"
+                                        fill="currentColor" />
+                                </svg>
+                                <!-- </div> -->
+                            </button>
+                        </h2>
+                        <div id="accordion-color-body-4" class="hidden" aria-labelledby="accordion-color-heading-4">
+                            <div
+                                class="pl-4 1408px:pr-[1px] 1408px:pl-[37px] pt-3 1408px:pt-6 font-bold text-[14px] 834px:text-base 1408px:text-lg 1408px:leading-7 text-[#A1A1AA]">
+                                <p class="leading-[18px] 1408px:leading-7">
+                                    Một website chuẩn SEO là một website có đầy đủ cấu trúc và
+                                    công cụ để tạo ra các nội dung chuẩn SEO. Nội dung chuẩn SEO
+                                    ở đây là nội dung mà các công cụ tìm kiếm (Google, Yahoo,
+                                    Bing...) có thể dễ dàng thu thập thông tin (Index).
+                                </p>
+                                <p class="leading-5 1408px:leading-7">
+                                    Điều đó có nghĩa là nếu bạn có một website chuẩn SEO Không
+                                    có nghĩa là website của bạn sẽ nằm trên Top Google, mà bạn
+                                    chỉ mới có công cụ, bạn cần nguyên liệu đó là ý tưởng để xây
+                                    dựng nên các nội dung hữu ích và được nhiều người tìm kiếm.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Accordion 5 -->
+                    <div class="pt-[17px] 1408px:pt-7 pb-[17px] 1408px:pb-[30px]">
+                        <h2 id="accordion-color-heading-5">
+                            <button aria-expanded="true" type="button"
+                                class="flex 1408px:items-center text-left 1408px:ml-[7px] justify-between w-full font-bold rtl:text-right gap-3 text-[14px] 834px:text-base 1408px:text-lg text-[#00355D]"
+                                data-accordion-target="#accordion-color-body-5" aria-controls="accordion-color-body-5">
+                                <div class="flex gap-1 1408px:block leading-[18px] w-[260px] 834px:w-auto">
+                                    <span class="">5.</span>
+                                    <span>Tại sao cần phải đầu tư đúng mức cho 1 website?</span>
+                                </div>
+
+                                <svg data-accordion-icon class="rotate-180" width="12" height="12" viewBox="0 0 12 12"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M1.49998 9.5003H10.5C10.5911 9.50001 10.6804 9.47488 10.7583 9.42761C10.8362 9.38034 10.8998 9.31271 10.9421 9.23202C10.9844 9.15133 11.0039 9.06062 10.9985 8.96966C10.9931 8.87869 10.963 8.79093 10.9115 8.7158L6.41148 2.2158C6.22498 1.9463 5.77598 1.9463 5.58898 2.2158L1.08898 8.7158C1.03689 8.79077 1.00635 8.87858 1.00066 8.96969C0.99498 9.06081 1.01437 9.15174 1.05674 9.2326C1.0991 9.31346 1.16282 9.38117 1.24096 9.42837C1.31911 9.47556 1.40869 9.50044 1.49998 9.5003Z"
+                                        fill="currentColor" />
+                                </svg>
+                            </button>
+                        </h2>
+                        <div id="accordion-color-body-5" class="hidden" aria-labelledby="accordion-color-heading-5">
+                            <div
+                                class="pl-4 1408px:pr-[1px] 1408px:pl-[37px] pt-3 1408px:pt-6 font-bold text-[14px] 834px:text-base 1408px:text-lg 1408px:leading-7 text-[#A1A1AA]">
+                                <p class="leading-[18px] 1408px:leading-7">
+                                    Một website chuẩn SEO là một website có đầy đủ cấu trúc và
+                                    công cụ để tạo ra các nội dung chuẩn SEO. Nội dung chuẩn SEO
+                                    ở đây là nội dung mà các công cụ tìm kiếm (Google, Yahoo,
+                                    Bing...) có thể dễ dàng thu thập thông tin (Index).
+                                </p>
+                                <p class="leading-5 1408px:leading-7">
+                                    Điều đó có nghĩa là nếu bạn có một website chuẩn SEO Không
+                                    có nghĩa là website của bạn sẽ nằm trên Top Google, mà bạn
+                                    chỉ mới có công cụ, bạn cần nguyên liệu đó là ý tưởng để xây
+                                    dựng nên các nội dung hữu ích và được nhiều người tìm kiếm.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Accordion 6 -->
+                    <div class="pt-[17px] 1408px:pt-7 pb-[17px] 1408px:pb-[30px]">
+                        <h2 id="accordion-color-heading-6">
+                            <button aria-expanded="true" type="button"
+                                class="flex 1408px:items-center text-left 1408px:ml-[7px] justify-between w-full font-bold rtl:text-right gap-3 text-[14px] 834px:text-base 1408px:text-lg text-[#00355D]"
+                                data-accordion-target="#accordion-color-body-6" aria-controls="accordion-color-body-6">
+                                <div class="flex gap-1 1408px:block leading-[18px] w-[246px] 834px:w-auto">
+                                    <span class="">6.</span>
+                                    <span>Có thể sử dụng nhiều tên miền trên một website
+                                        không?</span>
+                                </div>
+
+                                <svg data-accordion-icon class="rotate-180" width="12" height="12" viewBox="0 0 12 12"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M1.49998 9.5003H10.5C10.5911 9.50001 10.6804 9.47488 10.7583 9.42761C10.8362 9.38034 10.8998 9.31271 10.9421 9.23202C10.9844 9.15133 11.0039 9.06062 10.9985 8.96966C10.9931 8.87869 10.963 8.79093 10.9115 8.7158L6.41148 2.2158C6.22498 1.9463 5.77598 1.9463 5.58898 2.2158L1.08898 8.7158C1.03689 8.79077 1.00635 8.87858 1.00066 8.96969C0.99498 9.06081 1.01437 9.15174 1.05674 9.2326C1.0991 9.31346 1.16282 9.38117 1.24096 9.42837C1.31911 9.47556 1.40869 9.50044 1.49998 9.5003Z"
+                                        fill="currentColor" />
+                                </svg>
+                            </button>
+                        </h2>
+                        <div id="accordion-color-body-6" class="hidden" aria-labelledby="accordion-color-heading-6">
+                            <div
+                                class="pl-4 1408px:pr-[1px] 1408px:pl-[37px] pt-3 1408px:pt-6 font-bold text-[14px] 834px:text-base 1408px:text-lg 1408px:leading-7 text-[#A1A1AA]">
+                                <p class="leading-[18px] 1408px:leading-7">
+                                    Một website chuẩn SEO là một website có đầy đủ cấu trúc và
+                                    công cụ để tạo ra các nội dung chuẩn SEO. Nội dung chuẩn SEO
+                                    ở đây là nội dung mà các công cụ tìm kiếm (Google, Yahoo,
+                                    Bing...) có thể dễ dàng thu thập thông tin (Index).
+                                </p>
+                                <p class="leading-5 1408px:leading-7">
+                                    Điều đó có nghĩa là nếu bạn có một website chuẩn SEO Không
+                                    có nghĩa là website của bạn sẽ nằm trên Top Google, mà bạn
+                                    chỉ mới có công cụ, bạn cần nguyên liệu đó là ý tưởng để xây
+                                    dựng nên các nội dung hữu ích và được nhiều người tìm kiếm.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Accordion 7 -->
+                    <div class="pt-[17px] 1408px:pt-7 pb-[17px] 1408px:pb-[30px]">
+                        <h2 id="accordion-color-heading-7">
+                            <button aria-expanded="true" type="button"
+                                class="flex 1408px:items-center text-left 1408px:ml-[7px] justify-between w-full font-bold rtl:text-right gap-3 text-[14px] 834px:text-base 1408px:text-lg text-[#00355D]"
+                                data-accordion-target="#accordion-color-body-7" aria-controls="accordion-color-body-7">
+                                <div class="flex gap-1 1408px:block leading-[18px] w-[318px] 834px:w-auto">
+                                    <span class="">7.</span>
+                                    <span>Tốc độ website ảnh hưởng bởi các yếu tố nào?</span>
+                                </div>
+
+                                <svg data-accordion-icon class="rotate-180" width="12" height="12" viewBox="0 0 12 12"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M1.49998 9.5003H10.5C10.5911 9.50001 10.6804 9.47488 10.7583 9.42761C10.8362 9.38034 10.8998 9.31271 10.9421 9.23202C10.9844 9.15133 11.0039 9.06062 10.9985 8.96966C10.9931 8.87869 10.963 8.79093 10.9115 8.7158L6.41148 2.2158C6.22498 1.9463 5.77598 1.9463 5.58898 2.2158L1.08898 8.7158C1.03689 8.79077 1.00635 8.87858 1.00066 8.96969C0.99498 9.06081 1.01437 9.15174 1.05674 9.2326C1.0991 9.31346 1.16282 9.38117 1.24096 9.42837C1.31911 9.47556 1.40869 9.50044 1.49998 9.5003Z"
+                                        fill="currentColor" />
+                                </svg>
+                            </button>
+                        </h2>
+                        <div id="accordion-color-body-7" class="hidden" aria-labelledby="accordion-color-heading-7">
+                            <div
+                                class="pl-4 1408px:pr-[1px] 1408px:pl-[37px] pt-3 1408px:pt-6 font-bold text-[14px] 834px:text-base 1408px:text-lg 1408px:leading-7 text-[#A1A1AA]">
+                                <p class="leading-[18px] 1408px:leading-7">
+                                    Một website chuẩn SEO là một website có đầy đủ cấu trúc và
+                                    công cụ để tạo ra các nội dung chuẩn SEO. Nội dung chuẩn SEO
+                                    ở đây là nội dung mà các công cụ tìm kiếm (Google, Yahoo,
+                                    Bing...) có thể dễ dàng thu thập thông tin (Index).
+                                </p>
+                                <p class="leading-5 1408px:leading-7">
+                                    Điều đó có nghĩa là nếu bạn có một website chuẩn SEO Không
+                                    có nghĩa là website của bạn sẽ nằm trên Top Google, mà bạn
+                                    chỉ mới có công cụ, bạn cần nguyên liệu đó là ý tưởng để xây
+                                    dựng nên các nội dung hữu ích và được nhiều người tìm kiếm.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--  End Section Báo Chí Nói Gì Về Chúng Tôi -->
+
+        <!-- Section Điều Gì ? -->
+        <section
+            class="relative mt-[38px] 834px:mt-[71px] lg:mt-[111px] 1408px:mt-[135px] pb-[33px] 834px:py-[60px] lg:py-[90px] 21408px:pt-0 1408px:pb-24 bg-[#264ab9]">
+            <img class="absolute w-[41.7%] 834px:w-[43%] lg:w-[50%] 1408px:w-auto right-0 top-[-1.3rem] 834px:top-[-2.3rem] lg:top-[-4.375rem]"
+                src="./src/images/squareCutLeft.svg" alt="square" />
+            <img class="hidden 834px:block absolute z-10 bottom-0" src="./src/images/saigon_line [Converted] 2.svg"
+                alt="" />
+
+            <div
+                class="max-w-[1408px] px-5 21408px:px-0 mx-auto flex justify-between flex-col-reverse 834px:flex-row 1408px:gap-[4.8125rem] relative">
+                <div
+                    class="618:w-[90%] 694:w-[80%] 834px:w-[60%] lg:w-[55%] 618:mx-auto max-w-[697px] 834px:mx-0 1408px:w-full flex flex-col gap-[26px] 618:gap-9 lg:gap-12 1408px:gap-[3.25rem] pr-[11px] 834px:pr-0 mt-8 834px:mt-0 1408px:mt-[7.25rem]">
+                    <!-- Div 1 -->
+                    <div
+                        class="relative bg-gradient-to-r from-[#2AD8CD] to-[#00B8C4] rounded-lg 1408px:rounded-xl h-[78px] 475:h-[89px] 618:h-[100px] 834px:h-[120px] lg:h-[135px] 1408px:h-[160px] flex items-end">
+                        <img class="absolute max-h-[87px] 475:max-h-[99px] 618:max-h-[108px] 834px:max-h-[122px] lg:max-h-[138px] 1408px:max-h-none right-[-4%] 1408px:right-[-4.7%] top-[-13px] lg:top-[-19px] w-full 1408px:w-auto 1408px:top-[-26px] 1408px:max-w-max"
+                            src="./src/images/Rectangle 278.png" alt="" />
+                        <span
+                            class="text-2xl 475:text-[28px] 618:text-[32px] lg:text-4xl 1408px:text-5xl font-extrabold text-white pl-2 1408px:pl-5 1408px:pb-3">01</span>
+
+                        <div
+                            class="absolute z-10 left-[18.3%] lg:left-[19.3%] 1408px:left-[21.4%] top-[-8%] lg:top-[-5%] 1408px:top-0 max-w-[33.6875rem]">
+                            <h3 class="text-sm 475:text-base 618:text-[21px] lg:text-2xl font-extrabold text-[#00355D]">
+                                Năng lực chuyên môn
+                            </h3>
+                            <p
+                                class="font-medium text-[11px] 475:text-[13px] 618:text-[16px] 1408px:text-lg text-[#00355D] leading-[14px] 475:leading-[19px] 618:leading-[21px] lg:leading-6 1408px:leading-7 mt-[5px] 1408px:mt-[9px]">
+                                Đội ngũ nhân sự được đào tạo bài bản, giàu kinh nghiệm triển
+                                khai thực tế và không ngừng học hỏi, sáng tạo cùng với đam mê
+                                và trách nhiệm trong từng công việc.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- End Div 1 -->
+
+                    <!-- Div 2 -->
+                    <div
+                        class="relative bg-gradient-to-r from-[#2AD8CD] to-[#00B8C4] rounded-lg 1408px:rounded-xl h-[78px] 475:h-[89px] 618:h-[100px] 834px:h-[120px] lg:h-[135px] 1408px:h-[160px] flex items-end">
+                        <img class="absolute max-h-[87px] 475:max-h-[99px] 618:max-h-[108px] 834px:max-h-[122px] lg:max-h-[138px] 1408px:max-h-none right-[-4%] 1408px:right-[-4.7%] top-[-13px] lg:top-[-19px] w-full 1408px:w-auto 1408px:top-[-26px] 1408px:max-w-max"
+                            src="./src/images/Rectangle 278.png" alt="" />
+                        <span
+                            class="text-2xl 475:text-[28px] 618:text-[32px] lg:text-4xl 1408px:text-5xl font-extrabold text-white pl-2 1408px:pl-5 1408px:pb-3">02</span>
+
+                        <div
+                            class="absolute z-10 left-[18.3%] lg:left-[19.3%] 1408px:left-[21.4%] top-[-8%] lg:top-[-5%] 1408px:top-0 max-w-[33.6875rem]">
+                            <h3 class="text-sm 475:text-base 618:text-[21px] lg:text-2xl font-extrabold text-[#00355D]">
+                                Phục vụ tận tâm
+                            </h3>
+                            <p
+                                class="font-medium text-[11px] 475:text-[13px] 618:text-[16px] 1408px:text-lg text-[#00355D] leading-[14px] 475:leading-[19px] 618:leading-[21px] lg:leading-6 1408px:leading-7 mt-[5px] 1408px:mt-[9px]">
+                                Tư vấn giải pháp nhiệt tình. Hỗ trợ khách hàng nhanh chóng,
+                                24/7 trong suốt quá trình triển khai, bảo hành và vận hành sản
+                                phẩm.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- End Div 2 -->
+
+                    <!-- Div 3 -->
+                    <div
+                        class="relative bg-gradient-to-r from-[#2AD8CD] to-[#00B8C4] rounded-lg 1408px:rounded-xl h-[78px] 475:h-[89px] 618:h-[100px] 834px:h-[120px] lg:h-[135px] 1408px:h-[160px] flex items-end">
+                        <img class="absolute max-h-[87px] 475:max-h-[99px] 618:max-h-[108px] 834px:max-h-[122px] lg:max-h-[138px] 1408px:max-h-none right-[-4%] 1408px:right-[-4.7%] top-[-13px] lg:top-[-19px] w-full 1408px:w-auto 1408px:top-[-26px] 1408px:max-w-max"
+                            src="./src/images/Rectangle 278.png" alt="" />
+                        <span
+                            class="text-2xl 475:text-[28px] 618:text-[32px] lg:text-4xl 1408px:text-5xl font-extrabold text-white pl-2 1408px:pl-5 1408px:pb-3">03</span>
+
+                        <div
+                            class="absolute z-10 left-[18.3%] lg:left-[19.3%] 1408px:left-[21.4%] top-[-8%] lg:top-[-5%] 1408px:top-0 max-w-[33.6875rem]">
+                            <h3 class="text-sm 475:text-base 618:text-[21px] lg:text-2xl font-extrabold text-[#00355D]">
+                                Bảo hành trọn đời
+                            </h3>
+                            <p
+                                class="font-medium text-[11px] 475:text-[13px] 618:text-[16px] 1408px:text-lg text-[#00355D] leading-[14px] 475:leading-[19px] 618:leading-[21px] lg:leading-6 1408px:leading-7 mt-[5px] 1408px:mt-[9px]">
+                                Website được bảo hành trong suốt thời gian khách hàng sử dụng
+                                hosting tại Webops Agency mà không phát sinh thêm chi phí.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- End Div 3 -->
+                </div>
+
+                <div
+                    class="flex flex-col gap-[13px] mt-8 834px:mt-14 1408px:gap-[69px] 1408px:mt-[176px] items-center 834px:items-end z-20">
+                    <img class="w-10 618:w-16 lg:w-24 1408px:w-32"
+                        src="./src/icons/rocket_launch_FILL0_wght400_GRAD0_opsz24 1.svg" alt="" />
+                    <h2
+                        class="font-extrabold text-2xl 618:text-[28px] 834px:text-[26px] lg:text-4xl 1408px:text-[48px] max-w-[35.5rem] 618:leading-[37px] lg:leading-[4.0625rem] text-white text-center 834px:text-right">
+                        Điều Gì?
+                        <span class="block mr-1 1408px:mr-3">Làm Nên Sự Khác Biệt</span>
+                        Của WebOps Agency
+                    </h2>
+                </div>
+            </div>
+        </section>
+        <!-- End Section Điều Gì ? -->
+
+        <!-- Section Contact -->
+        <section class="834px:pt-16 1408px:pt-24 relative">
+            <div
+                class="535:w-[90%] 694:w-[80%] 834px:w-[90%] lg:w-[900px] 1200:w-[1000px] 1408px:w-[1280px] px-5 21408px:px-0 mx-auto">
+                <div
+                    class="flex flex-col 834px:flex-row 834px:items-center justify-between 834px:bg-[#264AB9] 834px:pr-5 1200:pr-7 1408px:pr-14 rounded-[26px] relative z-10 after:content-[''] after:hidden 834px:after:block after:absolute after:h-[82.42%] after:w-[5%] after:bg-[#E2EBF6] after:right-[-5%] after:top-[7%] after:-z-10 after:rounded-tr-[30px] after:rounded-br-[30px]">
+                    <img class="absolute hidden 834px:block -z-10 w-full h-full" src="./src/images/Rectangle 142.png"
+                        alt="" />
+                    <div
+                        class="hidden 834px:flex flex-col 1408px:gap-12 834px: mt-[-3%] relative 834px:w-[27%] lg:w-auto">
+                        <img class="absolute -z-10 834px:w-[295px] 834px:h-[363px] lg:h-[478px] lg:w-[360px] 1200:w-[385px] 1200:h-[475px] 1408px:w-auto 1408px:h-auto max-w-max 834px:left-[-19%] lg:left-[-19.3%] 834px:top-[-52%] lg:top-[-30.7%] 1408px:top-[-25.7%]"
+                            src="src/images/Rectangle 252.png" alt="" />
+                        <img class="w-10 618:w-16 lg:w-24 1408px:w-32 ml-[-6px]"
+                            src="src/icons/lucide_contact-round.svg" alt="" />
+                        <h2
+                            class="font-extrabold text-2xl 618:text-[28px] 834px:text-[26px] lg:text-4xl 1408px:text-[48px] max-w-[35.5rem] 618:leading-[37px] lg:leading-[4.0625rem] text-white text-center 834px:text-left">
+                            Liên Hệ
+                            <span class="block mr-1 1408px:mr-3">Với Chúng Tôi</span>
+                            Ngay Bây Giờ
+                        </h2>
+                    </div>
+                    <div
+                        class="flex flex-col gap-6 lg:gap-9 1408px:gap-12 lg:pt-9 1408px:pt-[31px] 834px:pb-9 lg:pb-24 1408px:pb-[122px] 834px:w-[60%] lg:w-auto">
+                        <h3
+                            class="text-[#00355D] 834px:text-white z-20 text-2xl 1408px:text-[2rem] font-bold text-center mx-auto 1408px:leading-[44px] mt-8 834px:mt-9 1408px:mt-24">
+                            ĐĂNG KÝ
+                            <span class="block 834px:inline">NHẬN TƯ VẤN MIỄN PHÍ</span>
+                        </h3>
+
+                        <div class="flex flex-col gap-4 lg:gap-5 1408px:gap-8 834px:items-center">
+                            <!-- <div class="flex flex-col 834px:flex-row gap-4 lg:gap-5 1408px:gap-8"> -->
+                            <div class="grid grid-cols-1 834px:grid-cols-2 gap-4 lg:gap-5 1408px:gap-8 w-full">
+                                <!-- <div class="flex flex-col gap-4 lg:gap-5 1408px:gap-8"> -->
+                                <input
+                                    class="834px:order-1 lg:w-[250px] 1408px:w-[328px] rounded-md 1408px:rounded-[10px] bg-transparent border-2 border-[#A1A1AA] 834px:border-white focus:outline-none text-[#A1A1AA] 834px:text-white placeholder-[#A1A1AA] 834px:placeholder-white py-[6px] 535:py-[10px] 1408px:py-2 text-sm 1408px:text-lg font-bold"
+                                    type="text" placeholder="Họ tên" />
+
+                                <input
+                                    class="834px:order-3 lg:w-[250px] 1408px:w-[328px] rounded-md 1408px:rounded-[10px] bg-transparent border-2 border-[#A1A1AA] 834px:border-white outline-none text-[#A1A1AA] 834px:text-white placeholder-[#A1A1AA] 834px:placeholder-white py-[6px] 535:py-[10px] 1408px:py-2 text-sm 1408px:text-lg font-bold"
+                                    type="text" placeholder="Email" />
+                                <!-- </div> -->
+                                <!-- <div class="flex flex-col gap-4 lg:gap-5 1408px:gap-8"> -->
+                                <input
+                                    class="834px:order-2 lg:w-[250px] 1408px:w-[328px] rounded-md 1408px:rounded-[10px] bg-transparent border-2 border-[#A1A1AA] 834px:border-white outline-none text-[#A1A1AA] 834px:text-white placeholder-[#A1A1AA] 834px:placeholder-white py-[6px] 535:py-[10px] 1408px:py-2 text-sm 1408px:text-lg font-bold"
+                                    type="text" placeholder="Số điện thoại" />
+
+                                <input
+                                    class="834px:order-4 lg:w-[250px] 1408px:w-[328px] rounded-md 1408px:rounded-[10px] bg-transparent border-2 border-[#A1A1AA] 834px:border-white outline-none text-[#A1A1AA] 834px:text-white placeholder-[#A1A1AA] 834px:placeholder-white py-[6px] 535:py-[10px] 1408px:py-2 text-sm 1408px:text-lg font-bold"
+                                    type="text" placeholder="Dịch vụ cần tư vấn" />
+                                <!-- </div> -->
+                            </div>
+                            <textarea
+                                class="h-[117px] 834px:h-36 w-full rounded-md 1408px:rounded-[10px] bg-transparent border-2 border-[#A1A1AA] 834px:border-white outline-none text-[#A1A1AA] 834px:text-white placeholder-[#A1A1AA] 834px:placeholder-white py-[5px] 1408px:py-2 text-sm 1408px:text-lg font-bold"
+                                placeholder="Nội dung"></textarea>
+
+                            <button
+                                class="self-start mx-auto bg-gradient-to-r from-[#00B8C4] to-[#2AD8CD] text-[14px] lg:text-lg font-bold text-white rounded-full py-[10px] px-4 lg:px-6 1408px:px-8 lg:py-2.5 1408px:py-3">
+                                Liên Hệ Ngay
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Section Contact -->
+    </main>
+    <!-- End Main -->
+
+    <!-- Start Footer -->
+    <footer class="max-w-full bg-[#23233F] mt-[61px] h-[921px] 1408px:h-auto 1408px:mt-[5.9375rem]">
+        <section class="max-w-[1408px] mx-auto pt-[5.5rem] *:text-white hidden 1408px:grid grid-cols-3">
+            <div class="pl-2 pt-2">
+                <img src="src/images/footer.png" alt="" />
+                <p class="text-[15px] font-[400] w-[448px] pt-[1rem] leading-7">
+                    Chúng tôi luôn chắc chắn về mục đích thiết kế website của khách
+                    hàng. Website chuyên nghiệp trước hết phải phù hợp với hệ thống nhận
+                    diện thương hiệu của doanh nghiệp, logic nội dung chặt chẽ và ổn
+                    định
+                </p>
+                <div class="menu-footer pt-11">
+                    <h3 class="text-lg font-semibold">DỊCH VỤ</h3>
+                    <ul class="*:mt-[0.75rem]">
+                        <li>
+                            <a href="">Dịch vụ</a>
+                        </li>
+                        <li>
+                            <a href="">Dịch vụ</a>
+                        </li>
+                        <li>
+                            <a href="">Dịch vụ</a>
+                        </li>
+                        <li>
+                            <a href="">Dịch vụ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <div class="menu-footer pl-[17px] pt-1">
+                    <h1 class="text-lg font-semibold mt-1 leading-6">VỀ CHÚNG TÔI</h1>
+                    <ul class="text-[16px] *:mt-[0.75rem] font-medium">
+                        <li>
+                            <a href="">List item</a>
+                        </li>
+                        <li>
+                            <a href="">List item</a>
+                        </li>
+                        <li>
+                            <a href="">List item</a>
+                        </li>
+                        <li>
+                            <a href="">List item</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu-footer pt-[5.8rem] pl-[18px]">
+                    <h1 class="font-semibold text-[18px]">CHÍNH SÁCH</h1>
+
+                    <ul class="*:mt-3">
+                        <li>
+                            <a href="">Chính sách</a>
+                        </li>
+                        <li>
+                            <a href="">Chính sách</a>
+                        </li>
+                        <li>
+                            <a href="">Chính sách</a>
+                        </li>
+                        <li>
+                            <a href="">Chính sách</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="max-w-[446px]">
+                <div class="menu-footer pt-[7px] pl-7">
+                    <h1 class="text-[18px] text-white font-semibold m-0 mb-[0.4375rem]">
+                        LIÊN HỆ
+                    </h1>
+
+                    <ul class="*:flex *:leading-[1.3rem] *:tracking-[0.4px] *:gap-4 *:pt-[10px]">
+                        <li>
+                            <img class="w-4 h-5" src="./src/icons/address.svg" alt="" />
+                            <a class="text-[16px] tracking-[0.4px] font-normal" href="">Số 102 Trần Phú, Phường Mộ Lao,
+                                Quận Hà Đông, TP.Hà Nội.</a>
+                        </li>
+                        <li>
+                            <img class="w-5 h-5" src="src/icons/phone.svg" alt="" />
+                            <a class="text-[16px] font-normal" href="">Hotline: 0973-258-886</a>
+                        </li>
+                        <li>
+                            <img class="w-5 h-5" src="src/icons/mail.svg" alt="" />
+                            <a class="text-[16px] font-normal" href="">info@webopsagency.com</a>
+                        </li>
+                        <li>
+                            <img class="w-5 h-5" src="src/icons/description_FILL0_wght400_GRAD0_opsz24 1.svg" alt="" />
+                            <a class="text-[16px] font-normal" href="">GPKD: 0107756568</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="pt-[4.6rem]">
+                    <h1 class="font-semibold text-lg pl-[28px] m-0">
+                        THEO DÕI CHÚNG TÔI
+                    </h1>
+
+                    <ul class="flex gap-[32px] pt-[10px] pl-[28px]">
+                        <li>
+                            <a href=""><img src="src/icons/facebook-square.svg" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href=""><img src="src/icons/instagram.svg" /></a>
+                        </li>
+                        <li>
+                            <a href=""><img src="src/icons/tiktok.svg" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href=""><img src="src/icons/twitter-square.svg" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href=""><img src="src/icons/youtube-square.svg" alt="" /></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="hidden 1408px:block max-w-[1426px] mt-[49px] mx-auto max-1444px:px-[17px]">
+            <div class="border-t-2 border-white flex pt-[22px] justify-between mx-auto ml-[17px] max-1444px:ml-0">
+                <div class="font-semibold text-[16px] text-white pt-[6px]">
+                    Copyright WebOpsAgency
+                </div>
+                <div class="-mt-[2px]">
+                    <img src="src/images/image 406.png" alt="" />
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    <!-- End Footer -->
+
+    <script src="./node_modules/flowbite/dist/flowbite.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        //Slide
+
+        // var swiper = new Swiper(".mySwiper", {
+        //   slidesPerView: 1,
+        //   // spaceBetween: 32,
+        //   navigation: {
+        //     nextEl: ".button-next",
+        //     prevEl: ".button-prev",
+        //   },
+        //   breakpoints: {
+        //     320: {
+        //       slidesPerView: 1,
+        //       // spaceBetween: 20,
+        //     },
+        //     640: {
+        //       slidesPerView: 2,
+        //       spaceBetween: 32,
+        //     },
+        //   },
+        // });
+
+        var swiper2 = new Swiper(".mySwiper2", {
+            slidesPerView: 3,
+            spaceBetween: 32,
+            // autoplay: {
+            //   delay: 2000,
+            // },
+            navigation: {
+                nextEl: ".swiper2-button-next",
+                prevEl: ".swiper2-button-prev",
+            },
+
+            breakpoints: {
+                320: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                834: {
+                    slidesPerView: 3,
+                    spaceBetween: 24,
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 32,
+                },
+                // 1900: {
+                //   slidesPerView: 3,
+                //   spaceBetween: 32,
+                // },
+            },
+        });
+
+        var swiper3 = new Swiper(".mySwiper3", {
+            slidesPerView: 3,
+
+            grid: {
+                rows: 3,
+                fill: "row",
+            },
+            spaceBetween: 32,
+            navigation: {
+                nextEl: ".swiper3-button-next",
+                prevEl: ".swiper3-button-prev",
+            },
+
+            breakpoints: {
+                320: {
+                    slidesPerView: 2,
+                    grid: {
+                        rows: 1,
+                    },
+                    spaceBetween: 20,
+                },
+                834: {
+                    slidesPerView: 3,
+                    grid: {
+                        rows: 3,
+                        fill: "row",
+                    },
+                    spaceBetween: 32,
+                },
+            },
+        });
+
+        // document.addEventListener("DOMContentLoaded", function () {
+        //   function handleResize() {
+        //     var element = document.getElementById("myElement");
+        //     if (window.innerWidth < 1024) {
+        //       // 1024px là breakpoint của 'lg' trong Tailwind
+        //       element.classList.add("swiper");
+        //     } else {
+        //       element.classList.remove("swiper");
+        //     }
+        //   }
+
+        //   // Kiểm tra kích thước màn hình khi tải trang
+        //   handleResize();
+
+        //   // Kiểm tra kích thước màn hình khi thay đổi kích thước cửa sổ
+        //   window.addEventListener("resize", handleResize);
+        // });
+    </script>
+</body>
+
+</html>

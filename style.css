@@ -6,3 +6,21 @@
 body {
     font-family: 'Nunito', sans-serif;
 }
+
+.swiper-cus {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    z-index: 1;
+    display: block;
+}
+
+.clip-img {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 79.5%, 50% 97.5%, 0% 79.3%);
+}
+
+.layout-project--lg {
+    @apply grid lg:grid-cols-4 834px:grid-cols-3 grid-cols-2;
+}
