@@ -7908,6 +7908,10 @@ body {
     width: 48%;
   }
 
+  .max-xl\:w-\[55\%\] {
+    width: 55%;
+  }
+
   .max-xl\:w-\[60\%\] {
     width: 60%;
   }
@@ -7934,10 +7938,6 @@ body {
 
   .max-xl\:w-full {
     width: 100%;
-  }
-
-  .max-xl\:w-\[55\%\] {
-    width: 55%;
   }
 
   .max-xl\:flex-col {
@@ -8451,10 +8451,6 @@ body {
     width: 100%;
   }
 
-  .max-lg\:w-\[55\%\] {
-    width: 55%;
-  }
-
   .max-lg\:flex-none {
     flex: none;
   }
@@ -8854,16 +8850,16 @@ body {
     height: 2762px;
   }
 
+  .max-md\:w-\[100\%\] {
+    width: 100%;
+  }
+
   .max-md\:w-\[20rem\] {
     width: 20rem;
   }
 
   .max-md\:w-\[80\%\] {
     width: 80%;
-  }
-
-  .max-md\:w-\[100\%\] {
-    width: 100%;
   }
 
   .max-md\:flex-col {
@@ -9289,6 +9285,16 @@ body {
 
   .max-515px\:border {
     border-width: 1px;
+  }
+}
+
+@media not all and (min-width: 468px) {
+  .max-468\:block {
+    display: block;
+  }
+
+  .max-468\:hidden {
+    display: none;
   }
 }
 
