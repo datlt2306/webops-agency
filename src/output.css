@@ -7936,6 +7936,10 @@ body {
     width: 100%;
   }
 
+  .max-xl\:w-\[55\%\] {
+    width: 55%;
+  }
+
   .max-xl\:flex-col {
     flex-direction: column;
   }
@@ -8447,6 +8451,10 @@ body {
     width: 100%;
   }
 
+  .max-lg\:w-\[55\%\] {
+    width: 55%;
+  }
+
   .max-lg\:flex-none {
     flex: none;
   }
@@ -8852,6 +8860,10 @@ body {
 
   .max-md\:w-\[80\%\] {
     width: 80%;
+  }
+
+  .max-md\:w-\[100\%\] {
+    width: 100%;
   }
 
   .max-md\:flex-col {
