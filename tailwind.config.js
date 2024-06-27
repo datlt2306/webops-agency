@@ -69,7 +69,6 @@ module.exports = {
       '2xl': '1536px',
       '1800px': '1800px',
       '1818px': '1818px',
-      '21408px': '21408px'
     },
     fontFamily: {
       Nunito: ['Nunito', 'sans-serif']
