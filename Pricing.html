@@ -37,8 +37,8 @@
                 </div>
                 <!-- End logo -->
                 <!-- Menu -->
-                <div class="menu flex max-sm:hidden max-sm:w-auto max-sm:-mr-0">
-                    <ul class="flex items-center mt-[1px]">
+                <div class="menu hidden sm:flex max-sm:w-auto max-sm:-mr-0">
+                    <ul class="hidden sm:flex items-center mt-[1px]">
                         <li
                             class="font-bold leading-[1.75rem] text-[#FFFFFF] text-[18px] max-xl:text-[14px] max-874px:text-[11px] hover:border-b-2 hover:border-Teal-400 hover:text-Teal-400 hover:pt-[2px]">
                             <a class="m-3 max-780px:m-[7px]" href="">Về chúng
@@ -82,9 +82,9 @@
                             d="M1 1h15M1 7h15M1 13h15" />
                     </svg>
                 </button>
-                <div class="w-full sm:w-auto hidden mx-auto" id="navbar-default">
+                <div class="w-full hidden sm:hidden mx-auto" id="navbar-default">
                     <ul
-                        class="font-semibold flex flex-col p-4 sm:p-0 mt-4 border border-gray-100 rounded sm bg-gray-50 sm:flex-row sm:space-x-8 rtl:space-x-reverse sm:mt-0 sm:border-0 sm:bg-white dark:bg-gray-800 sm:dark:bg-gray-900 dark:border-gray-700 max-sm:absolute max-sm:w-[89%] mx-auto">
+                        class="font-semibold flex sm:hidden flex-col p-4 sm:p-0 mt-4 border border-gray-100 rounded bg-gray-50 sm:flex-row sm:space-x-8 rtl:space-x-reverse sm:mt-0 sm:border-0 sm:bg-white dark:bg-gray-800 sm:dark:bg-gray-900 dark:border-gray-700 max-sm:absolute max-sm:w-[89%] mx-auto left-[50%] translate-x-[-50%]">
                         <li>
                             <a href="#"
                                 class="block py-2 px-3 text-white bg-blue-700 rounded sm:bg-transparent sm:text-blue-700 sm:p-0 dark:text-white sm:dark:text-blue-500"
@@ -123,7 +123,7 @@
                         Website</h1>
                 </div>
                 <div
-                    class="w-full h-[84%] mx-auto flex justify-between pt-[92px] relative max-lg:flex-col max-lg:items-center max-lg:pt-0 max-lg:justify-normal max-lg:h-[96%] max-lg:gap-[150px] max-1450px:w-[88%]">
+                    class="w-full h-[84%] mx-auto flex justify-between pt-[92px] relative max-lg:flex-col max-lg:items-center max-lg:pt-0 max-lg:justify-normal max-lg:h-[96%] max-lg:gap-[150px] max-1450px:w-[88%] max-394px:w-full max-394px:gap-[146px]">
                     <div
                         class="relative w-[31.8%]  top-16 max-lg:w-[89.83%] max-lg:top-0 max-lg:h-[28.51%] max-lg:flex max-lg:justify-center">
                         <div
@@ -359,9 +359,9 @@
 
         <!-- ==================================Quy trình thiết kế=================================== -->
         <section class="w-full max-md:h-[2762px] max-1450px:w-full max-1450px:flex max-1450px:justify-center">
-            <div class="w-[88rem] mx-auto py-24 max-394px:hidden max-1450px:w-[88%]">
+            <div class="w-[88rem] mx-auto py-24 max-1450px:w-[88%]">
                 <div
-                    class="w-full *:font-bold *:text-[40px] *:leading-[54.56px] *:text-center flex flex-col items-center justify-center gap-[17px] max-lg:*:text-[24px]">
+                    class="w-full *:font-bold *:text-[40px] *:leading-[54.56px] *:text-center flex flex-col items-center justify-center gap-[17px] max-lg:*:text-[24px] max-394px:*:text-[18px]">
                     <h1 class="m-0 bg-gradient-to-tr from-bluebold to-lightblue text-white px-12 py-4 rounded-full">
                         Quy Trình Thiết Kế Website
                     </h1>
@@ -597,7 +597,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="w-full pt-[95px] flex-col gap-[150px] hidden max-1180px:flex max-md:gap-[16px]">
+                <div
+                    class="w-full pt-[95px] flex-col gap-[150px] hidden max-1180px:flex max-md:gap-[16px] max-394px:pt-[4.5rem]">
                     <div class="grid relative grid-cols-2 gap-4 max-md:flex max-md:flex-col">
                         <div class="border border-gray-300 px-[23px] py-[23px] h-[280px]">
                             <div class="flex relative items-center justify-between">
@@ -1514,7 +1515,7 @@
         </footer>
     </div>
 </body>
-<script src="./node_modules/flowbite/dist/flowbite.min.js"></script>
+<script type="module" src="./node_modules/flowbite/dist/flowbite.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 </html>
