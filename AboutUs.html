@@ -1,0 +1,1500 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="src/output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="w-full h-auto mx-auto font-Nunito -ml-[1px]">
+      <!-- =====================================Logo & Header===================================== -->
+      <div
+        class="bg-gradient-to-t from-light to-lightbold mx-auto max-xl:min-h-[65.625rem] min-h-[93.625rem] max-lg:min-h-[77.625rem] max-sm:min-h-[46.625rem] max-641px:min-h-[87.625rem] overflow-hidden relative max-394px:min-h-[619px] max-445px:min-h-[660px] max-1450px:min-h-[83.625rem]"
+      >
+        <div class="mx-auto relative">
+          <div class="mx-auto w-full h-full overflow-hidden">
+            <img
+              class="mix-blend-multiply absolute overflow-hidden h-[53.125rem] top-0 z-10 w-full max-sm:h-[298px]"
+              src="src/images/Rectangle 111.jpg"
+              alt=""
+            />
+          </div>
+          <div class="mx-auto w-full h-full overflow-hidden">
+            <img
+              class="mix-blend-multiply absolute overflow-hidden h-[53.125rem] top-0 z-10 w-full max-sm:h-[298px]"
+              src="src/images/Rectangle 304.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <!-- /* ================================== HEADER==================================== */ -->
+        <header
+          class="w-[88rem] h-[6.375rem] flex items-center justify-between relative z-20 mx-auto max-sm:w-full max-sm:h-full max-sm:pl-[21px] max-sm:pr-[16px] max-sm:pt-[16px] max-sm:pb-[17px] max-sm:flex-wrap max-sm:z-40 max-xl:w-[88%] max-1450px:w-[88%]"
+        >
+          <!-- Logo -->
+          <div class="logo max-sm:w-[13.6%] max-874px:w-[11%]">
+            <a href="#"> <img src="src/images/logo 1.svg" alt="" /></a>
+          </div>
+          <!-- End logo -->
+          <!-- Menu -->
+          <div class="menu hidden sm:flex max-sm:w-auto max-sm:-mr-0">
+            <ul class="hidden sm:flex items-center mt-[1px]">
+              <li
+                class="font-bold leading-[1.75rem] text-[#FFFFFF] text-[18px] max-xl:text-[14px] max-874px:text-[11px] hover:border-b-2 hover:border-Teal-400 hover:text-Teal-400 hover:pt-[2px]"
+              >
+                <a class="m-3 max-780px:m-[7px]" href="">Về chúng tôi</a>
+              </li>
+              <li
+                class="leading-6 font-bold text-[#FFFFFF] text-[18px] max-xl:text-[14px] max-874px:text-[11px] hover:border-b-2 hover:border-Teal-400 hover:text-Teal-400 hover:pt-[2px]"
+              >
+                <a class="m-3 max-780px:m-[7px]" href="">Dự án</a>
+              </li>
+              <li
+                class="leading-6 font-bold text-[#FFFFFF] text-[18px] max-xl:text-[14px] max-874px:text-[11px] hover:border-b-2 hover:border-Teal-400 hover:text-Teal-400 hover:pt-[2px]"
+              >
+                <a class="m-3 max-780px:m-[7px]" href="">Dịch vụ</a>
+              </li>
+              <li
+                class="leading-6 font-bold text-[#FFFFFF] text-[18px] max-xl:text-[14px] max-874px:text-[11px] hover:border-b-2 hover:border-Teal-400 hover:text-Teal-400 hover:pt-[2px]"
+              >
+                <a class="m-3 max-780px:m-[7px]" href="">Bảng giá</a>
+              </li>
+              <li
+                class="leading-6 font-bold text-[#FFFFFF] text-[18px] max-xl:text-[14px] max-874px:text-[11px] hover:border-b-2 hover:border-Teal-400 hover:text-Teal-400 hover:pt-[2px]"
+              >
+                <a class="m-3 max-780px:m-[7px]" href="">Tin tức</a>
+              </li>
+              <li
+                class="leading-6 font-bold text-[#FFFFFF] text-[18px] max-xl:text-[14px] max-874px:text-[11px] hover:border-b-2 hover:border-Teal-400 hover:text-Teal-400 hover:pt-[2px]"
+              >
+                <a class="m-3 max-780px:m-[7px]" href="">Liên hệ</a>
+              </li>
+            </ul>
+            <div
+              class="ml-[0.8125rem] font-bold gap-[10px] text-[#FFFFFF] text-[18px] w-[226px] flex items-center justify-center h-[49px] bg-[#2AD8CD] rounded-[100px] mt-[2px] max-xl:text-[14px] max-xl:w-[188px] max-xl:h-[46px] max-780px:text-[11px] max-780px:w-[139px]"
+            >
+              <img class="pl-[3px]" src="src/icons/Vector.svg" alt="" />
+              <a class="pl-[2px]">098 - 888 - 8888</a>
+            </div>
+          </div>
+          <!-- ========================Menu-Mobile================================ -->
+          <button
+            data-collapse-toggle="navbar-default"
+            type="button"
+            class="hidden max-sm:inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg focus:outline-none focus:ring-2 focus:border dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-default"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-5 h-5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 17 14"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15"
+              />
+            </svg>
+          </button>
+          <div class="w-full hidden sm:hidden mx-auto" id="navbar-default">
+            <ul
+              class="font-semibold flex sm:hidden flex-col p-4 sm:p-0 mt-4 border border-gray-100 rounded bg-gray-50 sm:flex-row sm:space-x-8 rtl:space-x-reverse sm:mt-0 sm:border-0 sm:bg-white dark:bg-gray-800 sm:dark:bg-gray-900 dark:border-gray-700 max-sm:absolute max-sm:w-[89%] mx-auto left-[50%] translate-x-[-50%]"
+            >
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-white bg-blue-700 rounded sm:bg-transparent sm:text-blue-700 sm:p-0 dark:text-white sm:dark:text-blue-500"
+                  aria-current="page"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 sm:hover:bg-transparent sm:border-0 sm:hover:text-blue-700 sm:p-0 dark:text-white sm:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white sm:dark:hover:bg-transparent"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 sm:hover:bg-transparent sm:border-0 sm:hover:text-blue-700 sm:p-0 dark:text-white sm:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white sm:dark:hover:bg-transparent"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 sm:hover:bg-transparent sm:border-0 sm:hover:text-blue-700 sm:p-0 dark:text-white sm:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white sm:dark:hover:bg-transparent"
+                  >Pricing</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 sm:hover:bg-transparent sm:border-0 sm:hover:text-blue-700 sm:p-0 dark:text-white sm:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white sm:dark:hover:bg-transparent"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- ======================End-Menu-Mobile================================ -->
+          <!-- ENd Menu -->
+        </header>
+        <!-- /* ================================== END HEADER==================================== */ -->
+        <div class="w-full h-full flex justify-center">
+          <img
+            class="mix-blend-multiply max-w-max absolute bottom-0 ml-4 max-lg:w-full max-lg:h-full max-lg:m-0"
+            src="src/images/hanoiline [Converted] 2.jpg"
+            alt=""
+          />
+        </div>
+        <!-- ===================================Content=========================================== -->
+        <div
+          class="w-[88rem] absolute left-1/2 transform -translate-x-1/2 mx-auto z-30 pt-[1.5625rem] max-xl:pt-0 max-sm:w-full sm:w-full"
+        >
+          <div class="text-center text-white">
+            <h1
+              class="text-[4rem] font-extrabold py-[1rem] mb-[0.375rem] max-sm:text-[24px] max-sm:m-0 max-sm:ml-[3px] max-sm:py-[6px] max-xl:text-[3rem]"
+            >
+              About WebOps Agency
+            </h1>
+            <p
+              class="font-bold text-[1.125rem] text-center px-[14rem] leading-8 ml-[1.0625rem] max-sm:m-0 max-sm:p-0 max-641px:px-8 max-sm:text-[14px] max-sm:leading-[19px] max-sm:px-6 max-sm:ml-[3px] max-xl:text-[1rem] 2xl:w-[72%] 2xl:mx-auto 2xl:px-[14rem] md:px-16 641px:px-9"
+            >
+              Webops là một công ty thiết kế website được thành lập vào năm
+              2018. Sau một thời gian dài hoạt động, chúng tôi đã mở rộng hoạt
+              động đến 3 thị trường chính là Việt Nam, Nhật Bản và Châu Âu.
+            </p>
+          </div>
+          <div
+            class="w-[88rem] pt-[3rem] pb-[6rem] flex justify-center max-xl:py-8 max-sm:w-full max-sm:px-[20px] max-xl:w-[81%] mx-auto max-1450px:w-[88%] max-394px:py-4"
+          >
+            <img
+              class="max-xl:w-[100%]"
+              src="src/images/Rectangle 286.svg"
+              alt=""
+            />
+          </div>
+          <div
+            class="flex justify-between w-[88rem] mx-auto max-xl:w-[81%] max-xl:mx-auto max-xl:*:m-0 max-xl:gap-4 max-xl:*:w-[16.5rem] max-xl:*:h-[16.5rem] max-lg:flex-none max-lg:grid max-lg:grid-cols-2 max-lg:grid-rows-2 max-lg:gap-5 max-lg:w-[77%] max-lg:mx-auto max-lg:*:w-full max-sm:pl-0 max-sm:gap-4 max-sm:w-[90%] max-sm:h-full max-1450px:w-[88%] max-1450px:mx-auto max-1450px:*:m-0 max-1450px:gap-4 max-1450px:*:h-[18.5rem]"
+          >
+            <div
+              class="w-[20.5rem] h-[20.5rem] rounded-[1.25rem] bg-white flex flex-col justify-center items-center shadow-normal mt-[1px] max-sm:w-[99%] max-sm:h-[100%] max-sm:py-[14px] max-sm:m-0 max-sm:rounded-[10px] max-1180px:h-[13.5rem]"
+            >
+              <div class="pb-2 max-sm:w-[15%] max-sm:pb-[2px] max-xl:w-[20%]">
+                <img src="src/icons/people-outline.svg" alt="" />
+              </div>
+              <div class="pb-[0.625rem] max-sm:pb-[5px] number_KH">
+                <p
+                  id="number_KH"
+                  class="text-[4.5rem] font-extrabold max-xl:text-[3.5rem] max-sm:text-[1.5rem] max-1180px:text-[3rem]"
+                >
+                  70+
+                </p>
+              </div>
+              <div class="pb-[0.125rem]">
+                <p
+                  class="text-[1.5rem] text-tahiti max-xl:text-[1.3rem] max-sm:text-[14px] max-1180px:text-[1.1rem]"
+                >
+                  Khách hàng
+                </p>
+              </div>
+            </div>
+            <div
+              class="w-[20.5rem] h-[20.5rem] rounded-[1.25rem] bg-white flex flex-col justify-center items-center shadow-normal max-sm:w-[99%] max-sm:h-[100%] max-sm:m-0 max-sm:rounded-[10px] max-1180px:h-[13.5rem]"
+            >
+              <div class="pb-2 max-sm:w-[15%] max-sm:pb-[2px] max-xl:w-[20%]">
+                <img
+                  class="w-[4rem]"
+                  src="src/icons/folder-outline.svg"
+                  alt=""
+                />
+              </div>
+              <div class="pb-[0.625rem] max-sm:pb-[5px] number_DA">
+                <p
+                  id="number_DA"
+                  class="text-[4.5rem] font-extrabold max-xl:text-[3.5rem] max-sm:text-[1.5rem] max-1180px:text-[3rem]"
+                >
+                  500+
+                </p>
+              </div>
+              <div class="pb-[0.125rem]">
+                <p
+                  class="text-[1.5rem] text-tahiti max-xl:text-[1.3rem] max-sm:text-[14px] max-1180px:text-[1.1rem]"
+                >
+                  Dự án đã hoàn thành
+                </p>
+              </div>
+            </div>
+            <div
+              class="w-[20.5rem] h-[20.5rem] rounded-[1.25rem] bg-white flex flex-col justify-center items-center shadow-normal max-sm:w-[99%] max-sm:h-[100%] max-sm:m-0 max-sm:rounded-[10px] max-1180px:h-[13.5rem]"
+            >
+              <div class="pb-2 max-sm:w-[15%] max-sm:pb-[2px] max-xl:w-[20%]">
+                <img
+                  class="w-[4rem]"
+                  src="src/icons/library-outline.svg"
+                  alt=""
+                />
+              </div>
+              <div class="pb-[0.625rem] max-sm:pb-[5px] number_TEMP">
+                <p
+                  id="number_TEMP"
+                  class="text-[4.5rem] font-extrabold max-xl:text-[3.5rem] max-sm:text-[1.5rem] max-1180px:text-[3rem]"
+                >
+                  300+
+                </p>
+              </div>
+              <div class="pb-[0.125rem]">
+                <p
+                  class="text-[1.5rem] text-tahiti max-xl:text-[1.3rem] max-sm:text-[14px] max-1180px:text-[1.1rem]"
+                >
+                  Template đã phát triển
+                </p>
+              </div>
+            </div>
+            <div
+              class="w-[20.5rem] h-[20.5rem] rounded-[1.25rem] bg-white flex flex-col justify-center items-center shadow-normal - max-sm:w-[99%] max-sm:h-[100%] max-sm:m-0 max-sm:rounded-[10px] max-1180px:h-[13.5rem]"
+            >
+              <div class="pb-2 max-sm:w-[15%] max-sm:pb-[2px] max-xl:w-[20%]">
+                <img
+                  class="w-[4rem]"
+                  src="src/icons/heart-outline.svg"
+                  alt=""
+                />
+              </div>
+              <div class="pb-[0.625rem] max-sm:pb-[5px] number_HL">
+                <p
+                  id="number_HL"
+                  class="text-[4.5rem] font-extrabold max-xl:text-[3.5rem] max-sm:text-[1.5rem] max-1180px:text-[3rem]"
+                >
+                  100%
+                </p>
+              </div>
+              <div class="pb-[0.125rem]">
+                <p
+                  class="text-[1.5rem] text-tahiti max-xl:text-[1.3rem] max-sm:text-[14px] max-1180px:text-[1.1rem]"
+                >
+                  Khách hàng hài lòng
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ===================================End Content=========================================== -->
+      </div>
+      <!-- ===================================End Logo & Header========================== -->
+      <!-- ====================================Kết Nối Hiện Đại===================================== -->
+      <section
+        class="max-w-[88rem] mx-auto py-[34px] max-sm:w-full max-sm:py-0"
+      >
+        <div
+          class="flex justify-between items-center pt-[30px] max-sm:flex-col-reverse max-xl:w-[88%] max-xl:mx-auto max-1450px:w-[88%] max-1450px:mx-auto max-1450px:gap-8 max-394px:w-full max-394px:gap-0"
+        >
+          <div
+            class="text-blk grid grid-flow-row grid-rows-2 gap-y-9 max-xl:gap-y-7 mt-[0.125rem] max-sm:w-[89.5%] max-sm:mx-auto max-sm:gap-0 max-sm:grid-rows-1 max-sm:pt-[18px] max-1450px:w-[51%]"
+          >
+            <div
+              class="w-[28rem] max-sm:w-full max-xl:w-[21rem] max-lg:w-[15rem]"
+            >
+              <h1
+                class="text-[3rem] max-xl:text-[2rem] leading-[4.0625rem] max-xl:leading-[3.0625rem] font-extrabold m-0 max-sm:text-[1.5rem] max-sm:leading-[33px]"
+              >
+                Kết Nối Hiện Đại – Giải Pháp Tối Ưu
+              </h1>
+            </div>
+            <div
+              class="w-[42rem] max-sm:w-full max-sm:pt-4 max-md:w-[20rem] max-1450px:w-full"
+            >
+              <p
+                class="font-medium text-[1.125rem] leading-8 max-xl:leading-[28px] -mt-1 max-sm:font-medium max-sm:text-[14px] max-sm:leading-[19px] max-xl:text-[14px]"
+              >
+                Sinh ra trong thế hệ cách mạng công nghệ 4.0, WebOps Agency mang
+                trong mình khát khao mang lại những giá trị hữu ích của công
+                nghệ số, giúp mọi doanh nghiệp lan tỏa những sản phẩm, dịch vụ
+                chất lượng của mình đến nhiều hơn với cộng đồng và ngày càng
+                phát triển.
+              </p>
+            </div>
+          </div>
+          <div
+            class="-mt-[0.1875rem] max-xl:mx-auto max-xl:w-[48%] max-sm:my-0 max-sm:w-[72%] max-1450px:mr-0"
+          >
+            <img
+              src="src/images/data_visualization_1_01 [Converted] 1.svg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div
+          class="flex justify-between items-center max-sm:flex-col max-xl:w-[88%] max-xl:mx-auto max-1450px:w-[88%] max-1450px:mx-auto max-1450px:gap-8 max-394px:w-full max-394px:gap-0"
+        >
+          <div
+            class="pl-[3.75rem] max-sm:p-0 max-sm:mx-auto max-sm:w-[71%] max-sm:pt-[33px] max-xl:w-[48%] max-xl:pl-[2.75rem]"
+          >
+            <img
+              src="src/images/Blockchain Ecosystem and Digital Asset Exchange 3_15 [Converted] 1.svg"
+              alt=""
+            />
+          </div>
+          <div
+            class="text-blk mt-[0.125rem] max-xl:m-0 max-sm:mx-auto max-sm:my-0 max-sm:w-[89.5%] max-sm:pt-[20px] max-1450px:w-[51%]"
+          >
+            <div
+              class="w-[35.5rem] max-xl:w-[26.5rem] pb-8 max-sm:w-full max-sm:p-0 max-sm:mx-auto max-md:w-[100%] max-857px:w-full"
+            >
+              <h1
+                class="text-[3rem] max-xl:text-[2rem] leading-[4.09rem] max-xl:leading-[3.09rem] font-extrabold text-blk m-0 max-sm:font-extrabold max-sm:text-[24px] max-sm:leading-[33px]"
+              >
+                Không Ngừng Khám Phá Và Sáng Tạo
+              </h1>
+            </div>
+            <div
+              class="w-[43rem] pb-4 max-sm:w-full max-sm:pb-[13px] max-sm:pt-[12px] max-1450px:w-[100%]"
+            >
+              <p
+                class="font-medium text-[1.125rem] max-xl:text-[14px] leading-8 max-xl:leading-[28px] max-sm:font-medium max-sm:text-[14px] max-sm:leading-[19.1px]"
+              >
+                Với sự đam mê và nhiệt huyết, chúng tôi không ngừng khám phá và
+                sáng tạo, mang đến những dịch vụ hiệu quả nhất tới khách hàng:
+              </p>
+            </div>
+            <div>
+              <ul
+                class="font-medium text-[1.125rem] max-xl:text-[14px] leading-8 max-xl:leading-[28px] list-disc pb-[0.125rem] pl-[1.75rem] max-sm:font-medium max-sm:text-[14px] max-sm:leading-[19px] max-sm:pl-[24px]"
+              >
+                <li>Thiết kế website chuẩn SEO</li>
+                <li>Quản trị website, xây dựng content</li>
+                <li>Xây dựng phần mềm, CRM, ERP</li>
+                <li>Dịch vụ hosting & email doanh nghiệp</li>
+                <li>Google Ads & Facebook Ads</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- =================================End Kết Nối Hiện Đại==================================== -->
+
+      <!-- ====================================Tầm nhìn============================================= -->
+      <section class="w-full relative pt-[37px] h-full">
+        <div
+          class="relative w-full h-[53.125rem] bg-cus2 max-xl:h-[44rem] max-lg:h-[1552px]"
+        >
+          <div
+            class="absolute w-[88rem] mx-auto flex justify-between top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 -mt-[0.1875rem] max-xl:w-[63rem] max-xl:gap-4 max-lg:w-full max-lg:flex-col max-lg:top-0 max-lg:left-0 max-lg:translate-x-0 max-lg:translate-y-0 max-lg:items-center max-lg:h-full max-lg:mt-0 max-lg:pt-[59px] max-lg:pb-[66px] max-2xl:w-[88%] max-2xl:gap-[14px]"
+          >
+            <div
+              class="relative w-[28rem] flex flex-col justify-center items-center max-xl:w-[22rem] max-2xl:w-[24rem]"
+            >
+              <div
+                class="absolute -top-[0.875rem] max-xl:-top-[8px] max-lg:w-[68%] max-lg:ml-[2px] max-xl:w-[77%]"
+              >
+                <img class="" src="src/images/Rectangle 287.svg" alt="" />
+              </div>
+              <div
+                class="absolute -bottom-[1.125rem] max-xl:-bottom-[1rem] max-lg:w-[68%] max-lg:-bottom-[89px] max-lg:ml-[2px] max-xl:w-[77%]"
+              >
+                <img class="" src="src/images/Rectangle 288.svg" alt="" />
+              </div>
+              <div class="absolute top-[0.125rem]">
+                <img class="" src="src/images/Rectangle 290.svg" alt="" />
+              </div>
+              <div class="z-0 -mt-[0.125rem]">
+                <div class="pt-[4.3125rem] max-lg:pt-[113px] max-lg:pl-[3px]">
+                  <h3
+                    class="font-bold text-[2rem] text-center max-lg:text-[24px] max-lg:font-bold max-xl:text-[1.75rem] max-1375px:text-[28px]"
+                  >
+                    Tầm nhìn
+                  </h3>
+                </div>
+                <div
+                  class="w-[24.5rem] text-center text-[1.125rem] max-xl:text-[0.875rem] leading-[1.75rem] max-xl:leading-[1.5rem] font-medium ml-[0.5625rem] px-[0.125rem] pt-[1.125rem] max-xl:px-[24px] max-xl:ml-0 max-lg:font-medium max-lg:text-[14px] max-lg:pl-[42px] max-lg:pr-[40px] max-lg:leading-[22px] max-lg:pt-[19px] max-2xl:ml-0 max-2xl:px-[1.125rem] max-2xl:w-full max-1375px:text-[14px]"
+                >
+                  <p>
+                    Chúng tôi hướng tới một tương lai mà mọi người, từ cá nhân
+                    đến doanh nghiệp, đều có thể tận dụng sức mạnh của công nghệ
+                    để thúc đẩy sự sáng tạo, nâng cao hiệu suất, và tạo ra giá
+                    trị bền vững cho xã hội.
+                  </p>
+                </div>
+                <div
+                  class="flex justify-center items-center pt-8 max-xl:pt-4 max-lg:pt-[27px] max-lg:pl-[4px]"
+                >
+                  <img
+                    class="max-lg:w-[20%] max-xl:w-[24%]"
+                    src="src/icons/target.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div
+                class="absolute -top-[0.875rem] max-xl:-top-[8px] max-lg:w-[61%] max-lg:ml-[2px] max-xl:w-[60%]"
+              >
+                <img class="" src="src/images/Rectangle 289.svg" alt="" />
+              </div>
+            </div>
+            <div
+              class="relative w-[28rem] flex flex-col justify-center items-center max-xl:w-[22rem] max-2xl:w-[24rem]"
+            >
+              <div
+                class="absolute -top-[0.875rem] max-lg:w-[68%] max-lg:-top-[11px] max-lg:ml-[2px] max-xl:w-[77%] max-xl:-top-2"
+              >
+                <img class="" src="src/images/Rectangle 287.svg" alt="" />
+              </div>
+              <div
+                class="absolute -bottom-[1.125rem] max-xl:-bottom-[1rem] max-lg:w-[68%] max-lg:-bottom-[84px] max-lg:ml-[2px] max-xl:w-[77%]"
+              >
+                <img class="" src="src/images/Rectangle 288.svg" alt="" />
+              </div>
+              <div class="absolute top-[0.125rem]">
+                <img class="" src="src/images/Rectangle 290.svg" alt="" />
+              </div>
+              <div class="z-0 -mt-[0.125rem]">
+                <div class="pt-[4.3125rem] max-lg:pt-[113px] max-lg:pl-[3px]">
+                  <h3
+                    class="font-bold text-[2rem] text-center max-lg:text-[24px] max-lg:font-bold max-xl:text-[1.75rem] max-1375px:text-[28px]"
+                  >
+                    Sứ mệnh
+                  </h3>
+                </div>
+                <div
+                  class="w-[24.5rem] text-center text-[1.125rem] max-xl:text-[0.875rem] leading-[1.75rem] font-medium pt-[1.125rem] ml-[0.5625rem] max-xl:px-[24px] max-xl:ml-0 max-lg:font-medium max-lg:text-[14px] max-lg:leading-[22px] max-lg:pt-[20px] max-lg:pl-[40px] max-lg:pr-[38px] max-2xl:ml-0 max-2xl:px-[1.125rem] max-2xl:w-full max-1375px:text-[14px]"
+                >
+                  <p>
+                    Sứ mệnh của chúng tôi là biến ý tưởng thành hiện thực, từ
+                    việc xây dựng những giao diện đẹp mắt đến việc tối ưu hóa
+                    trải nghiệm người dùng, để mang lại giá trị và thành công
+                    cho mỗi dự án của khách hàng.
+                  </p>
+                </div>
+                <div
+                  class="flex justify-center items-center pt-8 max-xl:pt-4 max-lg:pt-[27px] max-lg:pl-[3px]"
+                >
+                  <img
+                    class="max-lg:w-[20%] max-xl:w-[24%]"
+                    src="src/icons/rocket-outline.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div
+                class="absolute -top-[0.875rem] max-lg:w-[61%] max-lg:-top-[11px] max-lg:ml-[2px] max-xl:w-[60%] max-xl:-top-2"
+              >
+                <img class="" src="src/images/Rectangle 289.svg" alt="" />
+              </div>
+            </div>
+            <div
+              class="relative w-[28rem] flex flex-col justify-center items-center max-xl:w-[22rem] max-2xl:w-[24rem] max-lg:mr-0 max-2xl:mr-0"
+            >
+              <div
+                class="absolute -top-[0.875rem] max-lg:w-[68%] max-lg:-top-[11px] max-xl:w-[77%] max-xl:-top-2"
+              >
+                <img class="" src="src/images/Rectangle 287.svg" alt="" />
+              </div>
+              <div
+                class="absolute -bottom-[1.125rem] max-xl:-bottom-[1rem] max-lg:w-[68%] max-lg:-bottom-[15px] max-xl:w-[77%]"
+              >
+                <img class="" src="src/images/Rectangle 288.svg" alt="" />
+              </div>
+              <div class="z-0 opacity-0">
+                <img class="" src="src/images/Rectangle 290.svg" alt="" />
+              </div>
+              <div class="absolute top-[0.125rem]">
+                <img class="" src="src/images/Rectangle 290.svg" alt="" />
+              </div>
+              <div class="absolute">
+                <div
+                  class="pt-[0.6875rem] max-xl:pt-[1.6875rem] max-lg:pt-[10px]"
+                >
+                  <h3
+                    class="font-bold text-[2rem] text-center pt-[3.5rem] max-xl:pt-[2.5rem] max-lg:text-[24px] max-lg:font-bold max-xl:text-[1.75rem] max-1375px:text-[28px]"
+                  >
+                    Giá trị cốt lõi
+                  </h3>
+                </div>
+                <div
+                  class="w-[24.5rem] text-center text-[1.125rem] max-xl:text-[0.875rem] leading-[1.75rem] pt-[1.125rem] font-medium ml-[0.5625rem] max-xl:m-0 max-xl:px-[24px] ax-394px:font-medium max-lg:text-[14px] max-lg:leading-[22px] max-lg:px-[40px] max-2xl:ml-0 max-2xl:px-[1.125rem] max-2xl:w-full max-1375px:text-[14px]"
+                >
+                  <p>
+                    Sự minh bạch, trung thực và trách nhiệm là những nguyên tắc
+                    cốt lõi mà chúng tôi tuân thủ, giúp xây dựng một mối quan hệ
+                    đáng tin cậy và bền vững với khách hàng và đối tác.
+                  </p>
+                </div>
+                <div
+                  class="flex justify-center items-center pt-[3.75rem] max-xl:pt-[0.75rem] max-lg:pt-[49px] max-2xl:pt-[1.75rem]"
+                >
+                  <img
+                    class="max-lg:w-[20%] max-xl:w-[24%]"
+                    src="src/icons/sparkles-outline.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div
+                class="absolute -top-[0.875rem] max-lg:w-[61%] max-lg:-top-[11px] max-xl:w-[60%] max-xl:-top-2"
+              >
+                <img class="" src="src/images/Rectangle 289.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="absolute -top-[33px] right-0 w-[45.8rem] max-lg:w-[46.5%] max-lg:top-[17px] max-xl:w-[55%]"
+        >
+          <img src="src/images/Rectangle 111.svg" alt="" />
+        </div>
+      </section>
+      <!-- ===================================End Tầm nhìn========================================== -->
+
+      <!-- ================================Đội ngũ WebOps Agency=====================================-->
+      <section
+        class="overflow-hidden bg-no-repeat bg-left-bottom"
+        style="background-image: url('./src/images/hanoilineConverted3.jpg')"
+      >
+        <div
+          class="mix-blend-multiply bg-gradient-to-t from-light to-lightbold relative flex justify-center items-center"
+        >
+          <div
+            class="w-[88rem] *:text-textname flex flex-col justify-center gap-[2.9375rem] -mt-[0.875rem] py-24 max-xl:w-[90%] max-xl:m-0 max-xl:py-14 max-sm:w-[90%] max-sm:py-3 max-sm:gap-[40px] max-sm:pb-[26px] max-sm:ml-[3px] max-1450px:w-[88%]"
+          >
+            <div>
+              <div
+                class="text-2xl leading-[3.75rem] -tracking-[0.04375rem] font-extrabold max-sm:font-bold max-sm:text-[14px] max-sm:tracking-normal max-sm:leading-[59px]"
+              >
+                <p class="text-custext">Chúng tôi là ai?</p>
+              </div>
+              <div>
+                <h1
+                  class="text-[2.5rem] leading-[3.41rem] font-extrabold m-0 max-sm:font-extrabold max-sm:text-[24px] max-sm:leading-[0px]"
+                >
+                  Đội ngũ WebOps Agency
+                </h1>
+              </div>
+            </div>
+            <div
+              class="flex justify-between z-10 max-xl:gap-7 max-sm:grid max-sm:grid-cols-2 max-sm:grid-rows-2 max-sm:gap-[20px] max-sm:gap-y-[31px] max-1450px:gap-x-[32px] max-1450px:gap-4"
+            >
+              <div>
+                <div>
+                  <img
+                    class="pb-[0.75rem]"
+                    src="src/images/Rectangle 300.svg"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <h3
+                    class="text-2xl leading-[3.5625rem] font-bold max-sm:font-bold max-sm:text-[18px] max-sm:leading-[24px] max-lg:text-[14px] max-lg:leading-[1.5625rem]"
+                  >
+                    Founder & CEO
+                  </h3>
+                </div>
+                <div>
+                  <span
+                    class="text-[1.125rem] leading-[1.5rem] font-semibold max-sm:font-normal max-sm:text-[14px] max-sm:leading-[30px] max-lg:text-[1rem]"
+                    >Lê Trọng Đạt</span
+                  >
+                </div>
+              </div>
+              <div>
+                <div>
+                  <img
+                    class="pb-[0.75rem]"
+                    src="src/images/Rectangle 301.svg"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <h3
+                    class="text-2xl leading-[3.5625rem] font-bold max-sm:font-bold max-sm:text-[18px] max-sm:leading-[24px] max-lg:text-[14px] max-lg:leading-[1.5625rem]"
+                  >
+                    CTO
+                  </h3>
+                </div>
+                <div>
+                  <span
+                    class="text-[1.125rem] leading-[1.5rem] font-semibold max-sm:font-normal max-sm:text-[14px] max-sm:leading-[30px] max-lg:text-[1rem]"
+                    >Ngô Văn Ngọc</span
+                  >
+                </div>
+              </div>
+              <div>
+                <div>
+                  <img
+                    class="pb-[0.75rem]"
+                    src="src/images/Rectangle 302.svg"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <h3
+                    class="text-2xl leading-[3.5625rem] font-bold max-sm:font-bold max-sm:text-[18px] max-sm:leading-[24px] max-lg:text-[14px] max-lg:leading-[1.5625rem]"
+                  >
+                    Creative Director
+                  </h3>
+                </div>
+                <div>
+                  <span
+                    class="text-[1.125rem] leading-[1.5rem] font-semibold max-sm:font-normal max-sm:text-[14px] max-sm:leading-[30px] max-lg:text-[1rem]"
+                    >Tân Văn Sơn</span
+                  >
+                </div>
+              </div>
+              <div class="max-sm:mr-0">
+                <div>
+                  <img
+                    class="pb-[0.75rem]"
+                    src="src/images/Rectangle 303.svg"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <h3
+                    class="text-2xl leading-[3.5625rem] font-bold max-sm:font-bold max-sm:text-[18px] max-sm:leading-[24px] max-lg:text-[14px] max-lg:leading-[1.5625rem]"
+                  >
+                    Marketing Director
+                  </h3>
+                </div>
+                <div>
+                  <span
+                    class="text-[1.125rem] leading-[1.5rem] font-semibold max-sm:font-normal max-sm:text-[14px] max-sm:leading-[30px] max-lg:text-[1rem]"
+                    >Phạm Văn Dũng</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ==============================End Đội ngũ WebOps Agency ================================= -->
+
+      <!-- ==============================Một số dự án tiêu biểu===================================== -->
+      <section
+        class="overflow-hidden bg-gradient-to-b from-light to-lightbold py-[30.5625rem] relative z-0 flex justify-center items-center max-lg:pt-[131%] max-lg:pb-[110%] max-394px:pb-[105.9%]"
+      >
+        <div
+          class="absolute -top-[177px] -left-[342px] max-1500px:-left-3 w-[82%] max-lg:w-full max-lg:left-1 max-lg:top-0"
+        >
+          <img class="w-full" src="src/images/2987331 1.svg" alt="" />
+        </div>
+        <div
+          class="absolute h-full flex justify-center items-center gap-[2.5rem] max-lg:ml-[1px] max-1500px:w-[76%] max-1748px:w-[86%] max-lg:h-[91%] max-lg:w-[100%] max-394px:top-[8.1%]"
+        >
+          <div
+            class="absolute overflow-hidden -right-[7.5rem] z-0 mt-[0.125rem] max-1686px:-right-[4.75rem] max-1600px:-right-[2rem] max-1500px:w-[60%] max-1500px:right-[-10%] max-1748px:right-[-6%] max-1748px:w-[64%] max-lg:hidden"
+          >
+            <img src="src/images/Rectangle 236.svg" alt="" />
+          </div>
+
+          <div
+            class="w-[58rem] pt-[0.125rem] max-lg:w-[88%] max-394px:w-[90%] max-lg:h-[83%] max-394px:h-[85.5%] max-lg:pt-[0px] max-1500px:w-[70%] max-1180px:w-[68%] max-1748px:w-[70%]"
+          >
+            <div class="swiper mySwiper w-full max-lg:h-full">
+              <div class="swiper-wrapper">
+                <div
+                  class="swiper-slide text-center text-lg flex justify-center items-center"
+                >
+                  <img
+                    class="block w-full object-cover"
+                    src="src/images/Rectangle 235.svg"
+                    alt=""
+                  />
+                </div>
+                <div
+                  class="swiper-slide text-center text-lg flex justify-center items-center"
+                >
+                  <img
+                    class="block w-full object-cover"
+                    src="src/images/Rectangle 236 (1).svg"
+                    alt=""
+                  />
+                </div>
+                <div
+                  class="swiper-slide text-center text-lg flex justify-center items-center"
+                >
+                  <img
+                    class="block w-full object-cover"
+                    src="src/images/Rectangle 235.svg"
+                    alt=""
+                  />
+                </div>
+                <div
+                  class="swiper-slide text-center text-lg flex justify-center items-center"
+                >
+                  <img
+                    class="block w-full object-cover"
+                    src="src/images/Rectangle 236 (1).svg"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex justify-center items-center gap-8 pt-8 mr-1 pl-[0.25rem] z-30 max-lg:pt-5 max-sm:pt-[13px] max-lg:pl-[14px] max-lg:gap-8 max-sm:gap-[12px]"
+            >
+              <div class="button-prev">
+                <img
+                  class="max-sm:w-[75%] max-lg:w-full"
+                  src="src/icons/arrow-left.svg"
+                  alt=""
+                />
+              </div>
+              <div class="button-next">
+                <img
+                  class="max-sm:w-[75%] max-lg:w-full"
+                  src="src/icons/arrow-right.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex flex-col z-10 gap-[3.0625rem] pb-[3.375rem] justify-center mt-[0.125rem] max-lg:absolute max-lg:top-[-6%] max-sm:top-[-4%] max-lg:gap-0 max-lg:w-full max-lg:mr-0 max-lg:pb-0 max-394px:top-[-5.4%]"
+          >
+            <div class="max-lg:flex max-lg:justify-center">
+              <img
+                class="float-right max-1500px:w-[50%] max-lg:hidden"
+                src="src/icons/archive.svg"
+                alt=""
+              />
+              <img
+                class="hidden max-lg:block max-lg:w-[14%] max-sm:w-[10%]"
+                src="src/icons/archive-mobile.svg"
+                alt=""
+              />
+            </div>
+            <div>
+              <h1
+                class="text-[4rem] font-extrabold text-white leading-[5.4375rem] text-right m-0 pb-[1px] max-1500px:text-[2rem] max-1500px:leading-[3.4375rem] max-1180px:text-[1.5rem] max-1180px:leading-[2.4375rem] max-1748px:text-[3rem] max-1748px:leading-[4.4375rem] max-lg:hidden"
+              >
+                Một Số Dự Án
+                <p>Tiêu Biểu</p>
+                Của Chúng Tôi
+              </h1>
+              <h1
+                class="hidden text-[4rem] font-extrabold text-tahiti leading-[5.4375rem] text-right m-0 pb-[1px] max-lg:block max-lg:text-[42px] max-sm:text-[24px] max-lg:text-center max-lg:leading-[58px]"
+              >
+                Các Dự Án Tiêu Biểu
+              </h1>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ==============================End Một số dự án tiêu biểu================================= -->
+
+      <!-- =================================Hợp tác - đồng hành===================================== -->
+      <section class="max-w-full overflow-hidden pb-[5.8125rem] max-sm:pb-0">
+        <div
+          class="*:font-bold *:text-[2.5rem] max-xl:*:text-[2rem] flex justify-center items-center flex-col pt-24 max-sm:pl-0 max-sm:pt-[32px] max-sm:*:text-[18px] max-sm:ml-[2px]"
+        >
+          <p
+            class="bg-gradient-to-r from-bluebold to-lightblue pt-[1.0625rem] pb-[1.01875rem] px-12 rounded-full leading-[3.41rem] text-white max-sm:px-[20px] max-sm:py-0 max-sm:leading-[41px]"
+          >
+            Hợp tác - đồng hành
+          </p>
+          <p
+            class="leading-[55px] pt-[17px] text-custext1 text-center w-[37%] max-sm:w-[92%] max-sm:leading-[25px] max-sm:pt-[12px] max-xl:w-[60%] max-md:w-[80%]"
+          >
+            Đưa nhiều hơn nữa các Doanh nghiệp đến thành công
+          </p>
+        </div>
+        <div
+          class="flex flex-col pt-[45px] pl-[0.5rem] max-1818px:pl-0 max-xl:hidden"
+        >
+          <div class="flex justify-center pr-[0.75rem] max-1748px:*:border-b">
+            <img
+              class="border border-border1 border-dashed border-r-0 border-b-0"
+              src="src/images/image 1.svg"
+              alt=""
+            />
+            <img
+              class="border border-border1 border-dashed border-r-0 border-b-0 -ml-[0.125rem] max-1748px:border max-1748px:border-r-0 max-1450px:hidden"
+              src="src/images/image 2.svg"
+              alt=""
+            />
+            <img
+              class="border border-border1 border-dashed border-r-0 border-b-0 -ml-[0.125rem] max-1748px:border max-1748px:border-r-0 max-1450px:hidden"
+              src="src/images/image 24.svg"
+              alt=""
+            />
+            <img
+              class="border border-border1 border-dashed border-r-0 border-b-0 -ml-[0.125rem] max-1748px:border max-1748px:border-r-0"
+              src="src/images/image 4.svg"
+              alt=""
+            />
+            <img
+              class="border border-border1 border-dashed border-r-0 border-b-0 -ml-[0.125rem] max-1748px:border max-1748px:border-r-0"
+              src="src/images/image 25.svg"
+              alt=""
+            />
+            <img
+              class="border border-border1 border-dashed border-r-0 border-b-0 -ml-[0.125rem] max-1748px:border max-1748px:border-r-0"
+              src="src/images/image 6.svg"
+              alt=""
+            />
+            <img
+              class="border border-border1 border-dashed border-b-0 -ml-[0.125rem] max-1748px:border"
+              src="src/images/image 2.svg"
+              alt=""
+            />
+          </div>
+          <div
+            class="flex justify-center pl-[3.75rem] max-1800px:pl-0 max-1748px:flex-col mx-auto"
+          >
+            <div class="flex max-1748px:*:border-t-0 max-1748px:*:border-b-0">
+              <img
+                class="border border-border1 border-dashed border-r-0"
+                src="src/images/image 1.svg"
+                alt=""
+              />
+              <img
+                class="border border-border1 border-dashed border-r-0 -ml-[0.125rem]"
+                src="src/images/image 2.svg"
+                alt=""
+              />
+              <img
+                class="border border-border1 border-dashed border-r-0 -ml-[0.125rem]"
+                src="src/images/image 24.svg"
+                alt=""
+              />
+              <img
+                class="border border-border1 border-dashed border-r-0 -ml-[0.125rem] max-1748px:border"
+                src="src/images/image 4.svg"
+                alt=""
+              />
+            </div>
+            <div class="flex max-1748px:*:border-b-0">
+              <img
+                class="border border-border1 border-dashed border-r-0 -ml-[0.125rem]"
+                src="src/images/image 25.svg"
+                alt=""
+              />
+              <img
+                class="border border-border1 border-dashed border-r-0 -ml-[0.125rem]"
+                src="src/images/image 6.svg"
+                alt=""
+              />
+              <img
+                class="border border-border1 border-dashed border-r-0 -ml-[0.125rem]"
+                src="src/images/image 2.svg"
+                alt=""
+              />
+              <img
+                class="border border-border1 border-dashed border-r-0 -ml-[0.125rem]"
+                src="src/images/image 25.svg"
+                alt=""
+              />
+              <img
+                class="border border-border1 border-dashed -ml-[0.125rem]"
+                src="src/images/image 16.svg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="flex justify-center pr-[0.75rem] max-1748px:*:border-t">
+            <img
+              class="border border-border1 border-dashed border-r-0 border-t-0"
+              src="src/images/image 25.svg"
+              alt=""
+            />
+            <img
+              class="border border-border1 border-dashed border-r-0 border-t-0 -ml-[0.125rem] max-1450px:hidden"
+              src="src/images/image 24.svg"
+              alt=""
+            />
+            <img
+              class="border border-border1 border-dashed border-r-0 border-t-0 -ml-[0.125rem] max-1450px:hidden"
+              src="src/images/image 17.svg"
+              alt=""
+            />
+            <img
+              class="border border-border1 border-dashed border-r-0 border-t-0 -ml-[0.125rem]"
+              src="src/images/image 18.svg"
+              alt=""
+            />
+            <img
+              class="border border-border1 border-dashed border-r-0 border-t-0 -ml-[0.125rem]"
+              src="src/images/image 20.svg"
+              alt=""
+            />
+            <img
+              class="border border-border1 border-dashed border-r-0 border-t-0 -ml-[0.125rem]"
+              src="src/images/image 21.svg"
+              alt=""
+            />
+            <img
+              class="border border-border1 border-dashed border-r-0 border-t-0 -ml-[0.125rem]"
+              src="src/images/image 25.svg"
+              alt=""
+            />
+            <img
+              class="border border-border1 border-dashed border-t-0 -ml-[0.125rem]"
+              src="src/images/image 23.svg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div
+          class="hidden justify-center mx-auto pt-[2.625rem] max-xl:flex max-xl:flex-col max-xl:w-full"
+        >
+          <div class="flex mx-auto">
+            <div class="flex max-585:*:border">
+              <img
+                class="border border-border1 border-dashed border-r-0 border-b-0 max-515px:border max-834px:hidden"
+                src="src/images/image 1.svg"
+                alt=""
+              />
+              <img
+                class="border border-border1 border-dashed border-r-0 border-b-0 -ml-[0.125rem] max-lg:border max-lg:border-b-0"
+                src="src/images/image 2.svg"
+                alt=""
+              />
+            </div>
+            <div class="flex max-585:*:border">
+              <img
+                class="border border-border1 border-dashed border-r-0 border-b-0 -ml-[0.125rem] max-lg:hidden"
+                src="src/images/image 1.svg"
+                alt=""
+              />
+              <img
+                class="border border-border1 border-dashed border-b-0 -ml-[0.125rem] max-515px:hidden"
+                src="src/images/image 2.svg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div
+            class="flex justify-center pl-[3.75rem] max-1800px:pl-0 max-1748px:flex-col mx-auto"
+          >
+            <div class="flex">
+              <img
+                class="border border-border1 border-dashed border-r-0 -ml-[0.125rem] max-585:hidden"
+                src="src/images/image 25.svg"
+                alt=""
+              />
+              <img
+                class="border border-border1 border-dashed border-r-0 -ml-[0.125rem] max-515px:hidden"
+                src="src/images/image 6.svg"
+                alt=""
+              />
+              <img
+                class="border border-border1 border-dashed border-r-0 -ml-[0.125rem] max-834px:hidden"
+                src="src/images/image 2.svg"
+                alt=""
+              />
+              <img
+                class="border border-border1 border-dashed border-r-0 -ml-[0.125rem] max-lg:hidden"
+                src="src/images/image 25.svg"
+                alt=""
+              />
+              <img
+                class="border border-border1 border-dashed -ml-[0.125rem]"
+                src="src/images/image 16.svg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="flex mx-auto">
+            <div class="flex max-1748px:*:border-t-0">
+              <img
+                class="border border-border1 border-dashed border-r-0 max-515px:border"
+                src="src/images/image 1.svg"
+                alt=""
+              />
+              <img
+                class="border border-border1 border-dashed border-r-0 border-b-0 -ml-[0.125rem] max-1748px:border max-1748px:border-r-0 max-lg:border max-515px:hidden"
+                src="src/images/image 25.svg"
+                alt=""
+              />
+            </div>
+            <div class="flex max-1748px:*:border-t-0">
+              <img
+                class="border border-border1 border-dashed border-r-0 border-b-0 -ml-[0.125rem] max-1748px:border max-1748px:border-r-0 max-834px:hidden"
+                src="src/images/image 1.svg"
+                alt=""
+              />
+              <img
+                class="border border-border1 border-dashed border-r-0 border-b-0 -ml-[0.125rem] max-1748px:border max-585:hidden"
+                src="src/images/image 25.svg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ==============================End Hợp tác - đồng hành==================================== -->
+      <section class="834px:pt-16 1408px:pt-0 relative">
+        <div
+          class="535:w-[90%] 694:w-[80%] 834px:w-[90%] lg:w-[900px] 1200:w-[1000px] 1408px:w-[1280px] px-5 2xl:px-0 mx-auto"
+        >
+          <div
+            class="flex flex-col 834px:flex-row 834px:items-center justify-between 834px:bg-[#264AB9] 834px:pr-5 1200:pr-7 1408px:pr-14 rounded-[26px] relative z-10 after:content-[''] after:hidden 834px:after:block after:absolute after:h-[82.42%] after:w-[5%] after:bg-[#E2EBF6] after:right-[-5%] after:top-[7%] after:-z-10 after:rounded-tr-[30px] after:rounded-br-[30px]"
+          >
+            <img
+              class="absolute hidden 834px:block -z-10 w-full h-full"
+              src="./src/images/Rectangle 142.png"
+              alt=""
+            />
+            <div
+              class="hidden 834px:flex flex-col 1408px:gap-12 834px: mt-[-3%] relative 834px:w-[27%] lg:w-auto"
+            >
+              <img
+                class="absolute -z-10 834px:w-[295px] 834px:h-[363px] lg:h-[478px] lg:w-[360px] 1200:w-[385px] 1200:h-[475px] 1408px:w-auto 1408px:h-auto max-w-max 834px:left-[-19%] lg:left-[-19.3%] 834px:top-[-52%] lg:top-[-30.7%] 1408px:top-[-25.7%]"
+                src="src/images/Rectangle 252.png"
+                alt=""
+              />
+              <img
+                class="w-10 618:w-16 lg:w-24 1408px:w-32 ml-[-6px]"
+                src="src/icons/lucide_contact-round.svg"
+                alt=""
+              />
+              <h2
+                class="font-extrabold text-2xl 618:text-[28px] 834px:text-[26px] lg:text-4xl 1408px:text-[48px] max-w-[35.5rem] 618:leading-[37px] lg:leading-[4.0625rem] text-white text-center 834px:text-left"
+              >
+                Liên Hệ
+                <span class="block mr-1 1408px:mr-3">Với Chúng Tôi</span>
+                Ngay Bây Giờ
+              </h2>
+            </div>
+            <div
+              class="flex flex-col gap-6 lg:gap-9 1408px:gap-12 lg:pt-9 1408px:pt-[31px] 834px:pb-9 lg:pb-24 1408px:pb-[122px] 834px:w-[60%] lg:w-auto"
+            >
+              <h3
+                class="text-[#00355D] 834px:text-white z-20 text-2xl 1408px:text-[2rem] font-bold text-center mx-auto 1408px:leading-[44px] mt-8 834px:mt-9 1408px:mt-24"
+              >
+                ĐĂNG KÝ
+                <span class="block 834px:inline">NHẬN TƯ VẤN MIỄN PHÍ</span>
+              </h3>
+
+              <div
+                class="flex flex-col gap-4 lg:gap-5 1408px:gap-8 834px:items-center"
+              >
+                <!-- <div class="flex flex-col 834px:flex-row gap-4 lg:gap-5 1408px:gap-8"> -->
+                <div
+                  class="grid grid-cols-1 834px:grid-cols-2 gap-4 lg:gap-5 1408px:gap-8 w-full"
+                >
+                  <!-- <div class="flex flex-col gap-4 lg:gap-5 1408px:gap-8"> -->
+                  <input
+                    class="834px:order-1 lg:w-[250px] 1408px:w-[328px] rounded-md 1408px:rounded-[10px] bg-transparent border-2 border-[#A1A1AA] 834px:border-white focus:outline-none text-[#A1A1AA] 834px:text-white placeholder-[#A1A1AA] 834px:placeholder-white py-[6px] 535:py-[10px] 1408px:py-2 text-sm 1408px:text-lg font-bold"
+                    type="text"
+                    placeholder="Họ tên"
+                  />
+
+                  <input
+                    class="834px:order-3 lg:w-[250px] 1408px:w-[328px] rounded-md 1408px:rounded-[10px] bg-transparent border-2 border-[#A1A1AA] 834px:border-white outline-none text-[#A1A1AA] 834px:text-white placeholder-[#A1A1AA] 834px:placeholder-white py-[6px] 535:py-[10px] 1408px:py-2 text-sm 1408px:text-lg font-bold"
+                    type="text"
+                    placeholder="Email"
+                  />
+                  <!-- </div> -->
+                  <!-- <div class="flex flex-col gap-4 lg:gap-5 1408px:gap-8"> -->
+                  <input
+                    class="834px:order-2 lg:w-[250px] 1408px:w-[328px] rounded-md 1408px:rounded-[10px] bg-transparent border-2 border-[#A1A1AA] 834px:border-white outline-none text-[#A1A1AA] 834px:text-white placeholder-[#A1A1AA] 834px:placeholder-white py-[6px] 535:py-[10px] 1408px:py-2 text-sm 1408px:text-lg font-bold"
+                    type="text"
+                    placeholder="Số điện thoại"
+                  />
+
+                  <input
+                    class="834px:order-4 lg:w-[250px] 1408px:w-[328px] rounded-md 1408px:rounded-[10px] bg-transparent border-2 border-[#A1A1AA] 834px:border-white outline-none text-[#A1A1AA] 834px:text-white placeholder-[#A1A1AA] 834px:placeholder-white py-[6px] 535:py-[10px] 1408px:py-2 text-sm 1408px:text-lg font-bold"
+                    type="text"
+                    placeholder="Dịch vụ cần tư vấn"
+                  />
+                  <!-- </div> -->
+                </div>
+                <textarea
+                  class="h-[117px] 834px:h-36 w-full rounded-md 1408px:rounded-[10px] bg-transparent border-2 border-[#A1A1AA] 834px:border-white outline-none text-[#A1A1AA] 834px:text-white placeholder-[#A1A1AA] 834px:placeholder-white py-[5px] 1408px:py-2 text-sm 1408px:text-lg font-bold"
+                  placeholder="Nội dung"
+                ></textarea>
+
+                <button
+                  class="self-start mx-auto bg-gradient-to-r from-[#00B8C4] to-[#2AD8CD] text-[14px] lg:text-lg font-bold text-white rounded-full py-[10px] px-4 lg:px-6 1408px:px-8 lg:py-2.5 1408px:py-3"
+                >
+                  Liên Hệ Ngay
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer
+        class="max-w-full bg-[#23233F] mt-[61px] h-[921px] 1408px:h-auto 1408px:mt-[5.9375rem]"
+      >
+        <section
+          class="max-w-[1408px] mx-auto pt-[5.5rem] *:text-white hidden 1408px:grid grid-cols-3"
+        >
+          <div class="pl-2 pt-2">
+            <img src="src/images/footer.png" alt="" />
+            <p class="text-[15px] font-[400] w-[448px] pt-[1rem] leading-7">
+              Chúng tôi luôn chắc chắn về mục đích thiết kế website của khách
+              hàng. Website chuyên nghiệp trước hết phải phù hợp với hệ thống
+              nhận diện thương hiệu của doanh nghiệp, logic nội dung chặt chẽ và
+              ổn định
+            </p>
+            <div class="menu-footer pt-11">
+              <h3 class="text-lg font-semibold">DỊCH VỤ</h3>
+              <ul class="*:mt-[0.75rem]">
+                <li>
+                  <a href="">Dịch vụ</a>
+                </li>
+                <li>
+                  <a href="">Dịch vụ</a>
+                </li>
+                <li>
+                  <a href="">Dịch vụ</a>
+                </li>
+                <li>
+                  <a href="">Dịch vụ</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div>
+            <div class="menu-footer pl-[17px] pt-1">
+              <h1 class="text-lg font-semibold mt-1 leading-6">VỀ CHÚNG TÔI</h1>
+              <ul class="text-[16px] *:mt-[0.75rem] font-medium">
+                <li>
+                  <a href="">List item</a>
+                </li>
+                <li>
+                  <a href="">List item</a>
+                </li>
+                <li>
+                  <a href="">List item</a>
+                </li>
+                <li>
+                  <a href="">List item</a>
+                </li>
+              </ul>
+            </div>
+            <div class="menu-footer pt-[5.8rem] pl-[18px]">
+              <h1 class="font-semibold text-[18px]">CHÍNH SÁCH</h1>
+
+              <ul class="*:mt-3">
+                <li>
+                  <a href="">Chính sách</a>
+                </li>
+                <li>
+                  <a href="">Chính sách</a>
+                </li>
+                <li>
+                  <a href="">Chính sách</a>
+                </li>
+                <li>
+                  <a href="">Chính sách</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="max-w-[446px]">
+            <div class="menu-footer pt-[7px] pl-7">
+              <h1
+                class="text-[18px] text-white font-semibold m-0 mb-[0.4375rem]"
+              >
+                LIÊN HỆ
+              </h1>
+
+              <ul
+                class="*:flex *:leading-[1.3rem] *:tracking-[0.4px] *:gap-4 *:pt-[10px]"
+              >
+                <li>
+                  <img class="w-4 h-5" src="./src/icons/address.svg" alt="" />
+                  <a class="text-[16px] tracking-[0.4px] font-normal" href=""
+                    >Số 102 Trần Phú, Phường Mộ Lao, Quận Hà Đông, TP.Hà Nội.</a
+                  >
+                </li>
+                <li>
+                  <img class="w-5 h-5" src="src/icons/phone.svg" alt="" />
+                  <a class="text-[16px] font-normal" href=""
+                    >Hotline: 0973-258-886</a
+                  >
+                </li>
+                <li>
+                  <img class="w-5 h-5" src="src/icons/mail.svg" alt="" />
+                  <a class="text-[16px] font-normal" href=""
+                    >info@webopsagency.com</a
+                  >
+                </li>
+                <li>
+                  <img
+                    class="w-5 h-5"
+                    src="src/icons/description_FILL0_wght400_GRAD0_opsz24 1.svg"
+                    alt=""
+                  />
+                  <a class="text-[16px] font-normal" href=""
+                    >GPKD: 0107756568</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="pt-[4.6rem]">
+              <h1 class="font-semibold text-lg pl-[28px] m-0">
+                THEO DÕI CHÚNG TÔI
+              </h1>
+
+              <ul class="flex gap-[32px] pt-[10px] pl-[28px]">
+                <li>
+                  <a href=""
+                    ><img src="src/icons/facebook-square.svg" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href=""><img src="src/icons/instagram.svg" /></a>
+                </li>
+                <li>
+                  <a href=""><img src="src/icons/tiktok.svg" alt="" /></a>
+                </li>
+                <li>
+                  <a href=""
+                    ><img src="src/icons/twitter-square.svg" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href=""
+                    ><img src="src/icons/youtube-square.svg" alt=""
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section
+          class="hidden 1408px:block max-w-[1426px] mt-[49px] mx-auto max-1444px:px-[17px]"
+        >
+          <div
+            class="border-t-2 border-white flex pt-[22px] justify-between mx-auto ml-[17px] max-1444px:ml-0"
+          >
+            <div class="font-semibold text-[16px] text-white pt-[6px]">
+              Copyright WebOpsAgency
+            </div>
+            <div class="-mt-[2px]">
+              <img src="src/images/image 406.png" alt="" />
+            </div>
+          </div>
+        </section>
+      </footer>
+    </div>
+  </body>
+  <script
+    type="module"
+    src="./node_modules/flowbite/dist/flowbite.min.js"
+  ></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    // Function to check if element is in viewport
+    function isInViewport(element) {
+      const rect = element.getBoundingClientRect();
+      return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <=
+          (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <=
+          (window.innerWidth || document.documentElement.clientWidth)
+      );
+    }
+
+    // Function to handle scroll event
+    function onScroll() {
+      const number_KH = document.querySelector(".number_KH");
+      const number_DA = document.querySelector(".number_DA");
+      const number_TEMP = document.querySelector(".number_TEMP");
+      const number_HL = document.querySelector(".number_HL");
+      if (isInViewport(number_KH)) {
+        animateNumber_KH(1, 70, 1700); // Bắt đầu từ 1 đến 100 trong 2 giây
+        window.removeEventListener("scroll", onScroll); // Loại bỏ sự kiện cuộn sau khi kích hoạt
+      }
+
+      if (isInViewport(number_DA)) {
+        animateNumber_DA(1, 500, 3000); // Bắt đầu từ 1 đến 100 trong 2 giây
+        window.removeEventListener("scroll", onScroll); // Loại bỏ sự kiện cuộn sau khi kích hoạt
+      }
+
+      if (isInViewport(number_TEMP)) {
+        animateNumber_TEMP(1, 300, 2500); // Bắt đầu từ 1 đến 100 trong 2 giây
+        window.removeEventListener("scroll", onScroll); // Loại bỏ sự kiện cuộn sau khi kích hoạt
+      }
+
+      if (isInViewport(number_HL)) {
+        animateNumber_HL(1, 100, 2000); // Bắt đầu từ 1 đến 100 trong 2 giây
+        window.removeEventListener("scroll", onScroll); // Loại bỏ sự kiện cuộn sau khi kích hoạt
+      }
+    }
+
+    // Function to animate the number
+    function animateNumber_KH(start, end, duration) {
+      const element = document.getElementById("number_KH");
+      const range = end - start;
+      const minTimer = 1;
+      let stepTime = Math.abs(Math.floor(duration / range));
+      stepTime = Math.max(stepTime, minTimer);
+
+      let startTime = new Date().getTime();
+      let endTime = startTime + duration;
+      let timer;
+
+      function run() {
+        let now = new Date().getTime();
+        let remaining = Math.max((endTime - now) / duration, 0);
+        let value = Math.round(end - remaining * range);
+        element.textContent = value + "+";
+        if (value === end) {
+          clearInterval(timer);
+        }
+      }
+
+      timer = setInterval(run, stepTime);
+      run();
+    }
+
+    function animateNumber_DA(start, end, duration) {
+      const element = document.getElementById("number_DA");
+      const range = end - start;
+      const minTimer = 1;
+      let stepTime = Math.abs(Math.floor(duration / range));
+      stepTime = Math.max(stepTime, minTimer);
+
+      let startTime = new Date().getTime();
+      let endTime = startTime + duration;
+      let timer;
+
+      function run() {
+        let now = new Date().getTime();
+        let remaining = Math.max((endTime - now) / duration, 0);
+        let value = Math.round(end - remaining * range);
+        element.textContent = value + "+";
+        if (value === end) {
+          clearInterval(timer);
+        }
+      }
+
+      timer = setInterval(run, stepTime);
+      run();
+    }
+
+    function animateNumber_TEMP(start, end, duration) {
+      const element = document.getElementById("number_TEMP");
+      const range = end - start;
+      const minTimer = 1;
+      let stepTime = Math.abs(Math.floor(duration / range));
+      stepTime = Math.max(stepTime, minTimer);
+
+      let startTime = new Date().getTime();
+      let endTime = startTime + duration;
+      let timer;
+
+      function run() {
+        let now = new Date().getTime();
+        let remaining = Math.max((endTime - now) / duration, 0);
+        let value = Math.round(end - remaining * range);
+        element.textContent = value + "+";
+        if (value === end) {
+          clearInterval(timer);
+        }
+      }
+
+      timer = setInterval(run, stepTime);
+      run();
+    }
+
+    function animateNumber_HL(start, end, duration) {
+      const element = document.getElementById("number_HL");
+      const range = end - start;
+      const minTimer = 1;
+      let stepTime = Math.abs(Math.floor(duration / range));
+      stepTime = Math.max(stepTime, minTimer);
+
+      let startTime = new Date().getTime();
+      let endTime = startTime + duration;
+      let timer;
+
+      function run() {
+        let now = new Date().getTime();
+        let remaining = Math.max((endTime - now) / duration, 0);
+        let value = Math.round(end - remaining * range);
+        element.textContent = value + "%";
+        if (value === end) {
+          clearInterval(timer);
+        }
+      }
+
+      timer = setInterval(run, stepTime);
+      run();
+    }
+
+    // Add the scroll event listener
+    window.addEventListener("scroll", onScroll);
+
+    //Slide
+    // var swiper = new Swiper(".mySwiper", {
+    //     slidesPerView: 2,
+    //     spaceBetween: 32,
+    //     navigation: {
+    //         nextEl: ".button-next",
+    //         prevEl: ".button-prev",
+    //     },
+    // });
+
+    document.addEventListener("DOMContentLoaded", function () {
+      const swiperOptions = {
+        slidesPerView: 2,
+        spaceBetween: 32,
+        navigation: {
+          nextEl: ".button-next",
+          prevEl: ".button-prev",
+        },
+      };
+
+      const mediaQuery = window.matchMedia("(max-width: 1023px)");
+
+      function handleMediaQueryChange(e) {
+        if (e.matches) {
+          swiperOptions.direction = "vertical";
+          swiperOptions.spaceBetween = 16;
+        } else {
+          swiperOptions.direction = "horizontal";
+        }
+
+        if (window.swiper) {
+          window.swiper.destroy(true, true);
+        }
+        window.swiper = new Swiper(".mySwiper", swiperOptions);
+      }
+
+      mediaQuery.addEventListener("change", handleMediaQueryChange);
+
+      // Initial check
+      handleMediaQueryChange(mediaQuery);
+    });
+
+    // var swiper = new Swiper(".mySwiper", {
+    //     navigation: {
+    //         nextEl: ".button-next",
+    //         prevEl: ".button-prev",
+    //     },
+    // });
+  </script>
+</html>

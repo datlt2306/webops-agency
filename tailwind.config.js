@@ -9,7 +9,7 @@ module.exports = {
       boxShadow: {
         normal: "0 0 6px 2px rgb(0 0 0 / 0.1)",
         custom: "0 0 8px 1px rgba(0, 0, 0, 1)",
-        custom: "0 4px 8px 0 rgba(0, 0, 0, 0.25)",
+        custom1: "0 4px 8px 0 rgba(0, 0, 0, 0.25)",
         custom2: "3px 3px 6px 0 rgba(0, 0, 0, 0.2)",
         custom3: "0 0 8px 0 rgba(0, 0, 0, 0.2)",
       },
